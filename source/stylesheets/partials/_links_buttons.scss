@@ -1,0 +1,63 @@
+a{
+	color:$link-color;
+}
+
+.btn{
+	border-radius:$base-border-radius;
+	font-weight:600;
+	//primary buttons
+	&.btn-primary{
+		background:$link-color;
+		border-color:$link-color;
+		&:hover{
+			@include button-hover($link-color);
+		}
+	}
+	&.btn-secondary{
+		background:white;
+		border-color:$border-color;
+		color:$text-color;
+		&:hover{
+			border-color:shade($border-color,90%);
+		}
+	}
+	//alert buttons
+	&.btn-danger{
+		background:$danger-color;
+		border-color:$danger-color;
+		&:hover{
+			@include button-hover($danger-color);
+		}
+	}
+	&.btn-success{
+		background:$success-color;
+		border-color:$success-color;
+		&:hover{
+			@include button-hover($success-color);
+		}
+	}
+	&.btn-warning{
+		background:$warning-color;
+		border-color:$warning-color;
+		color:white;
+		&:hover{
+			@include button-hover($warning-color);
+		}
+	}
+	//flat button
+	&.btn-flat{
+		background:white;
+		border-color:white;
+		color:$text-color;
+		&:hover{
+			@include button-hover(white);
+		}
+	}
+	//link button
+	&.btn-link{
+		color:$link-color;
+		&:hover{
+			color:shade($link-color,10%);
+		}
+	}
+}
