@@ -1,0 +1,82 @@
+.navbar{
+		a.nav-link{
+			color:$text-color!important;
+			@include transition-duration($base-transition-duration);
+			&:hover{
+				color:shade($text-color,90%)!important;
+			}
+		}
+	&.bg-light{
+		background-color:white!important;
+	}
+}
+#primary-nav{
+	padding:0;
+	font-size:14px;
+	border-bottom:1px solid $border-color;
+	.navbar-brand{
+		padding:0;
+		@include breakpoint(md) {
+			padding:$baseline 0;
+		}
+		@include breakpoint(xs) {
+			padding:$baseline 20px;
+		}
+	}
+	.navbar-nav{
+		.nav-item{
+			//workspace dropdown menu styles
+			&.workspace-selector{
+				.nav-link{
+					border-left:1px solid $border-color;
+					padding:0;
+					padding-left:1rem;
+					margin:.5rem ;
+					margin:0;
+				}
+			}
+			.nav-link{
+				padding:$baseline $baseline/2;
+				margin:0 $baseline/1.5;
+				line-height:2rem;
+			}
+			&.active{
+				.nav-link{
+					box-shadow:inset 0 -3px 0 $lightest-gray-color;
+				}
+			}
+		}
+	}
+	//menu button shown on mobile
+	.menu-toggle{
+		border-radius:0;
+		@include breakpoint(md) {
+			padding:$baseline 20;
+		}
+		@include breakpoint(xs) {
+			padding:$baseline 20px;
+		}
+		.material-icons{
+			line-height:30px;
+		}
+	}
+	//general dropdown toggle styles
+	.dropdown-toggle{
+		&:after{
+			display:none;
+		}
+		.material-icons{
+			font-size:16px;
+			position:relative;
+			top:3px;
+			color:$lightest-gray-color;
+		}
+	}
+}
+
+
+//page header nav
+
+.page-header{
+	padding-top:$baseline;
+}

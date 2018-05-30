@@ -1,0 +1,43 @@
+%nav.navbar.navbar-light.bg-light.fixed-top.navbar-expand-sm#primary-nav
+  .container
+    %a.navbar-brand{:href => "/products"} 
+      %svg.header-icon{:height => "24px", :version => "1.1", :viewbox => "0 0 26 22",  :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
+        / Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch
+        %g#Symbols{:fill => "none", "fill-rule" => "evenodd", :stroke => "none", "stroke-width" => "1"}
+          %g#header-with-workspaces{:fill => "#3EA7ED", :transform => "translate(-103.000000, -25.000000)"}
+            %g#Group{:transform => "translate(103.000000, 25.000000)"}
+              %path#Fill-1{:d => "M12.0826,22 C8.1266,22 4.4206,20.313 1.0616,16.985 L-0.0004,15.933 L2.1056,13.807 L3.1686,14.86 C5.9656,17.632 8.9646,19.055 12.1526,19.008 C17.6356,18.973 21.8836,14.717 21.9266,14.673 L22.9726,13.609 L25.1076,15.696 L24.0656,16.764 C23.8596,16.976 18.9406,21.942 12.2016,22 C12.1626,22 12.1226,22 12.0826,22"}
+              %polygon#Fill-4{:points => "11.1182 14.2715 11.1182 4.4565 11.1182 0.4685 8.2432 0.4685 8.2432 4.4565 8.2432 14.2715"}
+              %polygon#Fill-6{:points => "16.8282 14.2715 16.8282 4.4565 16.8282 0.4685 13.9532 0.4685 13.9532 4.4565 13.9532 14.2715"}
+    %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
+      %i.material-icons
+        menu
+    .navbar-nav.mr-auto.d-none.d-lg-block
+      .nav-item.dropdown.workspace-selector
+        %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          Eternal Contrast
+          %i.material-icons
+            unfold_more
+        .dropdown-menu{"aria-labelledby" => "navbarDropdownMenuLink"}
+          %a.dropdown-item{:href => "#"} 
+            Action
+    .d-none.d-lg-block
+      .navbar-nav
+        .nav-item.active
+          %a.nav-link{:href => "/products"}
+            Products
+        .nav-item
+          %a.nav-link{:href => "#"}
+            People
+        .nav-item.dropdown
+          %a.nav-link.dropdown-toggle.no-margin-right.no-padding-right{"data-toggle" => "dropdown", :href => "#"}
+            %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png"}
+            %i.material-icons
+              expand_more
+          .dropdown-menu.dropdown-menu-right
+            %a.dropdown-item{:href => "#"} 
+              Action
+            %a.dropdown-item{:href => "#"} 
+              Action
+            %a.dropdown-item{:href => "#"} 
+              Action

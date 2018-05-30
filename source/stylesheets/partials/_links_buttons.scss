@@ -15,10 +15,10 @@ a{
 	}
 	&.btn-secondary{
 		background:white;
-		border-color:$border-color;
+		border-color:$lightest-gray-color;
 		color:$text-color;
 		&:hover{
-			border-color:shade($border-color,90%);
+			border-color:shade($lightest-gray-color,90%);
 		}
 	}
 	//alert buttons

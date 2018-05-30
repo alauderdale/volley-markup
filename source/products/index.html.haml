@@ -1,0 +1,42 @@
+%section
+	.container
+		.row
+			.col-12
+				.page-header
+					.row
+						.col-sm-6.col-7
+							%h1
+								Products
+						.col-lg-2.col-md-3.col-sm-4.col-5.ml-auto
+							%a.btn.btn-lg.btn-primary.btn-block{:href=>"#"}
+								Add new
+%section
+	.container
+		.row
+			-2.times do
+				.col-sm-6.col-md-6.col-lg-4
+					.card.margin-bottom
+						%img.card-img-top{:alt => "Card image cap", :src => "http://via.placeholder.com/350x150"}
+						.card-body
+							.row
+								.col-8
+									%h3.card-title.no-margin-bottom
+										CEB Next
+									%h4.card-text.extra-light-text-color
+										Updated 10th Oct 17
+								.col-4
+									.dropdown.show.text-right
+										%a.btn.btn-flat{"data-toggle" => "dropdown", :href => "#"}
+											%i.material-icons
+												more_horiz
+										.dropdown-menu
+											%a.dropdown-item{:href => "#"} 
+												Delete
+
+
+
+
+
+
+
+					
