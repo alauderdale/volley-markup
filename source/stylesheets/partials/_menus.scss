@@ -36,12 +36,14 @@
 //Workspace selection menu
 .workspace-menu{
 	min-width:280px;
+	position:absolute!important;
 	animation-duration: .15s;
 	@include animation-fill-mode(both);
 	animation-name: menu-zoom;
 }
 
 .admin-menu{
+	position:absolute!important;
 	animation-duration: .15s;
 	@include animation-fill-mode(both);
 	animation-name: menu-zoom;
