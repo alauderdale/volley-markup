@@ -1,0 +1,13 @@
+@keyframes menu-zoom {
+
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translateY(-24px) scale3d(.9,.9,.9);
+	    transform: translateY(-24px) scale3d(.9,.9,.9);
+	}
+
+	50% {
+	    opacity: 1;
+	}
+
+}

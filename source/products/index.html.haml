@@ -8,15 +8,19 @@
 							%h1
 								Products
 						.col-lg-2.col-md-3.col-sm-4.col-5.ml-auto
-							%a.btn.btn-lg.btn-primary.btn-block{:href=>"#"}
+							%a.btn.btn-primary.btn-block{:href=>"#"}
 								Add new
-%section
+%section.no-padding-top
 	.container
 		.row
 			-2.times do
 				.col-sm-6.col-md-6.col-lg-4
-					.card.margin-bottom
-						%img.card-img-top{:alt => "Card image cap", :src => "http://via.placeholder.com/350x150"}
+					.card.margin-bottom.product-card
+						.card-header.no-padding-bottom
+							%img.card-img-top{:alt => "Card image cap", :src => "/images/tmp/ceb-shot.png"}
+							.view-product-overlay
+								%a.btn.btn-outline-light{:href=>"#"}
+									View product
 						.card-body
 							.row
 								.col-8
@@ -26,7 +30,7 @@
 										Updated 10th Oct 17
 								.col-4
 									.dropdown.show.text-right
-										%a.btn.btn-flat{"data-toggle" => "dropdown", :href => "#"}
+										%button.btn.btn-flat.btn-icon.no-padding{"data-toggle" => "dropdown", :type=>"button"}
 											%i.material-icons
 												more_horiz
 										.dropdown-menu.dropdown-menu-right

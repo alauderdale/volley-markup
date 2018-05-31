@@ -21,6 +21,7 @@
 		}
 		@include breakpoint(xs) {
 			padding:$baseline 20px;
+			margin:0!important;
 		}
 	}
 	.navbar-nav{

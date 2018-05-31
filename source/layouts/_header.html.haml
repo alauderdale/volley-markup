@@ -9,18 +9,43 @@
               %path#Fill-1{:d => "M12.0826,22 C8.1266,22 4.4206,20.313 1.0616,16.985 L-0.0004,15.933 L2.1056,13.807 L3.1686,14.86 C5.9656,17.632 8.9646,19.055 12.1526,19.008 C17.6356,18.973 21.8836,14.717 21.9266,14.673 L22.9726,13.609 L25.1076,15.696 L24.0656,16.764 C23.8596,16.976 18.9406,21.942 12.2016,22 C12.1626,22 12.1226,22 12.0826,22"}
               %polygon#Fill-4{:points => "11.1182 14.2715 11.1182 4.4565 11.1182 0.4685 8.2432 0.4685 8.2432 4.4565 8.2432 14.2715"}
               %polygon#Fill-6{:points => "16.8282 14.2715 16.8282 4.4565 16.8282 0.4685 13.9532 0.4685 13.9532 4.4565 13.9532 14.2715"}
-    %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
-      %i.material-icons
-        menu
-    .navbar-nav.mr-auto.d-none.d-lg-block
+    .navbar-nav.mr-auto
       .nav-item.dropdown.workspace-selector
         %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
           Eternal Contrast
           %i.material-icons
             unfold_more
-        .dropdown-menu{"aria-labelledby" => "navbarDropdownMenuLink"}
-          %a.dropdown-item{:href => "#"} 
-            Action
+        .dropdown-menu.workspace-menu.menu-with-button{"aria-labelledby" => "navbarDropdownMenuLink"}
+          %a.dropdown-item.d-flex.active{:href => "#"} 
+            .avatar-container
+              .avatar-default
+                EC
+            %span.text.p-2.mr-auto
+              Eternal Contrast
+            %span.button-container.p-2
+              %button.btn.btn-link.align-middle.btn-icon{:type=>"button"}
+                %i.material-icons
+                  settings
+          %a.dropdown-item.d-flex{:href => "#"} 
+            .avatar-container
+              .avatar-default
+                CB
+            %span.text.p-2.mr-auto
+              CE Broker
+            %span.button-container.p-2
+              %button.btn.btn-link.align-middle.btn-icon{:type=>"button"}
+                %i.material-icons
+                  settings
+          .dropdown-divider
+          %a.dropdown-item.d-flex{:href => "#"} 
+            .avatar-container.invert-avatar
+              .avatar-default
+                +
+            %span.text.p-2.mr-auto.link-color
+              Create a new Workspace
+    %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
+      %i.material-icons
+        menu
     .d-none.d-lg-block
       .navbar-nav
         .nav-item.active
@@ -35,9 +60,18 @@
             %i.material-icons
               expand_more
           .dropdown-menu.dropdown-menu-right
+            .dropdown-header
+              %p.medium-font.no-margin-bottom.text-color
+                Alex Lauderdale
+              %h5.extra-light-text-color
+                alauderdale@mac.com
+            .dropdown-divider
             %a.dropdown-item{:href => "#"} 
-              Action
+              %i.material-icons.icon-left
+                settings
+              Account settings
             %a.dropdown-item{:href => "#"} 
-              Action
-            %a.dropdown-item{:href => "#"} 
-              Action
+              %i.material-icons.icon-left
+                exit_to_app
+              Sign out
+              

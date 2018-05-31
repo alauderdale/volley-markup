@@ -1,0 +1,84 @@
+//default dropdown menu styling
+.dropdown-menu{
+	box-shadow:$box-shadow-elv-two;
+	border:none;
+	border-radius:2px;
+	.dropdown-item{
+		color:$text-color;
+		&:hover{
+			background:$off-white-dark-color;
+		}
+		&:active{
+			background:shade($off-white-dark-color,5%);
+			color:$text-color;
+		}
+		&.active{
+			background:white;
+			box-shadow:inset 3px 0 0 $link-color;
+			&:hover{
+				background:$off-white-dark-color;
+			}
+		}
+		i{
+				font-size:1rem;
+				line-height:1;
+				position:relative;
+				top:4px;
+				color:$lightest-gray-color;
+				&.icon-left{
+					margin-right:12px;
+				}
+			}
+	}
+
+}
+
+//Workspace selection menu
+.workspace-menu{
+	min-width:280px;
+	position:absolute!important;
+	animation-duration: .15s;
+	@include animation-fill-mode(both);
+	animation-name: menu-zoom;
+}
+
+///menus with biuttons to the right of the text
+.menu-with-button{
+	.dropdown-item{
+		padding:12px 20px;
+		.avatar-container{
+			margin-right:12px;
+			.avatar-default{
+				padding:6px;
+				background-color:$lightest-gray-color;
+				font-size:14px;
+				font-weight:600;
+				color:white;
+				border-radius:3px;
+				line-height:1;
+				min-width:28px;
+				text-align:center;
+
+			}
+			&.invert-avatar{
+				.avatar-default{
+					background:white;
+					color:$text-color;
+					border:1px solid $border-color;
+				}
+			}
+		}
+		.text{
+			padding:0!important;
+		}
+		.button-container{
+			padding:0!important;
+			button{
+				padding:0!important;
+			}
+			i{
+				font-size:20px;
+			}
+		}
+	}
+}

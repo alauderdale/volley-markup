@@ -46,7 +46,7 @@ a{
 	}
 	//flat button
 	&.btn-flat{
-		background:white;
+		background:transparent;
 		border-color:white;
 		color:$text-color;
 		&:hover{
@@ -58,6 +58,17 @@ a{
 		color:$link-color;
 		&:hover{
 			color:shade($link-color,10%);
+		}
+	}
+	&.btn-icon{
+		line-height:1;
+		i{
+			color:$lightest-gray-color;
+			}
+		&:hover, &:focus{
+			i{
+				color:shade($lightest-gray-color,90%);
+			}	
 		}
 	}
 }
