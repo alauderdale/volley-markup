@@ -15,18 +15,15 @@
 		.row
 			-2.times do
 				.col-sm-6.col-md-6.col-lg-4
-					.card.margin-bottom.product-card
+					%a.card.margin-bottom.product-card{:href=>"#"}
 						.card-header.no-padding-bottom
 							%img.card-img-top{:alt => "Card image cap", :src => "/images/tmp/ceb-shot.png"}
-							.view-product-overlay
-								%a.btn.btn-outline-light{:href=>"#"}
-									View product
 						.card-body
 							.row
 								.col-8
 									%h3.card-title.no-margin-bottom
 										CEB Next
-									%h4.card-text.extra-light-text-color
+									%h4.card-text
 										Updated 10th Oct 17
 								.col-4
 									.dropdown.show.text-right
@@ -34,7 +31,7 @@
 											%i.material-icons
 												more_horiz
 										.dropdown-menu.dropdown-menu-right
-											%a.dropdown-item{:href => "#"} 
+											%button.dropdown-item{:type=>"button"} 
 												Delete
 
 
