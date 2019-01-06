@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="204px" height="148px" viewBox="0 0 204 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Products" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home---zero" transform="translate(-485.000000, -264.000000)">
+            <g id="Group" transform="translate(485.000000, 264.000000)">
+                <rect id="Rectangle-3" stroke="#E6EAEE" fill="#F0F5FB" x="0.5" y="0.5" width="203" height="147" rx="8"></rect>
+                <path d="M0.5,14.5 L203.5,14.5 L203.5,8 C203.5,3.85786438 200.142136,0.5 196,0.5 L8,0.5 C3.85786438,0.5 0.5,3.85786438 0.5,8 L0.5,14.5 Z" id="Rectangle-3" stroke="#E6EAEE" fill="#FAFBFC"></path>
+                <circle id="Oval-2" fill="#FF4E4A" cx="10.5" cy="7.5" r="2.5"></circle>
+                <circle id="Oval-2" fill="#FFAA00" cx="20.5" cy="7.5" r="2.5"></circle>
+                <circle id="Oval-2" fill="#26C164" cx="30.5" cy="7.5" r="2.5"></circle>
+                <rect id="Rectangle-4" fill="#C5D0DE" x="11" y="23" width="123" height="5"></rect>
+                <rect id="Rectangle-4" fill="#C5D0DE" x="11" y="33" width="44" height="5"></rect>
+                <polygon id="Rectangle-4" fill="#C5D0DE" opacity="0.765122768" points="11 53 65 53 65 91 11 91"></polygon>
+                <polygon id="Rectangle-4" fill="#C5D0DE" opacity="0.565625" points="75 53 129 53 129 91 75 91"></polygon>
+                <polygon id="Rectangle-4" fill="#C5D0DE" opacity="0.277566964" points="140 53 194 53 194 91 140 91"></polygon>
+                <polygon id="Rectangle-4" fill="#C5D0DE" opacity="0.258314732" points="11 98 65 98 65 136 11 136"></polygon>
+                <polygon id="Rectangle-4" fill="#C5D0DE" opacity="0.312388393" points="75 98 129 98 129 136 75 136"></polygon>
+                <polygon id="Rectangle-4" fill="#C5D0DE" opacity="0.777566964" points="140 98 194 98 194 136 140 136"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
