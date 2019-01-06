@@ -1,30 +1,20 @@
-%section
-	.container
-		.row
-			.col-12
-				.page-header
-					.row
-						.col-sm-6.col-7
-							%h1
-								Products
-						.col-lg-2.col-md-3.col-sm-4.col-5.ml-auto
-							%a.btn.btn-primary.btn-block{:href=>"#"}
-								Add new
+=partial "add-new"
+
 %section.no-padding-top
 	.container
 		.row
-			-2.times do
+			-1.times do
 				.col-sm-6.col-md-6.col-lg-4
-					%a.card.margin-bottom.product-card{:href=>"#"}
+					%a.card.margin-bottom.product-card{:href=>"/product/browse"}
 						.card-header.no-padding-bottom
 							%img.card-img-top{:alt => "Card image cap", :src => "/images/tmp/ceb-shot.png"}
 						.card-body
 							.row
 								.col-8
 									%h3.card-title.no-margin-bottom
-										CEB Next
+										www.cebroker.com
 									%h4.card-text
-										Updated 10th Oct 17
+										Created Oct 17, 2019
 								.col-4
 									.dropdown.show.text-right
 										%button.btn.btn-flat.btn-icon.no-padding{"data-toggle" => "dropdown", :type=>"button"}
@@ -32,7 +22,10 @@
 												more_horiz
 										.dropdown-menu.dropdown-menu-right
 											%button.dropdown-item{:type=>"button"} 
+												Share
+											%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
 												Delete
+											
 
 
 

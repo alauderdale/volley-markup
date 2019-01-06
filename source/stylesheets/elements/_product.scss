@@ -1,0 +1,245 @@
+#bottom-bar{
+	border-top:1px solid #bcc2ce;
+	.share-button{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	a{
+		&.mode-link{
+			padding: 16px 15px 7px 15px;
+			margin:0 5px;
+			border-radius: 4px;
+			svg{
+				height:24px;
+				path{
+					transition: fill $base-transition-duration ease;
+				}
+				.icon{
+					fill:$light-gray-color;
+				}
+			}
+			&:hover{
+				text-decoration:none;
+				svg{
+					.icon{
+						fill:shade($light-gray-color,30%);
+					}
+				}
+			}
+			&.comment{
+				svg{
+					position: relative;
+					top:3px;
+				}
+			}
+			&.browse{
+				svg{
+					
+				}
+			}
+			&.review{
+				svg{
+					
+				}
+			}
+			&.active{
+				background:$link-color;
+				svg{
+					.icon{
+						fill:white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.web-view-container{
+	overflow: hidden;
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+	&.comment-mode{
+		cursor:crosshair;
+		.iframe-wrapper{
+			.iframe-border{
+				.overlay-container{
+					.overlay-wrapper{
+						background:rgba(0,0,0,.2);
+					}
+					.overlay-border{
+						border-color:$link-color;
+					}
+				}
+				iframe{
+					pointer-events: none;
+				}
+			}
+		}
+	}
+	.iframe-wrapper{
+		height: 100%;
+		width: 100%;
+		padding-bottom: 57px;
+		background: #9B9B9B;
+		position: relative;
+		.iframe-border{
+			width: 100%;
+			height: 100%;
+			border: none;
+			margin-left: auto;
+			margin-right: auto;
+			background: #fff;
+			position: relative;
+			.overlay-container{
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				pointer-events: none;
+				top: 0;
+				left: 0;
+				.overlay-wrapper{
+				    background: transparent;
+				    position: absolute;
+				    left: 0;
+				    right: 0;
+				    width: 100%;
+				    height: 100%;
+				    pointer-events: none;
+				}
+				.overlay-border{
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					pointer-events: none;
+					top: 0;
+					left: 0;
+					border: solid 6px transparent;
+				}
+			}
+			iframe{
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
+		}
+	}
+}
+
+
+///review
+
+
+.review-container{
+	padding-bottom:57px;
+	width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    display: flex;
+}
+
+.notes-list-container{
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width:280px;
+    display: flex;
+    overflow: hidden;
+    
+    .notes-list-body{
+	    position: relative;
+	    overflow-y:scroll;
+	    height: 100%;
+	    width:100%;
+	    padding-top:50px;
+	    border-right:1px solid $border-color;
+	    background:white;
+
+	    .notes-list-header{
+	    	width:280px;
+	    	position:fixed;
+	    	top:0;
+	    	left:0;
+	    	background:white;
+	    	border-right:1px solid $border-color;
+
+	    }
+	    .note-thumbnail{
+	    	padding:10px $baseline;
+	    	cursor:pointer;
+	    	background:white;
+	    	@include transition-duration(.2s);
+	    	&:hover{
+	    		background:$off-white-dark-color;
+
+	    	}
+	    	img{
+	    		border:3px solid $border-color;
+	    		border-radius:4px;
+	    	}
+	    	&.active{
+	    		background:$link-color;
+	    		h5{
+	    			color:white;
+	    		}
+	    	}
+	    }
+    }
+}
+
+.note-container{
+	width: calc(100% - 280px);
+    height: 100%;
+    position: relative;
+    top: 0;
+    right:0;
+    bottom:0;
+    display: flex;
+    overflow: hidden;
+    .note-body{
+    	overflow-y: scroll;
+    	position: relative;
+    	height: 100%;
+    	width: 100%;
+	    .navness{
+			width:calc(100% - 280px);
+			position:fixed;
+			top:0;
+			padding:10px 0;
+			.mark-resolved{
+				i{
+					position:relative; 
+					top:6px; 
+					margin-right:8px;
+				}
+			}
+		}
+		.note-info{
+			display: flex;
+			height: 100%;
+			width:100%;
+			padding-top:59px;
+			.img-container{
+				height: 100%;
+				overflow-y: scroll;
+				display: flex;
+				width:calc(100% - 320px);
+				background:$off-white-color;
+			}
+			.comments-container{
+				height: 100%;
+				overflow-y: scroll;
+				display: flex;
+				width:320px;
+				background:white;
+				border-left:1px solid $border-color;
+			}
+		}
+
+    }
+}

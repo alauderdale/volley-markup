@@ -1,0 +1,10 @@
+<!doctype html>
+%html
+  %head
+    = partial "shared/scripts"
+    %body{:class => page_classes}
+      = partial "product/header"
+      /end menu
+      .main
+        = yield
+

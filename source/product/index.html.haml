@@ -1,0 +1,20 @@
+;;;
+
+"layout": "product"
+
+;;;
+
+:javascript
+	$(document).ready(function(){
+		$( ".comment" ).addClass( "active" );
+	});
+
+.web-view-container.comment-mode
+	.iframe-wrapper
+		.iframe-border
+			.overlay-container
+				.overlay-wrapper
+				.overlay-border
+			%iframe{:src=>"https://getbootstrap.com/docs/4.0/components/tooltips/"}
+				%p
+					No good

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="22px" viewBox="0 0 26 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-with-workspaces" transform="translate(-103.000000, -25.000000)" fill="#0042FF">
+            <g id="Group" transform="translate(103.000000, 25.000000)">
+                <path d="M12.0826,22 C8.1266,22 4.4206,20.313 1.0616,16.985 L-0.0004,15.933 L2.1056,13.807 L3.1686,14.86 C5.9656,17.632 8.9646,19.055 12.1526,19.008 C17.6356,18.973 21.8836,14.717 21.9266,14.673 L22.9726,13.609 L25.1076,15.696 L24.0656,16.764 C23.8596,16.976 18.9406,21.942 12.2016,22 C12.1626,22 12.1226,22 12.0826,22" id="Fill-1"></path>
+                <polygon id="Fill-4" points="11.1182 14.2715 11.1182 4.4565 11.1182 0.4685 8.2432 0.4685 8.2432 4.4565 8.2432 14.2715"></polygon>
+                <polygon id="Fill-6" points="16.8282 14.2715 16.8282 4.4565 16.8282 0.4685 13.9532 0.4685 13.9532 4.4565 13.9532 14.2715"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

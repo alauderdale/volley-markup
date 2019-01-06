@@ -5,6 +5,10 @@ a{
 .btn{
 	border-radius:$base-border-radius;
 	font-weight:600;
+	font-size:16px;
+	&.btn-lg{
+		padding: .65rem 1rem;
+	}
 	//primary buttons
 	&.btn-primary{
 		background:$link-color;
@@ -71,4 +75,11 @@ a{
 			}	
 		}
 	}
+}
+
+//tooltips
+
+.tooltip{
+	margin-bottom:4px;
+	font-size:12px;
 }

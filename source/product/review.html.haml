@@ -1,0 +1,61 @@
+;;;
+
+"layout": "product"
+
+;;;
+
+
+:javascript
+	$(document).ready(function(){
+		$( ".review" ).addClass( "active" );
+		$( ".note-thumbnail:nth-child(4)" ).addClass( "active" );
+	});
+
+:css
+	body{
+		padding-top:0!important;
+	}
+
+
+.review-container
+	.notes-list-container
+		.notes-list-body
+			.notes-list-header.padded.half-padding-bottom
+				%h4.bold-font
+					Notes
+			- 4.times do
+				.note-thumbnail
+					.media
+						%img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
+						.media-body
+							%h5.bold-font.quarter-margin-bottom
+								John, Bill 
+							%h5
+								Great suggestion. No p …
+
+	.note-container
+		.note-body
+			.navness.border-bottom
+				.container-fluid
+					.row
+						.col
+							.mark-resolved
+								%p.no-margin-bottom
+									%i.material-icons
+										check_box_outline_blank
+									
+									Mark as resolved
+						.col
+							.float-right
+								%a.btn.btn-secondary{:href=>"#"}
+									Go to page
+			.note-info
+				.img-container
+					.padded
+				.comments-container
+					.padded
+
+				
+
+
+				

@@ -1,0 +1,20 @@
+;;;
+
+"layout": "product"
+
+;;;
+
+:javascript
+	$(document).ready(function(){
+		$( ".browse" ).addClass( "active" );
+	});
+
+.web-view-container
+	.iframe-wrapper
+		.iframe-border
+			.overlay-container
+				.overlay-wrapper
+				.overlay-border
+			%iframe{:src=>"https://getbootstrap.com/docs/4.0/components/tooltips/"}
+				%p
+					No good
