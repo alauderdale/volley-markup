@@ -8,7 +8,7 @@
 :javascript
 	$(document).ready(function(){
 		$( ".review" ).addClass( "active" );
-		$( ".note-thumbnail:nth-child(4)" ).addClass( "active" );
+		$( ".note-thumbnail:nth-child(2)" ).addClass( "active" );
 	});
 
 :css
@@ -33,27 +33,70 @@
 							%h5
 								Great suggestion. No p …
 
+			.notes-list-footer
+				.show-resolved.check-btn
+					%button.no-margin-bottom.btn-link.btn{:type=>"button"}
+						%i.material-icons
+							check_box_outline_blank
+						Show resolved
+
 	.note-container
 		.note-body
-			.navness.border-bottom
+			.note-nav.border-bottom
 				.container-fluid
 					.row
 						.col
-							.mark-resolved
-								%p.no-margin-bottom
+							.mark-resolved.check-btn
+								%button.no-margin-bottom.btn-link.btn{:type=>"button"}
 									%i.material-icons
 										check_box_outline_blank
 									
 									Mark as resolved
 						.col
 							.float-right
-								%a.btn.btn-secondary{:href=>"#"}
+								%a.btn.btn-secondary{:href=>"/product/browse"}
 									Go to page
 			.note-info
 				.img-container
-					.padded
+					.img-wrapper
+						.img-comment-container
+							.comment-number{:style=>"position: absolute; right: 0; top: -8px;"}
+								99
+							%img{:src=>"/images/tmp/shot.png", :width=>"400px"}
 				.comments-container
-					.padded
+					.comments-wrapper
+						.new-comment
+							%input.form-control.full-width{:type=>"text", :placeholder=>"Write a reply"}
+							%button.btn.btn-link.attachment{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
+								%i.material-icons
+									attachment
+						.comments-list-container
+							-8.times do
+								.comment
+									.media
+										.avatar.avatar-initial.avatar-xs.half-margin-right
+											JD
+										.media-body
+											.actions
+												.dropdown.show.text-right
+													%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+														%i.material-icons
+															more_horiz
+													.dropdown-menu.dropdown-menu-right
+														%button.dropdown-item{:type=>"button"} 
+															Edit
+														%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+															Delete
+											%h4.bold-font.quarter-margin-bottom
+												John Doe 
+											%h4
+												=lorem.words(20)
+											%a{:href=>"#"}
+												%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
+											%h5.light-text-color
+												2m ago
+
+
 
 				
 
