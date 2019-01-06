@@ -72,6 +72,28 @@
 					.overlay-border{
 						border-color:$link-color;
 					}
+					.overlay-helper{
+						position:fixed;
+						bottom:60px;
+						text-align: center;
+						width:100%;
+						display: flex;
+						.overlay-helper-inner{
+							padding:4px 20px;
+							border-radius: 4px;
+							border-bottom-right-radius: 0px;
+							border-bottom-left-radius: 0px;
+							background:$link-color;
+							display: flex;
+							margin:0 auto;
+							p{
+								margin-bottom:0;
+								color:white;
+								font-size: 14px;
+							}
+						}
+						
+					}
 				}
 				iframe{
 					pointer-events: none;

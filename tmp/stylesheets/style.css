@@ -610,6 +610,24 @@ a.product-card {
       background: rgba(0, 0, 0, 0.2); }
     .web-view-container.comment-mode .iframe-wrapper .iframe-border .overlay-container .overlay-border {
       border-color: #0042FF; }
+    .web-view-container.comment-mode .iframe-wrapper .iframe-border .overlay-container .overlay-helper {
+      position: fixed;
+      bottom: 60px;
+      text-align: center;
+      width: 100%;
+      display: flex; }
+      .web-view-container.comment-mode .iframe-wrapper .iframe-border .overlay-container .overlay-helper .overlay-helper-inner {
+        padding: 4px 20px;
+        border-radius: 4px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background: #0042FF;
+        display: flex;
+        margin: 0 auto; }
+        .web-view-container.comment-mode .iframe-wrapper .iframe-border .overlay-container .overlay-helper .overlay-helper-inner p {
+          margin-bottom: 0;
+          color: white;
+          font-size: 14px; }
     .web-view-container.comment-mode .iframe-wrapper .iframe-border iframe {
       pointer-events: none; }
   .web-view-container .iframe-wrapper {
