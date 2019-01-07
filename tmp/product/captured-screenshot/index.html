@@ -10,16 +10,16 @@ Volley
 </title>
 <!-- /google material icons -->
 <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-<link href="../stylesheets/style.css" rel="stylesheet" />
-<link href='../images/favicon.ico' rel='shortcut icon'>
-<script src="../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
+<link href="../../stylesheets/style.css" rel="stylesheet" />
+<link href='../../images/favicon.ico' rel='shortcut icon'>
+<script src="../../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
-<body class='product product_index'>
+<body class='product product_captured-screenshot product_captured-screenshot_index'>
 <nav class='navbar navbar-light bg-light fixed-bottom no-padding-top no-padding-bottom' id='bottom-bar'>
 <div class='container-fluid'>
 <div class='col'>
 <a class='navbar-brand padding-bottom padding-top half-margin-right' href='/products'>
-<img src='../images/logo-icon.svg' style='position:relative; top:-4px;' width='20px'>
+<img src='../../images/logo-icon.svg' style='position:relative; top:-4px;' width='20px'>
 </a>
 <div class='inline-block'>
 <i class='material-icons light-text-color' style='position:relative; top:3px;'>
@@ -118,25 +118,84 @@ Send invite
   	$( ".comment" ).addClass( "active" );
   });
 </script>
-<!-- //remove this -->
-<div onclick='location.href=&#39;/product/captured-screenshot&#39;' style='position:absolute; left:10px; top:10px; width:20px; height:20px; content:&#39;&#39;; background:black; display:block; z-index:99;'></div>
-<div class='web-view-container comment-mode'>
+<style>
+  #bottom-bar{
+  	display:none;
+  }
+</style>
+<div class='note-detail-container'>
+<a class='close' href='/product/'>
+<i class='material-icons'>
+close
+</i>
+</a>
+<div class='note-detail-wrapper'>
+<div class='note-detail-body'>
+<div class='comment-number' style='position: absolute; right: 217px; top: 60px;'>
+1
+</div>
+<div class='comment-form' style='position: absolute; right: 191px; top: 125px;'>
+<div class='comment-form-header'>
+<div class='row'>
+<div class='col'>
+<h4 class='no-margin-bottom'>
+Add a note
+</h4>
+</div>
+<div class='col'>
+<button class='close' type='button'>
+<i class='material-icons'>
+close
+</i>
+</button>
+</div>
+</div>
+</div>
+<div class='comment-form-body'>
+<textarea class='form-control' placeholder='Type your comment' rows='3'></textarea>
+</div>
+<div class='comment-form-footer'>
+<div class='text-right'>
+<a class='btn btn-link' href='#'>
+<i class='material-icons'>
+attachment
+</i>
+</a>
+<a class='btn btn-primary' href='#'>
+Send
+</a>
+</div>
+</div>
+</div>
+<div class='note-detail-helper'>
+<h5 class='text-center no-margin-bottom'>
+Click to add notes
+</h5>
+</div>
+<img src='../../images/tmp/screenshot.png' width='816px'>
+</div>
+</div>
+<div class='note-actionbar'>
+<div class='text-center'>
+<a class='btn btn-secondary share-button' href='/product'>
+Cancel
+</a>
+<a class='btn btn-primary share-button' href='/product'>
+Save 1 note
+</a>
+</div>
+</div>
+</div>
+<div class='web-view-container comment-mode adding-notes'>
 <div class='iframe-wrapper'>
 <div class='iframe-border'>
 <div class='overlay-container'>
 <div class='overlay-wrapper'></div>
 <div class='overlay-border'></div>
-<div class='overlay-helper'>
-<div class='overlay-helper-inner'>
-<p class='text-center bold-font'>
-Select an element on the page
-</p>
-</div>
-</div>
 </div>
 <iframe src='https://getbootstrap.com/docs/4.0/components/tooltips/'>
 <p>
-No good}
+No good
 </p>
 </iframe>
 </div>

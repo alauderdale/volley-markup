@@ -1,0 +1,64 @@
+;;;
+
+"layout": "product"
+
+;;;
+
+:javascript
+	$(document).ready(function(){
+		$( ".comment" ).addClass( "active" );
+	});
+
+:css
+	#bottom-bar{
+		display:none;
+	}
+
+
+
+.note-detail-container
+	%a.close{:href=>"/product/"}
+		%i.material-icons
+			close
+	.note-detail-wrapper
+		.note-detail-body
+			.comment-number{:style=>"position: absolute; right: 217px; top: 60px;"}
+				1
+			.comment-form{:style=>"position: absolute; right: 191px; top: 125px;"}
+				.comment-form-header
+					.row
+						.col
+							%h4.no-margin-bottom
+								Add a note
+						.col
+							%button.close{:type=>"button"}
+								%i.material-icons
+									close
+				.comment-form-body
+					%textarea.form-control{:rows=>"3", :placeholder=>"Type your comment"}
+				.comment-form-footer
+					.text-right
+						%a.btn.btn-link{:href=>"#"}
+							%i.material-icons
+								attachment
+						%a.btn.btn-primary{:href=>"#"}
+							Send
+			.note-detail-helper
+				%h5.text-center.no-margin-bottom
+					Click to add notes
+			%img{:src=>"/images/tmp/screenshot.png", :width=>"816px"}
+	.note-actionbar
+		.text-center
+			%a.btn.btn-secondary.share-button{:href=>"/product"}
+				Cancel
+			%a.btn.btn-primary.share-button{:href=>"/product"}
+				Save 1 note
+.web-view-container.comment-mode.adding-notes
+	.iframe-wrapper
+		.iframe-border
+			.overlay-container
+				.overlay-wrapper
+				.overlay-border
+			%iframe{:src=>"https://getbootstrap.com/docs/4.0/components/tooltips/"}
+				%p
+					No good
