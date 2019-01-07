@@ -205,7 +205,7 @@
 
 	    }
 	    .note-thumbnail{
-	    	padding:10px $baseline;
+	    	padding:$baseline;
 	    	cursor:pointer;
 	    	background:white;
 	    	@include transition-duration(.2s);
