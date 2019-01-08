@@ -9,7 +9,10 @@
 	.double-padding-bottom
 		.container
 			.row
-				.col-lg-6
+				.col-lg-6.order-lg-2
+					.padded
+						%img.max-width{:src=>"/images/marketing/home-hero.png"}
+				.col-lg-6.order-lg-1
 					.double-margin-top
 						%h2.market.bold-font.double-margin-bottom
 							A new way to collaborate on websites
@@ -17,9 +20,6 @@
 							Leave visual feedback directly on your web pages. 
 						%a.btn.btn-primary.btn-lg{:href=>"/welcome/sign-up"}
 							Try it now
-				.col-lg-6
-					.padded
-						%img.max-width{:src=>"/images/marketing/home-hero.png"}
 
 %section
 	.container
