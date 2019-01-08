@@ -17,6 +17,7 @@
 		background: white;
 		@include breakpoint(sm) {
 			width:100%;
+			padding:0 $baseline*3;
 		}
 		.form-header{
 			position:relative;
