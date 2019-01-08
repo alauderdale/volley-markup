@@ -58,6 +58,9 @@ h2{
 	&.market{
 		font-size: 61px;
 		line-height:59px;
+		@include breakpoint(sm) {
+			font-size: 55px;
+		}
 	}
 }
 
