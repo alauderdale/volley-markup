@@ -14,9 +14,15 @@ body.market{
 	padding:20px 0;
 	.btn-link{
 		color:white;
+		padding-left:0px;
+		padding-right:15px;
 		@include breakpoint(md) {
 			color:$link-color;
 		}
+	}
+	.btn-secondary{
+		padding-left:12px;
+		padding-right:12px;
 	}
 
 }
