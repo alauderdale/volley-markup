@@ -7,6 +7,11 @@ body.market{
 
 .market section{
 	padding:$baseline*4 0;
+	&#main-hero{
+		@include breakpoint(sm) {
+			padding-top:0;
+		}
+	}
 }
 
 #primary-header{
