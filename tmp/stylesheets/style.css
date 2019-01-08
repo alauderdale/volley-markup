@@ -582,13 +582,34 @@ a.product-card {
     .menu-with-button .dropdown-item .button-container i {
       font-size: 20px; }
 
+body.market {
+  background: url("../images/marketing/bg.svg") no-repeat top right; }
+  @media (max-width: 992px) {
+    body.market {
+      background: none; } }
+
 .market section {
   padding: 64px 0; }
 
 #primary-header {
   width: 100%;
-  padding: 20px 0;
-  background: white; }
+  padding: 20px 0; }
+  #primary-header .btn-link {
+    color: white; }
+    @media (max-width: 992px) {
+      #primary-header .btn-link {
+        color: #0042FF; } }
+
+.text-container {
+  position: relative; }
+  .text-container .accent-text {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    font-weight: 900;
+    font-size: 76px;
+    opacity: 0.08;
+    color: #0042FF; }
 
 p.market {
   font-size: 21px;

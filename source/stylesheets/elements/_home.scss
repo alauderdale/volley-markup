@@ -1,3 +1,10 @@
+body.market{
+	background:url("../images/marketing/bg.svg") no-repeat top right;
+	@include breakpoint(md) {
+		background: none;
+	}
+}
+
 .market section{
 	padding:$baseline*4 0;
 }
@@ -5,8 +12,26 @@
 #primary-header{
 	width:100%;
 	padding:20px 0;
-	background: white;
+	.btn-link{
+		color:white;
+		@include breakpoint(md) {
+			color:$link-color;
+		}
+	}
 
+}
+
+.text-container{
+	position: relative;
+	.accent-text{
+		position:absolute;
+		top:0;
+		left:-30px;
+		font-weight: 900;
+		font-size: 76px;
+		opacity: 0.08;
+		color: #0042FF;
+	}
 }
 
 p{
