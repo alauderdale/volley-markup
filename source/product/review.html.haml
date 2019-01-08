@@ -26,21 +26,49 @@
 			- 4.times do
 				.note-thumbnail
 					.media
-						%img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
+						/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
+						.comment-number.comment-number-sm.margin-right
+							1
 						.media-body
 							%h5.bold-font.quarter-margin-bottom
 								=lorem.first_name
 								,
 								=lorem.first_name
 							%h5
-								=lorem.words(5)
-								
+								=lorem.words(7)
+							%h6.light-text-color
+								Comment left on 
+								%span.bold-font
+									Chrome 71 
+								on 
+								%span.bold-font
+									Mac OS 10.14.0
+			.note-thumbnail.resolved
+				.media
+					/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
+					.comment-number.comment-number-sm.margin-right
+						1
+					.media-body
+						%h5.bold-font.quarter-margin-bottom
+							=lorem.first_name
+							,
+							=lorem.first_name
+						%h5
+							=lorem.words(8)
+						%h6.light-text-color
+							Comment left on 
+							%span.bold-font
+								Chrome 71 
+							on 
+							%span.bold-font
+								Mac OS 10.14.0
+
 
 			.notes-list-footer
 				.show-resolved.check-btn
 					%button.no-margin-bottom.btn-link.btn{:type=>"button"}
 						%i.material-icons
-							check_box_outline_blank
+							check_box
 						Show resolved
 
 	.note-container
@@ -54,7 +82,7 @@
 									%i.material-icons
 										check_box_outline_blank
 									
-									Mark as resolved
+									Resolved
 						.col
 							.float-right
 								%a.btn.btn-secondary{:href=>"/product/browse"}

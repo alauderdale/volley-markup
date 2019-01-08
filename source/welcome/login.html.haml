@@ -1,0 +1,41 @@
+;;;
+
+"layout": "welcome"
+
+;;;
+
+.welcome-container
+	.form-container
+		.form-header
+			%a.close{:href=>"/"}
+				%i.material-icons
+					close
+		.form-content-wrapper
+			.form-content
+				%img.double-margin-bottom{:src=>"/images/logo.svg",  :width=>"120px"}
+				%h2
+					Welcome back to Volley
+				%p.light-text-color
+					The world’s first design QA platform
+				%form
+					.margin-bottom
+						%h4.bold-font
+							Email
+						%input.form-control.form-control-lg{:type=>"text", :value=>"John Doe"}
+					.margin-bottom
+						%h4.bold-font
+							Password
+						%input.form-control.form-control-lg{:type=>"text", :value=>"John Doe"}
+					.margin-bottom
+						%p.no-margin-bpttpm
+							%a.light-text-color{:href=>"#"}
+								Forgot password?
+					.double-margin-top
+						%a.btn.btn-primary.btn-lg.btn-block{:href=>"/products"}
+							Log in
+				.double-margin-top
+					%p
+						No account?
+						%a{:href=>"/welcome/sign-up"}
+							Sign up
+	

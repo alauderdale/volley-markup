@@ -6,10 +6,18 @@
     background-color:$gray-color;
     color:white;
     text-align:center;
+    line-height: 50px;
+    font-size:18px;
     &.avatar-xs{
 	    width: 30px;
 	    height: 30px;
 	    font-size:13px;
 	    line-height:30px;
+    }
+    &.avatar-xl{
+	    width: 80px;
+	    height: 80px;
+	    font-size:34px;
+	    line-height:80px;
     }
 }

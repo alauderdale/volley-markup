@@ -1,0 +1,39 @@
+.market section{
+	padding:$baseline*4 0;
+}
+
+#primary-header{
+	width:100%;
+	padding:20px 0;
+	background: white;
+
+}
+
+p{
+	&.market{
+		font-size: 21px;
+		line-height:27px;
+	}
+}
+
+h1{
+	&.market{
+		font-size: 93px;
+		line-height:113px;
+	}	
+}
+
+h2{
+	&.market{
+		font-size: 61px;
+		line-height:59px;
+	}
+}
+
+h3{
+	&.market{
+		font-size: 45px;
+		line-height:59px;
+	}
+}
+

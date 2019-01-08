@@ -1,0 +1,35 @@
+%section
+	.container
+		.row
+			.col-md-2
+			.col-md-8
+				%h3.double-margin-bottom
+					Account settings
+				.card
+					.card-body
+						%h4.bold-font
+							Avatar
+						.media
+							.avatar.avatar-xl.margin-right
+								AL
+							.media-body
+								%a.btn.btn-secondary.margin-top{:href=>"#"}
+									Change avatar
+						.margin-top
+						%form
+							.margin-bottom
+								%h4.bold-font
+									Name
+								%input.form-control.form-control-lg{:type=>"text", :value=>"John Doe"}
+							.margin-bottom
+								%h4.bold-font
+									Email
+								%input.form-control.form-control-lg{:type=>"text", :value=>"John@doe.com"}
+							.double-margin-bottom
+								%h4.bold-font
+									New password
+								%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Enter new password"}
+							%button.btn.btn-primary.btn-lg{:type=>"submit"}
+								Save
+			.col-md-2
+

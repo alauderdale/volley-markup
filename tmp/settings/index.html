@@ -14,7 +14,7 @@ Volley
 <link href='../images/favicon.ico' rel='shortcut icon'>
 <script src="../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
 
-<body class='products products_index'>
+<body class='settings settings_index'>
 <nav class='navbar navbar-light bg-light fixed-top navbar-expand-sm' id='primary-nav'>
 <div class='container'>
 <a class='navbar-brand' href='/products'>
@@ -106,69 +106,54 @@ Sign out
 <section>
 <div class='container'>
 <div class='row'>
-<div class='col-12'>
-<div class='page-header'>
-<div class='row'>
-<div class='col-md-12'>
+<div class='col-md-2'></div>
+<div class='col-md-8'>
+<h3 class='double-margin-bottom'>
+Account settings
+</h3>
+<div class='card'>
+<div class='card-body'>
+<h4 class='bold-font'>
+Avatar
+</h4>
+<div class='media'>
+<div class='avatar avatar-xl margin-right'>
+AL
+</div>
+<div class='media-body'>
+<a class='btn btn-secondary margin-top' href='#'>
+Change avatar
+</a>
+</div>
+</div>
+<div class='margin-top'></div>
 <form>
-<div class='form-row'>
-<div class='col-lg-10 col-md-9 mb-3'>
-<input class='form-control form-control-lg' placeholder='Enter a website URL'>
+<div class='margin-bottom'>
+<h4 class='bold-font'>
+Name
+</h4>
+<input class='form-control form-control-lg' type='text' value='John Doe'>
 </div>
-<div class='col-lg-2 col-md-3 mb-3'>
-<button class='btn btn-primary mb-2 btn-block btn-lg' onclick='location.href=&#39;/products&#39;;' type='button'>
-Create Product
+<div class='margin-bottom'>
+<h4 class='bold-font'>
+Email
+</h4>
+<input class='form-control form-control-lg' type='text' value='John@doe.com'>
+</div>
+<div class='double-margin-bottom'>
+<h4 class='bold-font'>
+New password
+</h4>
+<input class='form-control form-control-lg' placeholder='Enter new password' type='text'>
+</div>
+<button class='btn btn-primary btn-lg' type='submit'>
+Save
 </button>
-</div>
-</div>
 </form>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</section>
-
-<section class='no-padding-top'>
-<div class='container'>
-<div class='row'>
-<div class='col-sm-6 col-md-6 col-lg-4'>
-<a class='card margin-bottom product-card' href='/product/browse'>
-<div class='card-header no-padding-bottom'>
-<img alt='Card image cap' class='card-img-top' src='../images/tmp/ceb-shot.png'>
-</div>
-<div class='card-body'>
-<div class='row'>
-<div class='col-8'>
-<h3 class='card-title no-margin-bottom'>
-www.getbootstrap.com
-</h3>
-<h4 class='card-text'>
-Created Oct 17, 2019
-</h4>
-</div>
-<div class='col-4'>
-<div class='dropdown show text-right'>
-<button class='btn btn-flat btn-icon no-padding' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
+<div class='col-md-2'></div>
 </div>
 </div>
 </section>

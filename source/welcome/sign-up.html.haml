@@ -1,0 +1,46 @@
+;;;
+
+"layout": "welcome"
+
+;;;
+
+.welcome-container
+	.form-container
+		.form-header
+			%a.close{:href=>"/"}
+				%i.material-icons
+					close
+		.form-content-wrapper
+			.form-content
+				%img.double-margin-bottom{:src=>"/images/logo.svg",  :width=>"120px"}
+				%h2
+					Get started now
+				%p.light-text-color
+					Filling the gap between design and development
+				%form
+					.margin-bottom
+						%h4.bold-font
+							Name
+						%input.form-control.form-control-lg{:type=>"text", :value=>"John Doe"}
+					.margin-bottom
+						%h4.bold-font
+							Email
+						%input.form-control.form-control-lg{:type=>"text", :value=>"John Doe"}
+					.margin-bottom
+						%h4.bold-font
+							Password
+						%input.form-control.form-control-lg{:type=>"text", :value=>"John Doe"}
+					%h5.light-text-color
+						I agree to the
+						%a.light-text-color{:href=>"/welcome/login"}
+							%u
+								Terms and privacy
+					.double-margin-top
+						%a.btn.btn-primary.btn-lg.btn-block{:href=>"/products"}
+							Create account
+				.double-margin-top
+					%p
+						Have an account?
+						%a{:href=>"/welcome/login"}
+							Log in
+	

@@ -1,0 +1,44 @@
+.welcome-container{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: $link-color;
+
+	.form-container{
+		padding:0 $baseline*4;
+		position: absolute;
+		top:0;
+		left:0;
+		width: 50%;
+		max-width: 800px;
+		height:100%;
+		background: white;
+		@include breakpoint(sm) {
+			width:100%;
+		}
+		.form-header{
+			position:relative;
+			.close{
+				position: absolute;	
+				right:-$baseline*2;
+				top:$baseline;
+				z-index: 99;		
+			}
+		}
+		.form-content-wrapper{
+			position:relative;
+			display: flex;
+			height:100%;
+			width:100%;
+		}
+		.form-content{
+			position:relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width:100%;
+		}
+	}
+}

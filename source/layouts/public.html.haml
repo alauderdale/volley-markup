@@ -2,5 +2,10 @@
 %html
   %head
     = partial "shared/scripts"
-    %body{:class => page_classes}
-      = yield
+    %body.market{:class => page_classes, :style=>"padding:0;"}
+      = partial "layouts/marketing/header"
+      /end menu
+      .main
+        = yield
+      /end main content
+      
