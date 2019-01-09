@@ -350,11 +350,27 @@
 						width: 100%;
 						padding:16px;
 						position:relative;
+						textarea{
+							resize: none;
+						}
+						.add-comment-btn{
+							display: none;
+						}
 						.attachment{
-							position:absolute;
-							top:16px;
-							right:16px;
 							color:$light-text-color;
+							display: none;
+						}
+						&.focused{
+							margin-bottom:$baseline;
+							textarea{
+								height:65px;
+							}
+							.add-comment-btn{
+							display: block;
+							}
+							.attachment{
+								display: block;
+							}
 						}
 					}
 					.comments-list-container{
