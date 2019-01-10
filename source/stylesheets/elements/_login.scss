@@ -12,11 +12,12 @@
 		top:0;
 		left:0;
 		width: 50%;
-		max-width: 800px;
+		max-width: 600px;
 		height:100%;
 		background: white;
 		@include breakpoint(sm) {
 			width:100%;
+			max-width: 100%;
 			padding:0 $baseline*3;
 		}
 		.form-header{

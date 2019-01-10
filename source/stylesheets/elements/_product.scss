@@ -1,3 +1,13 @@
+.add-new-product-bar{
+	input{
+		border:3px solid shade($border-color, 10%);
+	}
+	button{
+		box-shadow:0 5px 15px 0 rgba(0,0,0,0.15);
+		padding:11.5px 2rem!important;
+	}
+}
+
 #bottom-bar{
 	border-top:1px solid #bcc2ce;
 	.share-button{
