@@ -590,15 +590,23 @@ body.market {
 
 .market section {
   padding: 64px 0; }
+  @media (max-width: 768px) {
+    .market section#main-hero {
+      padding-top: 0; } }
 
 #primary-header {
   width: 100%;
   padding: 20px 0; }
   #primary-header .btn-link {
-    color: white; }
+    color: white;
+    padding-left: 0px;
+    padding-right: 15px; }
     @media (max-width: 992px) {
       #primary-header .btn-link {
         color: #0042FF; } }
+  #primary-header .btn-secondary {
+    padding-left: 12px;
+    padding-right: 12px; }
 
 .text-container {
   position: relative; }
@@ -622,10 +630,19 @@ h1.market {
 h2.market {
   font-size: 61px;
   line-height: 59px; }
+  @media (max-width: 768px) {
+    h2.market {
+      font-size: 55px; } }
 
 h3.market {
   font-size: 45px;
   line-height: 59px; }
+
+.add-new-product-bar input {
+  border: 3px solid #cfd3d6; }
+.add-new-product-bar button {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  padding: 11.5px 2rem !important; }
 
 #bottom-bar {
   border-top: 1px solid #bcc2ce; }
@@ -885,11 +902,21 @@ h3.market {
             width: 100%;
             padding: 16px;
             position: relative; }
+            .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment textarea {
+              resize: none; }
+            .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment .add-comment-btn {
+              display: none; }
             .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment .attachment {
-              position: absolute;
-              top: 16px;
-              right: 16px;
-              color: #7F8FA4; }
+              color: #7F8FA4;
+              display: none; }
+            .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment.focused {
+              margin-bottom: 16px; }
+              .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment.focused textarea {
+                height: 65px; }
+              .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment.focused .add-comment-btn {
+                display: block; }
+              .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment.focused .attachment {
+                display: block; }
           .note-container .note-body .note-info .comments-container .comments-wrapper .comments-list-container {
             width: 100%; }
             .note-container .note-body .note-info .comments-container .comments-wrapper .comments-list-container .comment {
@@ -1028,19 +1055,21 @@ h3.market {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #0042FF; }
+  background: #0042FF url("../images/marketing/pattern.svg"); }
   .welcome-container .form-container {
     padding: 0 64px;
     position: absolute;
     top: 0;
     left: 0;
     width: 50%;
-    max-width: 800px;
+    max-width: 600px;
     height: 100%;
     background: white; }
     @media (max-width: 768px) {
       .welcome-container .form-container {
-        width: 100%; } }
+        width: 100%;
+        max-width: 100%;
+        padding: 0 48px; } }
     .welcome-container .form-container .form-header {
       position: relative; }
       .welcome-container .form-container .form-header .close {
