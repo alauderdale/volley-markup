@@ -11,5 +11,15 @@
   })
 
 
+	$('.show-notes-toggle').on('click', function(e) {
+		$('.notes-list-container').toggleClass("notes-bar-open"); 
+	});
+
+	$('.show-comment-toggle').on('click', function(e) {
+		$('.comments-container').toggleClass("comments-bar-open"); 
+	});
+
+
+
 
   });

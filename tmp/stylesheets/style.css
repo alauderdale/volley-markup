@@ -83,16 +83,16 @@ img {
   text-transform: uppercase; }
 
 .extra-light-text-color {
-  color: #B4BBC6; }
+  color: #B4BBC6 !important; }
 
 .light-text-color {
-  color: #7F8FA4; }
+  color: #7F8FA4 !important; }
 
 .text-color {
-  color: #354052; }
+  color: #354052 !important; }
 
 .dark-text-color {
-  color: #393C3E; }
+  color: #393C3E !important; }
 
 .text-success {
   color: #26C164; }
@@ -649,6 +649,10 @@ h3.market {
   #bottom-bar .share-button {
     padding-left: 20px;
     padding-right: 20px; }
+    @media (max-width: 768px) {
+      #bottom-bar .share-button {
+        padding-left: 10px;
+        padding-right: 10px; } }
   #bottom-bar a.mode-link {
     padding: 16px 15px 7px 15px;
     margin: 0 5px;
@@ -670,6 +674,12 @@ h3.market {
       background: #0042FF; }
       #bottom-bar a.mode-link.active svg .icon {
         fill: white; }
+    @media (max-width: 768px) {
+      #bottom-bar a.mode-link {
+        padding: 10px 10px 7px 10px;
+        margin: 0 2px; }
+        #bottom-bar a.mode-link svg {
+          height: 18px; } }
 
 .web-view-container {
   overflow: hidden;
@@ -711,7 +721,7 @@ h3.market {
   .web-view-container .iframe-wrapper {
     height: 100%;
     width: 100%;
-    padding-bottom: 57px;
+    padding-bottom: 61px;
     background: #9B9B9B;
     position: relative; }
     .web-view-container .iframe-wrapper .iframe-border {
@@ -751,7 +761,7 @@ h3.market {
         border: none; }
 
 .review-container {
-  padding-bottom: 57px;
+  padding-bottom: 61px;
   width: 100%;
   height: 100%;
   top: 0;
@@ -767,6 +777,18 @@ h3.market {
   width: 280px;
   display: flex;
   overflow: hidden; }
+  @media (max-width: 992px) {
+    .notes-list-container {
+      position: absolute;
+      height: 100%;
+      width: 280px;
+      left: 0px;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      display: none; }
+      .notes-list-container.notes-bar-open {
+        display: block; } }
   .notes-list-container .notes-list-body {
     position: relative;
     overflow-y: scroll;
@@ -779,6 +801,7 @@ h3.market {
     .notes-list-container .notes-list-body .notes-list-header {
       width: 280px;
       position: fixed;
+      z-index: 9;
       top: 0;
       left: 0;
       background: white;
@@ -847,6 +870,9 @@ h3.market {
   bottom: 0;
   display: flex;
   overflow: hidden; }
+  @media (max-width: 992px) {
+    .note-container {
+      width: 100%; } }
   .note-container .note-body {
     overflow-y: scroll;
     position: relative;
@@ -857,6 +883,16 @@ h3.market {
       position: fixed;
       top: 0;
       padding: 10px 0; }
+      @media (max-width: 992px) {
+        .note-container .note-body .note-nav {
+          width: 100%; } }
+      .note-container .note-body .note-nav .menu-button {
+        position: relative; }
+        .note-container .note-body .note-nav .menu-button a {
+          padding: .275rem .55rem; }
+        .note-container .note-body .note-nav .menu-button i {
+          position: relative;
+          top: 2px; }
       .note-container .note-body .note-nav .mark-resolved button {
         position: relative;
         top: -4px; }
@@ -872,6 +908,9 @@ h3.market {
         width: calc(100% - 320px);
         background: #FAFBFC;
         position: relative; }
+        @media (max-width: 768px) {
+          .note-container .note-body .note-info .img-container {
+            width: 100%; } }
         .note-container .note-body .note-info .img-container .img-wrapper {
           width: 100%;
           height: 100%;
@@ -896,6 +935,16 @@ h3.market {
         width: 320px;
         background: white;
         border-left: 1px solid #E6EAEE; }
+        @media (max-width: 768px) {
+          .note-container .note-body .note-info .comments-container {
+            position: absolute;
+            width: 100%;
+            right: 0px;
+            bottom: 0;
+            z-index: 1;
+            display: none; }
+            .note-container .note-body .note-info .comments-container.comments-bar-open {
+              display: block; } }
         .note-container .note-body .note-info .comments-container .comments-wrapper {
           width: 100%; }
           .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment {
@@ -932,6 +981,12 @@ h3.market {
                 top: 6px; }
                 .note-container .note-body .note-info .comments-container .comments-wrapper .comments-list-container .comment .actions button.btn-action {
                   color: #7F8FA4; }
+
+.show-notes-toggle {
+  display: none; }
+  @media (max-width: 992px) {
+    .show-notes-toggle {
+      display: inline-block; } }
 
 .note-detail-container {
   position: absolute;
