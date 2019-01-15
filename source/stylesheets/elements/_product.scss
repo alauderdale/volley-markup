@@ -60,6 +60,13 @@
 					}
 				}
 			}
+			@include breakpoint(sm) {
+				padding: 10px 10px 7px 10px;
+				margin:0 2px;
+				svg{
+					height:18px;
+				}
+			}
 		}
 	}
 }
@@ -186,6 +193,7 @@
     display: flex;
 }
 
+////left bar
 .notes-list-container{
     height: 100%;
     position: relative;
@@ -194,6 +202,19 @@
     width:280px;
     display: flex;
     overflow: hidden;
+	@include breakpoint(sm) {
+		position: absolute;
+		height: 100%;
+		width: 280px;
+		left: 0px;
+		top: 0;
+		bottom:0;
+		z-index: 1;
+		display: none;
+		&.notes-bar-open{
+			display: block;
+		}
+	}
     
     .notes-list-body{
 	    position: relative;
@@ -296,6 +317,10 @@
     bottom:0;
     display: flex;
     overflow: hidden;
+    ///the whole image and convo wrapper
+	@include breakpoint(sm) {
+		width: 100%;
+	}
     .note-body{
     	overflow-y: scroll;
     	position: relative;
@@ -306,6 +331,21 @@
 			position:fixed;
 			top:0;
 			padding:10px 0;
+			@include breakpoint(sm) {
+				width: 100%;
+			}
+			//visible only on mobile
+			.menu-button{
+				position:relative;
+				a{
+					padding:.275rem .55rem;
+				}
+				i{
+					position:relative;
+					top:2px;
+					// font-size: 16px;
+				}
+			}
 			.mark-resolved{
 				button{
 					position:relative;
@@ -314,6 +354,7 @@
 			}
 		}
 		.note-info{
+			////image display area
 			display: flex;
 			height: 100%;
 			width:100%;
@@ -325,6 +366,9 @@
 				width:calc(100% - 320px);
 				background:$off-white-color;
 				position:relative;
+				@include breakpoint(sm) {
+					width: 100%;
+				}
 				.img-wrapper{
 					width:100%;
 					height:100%;
@@ -354,6 +398,9 @@
 				width:320px;
 				background:white;
 				border-left:1px solid $border-color;
+				@include breakpoint(sm) {
+					display: none
+				}
 				.comments-wrapper{
 					width:100%;
 					.new-comment{
@@ -410,6 +457,14 @@
 		}
 
     }
+}
+
+//this is both the menu button and the close button
+.show-comment-toggle{
+	display: none;
+	@include breakpoint(sm) {
+		display: inline-block;
+	}
 }
 
 //note detail

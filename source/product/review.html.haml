@@ -21,8 +21,13 @@
 	.notes-list-container
 		.notes-list-body
 			.notes-list-header.padded.half-padding-bottom
-				%h4.bold-font
-					Notes
+				.inline-block
+					%h4.bold-font
+						Notes
+				.inline-block.align-middle.show-comment-toggle.float-right
+					%a{:href=>"#"}
+						%i.material-icons
+							clear
 			- 4.times do
 				.note-thumbnail
 					.media
@@ -77,12 +82,17 @@
 				.container-fluid
 					.row
 						.col
-							.mark-resolved.check-btn
-								%button.no-margin-bottom.btn-link.btn{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal"}
+							.inline-block.align-middle.show-comment-toggle.menu-button
+								%a.btn.btn-secondary{:href=>"#"}
 									%i.material-icons
-										check_box_outline_blank
-									
-									Resolved
+										menu
+							.inline-block
+								.mark-resolved.check-btn
+									%button.no-margin-bottom.btn-link.btn{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal"}
+										%i.material-icons
+											check_box_outline_blank
+										
+										Resolved
 						.col
 							.float-right
 								%a.btn.btn-secondary{:href=>"/product/browse"}

@@ -11,5 +11,10 @@
   })
 
 
+	$('.show-comment-toggle').on('click', function(e) {
+		$('.notes-list-container').toggleClass("notes-bar-open"); 
+	});
+
+
 
   });

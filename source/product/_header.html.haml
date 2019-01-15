@@ -1,14 +1,11 @@
 %nav.navbar.navbar-light.bg-light.fixed-bottom.no-padding-top#bottom-bar.no-padding-bottom
   .container-fluid
-    .col
-      %a.navbar-brand.padding-bottom.padding-top.half-margin-right{:href => "/products"}
+    .col-xs-2
+      %a.navbar-brand.padding-bottom.padding-top{:href => "/products"}
+        .inline-block
+          %i.material-icons.light-text-color{:style=>"position:relative; top:3px;"}
+            keyboard_arrow_left
         %img{:src=>"/images/logo-icon.svg", :width=>"20px", :style=>"position:relative; top:-4px;"}
-      .inline-block
-        %i.material-icons.light-text-color{:style=>"position:relative; top:3px;"}
-          keyboard_arrow_right
-      .inline-block
-        %h4.no-margin-bottom.half-margin-left{:style=>"position:relative; top:-5px;"}
-          wwww.getbootstrap.com
     .col.text-center
       %a.mode-link.browse{:href=>"/product/browse", "data-toggle"=>"tooltip", :title=>"BROWSE (B)"}
         %svg{ :version => "1.1", :viewbox => "0 0 18 19",  :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
@@ -30,7 +27,7 @@
                 %polygon#Line{:points => "11.0602906 6 11.0602906 4 20.9275002 4 20.9275002 6"}
                 %polygon#Line{:points => "11.0602906 16 11.0602906 14 20.9275002 14 20.9275002 16"}
                 %path#Rectangle-2{:d => "M1.85,16 L4.95,16 L4.95,12.9 L1.85,12.9 L1.85,16 Z M6.95,10.9 L6.95,18 L-0.15,18 L-0.15,10.9 L6.95,10.9 Z"}
-    .col
+    .col-xs-2
       .float-right
         %a.btn.btn-secondary.share-button{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#shareModal"}
           Share
