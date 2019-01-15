@@ -220,7 +220,7 @@ $control-nav-height: 61px;
 		left: 0px;
 		top: 0;
 		bottom:0;
-		z-index: 1;
+		z-index: 5;
 		display: none;
 		&.notes-bar-open{
 			display: block;
@@ -264,7 +264,7 @@ $control-nav-height: 61px;
 	    	&.active{
 	    		background:$link-color;
 	    		h5, h6{
-	    			color:white;
+	    			color:white!important;
 	    		}
 	    	}
 	    	&.resolved{
@@ -343,6 +343,7 @@ $control-nav-height: 61px;
 			position:fixed;
 			top:0;
 			padding:10px 0;
+			z-index: 4;
 			@include breakpoint(md) {
 				width: 100%;
 			}
@@ -415,7 +416,7 @@ $control-nav-height: 61px;
 					width: 100%;
 					right: 0px;
 					bottom:0;
-					z-index: 1;
+					z-index: 5;
 					display: none;
 					&.comments-bar-open{
 						display: block;

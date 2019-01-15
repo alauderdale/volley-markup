@@ -785,7 +785,7 @@ h3.market {
       left: 0px;
       top: 0;
       bottom: 0;
-      z-index: 1;
+      z-index: 5;
       display: none; }
       .notes-list-container.notes-bar-open {
         display: block; } }
@@ -824,7 +824,7 @@ h3.market {
       .notes-list-container .notes-list-body .note-thumbnail.active {
         background: #0042FF; }
         .notes-list-container .notes-list-body .note-thumbnail.active h5, .notes-list-container .notes-list-body .note-thumbnail.active h6 {
-          color: white; }
+          color: white !important; }
       .notes-list-container .notes-list-body .note-thumbnail.resolved:after {
         content: "✓";
         position: absolute;
@@ -882,7 +882,8 @@ h3.market {
       width: calc(100% - 280px);
       position: fixed;
       top: 0;
-      padding: 10px 0; }
+      padding: 10px 0;
+      z-index: 4; }
       @media (max-width: 992px) {
         .note-container .note-body .note-nav {
           width: 100%; } }
@@ -941,7 +942,7 @@ h3.market {
             width: 100%;
             right: 0px;
             bottom: 0;
-            z-index: 1;
+            z-index: 5;
             display: none; }
             .note-container .note-body .note-info .comments-container.comments-bar-open {
               display: block; } }
