@@ -19,6 +19,10 @@ $control-nav-height: 61px;
 	.share-button{
 		padding-left:20px;
 		padding-right:20px;
+		@include breakpoint(sm) {
+			padding-left:10px;
+			padding-right:10px;
+		}
 	}
 	a{
 		&.mode-link{
@@ -66,6 +70,7 @@ $control-nav-height: 61px;
 					}
 				}
 			}
+			// adjust bottom icons for mobile
 			@include breakpoint(sm) {
 				padding: 10px 10px 7px 10px;
 				margin:0 2px;
@@ -208,7 +213,7 @@ $control-nav-height: 61px;
     width:280px;
     display: flex;
     overflow: hidden;
-	@include breakpoint(sm) {
+	@include breakpoint(md) {
 		position: absolute;
 		height: 100%;
 		width: 280px;
@@ -325,7 +330,7 @@ $control-nav-height: 61px;
     display: flex;
     overflow: hidden;
     ///the whole image and convo wrapper
-	@include breakpoint(sm) {
+	@include breakpoint(md) {
 		width: 100%;
 	}
     .note-body{
@@ -338,7 +343,7 @@ $control-nav-height: 61px;
 			position:fixed;
 			top:0;
 			padding:10px 0;
-			@include breakpoint(sm) {
+			@include breakpoint(md) {
 				width: 100%;
 			}
 			//visible only on mobile
@@ -406,7 +411,15 @@ $control-nav-height: 61px;
 				background:white;
 				border-left:1px solid $border-color;
 				@include breakpoint(sm) {
-					display: none
+					position: absolute;
+					width: 100%;
+					right: 0px;
+					bottom:0;
+					z-index: 1;
+					display: none;
+					&.comments-bar-open{
+						display: block;
+					}
 				}
 				.comments-wrapper{
 					width:100%;
@@ -467,9 +480,9 @@ $control-nav-height: 61px;
 }
 
 //this is both the menu button and the close button
-.show-comment-toggle{
+.show-notes-toggle{
 	display: none;
-	@include breakpoint(sm) {
+	@include breakpoint(md) {
 		display: inline-block;
 	}
 }

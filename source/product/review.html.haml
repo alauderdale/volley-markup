@@ -24,7 +24,7 @@
 				.inline-block
 					%h4.bold-font
 						Notes
-				.inline-block.align-middle.show-comment-toggle.float-right
+				.inline-block.align-middle.show-notes-toggle.float-right
 					%a{:href=>"#"}
 						%i.material-icons
 							clear
@@ -82,7 +82,7 @@
 				.container-fluid
 					.row
 						.col-8
-							.inline-block.align-middle.show-comment-toggle.menu-button
+							.inline-block.align-middle.show-notes-toggle.menu-button
 								%a.btn.btn-secondary{:href=>"#"}
 									%i.material-icons
 										menu
@@ -104,8 +104,15 @@
 							.comment-number{:style=>"position: absolute; right: 40px; top: 22px;"}
 								1
 							%img{:src=>"/images/tmp/screenshot.png", :width=>"800px"}
+							.half-margin-top.text-center.show-comment-toggle.d-lg-none.d-md-none
+								%a.btn.btn-link.btn-sm.light-text-color{:href=>"#"}
+									Show comments
 				.comments-container
 					.comments-wrapper
+						.padded.text-right.no-padding-bottom.show-comment-toggle.d-sm-block.d-md-none
+							%a{:href=>"#"}
+								%i.material-icons
+									close
 						.new-comment
 							%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
 							%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
