@@ -16,5 +16,13 @@
 	});
 
 
+//no tooltips on mobilr
+function isTouchDevice(){
+    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+}
+if(isTouchDevice()===false) {
+    $("[rel='tooltip']").tooltip();
+}
+
 
   });
