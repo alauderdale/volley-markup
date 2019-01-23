@@ -1080,6 +1080,37 @@ h3.market {
       position: relative;
       top: 2px; }
 
+.attachment-thumbnail {
+  display: block;
+  border: 1px solid #E6EAEE;
+  margin-bottom: 8px;
+  padding: 4px;
+  margin-top: 10px;
+  text-decoration: none !important;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  border-radius: 3px;
+  position: relative; }
+  .attachment-thumbnail img {
+    width: 30px;
+    box-shadow: none !important;
+    border: 1px solid #E6EAEE;
+    margin-right: 8px; }
+  .attachment-thumbnail .attachment-title {
+    margin: 0;
+    color: #354052;
+    line-height: 26px; }
+  .attachment-thumbnail .actions {
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+    .attachment-thumbnail .actions i {
+      font-size: 18px;
+      color: #7F8FA4; }
+
 .comment-number {
   background: #26C164;
   text-align: center;
