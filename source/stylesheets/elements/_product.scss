@@ -595,6 +595,43 @@ $control-nav-height: 61px;
 	}
 }
 
+.attachment-thumbnail{
+	// cursor: pointer;
+	display: block;
+	border:1px solid $border-color;
+	margin-bottom:$baseline/2;
+	padding:$baseline/4;
+	margin-top: 10px;
+	text-decoration: none!important;
+	@include transition-duration(.2s);
+	border-radius: $base-border-radius;
+	position:relative;
+	// &:hover{
+	// 	border:1px solid shade($border-color,20%);
+	// }
+	img{
+		width:30px;
+		box-shadow: none!important;
+		border:1px solid $border-color;
+		margin-right: 8px;
+		
+	}
+	.attachment-title{
+		margin:0;
+		color:$text-color;
+		line-height: 26px;
+	}
+	.actions{
+		position:absolute;
+		right:0px;
+		top: 0px;
+		i{
+			font-size: 18px;
+			color: $light-text-color;
+		}
+	}
+}
+
 
 //comments
 

@@ -36,6 +36,16 @@
 									close
 				.comment-form-body
 					%textarea.form-control{:rows=>"3", :placeholder=>"Type your comment"}
+					.attachment-thumbnail{:href=>"#"}
+						.media
+							%img{:src=>"/images/comment-attachment-thumb.png"}
+							.media-body
+								%h4.attachment-title
+									Attachment.png
+						.actions
+							%button.btn.btn-link{:type=>"button"}
+								%i.material-icons
+									delete
 				.comment-form-footer
 					.text-right
 						%a.btn.btn-link{:href=>"#"}
