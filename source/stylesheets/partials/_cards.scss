@@ -31,7 +31,6 @@ a.product-card{
 		}
 		
 		.img-wrapper{
-			@include linear-gradient(#275FFF,#FF30D3);
 			background: $link-color url("/images/marketing/pattern.svg");
 			background-size: 80%;
 			border:1px solid $border-color;
@@ -41,7 +40,7 @@ a.product-card{
 			height:100%;
 			position:relative;
 			@include breakpoint(sm) {
-				min-height: 131px;
+				min-height: 171px;
 			}
 			img{
 				height:100%;
