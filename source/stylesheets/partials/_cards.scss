@@ -32,11 +32,10 @@ a.product-card{
 		
 		.img-wrapper{
 			@include linear-gradient(#0042FF,#00ADFF);
-			// background: #5648FF;
-			background-size: 80%;
 			border:1px solid $border-color;
 			border-bottom:none;
-			border-radius: $base-border-radius;
+			border-top-left-radius: $base-border-radius;
+			border-top-right-radius: $base-border-radius;
 			width: 100%;
 			height:100%;
 			position:relative;
