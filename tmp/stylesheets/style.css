@@ -496,8 +496,7 @@ a.product-card {
       a.product-card .card-header {
         height: auto; } }
     a.product-card .card-header .img-wrapper {
-      background-image: linear-gradient(#0042FF, #00ADFF);
-      background-image: url("../images/pattern2.svg");
+      background-image: url("../images/pattern2.svg"), linear-gradient(#0042FF, #00ADFF);
       background-size: 100%;
       border: 1px solid #E6EAEE;
       border-bottom: none;
