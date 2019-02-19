@@ -482,8 +482,6 @@ section {
 
 a.product-card {
   position: relative;
-  transition-timing-function: ease-in-out;
-  transition: 0.2s;
   display: block;
   width: 448px; }
   @media (max-width: 768px) {
@@ -515,8 +513,6 @@ a.product-card {
         height: 100%;
         width: 100%; }
       a.product-card .card-header .img-wrapper .no-img {
-        transition-timing-function: ease-in-out;
-        transition-duration: .2s;
         width: 90px;
         height: 90px;
         background: transparent;
@@ -551,8 +547,7 @@ a.product-card {
     a.product-card:hover .card-body .card-url {
       color: #0042FF; }
     a.product-card:hover .no-img {
-      border-color: white !important;
-      background-color: #0042FF !important; }
+      border-color: white !important; }
 
 .avatar {
   vertical-align: middle;
