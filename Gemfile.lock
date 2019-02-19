@@ -9,6 +9,9 @@ GEM
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     backports (3.11.4)
+    bourbon (3.1.0)
+      sass (>= 3.2.0)
+      thor
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -115,6 +118,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bourbon (= 3.1.0)
   haml
   json
   middleman
