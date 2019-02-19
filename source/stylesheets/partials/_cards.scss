@@ -13,6 +13,9 @@ $product-card-width:448px;
 
 .product-card-container{
 	max-width: 950px;
+	@include breakpoint(md) {
+		max-width: 720px;
+	}
 }
 
 a.product-card{
