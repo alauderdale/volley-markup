@@ -18,7 +18,7 @@ $product-card-width:448px;
 a.product-card{
 	position:relative;
 	transition-timing-function: ease-in-out;
-  	transition: 0.1s;
+  	transition: 0.2s;
   	display:block;
   	width:$product-card-width;
   	@include breakpoint(sm) {
@@ -53,7 +53,8 @@ a.product-card{
 				width:100%;
 			}
 			.no-img{
-				 transition-duration:.2s;
+				transition-timing-function: ease-in-out;
+				transition-duration:.2s;
 				width:90px;
 				height:90px;
 				background:transparent;
@@ -104,6 +105,7 @@ a.product-card{
 		}
 		.no-img{
 			border-color:white!important;
+			background-color:$link-color!important;
 		}
 	}
 }

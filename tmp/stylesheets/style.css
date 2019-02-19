@@ -402,6 +402,7 @@ section {
   transition-duration: 0.13s; }
   .navbar a.nav-link:hover {
     color: #050608 !important; }
+
 .navbar.bg-light {
   background-color: white !important; }
 
@@ -422,7 +423,7 @@ section {
     border-left: 1px solid #E6EAEE;
     padding: 0;
     padding-left: 1rem;
-    margin: 0.5rem;
+    margin: .5rem;
     margin: 0; }
   #primary-nav .navbar-nav .nav-item .nav-link {
     padding: 16px 8px;
@@ -455,6 +456,7 @@ section {
   font-size: 16px;
   padding-top: .65rem;
   padding-bottom: .65rem; }
+
 .form-control:focus {
   box-shadow: none;
   border-color: #0042FF; }
@@ -478,7 +480,7 @@ section {
 a.product-card {
   position: relative;
   transition-timing-function: ease-in-out;
-  transition: 0.1s;
+  transition: 0.2s;
   display: block;
   width: 448px; }
   @media (max-width: 768px) {
@@ -511,6 +513,7 @@ a.product-card {
         height: 100%;
         width: 100%; }
       a.product-card .card-header .img-wrapper .no-img {
+        transition-timing-function: ease-in-out;
         transition-duration: .2s;
         width: 90px;
         height: 90px;
@@ -546,7 +549,8 @@ a.product-card {
     a.product-card:hover .card-body .card-url {
       color: #0042FF; }
     a.product-card:hover .no-img {
-      border-color: white !important; }
+      border-color: white !important;
+      background-color: #0042FF !important; }
 
 .avatar {
   vertical-align: middle;
@@ -654,6 +658,7 @@ a.product-card {
 @keyframes shine {
   to {
     background-position: 100% 0, 20px 20px, 20px 230px, 20px 260px; } }
+
 body.market {
   background: url("../images/marketing/bg.svg") no-repeat top right; }
   @media (max-width: 992px) {
@@ -712,6 +717,7 @@ h3.market {
 
 .add-new-product-bar input {
   border: 3px solid #cfd3d6; }
+
 .add-new-product-bar button {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   padding: 11.5px 2rem !important; }
@@ -1200,6 +1206,7 @@ h3.market {
     transform: translateY(-24px) scale3d(0.9, 0.9, 0.9); }
   50% {
     opacity: 1; } }
+
 .welcome-container {
   position: absolute;
   top: 0;
