@@ -2,40 +2,40 @@
   .container
     %a.navbar-brand{:href => "/products"} 
       %img{:src=>"/images/logo.svg", :width=>"100px"}
-    / .navbar-nav.mr-auto
-    /   .nav-item.dropdown.workspace-selector
-    /     %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-    /       Eternal Contrast
-    /       %i.material-icons
-    /         unfold_more
-    /     .dropdown-menu.workspace-menu.menu-with-button{"aria-labelledby" => "navbarDropdownMenuLink"}
-    /       %a.dropdown-item.d-flex.active{:href => "#"} 
-    /         .avatar-container
-    /           .avatar-default
-    /             EC
-    /         %span.text.p-2.mr-auto
-    /           Eternal Contrast
-    /         %span.button-container.p-2
-    /           %button.btn.btn-link.align-middle.btn-icon{:type=>"button"}
-    /             %i.material-icons
-    /               settings
-    /       %a.dropdown-item.d-flex{:href => "#"} 
-    /         .avatar-container
-    /           .avatar-default
-    /             CB
-    /         %span.text.p-2.mr-auto
-    /           CE Broker
-    /         %span.button-container.p-2
-    /           %button.btn.btn-link.align-middle.btn-icon{:type=>"button"}
-    /             %i.material-icons
-    /               settings
-    /       .dropdown-divider
-    /       %a.dropdown-item.d-flex{:href => "#"} 
-    /         .avatar-container.invert-avatar
-    /           .avatar-default
-    /             +
-    /         %span.text.p-2.mr-auto.link-color
-    /           Create a new Workspace
+    .navbar-nav.mr-auto
+      / .nav-item.dropdown.workspace-selector
+      /   %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+      /     Eternal Contrast
+      /     %i.material-icons
+      /       unfold_more
+      /   .dropdown-menu.workspace-menu.menu-with-button{"aria-labelledby" => "navbarDropdownMenuLink"}
+      /     %a.dropdown-item.d-flex.active{:href => "#"} 
+      /       .avatar-container
+      /         .avatar-default
+      /           EC
+      /       %span.text.p-2.mr-auto
+      /         Eternal Contrast
+      /       %span.button-container.p-2
+      /         %button.btn.btn-link.align-middle.btn-icon{:type=>"button"}
+      /           %i.material-icons
+      /             settings
+      /     %a.dropdown-item.d-flex{:href => "#"} 
+      /       .avatar-container
+      /         .avatar-default
+      /           CB
+      /       %span.text.p-2.mr-auto
+      /         CE Broker
+      /       %span.button-container.p-2
+      /         %button.btn.btn-link.align-middle.btn-icon{:type=>"button"}
+      /           %i.material-icons
+      /             settings
+      /     .dropdown-divider
+      /     %a.dropdown-item.d-flex{:href => "#"} 
+      /       .avatar-container.invert-avatar
+      /         .avatar-default
+      /           +
+      /       %span.text.p-2.mr-auto.link-color
+      /         Create a new Workspace
     / %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
     /   %i.material-icons
     /     menu
@@ -62,7 +62,16 @@
             %a.dropdown-item{:href => "/settings"} 
               %i.material-icons.icon-left
                 settings
-              Account settings
+              Profile
+            %a.dropdown-item{:href => "/settings"} 
+              %i.material-icons.icon-left
+                group
+              Team
+            %a.dropdown-item{:href => "/settings"} 
+              %i.material-icons.icon-left
+                insert_drive_file
+              Billing
+            .dropdown-divider
             %a.dropdown-item{:href => "/"} 
               %i.material-icons.icon-left
                 exit_to_app
