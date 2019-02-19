@@ -13,8 +13,8 @@
 
 a.product-card{
 	position:relative;
-	// transition-timing-function: ease-in-out;
- //  	transition: 0.3s;
+	transition-timing-function: ease-in-out;
+  	transition: 0.1s;
   	display:block;
   	width:448px;
   	@include breakpoint(sm) {
@@ -31,7 +31,8 @@ a.product-card{
 		}
 		
 		.img-wrapper{
-			background: $link-color url("/images/marketing/pattern.svg");
+			@include linear-gradient(#0042FF,#00ADFF);
+			// background: #5648FF;
 			background-size: 80%;
 			border:1px solid $border-color;
 			border-bottom:none;
@@ -47,9 +48,11 @@ a.product-card{
 				width:100%;
 			}
 			.no-img{
+				@include transition-duration(.2s);
 				width:90px;
 				height:90px;
-				background:white;
+				background:transparent;
+				border:1px solid rgba(255,255,255,.5);
 				text-align: center;
 				border-radius:100px;
 				position:absolute;
@@ -64,7 +67,7 @@ a.product-card{
 					position: relative;
 					font-size: 37px;
 					top: 31px;
-					color:tint($primary-color,10%);
+					color:white;
 				}
 			}
 		}
@@ -73,22 +76,29 @@ a.product-card{
 		z-index: 99;
 		background-color: white;
 		h3{
-			color:$text-color;
-			&.card-url{
-				font-size: 14px;
-			}
+
 		}
 		h4{
+			
+		}
+		.card-url{
+			color: $text-color;
+		}
+		.card-text{
 			color:$extra-light-text-color;
 		}
 	}
 	&:hover{
 		text-decoration:none;
+		box-shadow: 0 1px 3px 1px rgba(60,64,67,.15);
 		.card-body{
-			h3.card-title{
+			.card-url{
 				// text-decoration:underline;
-				color:$primary-color;
+				color: $primary-color;
 			}
+		}
+		.no-img{
+			border-color:white!important;
 		}
 	}
 }
