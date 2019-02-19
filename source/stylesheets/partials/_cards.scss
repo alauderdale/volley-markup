@@ -74,7 +74,9 @@ a.product-card{
 		background-color: white;
 		h3{
 			color:$text-color;
-			font-size: 14px;
+			&.card-url{
+				font-size: 14px;
+			}
 		}
 		h4{
 			color:$extra-light-text-color;
@@ -83,8 +85,9 @@ a.product-card{
 	&:hover{
 		text-decoration:none;
 		.card-body{
-			h3{
-				text-decoration:underline;
+			h3.card-title{
+				// text-decoration:underline;
+				color:$primary-color;
 			}
 		}
 	}
