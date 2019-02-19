@@ -20,7 +20,7 @@ Volley
 <a class='navbar-brand' href='/products'>
 <img src='../../images/logo.svg' width='100px'>
 </a>
-<!-- .navbar-nav.mr-auto -->
+<div class='navbar-nav mr-auto'>
 <!-- .nav-item.dropdown.workspace-selector -->
 <!-- %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} -->
 <!-- Eternal Contrast -->
@@ -54,6 +54,7 @@ Volley
 <!-- + -->
 <!-- %span.text.p-2.mr-auto.link-color -->
 <!-- Create a new Workspace -->
+</div>
 <!-- %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} -->
 <!-- %i.material-icons -->
 <!-- menu -->
@@ -86,8 +87,19 @@ alauderdale@mac.com
 <i class='material-icons icon-left'>
 settings
 </i>
-Account settings
+Profile
 </a>
+<!-- %a.dropdown-item{:href => "/settings"} -->
+<!-- %i.material-icons.icon-left -->
+<!-- group -->
+<!-- Team -->
+<a class='dropdown-item' href='/settings'>
+<i class='material-icons icon-left'>
+insert_drive_file
+</i>
+Billing
+</a>
+<div class='dropdown-divider'></div>
 <a class='dropdown-item' href='/'>
 <i class='material-icons icon-left'>
 exit_to_app
@@ -103,8 +115,19 @@ Sign out
 
 <!-- end menu -->
 <div class='main'>
+<div class='alert-container'>
+<div class='alert alert-success'>
+<div class='container product-card-container text-center'>
+Please confirm your email address. A confirmation message was sent to
+guy_barton@hotmail.com
+<a class='alert-link' href='#'>
+Resend email
+</a>
+</div>
+</div>
+</div>
 <section>
-<div class='container'>
+<div class='container product-card-container'>
 <div class='row'>
 <div class='col-12'>
 <div class='page-header'>
@@ -112,10 +135,10 @@ Sign out
 <div class='col-md-12'>
 <form class='add-new-product-bar'>
 <div class='form-row'>
-<div class='col-xl-10 col-lg-9 col-md-9 mb-3'>
+<div class='col-xl-9 col-lg-9 col-md-9 mb-3'>
 <input class='form-control form-control-lg' placeholder='Enter a website URL'>
 </div>
-<div class='col-xl-2 col-lg-3 col-md-3 mb-3'>
+<div class='col-xl-3 col-lg-3 col-md-3 mb-3'>
 <button class='btn btn-primary mb-2 btn-block btn-lg' onclick='location.href=&#39;/products&#39;;' type='button'>
 Create Product
 </button>
@@ -131,7 +154,7 @@ Create Product
 </section>
 
 <section class='no-padding-top'>
-<div class='container'>
+<div class='container product-card-container'>
 <div class='row'>
 <div class='col-lg-12'>
 <div class='card'>

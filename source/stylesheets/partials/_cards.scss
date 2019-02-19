@@ -1,4 +1,7 @@
 
+$product-card-width:448px;
+
+
 .card{
 	border-color:$border-color;
 	.card-header{
@@ -17,10 +20,10 @@ a.product-card{
 	transition-timing-function: ease-in-out;
   	transition: 0.1s;
   	display:block;
-  	width:448px;
+  	width:$product-card-width;
   	@include breakpoint(sm) {
   		width:100%;
-  		max-width: 448px;
+  		max-width: $product-card-width;
 	}
 	.card-header{
 		border-color:$border-color;
@@ -32,7 +35,7 @@ a.product-card{
 		}
 		
 		.img-wrapper{
-			@include linear-gradient(#0042FF,#00ADFF);
+			background-image: linear-gradient(#0042FF,#00ADFF);
 			background-image: url("/images/pattern2.svg");
 			background-size:100%;
 			border:1px solid $border-color;
@@ -50,7 +53,7 @@ a.product-card{
 				width:100%;
 			}
 			.no-img{
-				@include transition-duration(.2s);
+				 transition-duration:.2s;
 				width:90px;
 				height:90px;
 				background:transparent;

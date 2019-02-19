@@ -1,52 +1,54 @@
-// Custom Functions
-@import "functions/compact";
-@import "functions/deprecated-webkit-gradient";
-@import "functions/flex-grid";
-@import "functions/grid-width";
-@import "functions/linear-gradient";
-@import "functions/modular-scale";
-@import "functions/px-to-em";
-@import "functions/radial-gradient";
-@import "functions/render-gradients";
-@import "functions/tint-shade";
-@import "functions/transition-property-name";
+// Bourbon 5.1.0
+// https://www.bourbon.io/
+// Copyright 2011-2018 thoughtbot, inc.
+// MIT License
 
-// CSS3 Mixins
-@import "css3/animation";
-@import "css3/appearance";
-@import "css3/background";
-@import "css3/background-image";
-@import "css3/background-size";
-@import "css3/border-image";
-@import "css3/border-radius";
-@import "css3/box-sizing";
-@import "css3/columns";
-@import "css3/flex-box";
-@import "css3/font-face";
-@import "css3/hidpi-media-query";
-@import "css3/image-rendering";
-@import "css3/inline-block";
-@import "css3/keyframes";
-@import "css3/linear-gradient";
-@import "css3/perspective";
-@import "css3/radial-gradient";
-@import "css3/transform";
-@import "css3/transition";
-@import "css3/user-select";
-@import "css3/placeholder";
+@import "bourbon/helpers/buttons-list";
+@import "bourbon/helpers/scales";
+@import "bourbon/helpers/text-inputs-list";
 
-// Addons & other mixins
-@import "addons/button";
-@import "addons/clearfix";
-@import "addons/font-family";
-@import "addons/hide-text";
-@import "addons/html5-input-types";
-@import "addons/position";
-@import "addons/prefixer";
-@import "addons/retina-image";
-@import "addons/size";
-@import "addons/timing-functions";
-@import "addons/triangle";
+@import "bourbon/settings/settings";
 
-// Soon to be deprecated Mixins
-@import "bourbon-deprecated-upcoming";
+@import "bourbon/validators/contains";
+@import "bourbon/validators/contains-falsy";
+@import "bourbon/validators/is-color";
+@import "bourbon/validators/is-length";
+@import "bourbon/validators/is-number";
+@import "bourbon/validators/is-size";
+
+@import "bourbon/utilities/assign-inputs";
+@import "bourbon/utilities/compact-shorthand";
+@import "bourbon/utilities/directional-property";
+@import "bourbon/utilities/fetch-bourbon-setting";
+@import "bourbon/utilities/font-source-declaration";
+@import "bourbon/utilities/gamma";
+@import "bourbon/utilities/lightness";
+@import "bourbon/utilities/contrast-ratio";
+@import "bourbon/utilities/unpack-shorthand";
+
+@import "bourbon/library/border-color";
+@import "bourbon/library/border-radius";
+@import "bourbon/library/border-style";
+@import "bourbon/library/border-width";
+@import "bourbon/library/buttons";
+@import "bourbon/library/clearfix";
+@import "bourbon/library/contrast-switch";
+@import "bourbon/library/ellipsis";
+@import "bourbon/library/font-face";
+@import "bourbon/library/font-stacks";
+@import "bourbon/library/hide-text";
+@import "bourbon/library/hide-visually";
+@import "bourbon/library/margin";
+@import "bourbon/library/modular-scale";
+@import "bourbon/library/overflow-wrap";
+@import "bourbon/library/padding";
+@import "bourbon/library/position";
+@import "bourbon/library/prefixer";
+@import "bourbon/library/shade";
+@import "bourbon/library/size";
+@import "bourbon/library/strip-unit";
+@import "bourbon/library/text-inputs";
+@import "bourbon/library/timing-functions";
+@import "bourbon/library/tint";
+@import "bourbon/library/triangle";
+@import "bourbon/library/value-prefixer";

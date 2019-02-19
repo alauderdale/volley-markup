@@ -252,7 +252,7 @@ $control-nav-height: 61px;
 	    	cursor:pointer;
 	    	background:white;
 	    	position:relative;
-	    	@include transition-duration(.2s);
+	    	transition-duration:.2s;
 	    	&:hover{
 	    		background:$off-white-dark-color;
 
@@ -603,7 +603,7 @@ $control-nav-height: 61px;
 	padding:$baseline/4;
 	margin-top: 10px;
 	text-decoration: none!important;
-	@include transition-duration(.2s);
+	transition-duration:.2s;
 	border-radius: $base-border-radius;
 	position:relative;
 	// &:hover{

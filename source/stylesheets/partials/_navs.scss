@@ -1,7 +1,7 @@
 .navbar{
 		a.nav-link{
 			color:$text-color!important;
-			@include transition-duration($base-transition-duration);
+			transition-duration:$base-transition-duration;
 			&:hover{
 				color:shade($text-color,90%)!important;
 			}

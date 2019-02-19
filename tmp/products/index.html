@@ -20,7 +20,7 @@ Volley
 <a class='navbar-brand' href='/products'>
 <img src='../images/logo.svg' width='100px'>
 </a>
-<!-- .navbar-nav.mr-auto -->
+<div class='navbar-nav mr-auto'>
 <!-- .nav-item.dropdown.workspace-selector -->
 <!-- %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} -->
 <!-- Eternal Contrast -->
@@ -54,6 +54,7 @@ Volley
 <!-- + -->
 <!-- %span.text.p-2.mr-auto.link-color -->
 <!-- Create a new Workspace -->
+</div>
 <!-- %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} -->
 <!-- %i.material-icons -->
 <!-- menu -->
@@ -86,8 +87,19 @@ alauderdale@mac.com
 <i class='material-icons icon-left'>
 settings
 </i>
-Account settings
+Profile
 </a>
+<!-- %a.dropdown-item{:href => "/settings"} -->
+<!-- %i.material-icons.icon-left -->
+<!-- group -->
+<!-- Team -->
+<a class='dropdown-item' href='/settings'>
+<i class='material-icons icon-left'>
+insert_drive_file
+</i>
+Billing
+</a>
+<div class='dropdown-divider'></div>
 <a class='dropdown-item' href='/'>
 <i class='material-icons icon-left'>
 exit_to_app
@@ -104,7 +116,7 @@ Sign out
 <!-- end menu -->
 <div class='main'>
 <section>
-<div class='container'>
+<div class='container product-card-container'>
 <div class='row'>
 <div class='col-12'>
 <div class='page-header'>
@@ -112,10 +124,10 @@ Sign out
 <div class='col-md-12'>
 <form class='add-new-product-bar'>
 <div class='form-row'>
-<div class='col-xl-10 col-lg-9 col-md-9 mb-3'>
+<div class='col-xl-9 col-lg-9 col-md-9 mb-3'>
 <input class='form-control form-control-lg' placeholder='Enter a website URL'>
 </div>
-<div class='col-xl-2 col-lg-3 col-md-3 mb-3'>
+<div class='col-xl-3 col-lg-3 col-md-3 mb-3'>
 <button class='btn btn-primary mb-2 btn-block btn-lg' onclick='location.href=&#39;/products&#39;;' type='button'>
 Create Product
 </button>
@@ -131,17 +143,21 @@ Create Product
 </section>
 
 <section class='no-padding-top'>
-<div class='container'>
+<div class='container product-card-container'>
 <div class='row'>
-<div class='col-sm-6 col-md-6 col-lg-4'>
-<a class='card margin-bottom product-card' href='/product/browse'>
+<div class='col-sm-12 col-md-12 col-lg-6'>
+<a class='card margin-bottom product-card margin-auto' href='/product/browse'>
 <div class='card-header no-padding-bottom'>
+<div class='img-wrapper'>
 <img alt='Card image cap' class='card-img-top' src='../images/tmp/ceb-shot.png'>
+</div>
 </div>
 <div class='card-body'>
 <div class='row'>
 <div class='col-8'>
-<h3 class='card-title no-margin-bottom'>
+<!-- %h3.no-margin-bottom.card-title.medium-font -->
+<!-- Project title -->
+<h3 class='card-url no-margin-bottom'>
 www.getbootstrap.com
 </h3>
 <h4 class='card-text'>
@@ -156,9 +172,137 @@ more_horiz
 </i>
 </button>
 <div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- Edit -->
+<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
+Delete
 </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class='col-sm-12 col-md-12 col-lg-6'>
+<a class='card margin-bottom product-card margin-auto' href='/product/browse'>
+<div class='card-header no-padding-bottom'>
+<div class='img-wrapper'>
+<div class='no-img'>
+<p>
+G
+</p>
+</div>
+</div>
+</div>
+<div class='card-body'>
+<div class='row'>
+<div class='col-8'>
+<!-- %h3.no-margin-bottom.card-title.medium-font -->
+<!-- Project title -->
+<h3 class='card-url no-margin-bottom'>
+www.getbootstrap.com
+</h3>
+<h4 class='card-text'>
+Created Oct 17, 2019
+</h4>
+</div>
+<div class='col-4'>
+<div class='dropdown show text-right'>
+<button class='btn btn-flat btn-icon no-padding' data-toggle='dropdown' type='button'>
+<i class='material-icons'>
+more_horiz
+</i>
+</button>
+<div class='dropdown-menu dropdown-menu-right'>
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- Edit -->
+<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
+Delete
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class='col-sm-12 col-md-12 col-lg-6'>
+<a class='card margin-bottom product-card margin-auto' href='/product/browse'>
+<div class='card-header no-padding-bottom'>
+<div class='img-wrapper'>
+<div class='no-img'>
+<p>
+G
+</p>
+</div>
+</div>
+</div>
+<div class='card-body'>
+<div class='row'>
+<div class='col-8'>
+<!-- %h3.no-margin-bottom.card-title.medium-font -->
+<!-- Project title -->
+<h3 class='card-url no-margin-bottom'>
+www.getbootstrap.com
+</h3>
+<h4 class='card-text'>
+Created Oct 17, 2019
+</h4>
+</div>
+<div class='col-4'>
+<div class='dropdown show text-right'>
+<button class='btn btn-flat btn-icon no-padding' data-toggle='dropdown' type='button'>
+<i class='material-icons'>
+more_horiz
+</i>
+</button>
+<div class='dropdown-menu dropdown-menu-right'>
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- Edit -->
+<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
+Delete
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class='col-sm-12 col-md-12 col-lg-6'>
+<a class='card margin-bottom product-card margin-auto' href='/product/browse'>
+<div class='card-header no-padding-bottom'>
+<div class='img-wrapper'>
+<div class='no-img'>
+<p>
+G
+</p>
+</div>
+</div>
+</div>
+<div class='card-body'>
+<div class='row'>
+<div class='col-8'>
+<!-- %h3.no-margin-bottom.card-title.medium-font -->
+<!-- Project title -->
+<h3 class='card-url no-margin-bottom'>
+www.getbootstrap.com
+</h3>
+<h4 class='card-text'>
+Created Oct 17, 2019
+</h4>
+</div>
+<div class='col-4'>
+<div class='dropdown show text-right'>
+<button class='btn btn-flat btn-icon no-padding' data-toggle='dropdown' type='button'>
+<i class='material-icons'>
+more_horiz
+</i>
+</button>
+<div class='dropdown-menu dropdown-menu-right'>
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- Edit -->
 <button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
 Delete
 </button>

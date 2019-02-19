@@ -20,7 +20,7 @@ Volley
 <a class='navbar-brand' href='/products'>
 <img src='../images/logo.svg' width='100px'>
 </a>
-<!-- .navbar-nav.mr-auto -->
+<div class='navbar-nav mr-auto'>
 <!-- .nav-item.dropdown.workspace-selector -->
 <!-- %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} -->
 <!-- Eternal Contrast -->
@@ -54,6 +54,7 @@ Volley
 <!-- + -->
 <!-- %span.text.p-2.mr-auto.link-color -->
 <!-- Create a new Workspace -->
+</div>
 <!-- %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} -->
 <!-- %i.material-icons -->
 <!-- menu -->
@@ -86,8 +87,19 @@ alauderdale@mac.com
 <i class='material-icons icon-left'>
 settings
 </i>
-Account settings
+Profile
 </a>
+<!-- %a.dropdown-item{:href => "/settings"} -->
+<!-- %i.material-icons.icon-left -->
+<!-- group -->
+<!-- Team -->
+<a class='dropdown-item' href='/settings'>
+<i class='material-icons icon-left'>
+insert_drive_file
+</i>
+Billing
+</a>
+<div class='dropdown-divider'></div>
 <a class='dropdown-item' href='/'>
 <i class='material-icons icon-left'>
 exit_to_app
