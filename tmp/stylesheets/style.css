@@ -511,6 +511,14 @@ section {
     .product-card-container {
       max-width: 720px; } }
 
+.product-card-wrapper {
+  position: relative; }
+
+.card-actions {
+  position: absolute;
+  bottom: 20px;
+  right: 20px; }
+
 a.product-card {
   position: relative;
   display: block;

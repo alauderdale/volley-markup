@@ -5,56 +5,60 @@
 		.row
 			-1.times do
 				.col-sm-12.col-md-12.col-lg-6
-					%a.card.margin-bottom.product-card.margin-auto{:href=>"/product/browse"}
-						.card-header.no-padding-bottom
-							.img-wrapper
-								%img.card-img-top{:alt => "Card image cap", :src => "/images/tmp/ceb-shot.png"}
-						.card-body
-							.row
-								.col-8
-									/ %h3.no-margin-bottom.card-title.medium-font
-									/ 	Project title
-									%h3.card-url.no-margin-bottom
-										www.getbootstrap.com
-									%h4.card-text
-										Created Oct 17, 2019
-								.col-4
-									.dropdown.show.text-right
-										%button.btn.btn-flat.btn-icon.no-padding{"data-toggle" => "dropdown", :type=>"button"}
-											%i.material-icons
-												more_horiz
-										.dropdown-menu.dropdown-menu-right
-											/ %button.dropdown-item{:type=>"button"} 
-											/ 	Edit
-											%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
-												Delete
+					.product-card-wrapper
+						%a.card.margin-bottom.product-card.margin-auto{:href=>"/product/browse"}
+							.card-header.no-padding-bottom
+								.img-wrapper
+									%img.card-img-top{:alt => "Card image cap", :src => "/images/tmp/ceb-shot.png"}
+							.card-body
+								.row
+									.col-8
+										/ %h3.no-margin-bottom.card-title.medium-font
+										/ 	Project title
+										%h3.card-url.no-margin-bottom
+											www.getbootstrap.com
+										%h4.card-text
+											Created Oct 17, 2019
+									.col-4
+						.card-actions
+							.dropdown.show.text-right
+								%button.btn.btn-flat.btn-icon.no-padding{"data-toggle" => "dropdown", :type=>"button"}
+									%i.material-icons
+										more_horiz
+								.dropdown-menu.dropdown-menu-right
+									/ %button.dropdown-item{:type=>"button"} 
+									/ 	Edit
+									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+										Delete
 			-3.times do
 				.col-sm-12.col-md-12.col-lg-6
-					%a.card.margin-bottom.product-card.margin-auto{:href=>"/product/browse"}
-						.card-header.no-padding-bottom
-							.img-wrapper
-								.no-img
-									%p
-										G
-						.card-body
-							.row
-								.col-8
-									/ %h3.no-margin-bottom.card-title.medium-font
-									/ 	Project title
-									%h3.card-url.no-margin-bottom
-										www.getbootstrap.com
-									%h4.card-text
-										Created Oct 17, 2019
-								.col-4
-									.dropdown.show.text-right
-										%button.btn.btn-flat.btn-icon.no-padding{"data-toggle" => "dropdown", :type=>"button"}
-											%i.material-icons
-												more_horiz
-										.dropdown-menu.dropdown-menu-right
-											/ %button.dropdown-item{:type=>"button"} 
-											/ 	Edit
-											%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
-												Delete
+					.product-card-wrapper
+						%a.card.margin-bottom.product-card.margin-auto{:href=>"/product/browse"}
+							.card-header.no-padding-bottom
+								.img-wrapper
+									.no-img
+										%p
+											G
+							.card-body
+								.row
+									.col-8
+										/ %h3.no-margin-bottom.card-title.medium-font
+										/ 	Project title
+										%h3.card-url.no-margin-bottom
+											www.getbootstrap.com
+										%h4.card-text
+											Created Oct 17, 2019
+									.col-4
+						.card-actions
+							.dropdown.show.text-right
+								%button.btn.btn-flat.btn-icon.no-padding{"data-toggle" => "dropdown", :type=>"button"}
+									%i.material-icons
+										more_horiz
+								.dropdown-menu.dropdown-menu-right
+									/ %button.dropdown-item{:type=>"button"} 
+									/ 	Edit
+									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+										Delete
 			
 											
 

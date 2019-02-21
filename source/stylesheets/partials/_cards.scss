@@ -18,6 +18,16 @@ $product-card-width:448px;
 	}
 }
 
+.product-card-wrapper{
+	position:relative;
+}
+
+.card-actions{
+	position:absolute;
+	bottom:20px;
+	right:20px;
+}
+
 a.product-card{
 	position:relative;
 	// transition-timing-function: ease-in-out;
