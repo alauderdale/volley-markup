@@ -20,6 +20,12 @@ $product-card-width:448px;
 
 .product-card-wrapper{
 	position:relative;
+	width:$product-card-width;
+	margin:0 auto;
+	@include breakpoint(sm) {
+  		width:100%;
+  		max-width: $product-card-width;
+	}
 }
 
 .card-actions{
@@ -33,11 +39,6 @@ a.product-card{
 	// transition-timing-function: ease-in-out;
  //  	transition: 0.2s;
   	display:block;
-  	width:$product-card-width;
-  	@include breakpoint(sm) {
-  		width:100%;
-  		max-width: $product-card-width;
-	}
 	.card-header{
 		border-color:$border-color;
 		position:relative;

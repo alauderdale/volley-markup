@@ -512,7 +512,13 @@ section {
       max-width: 720px; } }
 
 .product-card-wrapper {
-  position: relative; }
+  position: relative;
+  width: 448px;
+  margin: 0 auto; }
+  @media (max-width: 768px) {
+    .product-card-wrapper {
+      width: 100%;
+      max-width: 448px; } }
 
 .card-actions {
   position: absolute;
@@ -521,12 +527,7 @@ section {
 
 a.product-card {
   position: relative;
-  display: block;
-  width: 448px; }
-  @media (max-width: 768px) {
-    a.product-card {
-      width: 100%;
-      max-width: 448px; } }
+  display: block; }
   a.product-card .card-header {
     border-color: #E6EAEE;
     position: relative;
