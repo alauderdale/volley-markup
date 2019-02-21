@@ -32,6 +32,14 @@ $product-card-width:448px;
 	position:absolute;
 	bottom:20px;
 	right:20px;
+	.menu-button{
+		padding:10px!important;
+		border:none;
+		&:hover{
+			background-color:transparent;
+			border:none;
+		}
+	}
 }
 
 a.product-card{

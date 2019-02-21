@@ -524,6 +524,12 @@ section {
   position: absolute;
   bottom: 20px;
   right: 20px; }
+  .card-actions .menu-button {
+    padding: 10px !important;
+    border: none; }
+    .card-actions .menu-button:hover {
+      background-color: transparent;
+      border: none; }
 
 a.product-card {
   position: relative;
