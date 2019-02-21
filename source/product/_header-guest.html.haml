@@ -1,11 +1,11 @@
 %nav.navbar.navbar-light.bg-light.fixed-bottom#bottom-bar.no-padding
   .container-fluid
     .col-xs-2
-      %a.navbar-brand.padding-bottom.padding-top{:href => "/products"}
+      %a.navbar-brand.padding-bottom.padding-top{:href => "/", :target=>"_blank"}
+        %img{:src=>"/images/logo-icon.svg", :width=>"20px", :style=>"position:relative; top:0px;"}
         .inline-block
-          %i.material-icons.light-text-color{:style=>"position:relative; top:3px;"}
-            keyboard_arrow_left
-        %img{:src=>"/images/logo-icon.svg", :width=>"20px", :style=>"position:relative; top:-4px;"}
+          %h5.half-margin-left.d-none.d-sm-block
+            Powered by Volley
     .col.text-center
       %a.mode-link.browse{:href=>"/product/browse", "data-toggle"=>"tooltip", :title=>"BROWSE (B)"}
         %svg{ :version => "1.1", :viewbox => "0 0 18 19",  :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
@@ -46,14 +46,11 @@
             Invite prople to this product
           %p.light-text-color.text-center
             Invite others to work in this workspace
+          .alert.alert-danger.text-center
+            You must be logged in to share.
           .double-margin-bottom
-            .position-relative
-              %input.input-lg.form-control.form-control-lg{:type=>"text", :autofocus=>"", :style=>"padding-left:170px; position:relative;"}
-                .chip{:style=>"position:absolute; top:7px; left:7px;"}
-                  john@doe.com
-                  .close
-                    %i.material-icons
-                      cancel
+            %input.input-lg.form-control.form-control-lg{:type=>"text", :placeholder=>"Enter emails seporated by commas"}
+
           .text-center
             %button.btn.btn-primary.btn-lg{:type => "button", "data-dismiss"=>"modal"} 
               Send invite
@@ -63,16 +60,3 @@
             Or share via a 
             %a{:href=>"#", "data-toggle"=>"tooltip", :title=>"Copy to clipboard"}
               public share link
-       
-
-
-
-
-
-     
-
-
-
-
-
-              

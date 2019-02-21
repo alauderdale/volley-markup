@@ -9,3 +9,39 @@
 		border-color:$link-color;
 	}
 }
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $light-text-color;
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $light-text-color;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: $light-text-color;
+}
+
+
+//chips
+
+.chip {
+  display: inline-block;
+  padding: 0 16px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 32px;
+  border-radius: 25px;
+  background-color: tint($link-color,90%);
+  color: $link-color;
+  .close{
+  	position:relative;
+  	left:8px;
+  	i{
+	  	line-height: 32px;
+	  	font-size: 24px;
+	  	color: $link-color;
+  	}
+  }
+}

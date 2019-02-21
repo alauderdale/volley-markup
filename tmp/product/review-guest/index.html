@@ -10,21 +10,21 @@ Volley
 </title>
 <!-- /google material icons -->
 <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-<link href="../stylesheets/style.css" rel="stylesheet" />
-<link href='../images/favicon.ico' rel='shortcut icon'>
-<script src="../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
+<link href="../../stylesheets/style.css" rel="stylesheet" />
+<link href='../../images/favicon.ico' rel='shortcut icon'>
+<script src="../../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
-<body class='product product_index'>
+<body class='product product_review-guest product_review-guest_index'>
 <nav class='navbar navbar-light bg-light fixed-bottom no-padding' id='bottom-bar'>
 <div class='container-fluid'>
 <div class='col-xs-2'>
-<a class='navbar-brand padding-bottom padding-top' href='/products'>
+<a class='navbar-brand padding-bottom padding-top' href='/' target='_blank'>
+<img src='../../images/logo-icon.svg' style='position:relative; top:0px;' width='20px'>
 <div class='inline-block'>
-<i class='material-icons light-text-color' style='position:relative; top:3px;'>
-keyboard_arrow_left
-</i>
+<h5 class='half-margin-left d-none d-sm-block'>
+Powered by Volley
+</h5>
 </div>
-<img src='../images/logo-icon.svg' style='position:relative; top:-4px;' width='20px'>
 </a>
 </div>
 <div class='col text-center'>
@@ -88,19 +88,11 @@ Invite prople to this product
 <p class='light-text-color text-center'>
 Invite others to work in this workspace
 </p>
+<div class='alert alert-danger text-center'>
+You must be logged in to share.
+</div>
 <div class='double-margin-bottom'>
-<div class='position-relative'>
-<input autofocus='' class='input-lg form-control form-control-lg' style='padding-left:170px; position:relative;' type='text'>
-<div class='chip' style='position:absolute; top:7px; left:7px;'>
-john@doe.com
-<div class='close'>
-<i class='material-icons'>
-cancel
-</i>
-</div>
-</div>
-</input>
-</div>
+<input class='input-lg form-control form-control-lg' placeholder='Enter emails seporated by commas' type='text'>
 </div>
 <div class='text-center'>
 <button class='btn btn-primary btn-lg' data-dismiss='modal' type='button'>
@@ -127,30 +119,317 @@ public share link
 <div class='main'>
 <script>
   $(document).ready(function(){
-  	$( ".comment" ).addClass( "active" );
+  	$( ".review" ).addClass( "active" );
+  	$( ".note-thumbnail:nth-child(2)" ).addClass( "active" );
   });
 </script>
-<!-- //remove this -->
-<div onclick='location.href=&#39;/product/captured-screenshot&#39;' style='position:absolute; left:10px; top:10px; width:20px; height:20px; content:&#39;&#39;; background:black; display:block; z-index:99;'></div>
-<div class='web-view-container comment-mode'>
-<div class='iframe-wrapper'>
-<div class='iframe-border'>
-<div class='overlay-container'>
-<div class='overlay-wrapper'></div>
-<div class='overlay-border'></div>
-<div class='overlay-helper'>
-<div class='overlay-helper-inner'>
-<p class='text-center bold-font'>
-Select an element on the page
+<style>
+  body{
+  	padding-top:0!important;
+  }
+</style>
+<div class='review-container'>
+<div class='notes-list-container'>
+<div class='notes-list-body'>
+<div class='notes-list-header padded half-padding-bottom'>
+<div class='inline-block'>
+<h4 class='bold-font'>
+Notes
+</h4>
+</div>
+<div class='inline-block align-middle show-notes-toggle float-right'>
+<a href='#'>
+<i class='material-icons'>
+clear
+</i>
+</a>
+</div>
+</div>
+<div class='note-thumbnail'>
+<div class='media'>
+<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
+<div class='comment-number comment-number-sm margin-right'>
+1
+</div>
+<div class='media-body'>
+<h5 class='bold-font quarter-margin-bottom'>
+John Doe
+</h5>
+<h5>
+minus eveniet quidem ipsam doloribus earum voluptatibus
+</h5>
+<h6 class='light-text-color'>
+Comment left on
+<span class='bold-font'>
+Chrome 71
+</span>
+on
+<span class='bold-font'>
+Mac OS 10.14.0
+</span>
+</h6>
+</div>
+</div>
+</div>
+<div class='note-thumbnail resolved'>
+<div class='media'>
+<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
+<div class='comment-number comment-number-sm margin-right'>
+1
+</div>
+<div class='media-body'>
+<h5 class='bold-font quarter-margin-bottom'>
+Alvin
+,
+Courtney
+</h5>
+<h5>
+ducimus nihil qui illum repellat pariatur accusamus rerum
+</h5>
+<h6 class='light-text-color'>
+Comment left on
+<span class='bold-font'>
+Chrome 71
+</span>
+on
+<span class='bold-font'>
+Mac OS 10.14.0
+</span>
+</h6>
+</div>
+</div>
+</div>
+<div class='notes-list-footer'>
+<div class='show-resolved check-btn'>
+<button class='no-margin-bottom btn-link btn' type='button'>
+<i class='material-icons'>
+check_box
+</i>
+Show resolved
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class='note-container'>
+<div class='note-body'>
+<div class='note-nav border-bottom'>
+<div class='container-fluid'>
+<div class='row'>
+<div class='col-8'>
+<div class='inline-block align-middle show-notes-toggle menu-button'>
+<a class='btn btn-secondary' href='#'>
+<i class='material-icons'>
+menu
+</i>
+</a>
+</div>
+<div class='inline-block'>
+<div class='mark-resolved check-btn'>
+<button class='no-margin-bottom btn-link btn' data-target='#guestModal' data-toggle='modal' type='button'>
+<i class='material-icons'>
+check_box_outline_blank
+</i>
+Resolved
+</button>
+</div>
+</div>
+</div>
+<div class='col-4'>
+<div class='float-right' style='position:relative; top:2px;'>
+<a class='btn btn-secondary' href='/product/browse'>
+Go to page
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='note-info'>
+<div class='img-container'>
+<div class='img-wrapper'>
+<div class='img-comment-container'>
+<div class='comment-number' style='position: absolute; right: 40px; top: 22px;'>
+1
+</div>
+<img src='../../images/tmp/screenshot.png' width='800px'>
+<div class='half-margin-top text-center show-comment-toggle d-lg-none d-md-none'>
+<a class='btn btn-link btn-sm light-text-color' href='#'>
+Show comments
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class='comments-container'>
+<div class='comments-wrapper'>
+<div class='padded text-right no-padding-bottom show-comment-toggle d-sm-block d-md-none'>
+<a href='#'>
+<i class='material-icons'>
+close
+</i>
+</a>
+</div>
+<div class='new-comment'>
+<textarea class='form-control full-width quarter-margin-bottom new-comment-field' placeholder='Write a reply' rows='1'></textarea>
+<button class='btn btn-primary btn-sm float-right add-comment-btn' type='button'>
+Comment
+</button>
+<button class='btn btn-link attachment float-right' data-toggle='tooltip' title='Attach a file' type='button'>
+<i class='material-icons'>
+attachment
+</i>
+</button>
+</div>
+<div class='comments-list-container'>
+<div class='comment'>
+<div class='media'>
+<div class='avatar avatar-initial avatar-xs half-margin-right'>
+JD
+</div>
+<div class='media-body'>
+<h4 class='bold-font quarter-margin-bottom'>
+John Doe
+</h4>
+<h4>
+eius et sit eos minima a sunt asperiores quae doloremque
+</h4>
+<a href='#'>
+<img src='../../images/tmp/shot.png' width='85px'>
+</a>
+<h5 class='light-text-color'>
+2m ago
+</h5>
+</div>
+</div>
+</div>
+<div class='comment'>
+<div class='media'>
+<div class='avatar avatar-initial avatar-xs half-margin-right'>
+AL
+</div>
+<div class='media-body'>
+<div class='actions'>
+<div class='dropdown show text-right'>
+<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
+<i class='material-icons'>
+more_horiz
+</i>
+</button>
+<div class='dropdown-menu dropdown-menu-right'>
+<button class='dropdown-item' type='button'>
+Edit
+</button>
+<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
+Delete
+</button>
+</div>
+</div>
+</div>
+<h4 class='bold-font quarter-margin-bottom'>
+Alex Lauderdale
+</h4>
+<h4>
+ad totam occaecati et totam a aut totam ut provident
+</h4>
+<h5 class='light-text-color'>
+2m ago
+</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='guestModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header no-border-bottom no-padding-bottom'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='padded no-padding-top no-padding-bottom'>
+<div class='text-center'>
+<img class='margin-auto double-margin-bottom' src='../../images/logo.svg' width='150px'>
+</div>
+<p class='text-center double-margin-bottom'>
+Before leaving a comment, please login as a guest.
 </p>
+<form>
+<div class='margin-bottom'>
+<input class='form-control form-control-lg' placeholder='Full name' type='text'>
+</div>
+<div class='margin-bottom'>
+<input class='form-control form-control-lg' placeholder='Email' type='text'>
+</div>
+<div class='double-margin-top'>
+<button class='btn btn-primary btn-lg btn-block' data-dismiss='modal' type='button'>
+Continue
+</button>
+</div>
+<h5 class='light-text-color margin-top text-center'>
+I agree to the
+<a class='light-text-color' href='/welcome/login'>
+<u>
+Terms and privacy
+</u>
+</a>
+</h5>
+</form>
+<div class='double-margin-top text-center'>
+<button class='btn btn-link' data-dismiss='modal' data-target='#guestLoginModal' data-toggle='modal' type='button'>
+Have an account?
+</button>
 </div>
 </div>
 </div>
-<iframe src='https://getbootstrap.com/docs/4.0/components/tooltips/'>
-<p>
-No good}
+<div class='modal-footer no-border-top'></div>
+</div>
+</div>
+</div>
+<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='guestLoginModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header no-border-bottom no-padding-bottom'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='padded no-padding-top no-padding-bottom'>
+<div class='text-center'>
+<img class='margin-auto double-margin-bottom' src='../../images/logo.svg' width='150px'>
+</div>
+<p class='text-center double-margin-bottom'>
+Before leaving a comment, please login.
 </p>
-</iframe>
+<form>
+<div class='margin-bottom'>
+<input class='form-control form-control-lg' placeholder='Full name' type='text'>
+</div>
+<div class='margin-bottom'>
+<input class='form-control form-control-lg' placeholder='Email' type='text'>
+</div>
+<div class='double-margin-top'>
+<button class='btn btn-primary btn-lg btn-block' data-dismiss='modal' type='button'>
+Continue
+</button>
+</div>
+</form>
+<div class='double-margin-top text-center'>
+<button class='btn btn-link' data-dismiss='modal' data-target='#guestModal' data-toggle='modal' type='button'>
+Don't an account?
+</button>
+</div>
+</div>
+</div>
+<div class='modal-footer no-border-top'></div>
 </div>
 </div>
 </div>

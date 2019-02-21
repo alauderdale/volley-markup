@@ -1,0 +1,220 @@
+;;;
+
+"layout": "product-guest"
+
+;;;
+
+
+:javascript
+	$(document).ready(function(){
+		$( ".review" ).addClass( "active" );
+		$( ".note-thumbnail:nth-child(2)" ).addClass( "active" );
+	});
+
+:css
+	body{
+		padding-top:0!important;
+	}
+
+
+.review-container
+	.notes-list-container
+		.notes-list-body
+			.notes-list-header.padded.half-padding-bottom
+				.inline-block
+					%h4.bold-font
+						Notes
+				.inline-block.align-middle.show-notes-toggle.float-right
+					%a{:href=>"#"}
+						%i.material-icons
+							clear
+			.note-thumbnail
+				.media
+					/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
+					.comment-number.comment-number-sm.margin-right
+						1
+					.media-body
+						%h5.bold-font.quarter-margin-bottom
+							John Doe
+						%h5
+							=lorem.words(7)
+						%h6.light-text-color
+							Comment left on 
+							%span.bold-font
+								Chrome 71 
+							on 
+							%span.bold-font
+								Mac OS 10.14.0
+			.note-thumbnail.resolved
+				.media
+					/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
+					.comment-number.comment-number-sm.margin-right
+						1
+					.media-body
+						%h5.bold-font.quarter-margin-bottom
+							=lorem.first_name
+							,
+							=lorem.first_name
+						%h5
+							=lorem.words(8)
+						%h6.light-text-color
+							Comment left on 
+							%span.bold-font
+								Chrome 71 
+							on 
+							%span.bold-font
+								Mac OS 10.14.0
+
+
+			.notes-list-footer
+				.show-resolved.check-btn
+					%button.no-margin-bottom.btn-link.btn{:type=>"button"}
+						%i.material-icons
+							check_box
+						Show resolved
+
+	.note-container
+		.note-body
+			.note-nav.border-bottom
+				.container-fluid
+					.row
+						.col-8
+							.inline-block.align-middle.show-notes-toggle.menu-button
+								%a.btn.btn-secondary{:href=>"#"}
+									%i.material-icons
+										menu
+							.inline-block
+								.mark-resolved.check-btn
+									%button.no-margin-bottom.btn-link.btn{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal"}
+										%i.material-icons
+											check_box_outline_blank
+										
+										Resolved
+						.col-4
+							.float-right{:style=>"position:relative; top:2px;"}
+								%a.btn.btn-secondary{:href=>"/product/browse"}
+									Go to page
+			.note-info
+				.img-container
+					.img-wrapper
+						.img-comment-container
+							.comment-number{:style=>"position: absolute; right: 40px; top: 22px;"}
+								1
+							%img{:src=>"/images/tmp/screenshot.png", :width=>"800px"}
+							.half-margin-top.text-center.show-comment-toggle.d-lg-none.d-md-none
+								%a.btn.btn-link.btn-sm.light-text-color{:href=>"#"}
+									Show comments
+				.comments-container
+					.comments-wrapper
+						.padded.text-right.no-padding-bottom.show-comment-toggle.d-sm-block.d-md-none
+							%a{:href=>"#"}
+								%i.material-icons
+									close
+						.new-comment
+							%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
+							%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
+								Comment
+							%button.btn.btn-link.attachment.float-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
+								%i.material-icons
+									attachment
+							
+						.comments-list-container
+							.comment
+								.media
+									.avatar.avatar-initial.avatar-xs.half-margin-right
+										JD
+									.media-body
+										%h4.bold-font.quarter-margin-bottom
+											John Doe
+										%h4
+											=lorem.words(10)
+										%a{:href=>"#"}
+											%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
+										%h5.light-text-color
+											2m ago
+							.comment
+								.media
+									.avatar.avatar-initial.avatar-xs.half-margin-right
+										AL
+									.media-body
+										.actions
+											.dropdown.show.text-right
+												%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+													%i.material-icons
+														more_horiz
+												.dropdown-menu.dropdown-menu-right
+													%button.dropdown-item{:type=>"button"} 
+														Edit
+													%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+														Delete
+										%h4.bold-font.quarter-margin-bottom
+											Alex Lauderdale
+										%h4
+											=lorem.words(10)
+										%h5.light-text-color
+											2m ago
+
+
+#guestModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.no-padding-bottom
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					.text-center
+						%img.margin-auto.double-margin-bottom{:src=>"/images/logo.svg", :width=>"150px"}
+					%p.text-center.double-margin-bottom
+						Before leaving a comment, please login as a guest.
+					%form
+						.margin-bottom
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Full name"}
+						.margin-bottom
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Email"}
+						.double-margin-top
+							%button.btn.btn-primary.btn-lg.btn-block{:type=>"button","data-dismiss"=>"modal"}
+								Continue
+						%h5.light-text-color.margin-top.text-center
+							I agree to the
+							%a.light-text-color{:href=>"/welcome/login"}
+								%u
+									Terms and privacy
+					.double-margin-top.text-center
+						%button.btn.btn-link{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestLoginModal", "data-dismiss"=>"modal"}
+							Have an account?
+
+			.modal-footer.no-border-top
+
+
+
+#guestLoginModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.no-padding-bottom
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					.text-center
+						%img.margin-auto.double-margin-bottom{:src=>"/images/logo.svg", :width=>"150px"}
+					%p.text-center.double-margin-bottom
+						Before leaving a comment, please login.
+					%form
+						.margin-bottom
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Full name"}
+						.margin-bottom
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Email"}
+						.double-margin-top
+							%button.btn.btn-primary.btn-lg.btn-block{:type=>"button","data-dismiss"=>"modal"}
+								Continue
+					.double-margin-top.text-center
+						%button.btn.btn-link{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal", "data-dismiss"=>"modal"}
+							Don't an account?
+
+			.modal-footer.no-border-top
+				
+				
+
+
+				
