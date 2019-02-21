@@ -534,6 +534,8 @@ section {
     .card-actions .menu-button:hover {
       background-color: transparent;
       border: none; }
+  .card-actions .dropdown-item:hover {
+    cursor: pointer; }
 
 a.product-card {
   position: relative;

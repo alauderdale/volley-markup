@@ -45,6 +45,11 @@ $product-card-width:448px;
 			border:none;
 		}
 	}
+	.dropdown-item{
+		&:hover{
+			cursor: pointer;
+		}
+	}
 }
 
 a.product-card{
