@@ -22,9 +22,14 @@ $product-card-width:448px;
 	position:relative;
 	width:$product-card-width;
 	margin:0 auto;
+	border:1px solid $border-color;
+	display:block;
 	@include breakpoint(sm) {
   		width:100%;
   		max-width: $product-card-width;
+	}
+	&:hover{
+		box-shadow: 0 1px 3px 1px rgba(60,64,67,.15);
 	}
 }
 
@@ -46,6 +51,7 @@ a.product-card{
 	position:relative;
 	// transition-timing-function: ease-in-out;
  //  	transition: 0.2s;
+ 	border:none;
   	display:block;
 	.card-header{
 		border-color:$border-color;
@@ -117,7 +123,6 @@ a.product-card{
 	}
 	&:hover{
 		text-decoration:none;
-		box-shadow: 0 1px 3px 1px rgba(60,64,67,.15);
 		.card-body{
 			.card-url{
 				// text-decoration:underline;

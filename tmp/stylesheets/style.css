@@ -514,11 +514,15 @@ section {
 .product-card-wrapper {
   position: relative;
   width: 448px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 1px solid #E6EAEE;
+  display: block; }
   @media (max-width: 768px) {
     .product-card-wrapper {
       width: 100%;
       max-width: 448px; } }
+  .product-card-wrapper:hover {
+    box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
 
 .card-actions {
   position: absolute;
@@ -533,6 +537,7 @@ section {
 
 a.product-card {
   position: relative;
+  border: none;
   display: block; }
   a.product-card .card-header {
     border-color: #E6EAEE;
@@ -588,8 +593,7 @@ a.product-card {
     a.product-card .card-body .card-text {
       color: #B4BBC6; }
   a.product-card:hover {
-    text-decoration: none;
-    box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
+    text-decoration: none; }
     a.product-card:hover .card-body .card-url {
       color: #0042FF; }
     a.product-card:hover .no-img {
