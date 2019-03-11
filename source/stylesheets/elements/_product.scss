@@ -344,6 +344,7 @@ $control-nav-height: 61px;
 			top:0;
 			padding:10px 0;
 			z-index: 4;
+			min-height: 65px;
 			@include breakpoint(md) {
 				width: 100%;
 			}
@@ -654,3 +655,33 @@ $control-nav-height: 61px;
 		font-size: 14px;
     }
 }
+
+
+//zero
+
+.notes-zero{
+	display: flex;
+	height:100%;
+	.zero-notes-container{
+		padding:$baseline*2;
+		display: flex;
+  flex-direction: column;
+  justify-content: center;
+	}
+
+}
+
+
+.note-zero{
+	background:$off-white-color;
+	width: 100%;
+	text-align:center;
+			padding:$baseline*2;
+		display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img{
+  	max-width: 100%;
+  }
+}
+

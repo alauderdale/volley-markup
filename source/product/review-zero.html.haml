@@ -1,0 +1,100 @@
+;;;
+
+"layout": "product"
+
+;;;
+
+
+:javascript
+	$(document).ready(function(){
+		$( ".review" ).addClass( "active" );
+		$( ".note-thumbnail:nth-child(2)" ).addClass( "active" );
+	});
+
+:css
+	body{
+		padding-top:0!important;
+	}
+
+
+.review-container
+	.notes-list-container
+		.notes-list-body
+			.notes-list-header.padded.half-padding-bottom
+				.inline-block
+					%h4.bold-font
+						0 Notes
+				.inline-block.align-middle.show-notes-toggle.float-right
+					%a{:href=>"#"}
+						%i.material-icons
+							clear
+			.notes-zero
+				.text-center.zero-notes-container
+					%img{:src=>"../images/comment.svg"}
+					%h4.light-text-color.margin-top
+						There are no open notes to display for this project.
+
+
+
+
+			.notes-list-footer
+				.show-resolved.check-btn
+					%button.no-margin-bottom.btn-link.btn{:type=>"button"}
+						%i.material-icons
+							check_box
+						Show resolved
+
+	.note-container
+		.note-body
+			.note-nav.border-bottom
+				.container-fluid
+					.row
+						.col-8
+							.inline-block.align-middle.show-notes-toggle.menu-button
+								%a.btn.btn-secondary{:href=>"#"}
+									%i.material-icons
+										menu
+
+						.col-4
+			.note-info
+				.note-zero
+					%img.margin-auto.double-margin-bottom{:src=>"../images/zero-note.png", :width=>"350px"}
+					%h2.half-margin-bottom.medium-font
+						No active notes
+					%h3.light-text-color
+						When you add notes to your project, they will show up here.
+		
+							
+
+
+
+#guestModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.no-padding-bottom
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					.text-center
+						%img.margin-auto.double-margin-bottom{:src=>"/images/logo.svg", :width=>"150px"}
+					%p.text-center.double-margin-bottom
+						Before leaving a comment, please login as a guest
+					%form
+						.margin-bottom
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Full name"}
+						.margin-bottom
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Email"}
+						.double-margin-top
+							%a.btn.btn-primary.btn-lg.btn-block{:href=>"/products/zero"}
+								Continue
+					.double-margin-top.text-center
+						%a{:href=>"/welcome/sign-up"}
+							Have an account?
+
+			.modal-footer.no-border-top
+				
+				
+
+
+				
