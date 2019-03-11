@@ -676,12 +676,14 @@ $control-nav-height: 61px;
 	background:$off-white-color;
 	width: 100%;
 	text-align:center;
-			padding:$baseline*2;
-		display: flex;
-  flex-direction: column;
-  justify-content: center;
+	padding:$baseline*2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: -1;
   img{
   	max-width: 100%;
+  	z-index: 0;
   }
 }
 

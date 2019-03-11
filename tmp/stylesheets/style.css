@@ -1288,9 +1288,11 @@ h3.market {
   padding: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  z-index: -1; }
   .note-zero img {
-    max-width: 100%; }
+    max-width: 100%;
+    z-index: 0; }
 
 @keyframes menu-zoom {
   0% {
