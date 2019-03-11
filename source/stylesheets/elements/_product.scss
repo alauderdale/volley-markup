@@ -345,6 +345,7 @@ $control-nav-height: 61px;
 			padding:10px 0;
 			z-index: 4;
 			min-height: 65px;
+			background-color: white;
 			@include breakpoint(md) {
 				width: 100%;
 			}
