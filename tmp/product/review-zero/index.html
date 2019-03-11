@@ -14,21 +14,21 @@ Volley
 <link href='../../images/favicon.ico' rel='shortcut icon'>
 <script src="../../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
-<body class='product product_review-guest product_review-guest_index'>
+<body class='product product_review-zero product_review-zero_index'>
 <nav class='navbar navbar-light bg-light fixed-bottom no-padding' id='bottom-bar'>
 <div class='container-fluid'>
 <div class='col-xs-2'>
-<a class='navbar-brand padding-bottom padding-top' href='/' target='_blank'>
-<img src='../../images/logo-icon.svg' style='position:relative; top:0px;' width='20px'>
+<a class='navbar-brand padding-bottom padding-top' href='/products'>
 <div class='inline-block'>
-<h5 class='half-margin-left d-none d-sm-block'>
-Powered by Volley
-</h5>
+<i class='material-icons light-text-color' style='position:relative; top:3px;'>
+keyboard_arrow_left
+</i>
 </div>
+<img src='../../images/logo-icon.svg' style='position:relative; top:-4px;' width='20px'>
 </a>
 </div>
 <div class='col text-center'>
-<a class='mode-link browse' data-toggle='tooltip' href='#' title='BROWSE (B)'>
+<a class='mode-link browse' data-toggle='tooltip' href='/product/browse' title='BROWSE (B)'>
 <svg version='1.1' viewbox='0 0 18 19' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
 <g fill-rule='evenodd' fill='none' id='Symbols' stroke-width='1' stroke='none'>
 <g class='icon' fill-rule='nonzero' fill='#C5D0DE' id='browse-inactive' transform='translate(-13.000000, -4.000000)'>
@@ -37,7 +37,7 @@ Powered by Volley
 </g>
 </svg>
 </a>
-<a class='mode-link comment' data-toggle='tooltip' href='#' title='COMMENT (C)'>
+<a class='mode-link comment' data-toggle='tooltip' href='/product' title='COMMENT (C)'>
 <svg version='1.1' viewbox='0 0 24 21' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
 <g fill-rule='evenodd' fill='none' id='Symbols' stroke-width='1' stroke='none'>
 <g class='icon' fill-rule='nonzero' fill='#C5D0DE' id='comment-inactive' transform='translate(-9.000000, -5.000000)'>
@@ -48,7 +48,7 @@ Powered by Volley
 </g>
 </svg>
 </a>
-<a class='mode-link review' data-toggle='tooltip' href='#' title='REVIEW (V)'>
+<a class='mode-link review' data-toggle='tooltip' href='/product/review' title='REVIEW (V)'>
 <svg version='1.1' viewbox='0 0 22 19' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
 <g fill-rule='evenodd' fill='none' id='Symbols' stroke-width='1' stroke='none'>
 <g class='icon' fill-rule='nonzero' fill='#C5D0DE' id='notes-inactive' transform='translate(-10.000000, -4.000000)'>
@@ -88,11 +88,19 @@ Invite prople to this product
 <p class='light-text-color text-center'>
 Invite others to work in this workspace
 </p>
-<div class='alert alert-danger text-center'>
-You must be logged in to share.
-</div>
 <div class='double-margin-bottom'>
-<input class='input-lg form-control form-control-lg' placeholder='Enter emails seporated by commas' type='text'>
+<div class='position-relative'>
+<input autofocus='' class='input-lg form-control form-control-lg' style='padding-left:170px; position:relative;' type='text'>
+<div class='chip' style='position:absolute; top:7px; left:7px;'>
+john@doe.com
+<div class='close'>
+<i class='material-icons'>
+cancel
+</i>
+</div>
+</div>
+</input>
+</div>
 </div>
 <div class='text-center'>
 <button class='btn btn-primary btn-lg' data-dismiss='modal' type='button'>
@@ -134,7 +142,7 @@ public share link
 <div class='notes-list-header padded half-padding-bottom'>
 <div class='inline-block'>
 <h4 class='bold-font'>
-21 Notes
+0 Notes
 </h4>
 </div>
 <div class='inline-block align-middle show-notes-toggle float-right'>
@@ -145,58 +153,12 @@ clear
 </a>
 </div>
 </div>
-<div class='note-thumbnail'>
-<div class='media'>
-<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
-<div class='comment-number comment-number-sm margin-right'>
-1
-</div>
-<div class='media-body'>
-<h5 class='bold-font quarter-margin-bottom'>
-John Doe
-</h5>
-<h5>
-ad eius id numquam necessitatibus et sed
-</h5>
-<h6 class='light-text-color'>
-Comment left on
-<span class='bold-font'>
-Chrome 71
-</span>
-on
-<span class='bold-font'>
-Mac OS 10.14.0
-</span>
-</h6>
-</div>
-</div>
-</div>
-<div class='note-thumbnail resolved'>
-<div class='media'>
-<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
-<div class='comment-number comment-number-sm margin-right'>
-1
-</div>
-<div class='media-body'>
-<h5 class='bold-font quarter-margin-bottom'>
-Phil
-,
-Dominick
-</h5>
-<h5>
-sit ipsam omnis maiores dolorum qui nemo nobis
-</h5>
-<h6 class='light-text-color'>
-Comment left on
-<span class='bold-font'>
-Chrome 71
-</span>
-on
-<span class='bold-font'>
-Mac OS 10.14.0
-</span>
-</h6>
-</div>
+<div class='notes-zero'>
+<div class='text-center zero-notes-container'>
+<img src='../images/comment.svg'>
+<h4 class='light-text-color margin-top'>
+There are no open notes to display for this project.
+</h4>
 </div>
 </div>
 <div class='notes-list-footer'>
@@ -224,122 +186,20 @@ menu
 </i>
 </a>
 </div>
-<div class='inline-block'>
-<div class='mark-resolved check-btn'>
-<button class='no-margin-bottom btn-link btn' data-target='#guestModal' data-toggle='modal' type='button'>
-<i class='material-icons'>
-check_box_outline_blank
-</i>
-Resolved
-</button>
 </div>
-</div>
-</div>
-<div class='col-4'>
-<div class='float-right' style='position:relative; top:2px;'>
-<a class='btn btn-secondary' href='#'>
-Go to page
-</a>
-</div>
-</div>
+<div class='col-4'></div>
 </div>
 </div>
 </div>
 <div class='note-info'>
-<div class='img-container'>
-<div class='img-wrapper'>
-<div class='img-comment-container'>
-<div class='comment-number' style='position: absolute; right: 40px; top: 22px;'>
-1
-</div>
-<img src='../../images/tmp/screenshot.png' width='800px'>
-<div class='half-margin-top text-center show-comment-toggle d-lg-none d-md-none'>
-<a class='btn btn-link btn-sm light-text-color' href='#'>
-Show comments
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class='comments-container'>
-<div class='comments-wrapper'>
-<div class='padded text-right no-padding-bottom show-comment-toggle d-sm-block d-md-none'>
-<a href='#'>
-<i class='material-icons'>
-close
-</i>
-</a>
-</div>
-<div class='new-comment'>
-<textarea class='form-control full-width quarter-margin-bottom new-comment-field' placeholder='Write a reply' rows='1'></textarea>
-<button class='btn btn-primary btn-sm float-right add-comment-btn' type='button'>
-Comment
-</button>
-<button class='btn btn-link attachment float-right' data-toggle='tooltip' title='Attach a file' type='button'>
-<i class='material-icons'>
-attachment
-</i>
-</button>
-</div>
-<div class='comments-list-container'>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<h4 class='bold-font quarter-margin-bottom'>
-John Doe
-</h4>
-<h4>
-autem officiis ut aut inventore rerum harum aut dolores aliquam
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-AL
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Alex Lauderdale
-</h4>
-<h4>
-perspiciatis tenetur vitae ab at reiciendis officiis officiis voluptatem reprehenderit
-</h4>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class='note-zero'>
+<img class='margin-auto double-margin-bottom' src='../images/zero-note.png' width='350px'>
+<h2 class='half-margin-bottom medium-font'>
+No active notes
+</h2>
+<h3 class='light-text-color'>
+When you add notes to your project, they will show up here.
+</h3>
 </div>
 </div>
 </div>
@@ -359,7 +219,7 @@ perspiciatis tenetur vitae ab at reiciendis officiis officiis voluptatem reprehe
 <img class='margin-auto double-margin-bottom' src='../../images/logo.svg' width='150px'>
 </div>
 <p class='text-center double-margin-bottom'>
-Before leaving a comment, please login as a guest.
+Before leaving a comment, please login as a guest
 </p>
 <form>
 <div class='margin-bottom'>
@@ -369,63 +229,15 @@ Before leaving a comment, please login as a guest.
 <input class='form-control form-control-lg' placeholder='Email' type='text'>
 </div>
 <div class='double-margin-top'>
-<button class='btn btn-primary btn-lg btn-block' data-dismiss='modal' type='button'>
+<a class='btn btn-primary btn-lg btn-block' href='/products/zero'>
 Continue
-</button>
-</div>
-<h5 class='light-text-color margin-top text-center'>
-I agree to the
-<a class='light-text-color' href='/welcome/login'>
-<u>
-Terms and privacy
-</u>
 </a>
-</h5>
+</div>
 </form>
 <div class='double-margin-top text-center'>
-<button class='btn btn-link' data-dismiss='modal' data-target='#guestLoginModal' data-toggle='modal' type='button'>
+<a href='/welcome/sign-up'>
 Have an account?
-</button>
-</div>
-</div>
-</div>
-<div class='modal-footer no-border-top'></div>
-</div>
-</div>
-</div>
-<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='guestLoginModal' role='dialog' tabindex='-1'>
-<div class='modal-dialog' role='document'>
-<div class='modal-content'>
-<div class='modal-header no-border-bottom no-padding-bottom'>
-<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
-<span aria-hidden='true'>×</span>
-</button>
-</div>
-<div class='modal-body'>
-<div class='padded no-padding-top no-padding-bottom'>
-<div class='text-center'>
-<img class='margin-auto double-margin-bottom' src='../../images/logo.svg' width='150px'>
-</div>
-<p class='text-center double-margin-bottom'>
-Before leaving a comment, please login.
-</p>
-<form>
-<div class='margin-bottom'>
-<input class='form-control form-control-lg' placeholder='Email' type='text'>
-</div>
-<div class='margin-bottom'>
-<input class='form-control form-control-lg' placeholder='Password' type='text'>
-</div>
-<div class='double-margin-top'>
-<button class='btn btn-primary btn-lg btn-block' data-dismiss='modal' type='button'>
-Continue
-</button>
-</div>
-</form>
-<div class='double-margin-top text-center'>
-<button class='btn btn-link' data-dismiss='modal' data-target='#guestModal' data-toggle='modal' type='button'>
-Don't an account?
-</button>
+</a>
 </div>
 </div>
 </div>
