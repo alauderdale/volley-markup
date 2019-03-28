@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Extension" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-685.000000, -462.000000)">
+            <g id="Group-3" transform="translate(116.000000, 150.000000)">
+                <g id="Group-2" transform="translate(176.000000, 311.000000)">
+                    <g id="Group" transform="translate(393.500000, 1.000000)">
+                        <circle id="Oval" fill="#485460" cx="9.5" cy="9.5" r="9.5"></circle>
+                        <g id="Group-8" transform="translate(3.392857, 4.071429)" fill="#FFFFFF">
+                            <path d="M5.87801554,10.8571429 C3.9535407,10.8571429 2.15068333,10.0385873 0.516631011,8.4237959 L0,7.91335104 L1.02450556,6.88178661 L1.54162305,7.39271669 C2.9022793,8.7377292 4.36120246,9.42818837 5.91206844,9.40538332 C8.57938278,9.38840084 10.6459068,7.32333112 10.666825,7.30198172 L11.1756725,6.78571429 L12.2142857,7.79835538 L11.7073841,8.31656367 C11.6071713,8.41942898 9.21422597,10.8290005 5.93590546,10.8571429 C5.91693313,10.8571429 5.89747434,10.8571429 5.87801554,10.8571429" id="Fill-1"></path>
+                            <polygon id="Fill-4" points="5.42857143 6.78571429 5.42857143 1.96054688 5.42857143 0 4.07142857 0 4.07142857 1.96054688 4.07142857 6.78571429"></polygon>
+                            <polygon id="Fill-6" points="8.14285714 6.78571429 8.14285714 1.96054688 8.14285714 0 6.78571429 0 6.78571429 1.96054688 6.78571429 6.78571429"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

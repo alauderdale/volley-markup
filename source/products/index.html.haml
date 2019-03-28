@@ -1,12 +1,12 @@
-=partial "add-new"
 
-%section.no-padding-top
+
+%section
 	.container.product-card-container
 		.row
 			-1.times do
 				.col-sm-12.col-md-12.col-lg-6
 					.product-card-wrapper.margin-bottom
-						%a.card.product-card{:href=>"/product/browse"}
+						%a.card.product-card{:href=>"/product/review"}
 							.card-header.no-padding-bottom
 								.img-wrapper
 									%img.card-img-top{:alt => "Card image cap", :src => "/images/tmp/ceb-shot.png"}
@@ -35,7 +35,7 @@
 			-1.times do
 				.col-sm-12.col-md-12.col-lg-6
 					.product-card-wrapper.margin-bottom
-						%a.card.product-card{:href=>"/product/browse"}
+						%a.card.product-card{:href=>"/product/review"}
 							.card-header.no-padding-bottom
 								.img-wrapper
 									.no-img

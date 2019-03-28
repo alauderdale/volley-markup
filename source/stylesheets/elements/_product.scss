@@ -346,8 +346,12 @@ $control-nav-height: 61px;
 			z-index: 4;
 			min-height: 65px;
 			background-color: white;
+			display: none;
 			@include breakpoint(md) {
 				width: 100%;
+			}
+			@include breakpoint(md) {
+				display: block;
 			}
 			//visible only on mobile
 			.menu-button{
@@ -373,7 +377,9 @@ $control-nav-height: 61px;
 			display: flex;
 			height: 100%;
 			width:100%;
-			padding-top:65px;
+			@include breakpoint(sm) {
+				padding-top:65px;
+			}
 			.img-container{
 				height: 100%;
 				overflow-y: scroll;
@@ -413,6 +419,7 @@ $control-nav-height: 61px;
 				width:320px;
 				background:white;
 				border-left:1px solid $border-color;
+				position:relative;
 				@include breakpoint(sm) {
 					position: absolute;
 					width: 100%;
@@ -424,8 +431,32 @@ $control-nav-height: 61px;
 						display: block;
 					}
 				}
+
+
+				.resolved-header{
+					position:fixed;
+					width:320px;
+					background-color: white;
+					top:0;
+					z-index: 99;
+					@include breakpoint(md) {
+						display: none;
+					}
+					.page-btn{
+						position:relative;
+						top:3px;
+						padding-left:30px;
+						padding-right:30px;
+					}
+				}
+
 				.comments-wrapper{
 					width:100%;
+					position:relative;
+					padding-top:76px;
+					@include breakpoint(sm) {
+						padding-top:0px;
+					}
 					.new-comment{
 						width: 100%;
 						padding:16px;

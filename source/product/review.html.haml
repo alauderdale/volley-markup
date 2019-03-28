@@ -108,6 +108,19 @@
 								%a.btn.btn-link.btn-sm.light-text-color{:href=>"#"}
 									Show comments
 				.comments-container
+					.resolved-header
+						.padded
+							.row.align-items-center
+								.col
+									.mark-resolved.check-btn
+										%button.no-margin-bottom.btn-link.btn{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal"}
+											%i.material-icons
+												check_box_outline_blank
+											
+											Resolved
+								.col
+									%a.btn.btn-secondary.float-right.page-btn{:href=>"/product/browse"}
+										Go to page
 					.comments-wrapper
 						.padded.text-right.no-padding-bottom.show-comment-toggle.d-sm-block.d-md-none
 							%a{:href=>"#"}
@@ -122,7 +135,7 @@
 									attachment
 							
 						.comments-list-container
-							-2.times do
+							-20.times do
 								.comment
 									.media
 										.avatar.avatar-initial.avatar-xs.half-margin-right
