@@ -1030,10 +1030,15 @@ h3.market {
       top: 0;
       padding: 10px 0;
       z-index: 4;
-      min-height: 65px; }
+      min-height: 65px;
+      background-color: white;
+      display: none; }
       @media (max-width: 992px) {
         .note-container .note-body .note-nav {
           width: 100%; } }
+      @media (max-width: 992px) {
+        .note-container .note-body .note-nav {
+          display: block; } }
       .note-container .note-body .note-nav .menu-button {
         position: relative; }
         .note-container .note-body .note-nav .menu-button a {
@@ -1047,8 +1052,10 @@ h3.market {
     .note-container .note-body .note-info {
       display: flex;
       height: 100%;
-      width: 100%;
-      padding-top: 65px; }
+      width: 100%; }
+      @media (max-width: 768px) {
+        .note-container .note-body .note-info {
+          padding-top: 65px; } }
       .note-container .note-body .note-info .img-container {
         height: 100%;
         overflow-y: scroll;
@@ -1082,7 +1089,8 @@ h3.market {
         display: flex;
         width: 320px;
         background: white;
-        border-left: 1px solid #E6EAEE; }
+        border-left: 1px solid #E6EAEE;
+        position: relative; }
         @media (max-width: 768px) {
           .note-container .note-body .note-info .comments-container {
             position: absolute;
@@ -1093,8 +1101,27 @@ h3.market {
             display: none; }
             .note-container .note-body .note-info .comments-container.comments-bar-open {
               display: block; } }
+        .note-container .note-body .note-info .comments-container .resolved-header {
+          position: fixed;
+          width: 320px;
+          background-color: white;
+          top: 0;
+          z-index: 99; }
+          @media (max-width: 992px) {
+            .note-container .note-body .note-info .comments-container .resolved-header {
+              display: none; } }
+          .note-container .note-body .note-info .comments-container .resolved-header .page-btn {
+            position: relative;
+            top: 3px;
+            padding-left: 30px;
+            padding-right: 30px; }
         .note-container .note-body .note-info .comments-container .comments-wrapper {
-          width: 100%; }
+          width: 100%;
+          position: relative;
+          padding-top: 76px; }
+          @media (max-width: 768px) {
+            .note-container .note-body .note-info .comments-container .comments-wrapper {
+              padding-top: 0px; } }
           .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment {
             width: 100%;
             padding: 16px;
