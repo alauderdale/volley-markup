@@ -79,6 +79,9 @@ img {
 .inline {
   display: inline; }
 
+.jumbotron {
+  background: #F5F8FA; }
+
 .text-uppercase {
   text-transform: uppercase; }
 
@@ -786,6 +789,9 @@ h2.market {
 h3.market {
   font-size: 45px;
   line-height: 59px; }
+
+.welcome-panel {
+  background: #F5F8FA url("../images/welcome-bg.svg") center center no-repeat; }
 
 .add-new-product-bar input {
   border: 3px solid #cfd3d6; }

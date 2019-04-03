@@ -2,7 +2,9 @@
 $control-nav-height: 61px;
 
 
-
+.welcome-panel{
+	background:$off-white-dark-color url("../images/welcome-bg.svg") center center no-repeat;
+}
 
 .add-new-product-bar{
 	input{
