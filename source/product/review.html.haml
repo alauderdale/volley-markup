@@ -86,27 +86,7 @@
 								%a.btn.btn-secondary{:href=>"#"}
 									%i.material-icons
 										menu
-							.inline-block
-								.mark-resolved.check-btn
-									%button.no-margin-bottom.btn-link.btn{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal"}
-										%i.material-icons
-											check_box_outline_blank
-										
-										Resolved
-						.col-4
-							.float-right{:style=>"position:relative; top:2px;"}
-								%a.btn.btn-secondary{:href=>"/product/browse"}
-									Go to page
 			.note-info
-				.img-container
-					.img-wrapper
-						.img-comment-container
-							.comment-number{:style=>"position: absolute; right: 40px; top: 22px;"}
-								1
-							%img{:src=>"/images/tmp/screenshot.png", :width=>"800px"}
-							.half-margin-top.text-center.show-comment-toggle.d-lg-none.d-md-none
-								%a.btn.btn-link.btn-sm.light-text-color{:href=>"#"}
-									Show comments
 				.comments-container
 					.resolved-header
 						.padded
@@ -121,44 +101,51 @@
 								.col
 									%a.btn.btn-secondary.float-right.page-btn{:href=>"/product/browse"}
 										Go to page
-					.comments-wrapper
-						.padded.text-right.no-padding-bottom.show-comment-toggle.d-sm-block.d-md-none
-							%a{:href=>"#"}
-								%i.material-icons
-									close
-						.new-comment
-							%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
-							%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
-								Comment
-							%button.btn.btn-link.attachment.float-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
-								%i.material-icons
-									attachment
-							
-						.comments-list-container
-							-20.times do
-								.comment
-									.media
-										.avatar.avatar-initial.avatar-xs.half-margin-right
-											JD
-										.media-body
-											.actions
-												.dropdown.show.text-right
-													%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
-														%i.material-icons
-															more_horiz
-													.dropdown-menu.dropdown-menu-right
-														%button.dropdown-item{:type=>"button"} 
-															Edit
-														%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
-															Delete
-											%h4.bold-font.quarter-margin-bottom
-												=lorem.name
-											%h4
-												=lorem.words(20)
-											%a{:href=>"#"}
-												%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
-											%h5.light-text-color
-												2m ago
+				.img-container
+					.img-wrapper
+						.img-comment-container
+							.comment-number{:style=>"position: absolute; right: 40px; top: 22px;"}
+								1
+							%img{:src=>"/images/tmp/screenshot.png", :width=>"800px"}
+				.comments-wrapper
+					.padded.text-right.no-padding-bottom.show-comment-toggle.d-sm-block.d-md-none
+						%a{:href=>"#"}
+							%i.material-icons
+								close
+					.new-comment
+						%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
+						%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
+							Comment
+						%button.btn.btn-link.attachment.float-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
+							%i.material-icons
+								attachment
+						
+					.comments-list-container
+						-20.times do
+							.comment
+								.media
+									.avatar.avatar-initial.avatar-xs.half-margin-right
+										JD
+									.media-body
+										.actions
+											.dropdown.show.text-right
+												%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+													%i.material-icons
+														more_horiz
+												.dropdown-menu.dropdown-menu-right
+													%button.dropdown-item{:type=>"button"} 
+														Edit
+													%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+														Delete
+										%h4.bold-font.quarter-margin-bottom
+											=lorem.name
+										%h4
+											=lorem.words(20)
+										%a{:href=>"#"}
+											%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
+										%h5.light-text-color
+											2m ago
+				
 
 
 #guestModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
