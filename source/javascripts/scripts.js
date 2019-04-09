@@ -14,7 +14,7 @@
 
 
 	$('.show-notes-toggle').on('click', function(e) {
-		$('.notes-list-container').toggleClass("notes-bar-open"); 
+		$('.review-container').toggleClass("notes-bar-open"); 
 	});
 
 	$('.show-comment-toggle').on('click', function(e) {
