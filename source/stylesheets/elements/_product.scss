@@ -16,8 +16,8 @@ $control-nav-height: 61px;
 	}
 }
 
-#bottom-bar{
-	border-top:1px solid #bcc2ce;
+#top-bar{
+	border-bottom:1px solid #bcc2ce;
 	.share-button{
 		padding-left:20px;
 		padding-right:20px;
@@ -197,7 +197,7 @@ $control-nav-height: 61px;
 
 
 .review-container{
-	padding-bottom:$control-nav-height;
+	padding-top:$control-nav-height;
 	width: 100%;
     height: 100%;
     top:0;
@@ -216,14 +216,39 @@ $control-nav-height: 61px;
     display: flex;
     overflow: hidden;
 	@include breakpoint(md) {
-		position: absolute;
+		position: absolute!important;
 		height: 100%;
 		width: 280px;
-		left: 0px;
-		top: 0;
 		bottom:0;
-		z-index: 5;
+		left:auto!important;
+		right:0px!important;
+		z-index: 1040;
 		display: none;
+		&:before{
+			display: block;
+			width:100%;
+			height:100%;
+			position:fixed;
+			left:0;
+			top:0;
+			right: 0;
+			bottom:0;
+			background:rgba(0,0,0,.5);
+			content: "";
+		}
+		.notes-list-body{
+			padding-top:61px!important;
+			.notes-list-header{
+				left:auto!important;
+				right:0px!important;
+				top:0!important;
+				padding:16px!important;
+			}
+			.notes-list-footer{
+				left:auto!important;
+				right:0px!important;
+			}
+		}
 		&.notes-bar-open{
 			display: block;
 		}
@@ -243,7 +268,7 @@ $control-nav-height: 61px;
 	    	width:280px;
 	    	position:fixed;
 	    	z-index: 9;
-	    	top:0;
+	    	top:56px;
 	    	left:0;
 	    	background:white;
 	    	border-right:1px solid $border-color;
@@ -281,12 +306,13 @@ $control-nav-height: 61px;
 	    }
 	    .notes-list-footer{
 	    	position:fixed;
-	    	bottom:56px;
+	    	bottom:0px;
 	    	left:0;
 	    	background:white;
 	    	width:100%;
 	    	width:280px;
 	    	border-right:1px solid $border-color;
+	    	padding:18px;
 	    	.show-resolved{
 	    		position:relative;
 	    		top:-4px;
@@ -309,6 +335,7 @@ $control-nav-height: 61px;
 	button{
 			color:$text-color!important;
 			font-weight:400;
+			padding:0;
 			position:relative;
 			&:hover, &:active, &:focus{
 				text-decoration:none;
@@ -338,44 +365,12 @@ $control-nav-height: 61px;
     	margin:0 auto;
     	width:100%;
     	overflow-y: scroll;
-	    .note-nav{
-			width:calc(100% - 280px);
-			position:fixed;
-			top:0;
-			padding:10px 0;
-			z-index: 4;
-			min-height: 65px;
-			background-color: white;
-			display: none;
-			@include breakpoint(md) {
-				width: 100%;
-			}
-			@include breakpoint(md) {
-				display: block;
-			}
-			//visible only on mobile
-			.menu-button{
-				position:relative;
-				a{
-					padding:.275rem .55rem;
-				}
-				i{
-					position:relative;
-					top:2px;
-					// font-size: 16px;
-				}
-			}
-			.mark-resolved{
-				button{
-					position:relative;
-					top:-4px;
-				}
-			}
-		}
 		.note-info{
-			max-width: 900px;
+			max-width: 850px;
 			margin:0 auto;
-			
+			.resolved-header{
+				padding:$baseline 10px;
+			}
 			.img-container{
 				position:relative;
 				.img-wrapper{
@@ -385,6 +380,10 @@ $control-nav-height: 61px;
 							border: 1px solid #E6EAEE;
 							border-radius: 7px;
 							box-shadow: 0 4px 16px 0 #E0E6F8;
+							@include breakpoint(md) {
+								box-shadow:none;
+								border-radius:0px;
+							}
 						}
 					}
 				}
@@ -396,6 +395,13 @@ $control-nav-height: 61px;
 //this is both the menu button and the close button
 .show-notes-toggle{
 	display: none;
+	margin-left:10px;
+	.btn{
+		line-height: 0;
+	}
+	i{
+		line-height: 26px;
+	}
 	@include breakpoint(md) {
 		display: inline-block;
 	}
@@ -437,6 +443,72 @@ $control-nav-height: 61px;
 		i{
 			font-size: 18px;
 			color: $light-text-color;
+		}
+	}
+}
+
+//discussion
+
+.new-comment{
+	position:fixed;
+	bottom:0;
+	left:280px;
+	background: white;
+	width: calc(100% - 280px);
+	padding:$baseline 16px;
+	z-index: 10;
+	@include breakpoint(md) {
+		width: 100%;
+		left:0;
+	}
+	textarea{
+		resize: none;
+		padding:10px;
+	}
+	.add-comment-controls{
+		margin-top:$baseline;
+		display: none;
+	}
+	.add-comment-btn{
+		
+	}
+	.attachment{
+		color:$light-text-color;
+	}
+	&.focused{
+		textarea{
+			height:85px;
+		}
+		.add-comment-controls{
+			display: block;
+		}
+	}
+}
+
+.discussion-wrapper{
+	width:100%;
+	margin:0 auto;
+	padding-bottom:150px;
+	.comments-list-container{
+		width:100%;
+		.comment{
+			padding:16px;
+			width:100%;
+			position:relative;
+			img{
+				border-radius:4px;
+				margin-bottom:5px;
+			}
+			.actions{
+				position:absolute;
+				right:10px;
+				top:6px;
+				button{
+					&.btn-action{
+						color:$light-text-color;
+					}
+				}
+			}
 		}
 	}
 }

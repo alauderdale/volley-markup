@@ -78,50 +78,36 @@
 
 	.note-container
 		.note-body
-			.note-nav.border-bottom
-				.container-fluid
-					.row
-						.col-8
-							.inline-block.align-middle.show-notes-toggle.menu-button
-								%a.btn.btn-secondary{:href=>"#"}
-									%i.material-icons
-										menu
 			.note-info
-				.comments-container
-					.resolved-header
-						.padded
-							.row.align-items-center
-								.col
-									.mark-resolved.check-btn
-										%button.no-margin-bottom.btn-link.btn{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal"}
-											%i.material-icons
-												check_box_outline_blank
-											
-											Resolved
-								.col
-									%a.btn.btn-secondary.float-right.page-btn{:href=>"/product/browse"}
-										Go to page
-				.img-container
+				.resolved-header
+					.row.align-items-center
+						.col
+							.mark-resolved.check-btn
+								%button.no-margin.btn-link.btn{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal"}
+									%i.material-icons
+										check_box_outline_blank
+									
+									Resolved
+						.col
+							%a.btn.btn-secondary.float-right.page-btn{:href=>"/product/browse"}
+								Go to page
+				.img-container.double-margin-bottom
 					.img-wrapper
 						.img-comment-container
-							.comment-number{:style=>"position: absolute; right: 40px; top: 22px;"}
+							.comment-number{:style=>"position: absolute; right: 63%; top: 22px;"}
 								1
-							%img{:src=>"/images/tmp/screenshot.png", :width=>"800px"}
-				.comments-wrapper
-					.padded.text-right.no-padding-bottom.show-comment-toggle.d-sm-block.d-md-none
-						%a{:href=>"#"}
-							%i.material-icons
-								close
-					.new-comment
-						%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
+							%img{:src=>"/images/tmp/screenshot.png"}
+				.new-comment
+					%textarea.form-control.full-width.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
+					.add-comment-controls
 						%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
 							Comment
 						%button.btn.btn-link.attachment.float-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
 							%i.material-icons
 								attachment
-						
+				.discussion-wrapper
 					.comments-list-container
-						-20.times do
+						-3.times do
 							.comment
 								.media
 									.avatar.avatar-initial.avatar-xs.half-margin-right
@@ -137,14 +123,15 @@
 														Edit
 													%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
 														Delete
-										%h4.bold-font.quarter-margin-bottom
-											=lorem.name
+										%h4.quarter-margin-bottom
+											%span.bold-font.half-margin-right
+												=lorem.name
+											%span.light-text-color
+												4min ago
 										%h4
 											=lorem.words(20)
-										%a{:href=>"#"}
-											%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
-										%h5.light-text-color
-											2m ago
+										/ %a{:href=>"#"}
+										/ 	%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
 				
 
 
