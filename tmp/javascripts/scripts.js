@@ -5,9 +5,11 @@
 
  $(".new-comment-field").focus(function(){
    $(this).parent().addClass("focused");
+   $('.note-container').addClass("comment-bar-open");
 
   }).blur(function(){
        $(this).parent().removeClass("focused");
+       $('.note-container').removeClass("comment-bar-open");
   })
 
 

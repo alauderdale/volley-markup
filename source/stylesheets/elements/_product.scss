@@ -349,14 +349,18 @@ $control-nav-height: 61px;
 }
 
 
+
 .note-container{
 	width: calc(100% - 280px);
-    position: relative;
-    top: 0;
+    position: absolute;
+    top: $control-nav-height;
     right:0;
-    bottom:0;
+    bottom:78px;
     display: flex;
     overflow: hidden;
+    &.comment-bar-open{
+    	bottom:177px;
+    }
     ///the whole image and convo wrapper
 	@include breakpoint(md) {
 		width: 100%;
@@ -498,8 +502,7 @@ $control-nav-height: 61px;
 
 .discussion-wrapper{
 	width:100%;
-	margin:0 auto;
-	padding-bottom:150px;
+	margin:0 auto;	
 	.comments-list-container{
 		width:100%;
 		.comment{
