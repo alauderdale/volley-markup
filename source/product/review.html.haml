@@ -107,31 +107,68 @@
 								attachment
 				.discussion-wrapper
 					.comments-list-container
-						-3.times do
-							.comment
-								.media
-									.avatar.avatar-initial.avatar-xs.half-margin-right
-										JD
-									.media-body
-										.actions
-											.dropdown.show.text-right
-												%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
-													%i.material-icons
-														more_horiz
-												.dropdown-menu.dropdown-menu-right
-													%button.dropdown-item{:type=>"button"} 
-														Edit
-													%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
-														Delete
-										%h4.quarter-margin-bottom
-											%span.bold-font.half-margin-right
-												=lorem.name
-											%span.light-text-color
-												4min ago
-										%h4
-											=lorem.words(20)
-										/ %a{:href=>"#"}
-										/ 	%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
+						.comment
+							.media
+								.avatar.avatar-initial.avatar-xs.half-margin-right
+									JD
+								.media-body
+									.actions
+										.dropdown.show.text-right
+											%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+												%i.material-icons
+													more_horiz
+											.dropdown-menu.dropdown-menu-right
+												%button.dropdown-item{:type=>"button"} 
+													Edit
+												%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+													Delete
+									%h4.quarter-margin-bottom
+										%span.bold-font.half-margin-right
+											John Doe
+										%span.light-text-color
+											4min ago
+									%h4
+										Let's adjust the font size here
+									%a{:href=>"#"}
+										%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
+						.comment
+							.media
+								.avatar.avatar-initial.avatar-xs.half-margin-right
+									KS
+								.media-body
+									%h4.quarter-margin-bottom
+										%span.bold-font.half-margin-right
+											Karen Smith
+										%span.light-text-color
+											4min ago
+									%h4
+										Sound's good. Consider it done!
+									/ %a{:href=>"#"}
+									/ 	%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
+						.comment
+							.media
+								.avatar.avatar-initial.avatar-xs.half-margin-right
+									JD
+								.media-body
+									.actions
+										.dropdown.show.text-right
+											%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+												%i.material-icons
+													more_horiz
+											.dropdown-menu.dropdown-menu-right
+												%button.dropdown-item{:type=>"button"} 
+													Edit
+												%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+													Delete
+									%h4.quarter-margin-bottom
+										%span.bold-font.half-margin-right
+											John Doe
+										%span.light-text-color
+											4min ago
+									%h4
+										Look's great!
+									/ %a{:href=>"#"}
+									/ 	%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
 				
 
 
@@ -158,7 +195,7 @@
 							%a.btn.btn-primary.btn-lg.btn-block{:href=>"/products/zero"}
 								Continue
 					.double-margin-top.text-center
-						%a{:href=>"/welcome/sign-up"}
+						%a{:href=>"#"}
 							Have an account?
 
 			.modal-footer.no-border-top
