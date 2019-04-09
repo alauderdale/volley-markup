@@ -15,9 +15,10 @@ Volley
 <script src="../../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
 <body class='product product_review product_review_index'>
-<nav class='navbar navbar-light bg-light fixed-bottom no-padding' id='bottom-bar'>
+<nav class='navbar navbar-light bg-light fixed-top no-padding' id='top-bar'>
 <div class='container-fluid'>
-<div class='col'>
+<div class='row' style='display:contents;'>
+<div class='col-xs-6'>
 <div class='inline-block'>
 <a class='navbar-brand padding-bottom padding-top' href='/products'>
 <div class='inline-block'>
@@ -36,11 +37,19 @@ Created Oct 17, 2019
 </h6>
 </div>
 </div>
-<div class='col'>
-<div class='float-right'>
+<div class='col-xs-6'>
+<div class='float-right align-middle'>
 <a class='btn btn-primary share-button' data-target='#shareModal' data-toggle='modal' href='#'>
 Share
 </a>
+<div class='inline-block show-notes-toggle menu-button'>
+<a class='btn btn-secondary' href='#'>
+<i class='material-icons'>
+menu
+</i>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -110,6 +119,7 @@ public share link
   }
 </style>
 <div class='review-container'>
+<div class='overlay'></div>
 <div class='notes-list-container'>
 <div class='notes-list-body'>
 <div class='notes-list-header padded half-padding-bottom'>
@@ -134,12 +144,12 @@ clear
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Ana
+Sydney
 ,
-Nadia
+Dirk
 </h5>
 <h5>
-quos sint et similique aut corporis assumenda
+asperiores est sed consequuntur minus et voluptatum
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -162,12 +172,236 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Dominick
+Tracy
 ,
-Tomas
+Neil
 </h5>
 <h5>
-esse quibusdam qui molestiae repellat laudantium corporis
+ducimus nostrum voluptate inventore eligendi quia aut
+</h5>
+<h6 class='light-text-color'>
+Comment left on
+<span class='bold-font'>
+Chrome 71
+</span>
+on
+<span class='bold-font'>
+Mac OS 10.14.0
+</span>
+</h6>
+</div>
+</div>
+</div>
+<div class='note-thumbnail'>
+<div class='media'>
+<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
+<div class='comment-number comment-number-sm margin-right'>
+1
+</div>
+<div class='media-body'>
+<h5 class='bold-font quarter-margin-bottom'>
+Laila
+,
+Ciaran
+</h5>
+<h5>
+excepturi non eligendi vel alias ea autem
+</h5>
+<h6 class='light-text-color'>
+Comment left on
+<span class='bold-font'>
+Chrome 71
+</span>
+on
+<span class='bold-font'>
+Mac OS 10.14.0
+</span>
+</h6>
+</div>
+</div>
+</div>
+<div class='note-thumbnail'>
+<div class='media'>
+<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
+<div class='comment-number comment-number-sm margin-right'>
+1
+</div>
+<div class='media-body'>
+<h5 class='bold-font quarter-margin-bottom'>
+Sheryl
+,
+Don
+</h5>
+<h5>
+sit eos distinctio inventore magni dolores velit
+</h5>
+<h6 class='light-text-color'>
+Comment left on
+<span class='bold-font'>
+Chrome 71
+</span>
+on
+<span class='bold-font'>
+Mac OS 10.14.0
+</span>
+</h6>
+</div>
+</div>
+</div>
+<div class='note-thumbnail'>
+<div class='media'>
+<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
+<div class='comment-number comment-number-sm margin-right'>
+1
+</div>
+<div class='media-body'>
+<h5 class='bold-font quarter-margin-bottom'>
+Angela
+,
+Lori
+</h5>
+<h5>
+ea dolores ad reiciendis et ea aut
+</h5>
+<h6 class='light-text-color'>
+Comment left on
+<span class='bold-font'>
+Chrome 71
+</span>
+on
+<span class='bold-font'>
+Mac OS 10.14.0
+</span>
+</h6>
+</div>
+</div>
+</div>
+<div class='note-thumbnail'>
+<div class='media'>
+<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
+<div class='comment-number comment-number-sm margin-right'>
+1
+</div>
+<div class='media-body'>
+<h5 class='bold-font quarter-margin-bottom'>
+Lucinda
+,
+Lorie
+</h5>
+<h5>
+odio ex quasi fugit illo at ducimus
+</h5>
+<h6 class='light-text-color'>
+Comment left on
+<span class='bold-font'>
+Chrome 71
+</span>
+on
+<span class='bold-font'>
+Mac OS 10.14.0
+</span>
+</h6>
+</div>
+</div>
+</div>
+<div class='note-thumbnail'>
+<div class='media'>
+<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
+<div class='comment-number comment-number-sm margin-right'>
+1
+</div>
+<div class='media-body'>
+<h5 class='bold-font quarter-margin-bottom'>
+Ana
+,
+Patrick
+</h5>
+<h5>
+suscipit voluptatem autem voluptatem maiores occaecati accusantium
+</h5>
+<h6 class='light-text-color'>
+Comment left on
+<span class='bold-font'>
+Chrome 71
+</span>
+on
+<span class='bold-font'>
+Mac OS 10.14.0
+</span>
+</h6>
+</div>
+</div>
+</div>
+<div class='note-thumbnail'>
+<div class='media'>
+<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
+<div class='comment-number comment-number-sm margin-right'>
+1
+</div>
+<div class='media-body'>
+<h5 class='bold-font quarter-margin-bottom'>
+Cara
+,
+Melinda
+</h5>
+<h5>
+eaque explicabo saepe eum asperiores eligendi totam
+</h5>
+<h6 class='light-text-color'>
+Comment left on
+<span class='bold-font'>
+Chrome 71
+</span>
+on
+<span class='bold-font'>
+Mac OS 10.14.0
+</span>
+</h6>
+</div>
+</div>
+</div>
+<div class='note-thumbnail'>
+<div class='media'>
+<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
+<div class='comment-number comment-number-sm margin-right'>
+1
+</div>
+<div class='media-body'>
+<h5 class='bold-font quarter-margin-bottom'>
+Ciara
+,
+Brock
+</h5>
+<h5>
+id incidunt aut consectetur deserunt quas est
+</h5>
+<h6 class='light-text-color'>
+Comment left on
+<span class='bold-font'>
+Chrome 71
+</span>
+on
+<span class='bold-font'>
+Mac OS 10.14.0
+</span>
+</h6>
+</div>
+</div>
+</div>
+<div class='note-thumbnail'>
+<div class='media'>
+<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
+<div class='comment-number comment-number-sm margin-right'>
+1
+</div>
+<div class='media-body'>
+<h5 class='bold-font quarter-margin-bottom'>
+Aniya
+,
+Sonja
+</h5>
+<h5>
+sint ipsa vitae beatae dolore nisi provident
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -192,10 +426,10 @@ Mac OS 10.14.0
 <h5 class='bold-font quarter-margin-bottom'>
 Emma
 ,
-Guy
+Kelly
 </h5>
 <h5>
-explicabo consequuntur molestias exercitationem repellendus qui voluptatem
+deserunt voluptatem sapiente iure ea dolores maxime
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -218,12 +452,12 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Bianca
+inley
 ,
-Vanessa
+Orlaith
 </h5>
 <h5>
-ut est sunt aspernatur exercitationem suscipit error
+dolorem totam et nostrum modi eius ex
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -246,12 +480,12 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Ciaran
+Johnnie
 ,
-Kerry
+Teddy
 </h5>
 <h5>
-impedit et voluptatem voluptatem eligendi tempora accusantium
+ut et eos enim labore at magnam
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -274,12 +508,12 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Abigail
+Bonnie
 ,
-Colton
+Billie
 </h5>
 <h5>
-unde aliquid iure velit molestias optio voluptates
+quod ullam beatae consequuntur iure ut accusantium
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -302,12 +536,12 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Dora
+Nia
 ,
-Dominick
+Shirley
 </h5>
 <h5>
-dolore occaecati repellendus eius impedit unde cumque
+totam voluptatem quis rerum quia incidunt omnis
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -330,12 +564,12 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Toby
+Joann
 ,
-Alondra
+Mitzi
 </h5>
 <h5>
-sit excepturi sint libero optio voluptas harum
+saepe qui non velit excepturi consectetur ipsam
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -358,12 +592,12 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Alyson
+Connor
 ,
-Quinn
+Alberto
 </h5>
 <h5>
-laboriosam numquam nesciunt numquam quo eaque maiores
+cupiditate porro voluptatum ut et ipsam sed
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -386,12 +620,12 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Virgil
+Brayden
 ,
-Ruby
+Angelina
 </h5>
 <h5>
-est aliquam aut et molestiae quis quia
+placeat quia eaque ut omnis quisquam voluptate
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -414,12 +648,12 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Zoe
+Sydney
 ,
-Phil
+Cara
 </h5>
 <h5>
-et dolorum commodi quam explicabo quia qui
+est est ipsum qui assumenda suscipit eveniet
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -442,236 +676,12 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Francesca
+Kaden
 ,
-Skye
+Carla
 </h5>
 <h5>
-dicta assumenda aperiam repellendus et maxime velit
-</h5>
-<h6 class='light-text-color'>
-Comment left on
-<span class='bold-font'>
-Chrome 71
-</span>
-on
-<span class='bold-font'>
-Mac OS 10.14.0
-</span>
-</h6>
-</div>
-</div>
-</div>
-<div class='note-thumbnail'>
-<div class='media'>
-<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
-<div class='comment-number comment-number-sm margin-right'>
-1
-</div>
-<div class='media-body'>
-<h5 class='bold-font quarter-margin-bottom'>
-Arturo
-,
-Emely
-</h5>
-<h5>
-et commodi eveniet pariatur sint totam magni
-</h5>
-<h6 class='light-text-color'>
-Comment left on
-<span class='bold-font'>
-Chrome 71
-</span>
-on
-<span class='bold-font'>
-Mac OS 10.14.0
-</span>
-</h6>
-</div>
-</div>
-</div>
-<div class='note-thumbnail'>
-<div class='media'>
-<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
-<div class='comment-number comment-number-sm margin-right'>
-1
-</div>
-<div class='media-body'>
-<h5 class='bold-font quarter-margin-bottom'>
-Brendon
-,
-Emely
-</h5>
-<h5>
-enim et velit et iure ut voluptas
-</h5>
-<h6 class='light-text-color'>
-Comment left on
-<span class='bold-font'>
-Chrome 71
-</span>
-on
-<span class='bold-font'>
-Mac OS 10.14.0
-</span>
-</h6>
-</div>
-</div>
-</div>
-<div class='note-thumbnail'>
-<div class='media'>
-<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
-<div class='comment-number comment-number-sm margin-right'>
-1
-</div>
-<div class='media-body'>
-<h5 class='bold-font quarter-margin-bottom'>
-Michelle
-,
-Paola
-</h5>
-<h5>
-fuga blanditiis est est soluta ut soluta
-</h5>
-<h6 class='light-text-color'>
-Comment left on
-<span class='bold-font'>
-Chrome 71
-</span>
-on
-<span class='bold-font'>
-Mac OS 10.14.0
-</span>
-</h6>
-</div>
-</div>
-</div>
-<div class='note-thumbnail'>
-<div class='media'>
-<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
-<div class='comment-number comment-number-sm margin-right'>
-1
-</div>
-<div class='media-body'>
-<h5 class='bold-font quarter-margin-bottom'>
-Isabelle
-,
-Beau
-</h5>
-<h5>
-nihil animi delectus fuga quis enim rerum
-</h5>
-<h6 class='light-text-color'>
-Comment left on
-<span class='bold-font'>
-Chrome 71
-</span>
-on
-<span class='bold-font'>
-Mac OS 10.14.0
-</span>
-</h6>
-</div>
-</div>
-</div>
-<div class='note-thumbnail'>
-<div class='media'>
-<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
-<div class='comment-number comment-number-sm margin-right'>
-1
-</div>
-<div class='media-body'>
-<h5 class='bold-font quarter-margin-bottom'>
-Freya
-,
-Constance
-</h5>
-<h5>
-id quia sit iusto quis laboriosam autem
-</h5>
-<h6 class='light-text-color'>
-Comment left on
-<span class='bold-font'>
-Chrome 71
-</span>
-on
-<span class='bold-font'>
-Mac OS 10.14.0
-</span>
-</h6>
-</div>
-</div>
-</div>
-<div class='note-thumbnail'>
-<div class='media'>
-<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
-<div class='comment-number comment-number-sm margin-right'>
-1
-</div>
-<div class='media-body'>
-<h5 class='bold-font quarter-margin-bottom'>
-Danielle
-,
-Javon
-</h5>
-<h5>
-quo accusantium rerum tenetur voluptas et sit
-</h5>
-<h6 class='light-text-color'>
-Comment left on
-<span class='bold-font'>
-Chrome 71
-</span>
-on
-<span class='bold-font'>
-Mac OS 10.14.0
-</span>
-</h6>
-</div>
-</div>
-</div>
-<div class='note-thumbnail'>
-<div class='media'>
-<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
-<div class='comment-number comment-number-sm margin-right'>
-1
-</div>
-<div class='media-body'>
-<h5 class='bold-font quarter-margin-bottom'>
-Phil
-,
-Ashton
-</h5>
-<h5>
-voluptatibus cupiditate laboriosam eos ut et beatae
-</h5>
-<h6 class='light-text-color'>
-Comment left on
-<span class='bold-font'>
-Chrome 71
-</span>
-on
-<span class='bold-font'>
-Mac OS 10.14.0
-</span>
-</h6>
-</div>
-</div>
-</div>
-<div class='note-thumbnail'>
-<div class='media'>
-<!-- %img.margin-right{:src=>"../../images/tmp/product-shot.png", :width=>"42px"} -->
-<div class='comment-number comment-number-sm margin-right'>
-1
-</div>
-<div class='media-body'>
-<h5 class='bold-font quarter-margin-bottom'>
-Perla
-,
-Clinton
-</h5>
-<h5>
-dolor est voluptate dolor nobis delectus quibusdam
+id similique qui ipsa dolor dignissimos ratione
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -694,12 +704,12 @@ Mac OS 10.14.0
 </div>
 <div class='media-body'>
 <h5 class='bold-font quarter-margin-bottom'>
-Sadie
+Joann
 ,
-Katherine
+Lorie
 </h5>
 <h5>
-voluptatum eos qui quia distinctio debitis in aut
+tempore et expedita eum quam quo qui aperiam
 </h5>
 <h6 class='light-text-color'>
 Comment left on
@@ -728,61 +738,11 @@ Show resolved
 </div>
 <div class='note-container'>
 <div class='note-body'>
-<div class='note-nav border-bottom'>
-<div class='container-fluid'>
-<div class='row'>
-<div class='col-8'>
-<div class='inline-block align-middle show-notes-toggle menu-button'>
-<a class='btn btn-secondary' href='#'>
-<i class='material-icons'>
-menu
-</i>
-</a>
-</div>
-<div class='inline-block'>
-<div class='mark-resolved check-btn'>
-<button class='no-margin-bottom btn-link btn' data-target='#guestModal' data-toggle='modal' type='button'>
-<i class='material-icons'>
-check_box_outline_blank
-</i>
-Resolved
-</button>
-</div>
-</div>
-</div>
-<div class='col-4'>
-<div class='float-right' style='position:relative; top:2px;'>
-<a class='btn btn-secondary' href='/product/browse'>
-Go to page
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class='note-info'>
-<div class='img-container'>
-<div class='img-wrapper'>
-<div class='img-comment-container'>
-<div class='comment-number' style='position: absolute; right: 40px; top: 22px;'>
-1
-</div>
-<img src='../../images/tmp/screenshot.png' width='800px'>
-<div class='half-margin-top text-center show-comment-toggle d-lg-none d-md-none'>
-<a class='btn btn-link btn-sm light-text-color' href='#'>
-Show comments
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class='comments-container'>
 <div class='resolved-header'>
-<div class='padded'>
-<div class='row align-items-center'>
-<div class='col'>
+<div class='float-left'>
 <div class='mark-resolved check-btn'>
-<button class='no-margin-bottom btn-link btn' data-target='#guestModal' data-toggle='modal' type='button'>
+<button class='no-margin btn-link btn' data-target='#guestModal' data-toggle='modal' type='button'>
 <i class='material-icons'>
 check_box_outline_blank
 </i>
@@ -790,24 +750,25 @@ Resolved
 </button>
 </div>
 </div>
-<div class='col'>
+<div class='float-right'>
 <a class='btn btn-secondary float-right page-btn' href='/product/browse'>
 Go to page
 </a>
 </div>
 </div>
+<div class='img-container double-margin-bottom'>
+<div class='img-wrapper'>
+<div class='img-comment-container'>
+<div class='comment-number' style='position: absolute; right: 63%; top: 22px;'>
+1
+</div>
+<img src='../../images/tmp/screenshot.png'>
 </div>
 </div>
-<div class='comments-wrapper'>
-<div class='padded text-right no-padding-bottom show-comment-toggle d-sm-block d-md-none'>
-<a href='#'>
-<i class='material-icons'>
-close
-</i>
-</a>
 </div>
 <div class='new-comment'>
-<textarea class='form-control full-width quarter-margin-bottom new-comment-field' placeholder='Write a reply' rows='1'></textarea>
+<textarea class='form-control full-width new-comment-field' placeholder='Write a reply' rows='1'></textarea>
+<div class='add-comment-controls'>
 <button class='btn btn-primary btn-sm float-right add-comment-btn' type='button'>
 Comment
 </button>
@@ -817,6 +778,8 @@ attachment
 </i>
 </button>
 </div>
+</div>
+<div class='discussion-wrapper'>
 <div class='comments-list-container'>
 <div class='comment'>
 <div class='media'>
@@ -841,18 +804,19 @@ Delete
 </div>
 </div>
 </div>
-<h4 class='bold-font quarter-margin-bottom'>
-Wendell Allen
+<h4 class='quarter-margin-bottom'>
+<span class='bold-font half-margin-right'>
+Bart Middleton
+</span>
+<span class='light-text-color'>
+4min ago
+</span>
 </h4>
 <h4>
-et et velit voluptas molestiae iure ut placeat inventore ab tempora nesciunt assumenda delectus deserunt autem omnis voluptas rerum iusto
+recusandae ut quis enim inventore aut inventore ut adipisci odio commodi vero et distinctio neque nisi consequatur a veritatis qui
 </h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
+<!-- %a{:href=>"#"} -->
+<!-- %img{:src=>"../../images/tmp/shot.png", :width=>"85px"} -->
 </div>
 </div>
 </div>
@@ -879,18 +843,19 @@ Delete
 </div>
 </div>
 </div>
-<h4 class='bold-font quarter-margin-bottom'>
-Yehudi Connolly
+<h4 class='quarter-margin-bottom'>
+<span class='bold-font half-margin-right'>
+Jerald Rich
+</span>
+<span class='light-text-color'>
+4min ago
+</span>
 </h4>
 <h4>
-sit eos eligendi debitis sed velit inventore nisi atque similique quia dicta alias impedit hic minus reiciendis consequuntur libero sint
+praesentium nostrum deleniti repellendus eaque ut earum impedit tempora temporibus quia vitae iusto id ex minima in unde porro modi
 </h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
+<!-- %a{:href=>"#"} -->
+<!-- %img{:src=>"../../images/tmp/shot.png", :width=>"85px"} -->
 </div>
 </div>
 </div>
@@ -917,665 +882,19 @@ Delete
 </div>
 </div>
 </div>
-<h4 class='bold-font quarter-margin-bottom'>
-Eli Heath
+<h4 class='quarter-margin-bottom'>
+<span class='bold-font half-margin-right'>
+Dora Case
+</span>
+<span class='light-text-color'>
+4min ago
+</span>
 </h4>
 <h4>
-exercitationem eum repudiandae enim facilis iste iure tempore quo provident debitis provident ipsa mollitia est voluptatibus molestiae est dolores explicabo
+qui tempora maxime sit beatae voluptatem ut ab fugiat eum aut dolorem suscipit fuga voluptates esse facere eos provident qui
 </h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Carly Boswell
-</h4>
-<h4>
-cum repellat beatae est excepturi libero recusandae harum dolores assumenda nemo libero at minus perspiciatis deleniti totam fugit et dolor
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Isabelle Rich
-</h4>
-<h4>
-fugiat pariatur quia perferendis et tempora aperiam et eum aspernatur temporibus reiciendis nostrum odio est vitae distinctio id nostrum ut
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Rolando Welch
-</h4>
-<h4>
-delectus minus iure veritatis nam quaerat enim et id quod eum culpa beatae vel tempora consequatur quia debitis repellat ea
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Reese Allen
-</h4>
-<h4>
-architecto aliquam aut aliquam ut ea illum minus veritatis magnam sit vero architecto accusantium voluptatibus tenetur vitae nam ut laborum
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Virgil Woods
-</h4>
-<h4>
-sapiente et enim sapiente quod non impedit voluptas eos placeat recusandae vel molestiae fugiat autem sequi quia molestias illum enim
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Eli McClure
-</h4>
-<h4>
-impedit harum ut amet nostrum similique commodi reiciendis molestiae quas culpa consequatur quia qui aliquid voluptatem ratione quia sequi a
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Harvey Brady
-</h4>
-<h4>
-quas iusto vel ut dolores tempore numquam quod quibusdam corporis aut nemo ullam deleniti impedit delectus dolor officia aliquam eos
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Tricia Finch
-</h4>
-<h4>
-quidem qui eum et dolorem culpa dolor ratione consequatur aliquid nemo fugiat quisquam et aliquid et ut nulla harum dolorem
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Dulce Cowan
-</h4>
-<h4>
-eligendi qui est explicabo voluptatem iusto officiis eos voluptas repudiandae rerum sunt doloribus nesciunt quae id vitae ducimus dolorum minus
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Marianne Chan
-</h4>
-<h4>
-mollitia nam illo sapiente enim unde et sit saepe iste saepe veniam nemo omnis libero quos quia voluptatem quia eos
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Ty Raynor
-</h4>
-<h4>
-quaerat repellat amet blanditiis voluptas odio qui voluptatem tenetur ea ut doloribus et repellendus qui et fugiat quas id et
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Hector Connolly
-</h4>
-<h4>
-et ipsum quo incidunt facere eius nam omnis debitis omnis inventore dolores eos facere facilis dolores voluptatem dolor aliquam quia
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Brayden Davidson
-</h4>
-<h4>
-delectus et et sint quo rem recusandae assumenda beatae velit in dolor deserunt tenetur illum rerum necessitatibus excepturi labore rerum
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Sheryl Middleton
-</h4>
-<h4>
-animi laboriosam cumque consectetur et praesentium veniam occaecati veniam ut harum ut earum illum perferendis tenetur ut dolores sed praesentium
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Clyde Puckett
-</h4>
-<h4>
-eum qui perferendis vel aspernatur sapiente non harum totam aut occaecati quibusdam non magni id ab atque vitae sed consequatur
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Pete Walsh
-</h4>
-<h4>
-et porro ut harum rem voluptatibus tempora nobis nisi culpa ab praesentium qui saepe ut est qui tenetur maiores aliquid
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
-</div>
-</div>
-<div class='comment'>
-<div class='media'>
-<div class='avatar avatar-initial avatar-xs half-margin-right'>
-JD
-</div>
-<div class='media-body'>
-<div class='actions'>
-<div class='dropdown show text-right'>
-<button class='btn btn-link btn-action' data-toggle='dropdown' type='button'>
-<i class='material-icons'>
-more_horiz
-</i>
-</button>
-<div class='dropdown-menu dropdown-menu-right'>
-<button class='dropdown-item' type='button'>
-Edit
-</button>
-<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
-Delete
-</button>
-</div>
-</div>
-</div>
-<h4 class='bold-font quarter-margin-bottom'>
-Dirk Wagner
-</h4>
-<h4>
-officia architecto doloribus et ut a earum a ex nesciunt voluptatem sit odit voluptatem quae non quaerat et maiores dolor
-</h4>
-<a href='#'>
-<img src='../../images/tmp/shot.png' width='85px'>
-</a>
-<h5 class='light-text-color'>
-2m ago
-</h5>
-</div>
+<!-- %a{:href=>"#"} -->
+<!-- %img{:src=>"../../images/tmp/shot.png", :width=>"85px"} -->
 </div>
 </div>
 </div>
@@ -1599,7 +918,7 @@ officia architecto doloribus et ut a earum a ex nesciunt voluptatem sit odit vol
 <img class='margin-auto double-margin-bottom' src='../../images/logo.svg' width='150px'>
 </div>
 <p class='text-center double-margin-bottom'>
-Before leaving a comment, please login as a guest
+Before leaving a comment, please sign up.
 </p>
 <form>
 <div class='margin-bottom'>
@@ -1607,6 +926,9 @@ Before leaving a comment, please login as a guest
 </div>
 <div class='margin-bottom'>
 <input class='form-control form-control-lg' placeholder='Email' type='text'>
+</div>
+<div class='margin-bottom'>
+<input class='form-control form-control-lg' placeholder='Password' type='text'>
 </div>
 <div class='double-margin-top'>
 <a class='btn btn-primary btn-lg btn-block' href='/products/zero'>

@@ -15,9 +15,10 @@ Volley
 <script src="../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
 
 <body class='product product_index'>
-<nav class='navbar navbar-light bg-light fixed-bottom no-padding' id='bottom-bar'>
+<nav class='navbar navbar-light bg-light fixed-top no-padding' id='top-bar'>
 <div class='container-fluid'>
-<div class='col'>
+<div class='row' style='display:contents;'>
+<div class='col-xs-6'>
 <div class='inline-block'>
 <a class='navbar-brand padding-bottom padding-top' href='/products'>
 <div class='inline-block'>
@@ -36,11 +37,19 @@ Created Oct 17, 2019
 </h6>
 </div>
 </div>
-<div class='col'>
-<div class='float-right'>
+<div class='col-xs-6'>
+<div class='float-right align-middle'>
 <a class='btn btn-primary share-button' data-target='#shareModal' data-toggle='modal' href='#'>
 Share
 </a>
+<div class='inline-block show-notes-toggle menu-button'>
+<a class='btn btn-secondary' href='#'>
+<i class='material-icons'>
+menu
+</i>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
