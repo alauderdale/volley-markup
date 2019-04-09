@@ -1,24 +1,25 @@
 %nav.navbar.navbar-light.bg-light.fixed-top#top-bar.no-padding
   .container-fluid
-    .col
-      .inline-block
-        %a.navbar-brand.padding-bottom.padding-top{:href => "/products"}
-          .inline-block
-            %i.material-icons.light-text-color{:style=>"position:relative; top:3px;"}
-              keyboard_arrow_left
-      .inline-block
-        %p.no-margin-bottom
-          Bootstrap
-        %h6
-          Created Oct 17, 2019
-    .col
-      .float-right.align-middle
-        %a.btn.btn-primary.share-button{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#shareModal"}
-          Share
-        .inline-block.show-notes-toggle.menu-button
-          %a.btn.btn-secondary{:href=>"#"}
-            %i.material-icons
-              menu
+    .row{:style=>"display:contents;"}
+      .col-xs-6
+        .inline-block
+          %a.navbar-brand.padding-bottom.padding-top{:href => "/products"}
+            .inline-block
+              %i.material-icons.light-text-color{:style=>"position:relative; top:3px;"}
+                keyboard_arrow_left
+        .inline-block
+          %p.no-margin-bottom
+            Bootstrap
+          %h6
+            Created Oct 17, 2019
+      .col-xs-6
+        .float-right.align-middle
+          %a.btn.btn-primary.share-button{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#shareModal"}
+            Share
+          .inline-block.show-notes-toggle.menu-button
+            %a.btn.btn-secondary{:href=>"#"}
+              %i.material-icons
+                menu
 
 
 

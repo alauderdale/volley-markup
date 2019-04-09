@@ -80,17 +80,16 @@
 		.note-body
 			.note-info
 				.resolved-header
-					.row.align-items-center
-						.col
-							.mark-resolved.check-btn
-								%button.no-margin.btn-link.btn{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal"}
-									%i.material-icons
-										check_box_outline_blank
-									
-									Resolved
-						.col
-							%a.btn.btn-secondary.float-right.page-btn{:href=>"/product/browse"}
-								Go to page
+					.float-left
+						.mark-resolved.check-btn
+							%button.no-margin.btn-link.btn{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal"}
+								%i.material-icons
+									check_box_outline_blank
+								
+								Resolved
+					.float-right
+						%a.btn.btn-secondary.float-right.page-btn{:href=>"/product/browse"}
+							Go to page
 				.img-container.double-margin-bottom
 					.img-wrapper
 						.img-comment-container

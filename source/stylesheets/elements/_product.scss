@@ -368,18 +368,29 @@ $control-nav-height: 61px;
 		.note-info{
 			max-width: 850px;
 			margin:0 auto;
+	    	@include breakpoint(md) {
+	    		max-width: 100%;
+	    	}
 			.resolved-header{
-				padding:$baseline 10px;
+				display: inline-block;
+				padding:$baseline 15px;
+				padding-bottom: 8px;
+				width:100%;
 			}
 			.img-container{
 				position:relative;
 				.img-wrapper{
 					.img-comment-container{
+						margin:0 15px;
+						@include breakpoint(md) {
+							margin:0;
+						}
 						img{
 							width:100%;
 							border: 1px solid #E6EAEE;
 							border-radius: 7px;
 							box-shadow: 0 4px 16px 0 #E0E6F8;
+
 							@include breakpoint(md) {
 								box-shadow:none;
 								border-radius:0px;
