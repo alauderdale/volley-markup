@@ -131,13 +131,13 @@
 							.dropdown-menu.display-block.mention-menu{:style=>"top:80px; left:20px;"}
 								-4.times do
 									%a.dropdown-item{:href=>"#"}
-										.media
+										.media.half-padding-top.half-padding-bottom
 											.avatar.avatar-initial.avatar-xs.half-margin-right
 												JD
 											.media-body
 												%h4.bold-font.no-margin-bottom
 													=lorem.name
-												%h5.light-text-color
+												%h5.light-text-color.no-margin-bottom
 													=lorem.email
 							%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
 								Comment
