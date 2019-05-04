@@ -126,13 +126,27 @@
 							%a{:href=>"#"}
 								%i.material-icons
 									close
-						.new-comment
+						.new-comment.focused
 							%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
+							.dropdown-menu.display-block.mention-menu{:style=>"top:80px; left:20px;"}
+								-4.times do
+									%a.dropdown-item{:href=>"#"}
+										.media
+											.avatar.avatar-initial.avatar-xs.half-margin-right
+												JD
+											.media-body
+												%h4.bold-font.no-margin-bottom
+													=lorem.name
+												%h5.light-text-color
+													=lorem.email
 							%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
 								Comment
 							%button.btn.btn-link.attachment.float-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
 								%i.material-icons
 									attachment
+							
+							
+							
 							
 						.comments-list-container
 							-20.times do
