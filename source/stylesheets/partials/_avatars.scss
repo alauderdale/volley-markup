@@ -21,3 +21,18 @@
 	    line-height:80px;
     }
 }
+
+.avatars-list{
+    .avatar{
+        margin-left:-8px;
+        border:2px solid white;
+        cursor:pointer;
+        &:first-of-type{
+            margin-left:0;
+        }
+        &.avatar-xs{
+            width: 34px;
+            height: 34px;
+        }
+    }
+}

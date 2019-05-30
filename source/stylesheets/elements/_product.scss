@@ -26,6 +26,17 @@ $control-nav-height: 61px;
 			padding-right:10px;
 		}
 	}
+	.product-title{
+		.product-name{
+			@include breakpoint(sm) {
+				width: 160px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+		}
+	}
 	a{
 		&.mode-link{
 			padding: 16px 15px 7px 15px;
@@ -709,15 +720,23 @@ $control-nav-height: 61px;
 .note-zero{
 	background:$off-white-color;
 	width: 100%;
-	text-align:center;
 	padding:$baseline*2;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	z-index: -1;
+	margin:0 auto;
   img{
   	max-width: 100%;
   	z-index: 0;
+  }
+  .note-zero-text{
+  	margin:0 auto;
+  	ul{
+  		margin-top: $baseline;
+  		li{
+  			line-height: 30px;
+  		}
+  	}
   }
 }
 

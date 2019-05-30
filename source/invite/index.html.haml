@@ -1,0 +1,48 @@
+;;;
+
+"layout": "invite"
+
+;;;
+
+%section.no-padding-top
+	.container
+		.row
+			.col.text-center
+				%img{:src=>"../images/logo.svg", :width=>"105px"}
+%section
+	.container
+		.row.align-items-center
+			.col-lg-1
+			.col
+				.padded
+					%h1.bold-font
+						Alex Lauderdale has invited you to collaborate on Volley
+					%p.market
+						Volley is the easiest way to provide feedback on websites.
+			.col.align-middle
+				.card
+					.card-body
+						.padded
+							%form
+								.margin-bottom
+									%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Full name"}
+								.margin-bottom
+									%input.form-control.form-control-lg{:type=>"text", :value=>"john@doe.com", :disabled=>"disabled"}
+								.margin-bottom
+									%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Passowrd"}
+								.double-margin-top
+									%a.btn.btn-primary.btn-lg.btn-block{:href=>"/product/review-zero"}
+										Sign up and view Alex’s project
+			.col-lg-1
+%section
+	.container
+		.row
+			.col.text-center
+				%p.light-text-color.half-margin-bottom
+					By creating an account, you agree to our
+					%a{:href=>"#"}
+						Terms
+				%p.light-text-color
+					Already have an account?
+					%a{:href=>"#"}
+						Log in

@@ -82,6 +82,9 @@ img {
 .jumbotron {
   background: #F5F8FA; }
 
+.primary-bg {
+  background-color: #0042FF !important; }
+
 .text-uppercase {
   text-transform: uppercase; }
 
@@ -651,6 +654,16 @@ a.product-card {
     font-size: 34px;
     line-height: 80px; }
 
+.avatars-list .avatar {
+  margin-left: -8px;
+  border: 2px solid white;
+  cursor: pointer; }
+  .avatars-list .avatar:first-of-type {
+    margin-left: 0; }
+  .avatars-list .avatar.avatar-xs {
+    width: 34px;
+    height: 34px; }
+
 .dropdown-menu {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.04);
   border: none;
@@ -812,6 +825,12 @@ h3.market {
       #bottom-bar .share-button {
         padding-left: 10px;
         padding-right: 10px; } }
+  @media (max-width: 768px) {
+    #bottom-bar .product-title .product-name {
+      width: 160px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; } }
   #bottom-bar a.mode-link {
     padding: 16px 15px 7px 15px;
     margin: 0 5px;
@@ -1320,15 +1339,20 @@ h3.market {
 .note-zero {
   background: #FAFBFC;
   width: 100%;
-  text-align: center;
   padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: -1; }
+  margin: 0 auto; }
   .note-zero img {
     max-width: 100%;
     z-index: 0; }
+  .note-zero .note-zero-text {
+    margin: 0 auto; }
+    .note-zero .note-zero-text ul {
+      margin-top: 16px; }
+      .note-zero .note-zero-text ul li {
+        line-height: 30px; }
 
 @keyframes menu-zoom {
   0% {

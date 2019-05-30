@@ -1,4 +1,4 @@
-
+= partial "add-new"
 
 %section
 	.container.product-card-container
@@ -28,14 +28,14 @@
 								.dropdown-menu.dropdown-menu-right
 									/ %button.dropdown-item{:type=>"button"} 
 									/ 	Edit
-									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
-										Delete
 									%button.dropdown-item{:type=>"button"} 
 										Share
+									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+										Delete
 			-1.times do
 				.col-sm-12.col-md-12.col-lg-6
 					.product-card-wrapper.margin-bottom
-						%a.card.product-card{:href=>"/product/review"}
+						%a.card.product-card{:href=>"/product/review-zero"}
 							.card-header.no-padding-bottom
 								.img-wrapper
 									.no-img
@@ -47,7 +47,7 @@
 										/ %h3.no-margin-bottom.card-title.medium-font
 										/ 	Project title
 										%h3.card-url.no-margin-bottom
-											Another Project
+											Empty product
 										%h4.card-text
 											Created Oct 17, 2019
 									.col-4
@@ -59,10 +59,10 @@
 								.dropdown-menu.dropdown-menu-right
 									/ %button.dropdown-item{:type=>"button"} 
 									/ 	Edit
-									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
-										Delete
 									%button.dropdown-item{:type=>"button"} 
 										Share
+									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+										Delete
 			
 											
 

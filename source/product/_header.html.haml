@@ -6,14 +6,20 @@
           .inline-block
             %i.material-icons.light-text-color{:style=>"position:relative; top:3px;"}
               keyboard_arrow_left
-      .inline-block
-        %p.no-margin-bottom
-          Bootstrap
-        %h6
+      .inline-block.product-title
+        %p.no-margin-bottom.product-name
+          Project title with a really long name
+        %h6.product-date
           Created Oct 17, 2019
-    .col
+    .col.align-middle
       .float-right
-        %a.btn.btn-primary.share-button{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#shareModal"}
+        .avatars-list.d-inline-block.half-margin-right
+          - 3.times do
+            .avatar.avatar-initial.avatar-xs.d-inline-block{"data-toggle"=>"tooltip", "data-placement"=>"top", :title=>"John Doe"}
+              JD
+          .avatar.avatar-initial.avatar-xs.d-inline-block.primary-bg
+            +4
+        %a.btn.btn-primary.share-button.d-inline-block{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#shareModal"}
           Share
 
 

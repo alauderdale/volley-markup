@@ -5,11 +5,7 @@
 ;;;
 
 
-:javascript
-	$(document).ready(function(){
-		$( ".review" ).addClass( "active" );
-		$( ".note-thumbnail:nth-child(2)" ).addClass( "active" );
-	});
+
 
 :css
 	body{
@@ -59,10 +55,20 @@
 			.note-info
 				.note-zero
 					%img.margin-auto.double-margin-bottom{:src=>"../images/zero-note.png", :width=>"350px"}
-					%h2
-						No active notes
-					%p.light-text-color
-						When you add notes to your project, they will show up here.
+					.note-zero-text
+						%h2.text-center
+							Add notes to this project
+						%ul.list-unstyled
+							%li
+								1. Make sure you have the 
+								%a{:href=>"#"}
+									Volley Extension
+							%li
+								2. Visit the website you’s like to provide feedback on
+							%li
+								3. Select this project from the extension
+							%li
+								4. Your notes will show up here
 		
 							
 
