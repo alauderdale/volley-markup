@@ -183,3 +183,15 @@
 .no-border-bottom{
   border-bottom:none!important;
 }
+
+
+//responsive
+
+
+@include breakpoint(sm) {
+
+  .no-padding-sm{
+    padding:0!important;
+  }
+
+}

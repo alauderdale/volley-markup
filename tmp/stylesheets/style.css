@@ -166,6 +166,10 @@ ul.icon-list li {
     top: 3px;
     margin-right: 5px; }
 
+@media (max-width: 768px) {
+  .text-center-sm {
+    text-align: center !important; } }
+
 a {
   color: #0042FF; }
 
@@ -404,6 +408,10 @@ a {
 
 .no-border-bottom {
   border-bottom: none !important; }
+
+@media (max-width: 768px) {
+  .no-padding-sm {
+    padding: 0 !important; } }
 
 section {
   padding: 32px 0; }
