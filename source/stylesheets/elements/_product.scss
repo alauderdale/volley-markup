@@ -27,6 +27,8 @@ $control-nav-height: 61px;
 		}
 	}
 	.product-title{
+		position:relative;
+		top:3px;
 		.product-name{
 			@include breakpoint(sm) {
 				width: 150px;

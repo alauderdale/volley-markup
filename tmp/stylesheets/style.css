@@ -833,13 +833,16 @@ h3.market {
       #bottom-bar .share-button {
         padding-left: 10px;
         padding-right: 10px; } }
-  @media (max-width: 768px) {
-    #bottom-bar .product-title .product-name {
-      width: 150px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      font-size: 13px; } }
+  #bottom-bar .product-title {
+    position: relative;
+    top: 3px; }
+    @media (max-width: 768px) {
+      #bottom-bar .product-title .product-name {
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px; } }
   #bottom-bar a.mode-link {
     padding: 16px 15px 7px 15px;
     margin: 0 5px;
