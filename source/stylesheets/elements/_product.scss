@@ -729,10 +729,13 @@ $control-nav-height: 61px;
   img{
   	max-width: 100%;
   	z-index: 0;
+  	@include breakpoint(sm) {
+  		max-width: 50%;
+	}
   }
   .note-zero-text{
   	margin:0 auto;
-  	ul{
+  	ul,ol{
   		margin-top: $baseline;
   		li{
   			line-height: 30px;

@@ -1356,11 +1356,14 @@ h3.market {
   .note-zero img {
     max-width: 100%;
     z-index: 0; }
+    @media (max-width: 768px) {
+      .note-zero img {
+        max-width: 50%; } }
   .note-zero .note-zero-text {
     margin: 0 auto; }
-    .note-zero .note-zero-text ul {
+    .note-zero .note-zero-text ul, .note-zero .note-zero-text ol {
       margin-top: 16px; }
-      .note-zero .note-zero-text ul li {
+      .note-zero .note-zero-text ul li, .note-zero .note-zero-text ol li {
         line-height: 30px; }
 
 @keyframes menu-zoom {
