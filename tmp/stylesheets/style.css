@@ -835,7 +835,7 @@ h3.market {
         padding-right: 10px; } }
   @media (max-width: 768px) {
     #bottom-bar .product-title .product-name {
-      width: 160px;
+      width: 150px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;

@@ -29,7 +29,7 @@ $control-nav-height: 61px;
 	.product-title{
 		.product-name{
 			@include breakpoint(sm) {
-				width: 160px;
+				width: 150px;
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
