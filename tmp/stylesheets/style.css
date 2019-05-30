@@ -838,7 +838,8 @@ h3.market {
       width: 160px;
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis; } }
+      text-overflow: ellipsis;
+      font-size: 13px; } }
   #bottom-bar a.mode-link {
     padding: 16px 15px 7px 15px;
     margin: 0 5px;
