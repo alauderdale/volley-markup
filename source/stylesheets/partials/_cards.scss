@@ -139,3 +139,23 @@ a.product-card{
 		}
 	}
 }
+
+.free-trial-card{
+	position:fixed;
+	bottom:20px;
+	left:20px;
+	width:290px;
+	border:2px solid $primary-color;
+	z-index: 99;
+	p{
+		margin-bottom:0px;
+	}
+	a.close{
+		position:absolute;
+		right:10px;
+		top:10px;
+	}
+	.btn{
+		max-width: 100px;
+	}
+}

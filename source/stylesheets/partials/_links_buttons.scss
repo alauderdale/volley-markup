@@ -13,6 +13,7 @@ a{
 	&.btn-primary{
 		background:$link-color;
 		border-color:$link-color;
+		
 		&:hover{
 			@include button-hover($link-color);
 		}
