@@ -18,12 +18,13 @@ $control-nav-height: 61px;
 
 #bottom-bar{
 	border-top:1px solid #bcc2ce;
-	.share-button{
+	.btn{
 		padding-left:20px;
 		padding-right:20px;
 		@include breakpoint(sm) {
-			padding-left:10px;
-			padding-right:10px;
+			padding-left:8px;
+			padding-right:8px;
+			font-size: 13px;
 		}
 	}
 	.product-title{
@@ -31,7 +32,7 @@ $control-nav-height: 61px;
 		top:3px;
 		.product-name{
 			@include breakpoint(sm) {
-				width: 150px;
+				width: 120px;
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;

@@ -1,0 +1,63 @@
+;;;
+
+"layout": "blank"
+
+;;;
+
+
+=partial "header"
+
+%section.export-header
+	.container
+		.row.align-items-center
+			.col-md-6
+				.media
+					%img.mr-3{:src=>"../images/trello-icon.png", :width=>"55px"}
+					.media-body
+						%p.no-margin-bottom
+							Export notes to Trello
+						%h2.medium-font.margin-bottom
+							Select notes to export
+			.col-md-6
+				.text-right.actions.margin-top
+					%a.btn.btn-primary.btn-lg{:href=>"/export/select-boards"}
+						Continue
+
+%section
+	.container
+		.row
+			.col
+				.list-of-options
+					.row
+						.col
+							.list-group
+								.list-group-inner
+									%div
+										%input{:id=>"Radio#A" ,:name => "RadioInputName", :type => "checkbox", :value => "Value1"}
+										%label.list-group-item.select-all{:for => "Radio#A"}
+											.row.align-items-center.double-margin-left
+												.col
+													%p.medium-font.no-margin-bottom
+														0 selected
+							
+						.col
+							.show-resolved.check-btn.float-right
+								%button.no-margin-bottom.btn-link.btn{:type=>"button"}
+									%i.material-icons
+										check_box_outline_blank
+									Show resolved
+
+											
+					-4.times do |index|
+						.list-group
+							.list-group-inner
+								%div
+									%input{:id=>"Checkbox#{index}" ,:name => "RadioInputName", :type => "checkbox", :value => "Value1"}
+									%label.list-group-item{:for => "Checkbox#{index}"}
+										=partial "comment"
+
+
+
+
+
+

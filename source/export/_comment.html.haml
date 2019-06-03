@@ -1,0 +1,12 @@
+.row.align-items-center.double-margin-left
+	.col-lg-1.d-none.d-lg-block
+		%img.full-width.margin-auto{:src=>"../images/export-thumb.png"}
+	.col-lg-2
+		%h4.quarter-margin-bottom.medium-font
+			=lorem.name
+	.col-lg-8
+		%h4.quarter-margin-bottom
+			=lorem.words(20)
+	.col-lg-1
+		%h4.no-margin-bottom.light-text-color
+			=lorem.date("%b %d")

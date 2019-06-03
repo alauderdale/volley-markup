@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import url(../bower_components/bootstrap/dist/css/bootstrap.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900");
+@media (max-width: 768px) {
+  .text-left-sm {
+    text-align: left !important; }
+  .text-center-sm {
+    text-align: center !important; } }
+
 section.inverse-section h1, section.inverse-section h2, section.inverse-section h3, section.inverse-section h4, section.inverse-section h5, section.inverse-section h6, section.inverse-section p, section.inverse-section small, section.inverse-section li {
   color: white !important; }
 
@@ -99,6 +105,9 @@ img {
 
 .dark-text-color {
   color: #393C3E !important; }
+
+.primary-text-color {
+  color: #0042FF !important; }
 
 .text-success {
   color: #26C164; }
@@ -227,6 +236,10 @@ a {
       color: #B4BBC6; }
     .btn.btn-icon:hover i, .btn.btn-icon:focus i {
       color: #121314; }
+
+.close {
+  color: #0042FF;
+  opacity: .8; }
 
 .tooltip {
   margin-bottom: 4px;
@@ -492,6 +505,69 @@ section {
 .mention-menu {
   min-width: 280px; }
 
+.list-of-options .list-group-inner {
+  position: relative; }
+
+.list-of-options .list-group-item {
+  user-select: none;
+  border-width: 1px;
+  margin-bottom: 10px;
+  transition-duration: .1s;
+  border-color: #E6EAEE;
+  width: 100%; }
+  .list-of-options .list-group-item:hover {
+    background-color: #f2f6ff; }
+  .list-of-options .list-group-item.select-all {
+    border: none; }
+    .list-of-options .list-group-item.select-all:hover {
+      background: transparent; }
+
+.list-of-options .list-group input[type="checkbox"]:checked + .select-all {
+  background: none !important; }
+
+.list-of-options .list-group {
+  width: 100%; }
+
+.list-of-options .list-group input[type="checkbox"] {
+  display: none; }
+  .list-of-options .list-group input[type="checkbox"] + .list-group-item {
+    cursor: pointer; }
+    .list-of-options .list-group input[type="checkbox"] + .list-group-item:before {
+      position: absolute;
+      top: calc(50% - 14px);
+      left: 15px;
+      z-index: 99;
+      font-size: 30px;
+      color: #B4BBC6;
+      font-family: "Material Icons";
+      content: "radio_button_unchecked"; }
+  .list-of-options .list-group input[type="checkbox"]:checked + .list-group-item {
+    background-color: #f2f6ff;
+    border-color: #0042FF; }
+    .list-of-options .list-group input[type="checkbox"]:checked + .list-group-item:before {
+      color: #0042FF;
+      content: "check_circle"; }
+
+.list-of-options .list-group input[type="radio"] {
+  display: none; }
+  .list-of-options .list-group input[type="radio"] + .list-group-item {
+    cursor: pointer; }
+    .list-of-options .list-group input[type="radio"] + .list-group-item:before {
+      position: absolute;
+      top: calc(50% - 14px);
+      left: 15px;
+      z-index: 99;
+      font-size: 30px;
+      color: #B4BBC6;
+      font-family: "Material Icons";
+      content: "radio_button_unchecked"; }
+  .list-of-options .list-group input[type="radio"]:checked + .list-group-item {
+    background-color: #f2f6ff;
+    border-color: #0042FF; }
+    .list-of-options .list-group input[type="radio"]:checked + .list-group-item:before {
+      color: #0042FF;
+      content: "check_circle"; }
+
 .form-control.form-control-lg {
   font-size: 16px;
   padding-top: .65rem;
@@ -640,6 +716,22 @@ a.product-card {
       color: #0042FF; }
     a.product-card:hover .no-img {
       border-color: white !important; }
+
+.free-trial-card {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 290px;
+  border: 2px solid #0042FF;
+  z-index: 99; }
+  .free-trial-card p {
+    margin-bottom: 0px; }
+  .free-trial-card a.close {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+  .free-trial-card .btn {
+    max-width: 100px; }
 
 .avatar {
   vertical-align: middle;
@@ -826,19 +918,20 @@ h3.market {
 
 #bottom-bar {
   border-top: 1px solid #bcc2ce; }
-  #bottom-bar .share-button {
+  #bottom-bar .btn {
     padding-left: 20px;
     padding-right: 20px; }
     @media (max-width: 768px) {
-      #bottom-bar .share-button {
-        padding-left: 10px;
-        padding-right: 10px; } }
+      #bottom-bar .btn {
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 13px; } }
   #bottom-bar .product-title {
     position: relative;
     top: 3px; }
     @media (max-width: 768px) {
       #bottom-bar .product-title .product-name {
-        width: 150px;
+        width: 120px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

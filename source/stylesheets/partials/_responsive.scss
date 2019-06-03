@@ -21,5 +21,10 @@
 
 
 @include breakpoint(sm) {
-
+  .text-left-sm{
+    text-align:left!important;
+  }
+  .text-center-sm{
+    text-align:center!important;
+  }
 }

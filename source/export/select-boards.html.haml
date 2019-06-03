@@ -1,0 +1,59 @@
+;;;
+
+"layout": "blank"
+
+;;;
+
+
+=partial "header"
+
+%section.export-header
+	.container
+		.row.align-items-center
+			.col-md-6
+				.media
+					%img.mr-3{:src=>"../images/trello-icon.png", :width=>"55px"}
+					.media-body
+						%p.no-margin-bottom
+							Export notes to Trello
+						%h2.medium-font.margin-bottom
+							Choose a board from Trello
+			.col-md-6
+				.text-right.actions.margin-top
+					%a.btn.btn-secondary.btn-lg.half-margin-right{:href=>"/export"}
+						Back
+					%a.btn.btn-primary.btn-lg{:href=>"/export/select-list"}
+						Continue
+
+%section
+	.container
+		.row
+			.col
+				.list-of-options
+					.margin-bottom
+						%p.bold-font
+							Board group											
+						-4.times do |index|
+							.list-group
+								.list-group-inner
+									%div
+										%input{:id=>"Radio#{index}" ,:name => "RadioInputName", :type => "radio", :value => "Value1"}
+										%label.list-group-item{:for => "Radio#{index}"}
+											=partial"name"
+					.margin-bottom
+						%p.bold-font
+							Board group												
+						-4.times do |index|
+							- i=index+5
+							.list-group
+								.list-group-inner
+									%div
+										%input{:id=>"Radio#{i}" ,:name => "RadioInputName", :type => "radio", :value => "Value1"}
+										%label.list-group-item{:for => "Radio#{i}"}
+											=partial"name"
+
+
+
+
+
+

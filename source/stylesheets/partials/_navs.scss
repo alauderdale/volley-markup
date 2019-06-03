@@ -111,3 +111,98 @@
 .mention-menu{
 	min-width: 280px;
 }
+
+
+
+//selection list
+
+.list-of-options{
+
+	.list-group-inner {
+	  position: relative;
+	}
+
+	.list-group-item {
+	  user-select: none;
+	  border-width: 1px;
+	  margin-bottom: 10px;
+	  transition-duration: .1s;
+	  border-color:$border-color;
+	  width:100%;
+	    &:hover{
+	    	background-color: tint($link-color, 95%);
+	    }
+		&.select-all{
+			border:none;
+			&:hover{
+				background:transparent;
+			}
+		}
+	}
+
+	.list-group input[type="checkbox"]:checked + .select-all{
+		background:none!important;
+	}
+
+	.list-group{
+		width:100%;
+
+	}
+
+	.list-group input {
+	  &[type="checkbox"] {
+	    // position: absolute;
+	    // top: calc(50% - 14px);
+    	// left: 15px;
+	    // z-index: 99;
+	    display: none;
+	    + .list-group-item {
+	      cursor: pointer;
+	      &:before {
+		    position: absolute;
+		    top: calc(50% - 14px);
+	    	left: 15px;
+		    z-index: 99;
+	        font-size: 30px;
+	        color:$lightest-gray-color;
+	        font-family: "Material Icons";
+	       	content: "radio_button_unchecked";
+	      }
+	    }
+	    &:checked + .list-group-item {
+	      background-color: tint($link-color, 95%);
+	      border-color:$link-color;
+	      &:before {
+	        color: $primary-color;
+	        content: "check_circle";
+	      }
+	    }
+	  }
+	  &[type="radio"] {
+	  	display: none;
+	    + .list-group-item {
+	      cursor: pointer;
+	      &:before {
+		    position: absolute;
+		    top: calc(50% - 14px);
+	    	left: 15px;
+		    z-index: 99;
+	        font-size: 30px;
+	        color:$lightest-gray-color;
+	        font-family: "Material Icons";
+	       	content: "radio_button_unchecked";
+	      }
+	    }
+	    &:checked + .list-group-item {
+	      background-color: tint($link-color, 95%);
+	      border-color:$link-color;
+	      &:before {
+	        color: $primary-color;
+	        content: "check_circle";
+	      }
+	    }
+	  }
+	}
+
+
+}
