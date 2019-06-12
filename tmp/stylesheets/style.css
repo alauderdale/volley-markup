@@ -642,6 +642,8 @@ section {
       max-width: 448px; } }
   .product-card-wrapper:hover {
     box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
+    .product-card-wrapper:hover .card-url {
+      color: #354052 !important; }
 
 .card-actions {
   position: absolute;
@@ -1131,20 +1133,28 @@ h3.market {
             font-size: 21px;
             top: 6px;
             margin-right: 4px; }
+          .notes-list-container .notes-list-body .notes-list-footer .show-resolved button:hover {
+            text-decoration: none; }
 
-.check-btn button {
+.check-btn button i {
+  font-size: 14px;
+  position: relative;
+  right: 6px;
+  top: 3px; }
+
+.complete-btn button {
   padding-left: 15px; }
-  .check-btn button i {
+  .complete-btn button i {
     font-size: 14px;
     position: relative;
     right: 6px;
     top: 3px; }
-  .check-btn button:after {
+  .complete-btn button:after {
     content: "Mark complete"; }
-  .check-btn button.active {
+  .complete-btn button.active {
     background: #26C164 !important;
     border: #26C164 !important; }
-    .check-btn button.active:after {
+    .complete-btn button.active:after {
       content: "Completed"; }
 
 .note-container {
