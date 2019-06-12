@@ -80,9 +80,9 @@
 		.note-body
 			.note-nav.border-bottom
 				.container-fluid
-					.row
+					.row.align-items-center
 						.col-8
-							.inline-block.align-middle.show-notes-toggle.menu-button
+							.inline-block.show-notes-toggle.menu-button
 								%a.btn.btn-secondary{:href=>"#"}
 									%i.material-icons
 										menu
@@ -107,9 +107,7 @@
 						.padded
 							.row.align-items-center
 								.col
-									=partial"mark-resolved-btn"
-											
-											
+									=partial"mark-resolved-btn"		
 								.col
 									%a.btn.btn-secondary.float-right.page-btn{:href=>"/product/browse"}
 										Go to page

@@ -1140,7 +1140,7 @@ h3.market {
     right: 6px;
     top: 3px; }
   .check-btn button:after {
-    content: "Mark complete"; }
+    content: "Complete"; }
   .check-btn button.active {
     background: #26C164 !important;
     border: #26C164 !important; }
@@ -1187,8 +1187,7 @@ h3.market {
           position: relative;
           top: 2px; }
       .note-container .note-body .note-nav .mark-resolved button {
-        position: relative;
-        top: -4px; }
+        margin-left: 3px; }
     .note-container .note-body .note-info {
       display: flex;
       height: 100%;
