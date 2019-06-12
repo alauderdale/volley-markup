@@ -84,12 +84,7 @@
 									%i.material-icons
 										menu
 							.inline-block
-								.mark-resolved.check-btn
-									%button.no-margin-bottom.btn-link.btn{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#guestModal"}
-										%i.material-icons
-											check_box_outline_blank
-										
-										Resolved
+								=partial"mark-resolved-btn"
 						.col-4
 							.float-right{:style=>"position:relative; top:2px;"}
 								%a.btn.btn-secondary{:href=>"#"}

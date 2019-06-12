@@ -236,6 +236,9 @@ a {
       color: #B4BBC6; }
     .btn.btn-icon:hover i, .btn.btn-icon:focus i {
       color: #121314; }
+  .btn:focus {
+    outline: none;
+    box-shadow: none !important; }
 
 .close {
   color: #0042FF;
@@ -1130,15 +1133,19 @@ h3.market {
             margin-right: 4px; }
 
 .check-btn button {
-  color: #354052 !important;
-  font-weight: 400;
-  position: relative; }
-  .check-btn button:hover, .check-btn button:active, .check-btn button:focus {
-    text-decoration: none; }
+  padding-left: 15px; }
   .check-btn button i {
+    font-size: 14px;
     position: relative;
-    top: 7px;
-    margin-right: 8px; }
+    right: 6px;
+    top: 3px; }
+  .check-btn button:after {
+    content: "Mark complete"; }
+  .check-btn button.active {
+    background: #26C164 !important;
+    border: #26C164 !important; }
+    .check-btn button.active:after {
+      content: "Completed"; }
 
 .note-container {
   width: calc(100% - 280px);
@@ -1244,10 +1251,7 @@ h3.market {
             .note-container .note-body .note-info .comments-container .resolved-header {
               display: none; } }
           .note-container .note-body .note-info .comments-container .resolved-header .page-btn {
-            position: relative;
-            top: 3px;
-            padding-left: 30px;
-            padding-right: 30px; }
+            position: relative; }
         .note-container .note-body .note-info .comments-container .comments-wrapper {
           width: 100%;
           position: relative;
