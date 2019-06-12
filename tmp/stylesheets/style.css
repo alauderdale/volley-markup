@@ -1185,7 +1185,8 @@ h3.market {
           padding: .275rem .55rem; }
         .note-container .note-body .note-nav .menu-button i {
           position: relative;
-          top: 2px; }
+          top: 2px;
+          font-size: 21px; }
       .note-container .note-body .note-nav .mark-resolved button {
         margin-left: 3px; }
     .note-container .note-body .note-info {
