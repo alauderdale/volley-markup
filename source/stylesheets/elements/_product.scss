@@ -330,7 +330,7 @@ $control-nav-height: 61px;
 			top:3px;
 		}
 		&:after{
-			content: "Complete";
+			content: "Mark complete";
 		}
 		&.active{
 			&:after{
@@ -384,7 +384,7 @@ $control-nav-height: 61px;
 				}
 				i{
 					position:relative;
-					top:2px;
+					top:3px;
 					font-size: 21px;
 				}
 			}
