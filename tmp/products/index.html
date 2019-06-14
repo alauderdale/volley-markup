@@ -200,8 +200,9 @@ more_horiz
 </i>
 </button>
 <div class='dropdown-menu dropdown-menu-right'>
-<!-- %button.dropdown-item{:type=>"button"} -->
-<!-- Edit -->
+<button class='dropdown-item' data-target='#editModal' data-toggle='modal' type='button'>
+Edit
+</button>
 <button class='dropdown-item' type='button'>
 Share
 </button>
@@ -249,8 +250,9 @@ more_horiz
 </i>
 </button>
 <div class='dropdown-menu dropdown-menu-right'>
-<!-- %button.dropdown-item{:type=>"button"} -->
-<!-- Edit -->
+<button class='dropdown-item' data-target='#editModal' data-toggle='modal' type='button'>
+Edit
+</button>
 <button class='dropdown-item' type='button'>
 Share
 </button>
@@ -265,6 +267,40 @@ Delete
 </div>
 </div>
 </section>
+<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='editModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h2 class='padding-left'>
+Edit this project
+</h2>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='padded no-padding-top no-padding-bottom'>
+<label>
+Title
+</label>
+<form>
+<div class='margin-bottom'>
+<input class='form-control form-control-lg' type='text' value='Project title'>
+</div>
+</form>
+</div>
+</div>
+<div class='modal-footer no-border-top'>
+<button class='btn btn-link' data-dismiss='modal' tyle='button'>
+Cancel
+</button>
+<button class='btn btn-primary' data-dismiss='modal' tyle='button'>
+Save
+</button>
+</div>
+</div>
+</div>
+</div>
 
 </div>
 <!-- end main content -->
