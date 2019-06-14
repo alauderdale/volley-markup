@@ -28,7 +28,8 @@
 					%a{:href=>"#"}
 						%i.material-icons
 							clear
-			- 20.times do
+			
+			- 3.times do
 				.note-thumbnail
 					.media
 						/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
@@ -48,6 +49,27 @@
 								on 
 								%span.bold-font
 									Mac OS 10.14.0
+			.note-thumbnail
+				.media
+					/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
+					.comment-number.comment-number-sm.margin-right
+						1
+					.media-body
+						%h5.bold-font.quarter-margin-bottom
+							=lorem.first_name
+							,
+							=lorem.first_name
+							%span.badge.badge-danger.quarter-margin-left
+								3
+						%h5
+							=lorem.words(7)
+						%h6.light-text-color
+							Comment left on 
+							%span.bold-font
+								Chrome 71 
+							on 
+							%span.bold-font
+								Mac OS 10.14.0
 			.note-thumbnail.resolved
 				.media
 					/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
