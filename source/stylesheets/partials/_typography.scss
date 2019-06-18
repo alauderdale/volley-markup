@@ -151,6 +151,18 @@ ul.icon-list{
   }
 }
 
+ul.icon-list-better{
+  li{
+    line-height: 1.8rem;
+    position:relative;
+    &:before{
+      font-family: 'material icons';
+      content: 'check';
+      color: $primary-color;
+    }
+  }
+}
+
 
 //truncate
 

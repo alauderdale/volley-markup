@@ -175,6 +175,14 @@ ul.icon-list li {
     top: 3px;
     margin-right: 5px; }
 
+ul.icon-list-better li {
+  line-height: 1.8rem;
+  position: relative; }
+  ul.icon-list-better li:before {
+    font-family: 'material icons';
+    content: 'check';
+    color: #0042FF; }
+
 @media (max-width: 768px) {
   .text-center-sm {
     text-align: center !important; } }
@@ -616,13 +624,19 @@ section {
   .alert .alert-link {
     font-weight: 600;
     text-decoration: underline; }
+  .alert.alert-info {
+    background-color: #e6ecff; }
 
 .card {
   border-color: #E6EAEE; }
   .card .card-header {
     background: white;
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-top-right-radius: 3px;
+    border-color: #E6EAEE; }
+  .card .card-footer {
+    border-top: none;
+    background-color: transparent; }
 
 .product-card-container {
   max-width: 950px; }
@@ -1545,3 +1559,18 @@ h3.market {
     color: #26C164; }
   .invoice-list .row .unpaid i {
     color: #FF4E4A; }
+
+.card.price-card h1 {
+  position: relative; }
+  .card.price-card h1 .price {
+    font-size: 20px;
+    position: absolute;
+    top: 15px; }
+  .card.price-card h1 .dollar-ammount {
+    position: relative;
+    left: 15px; }
+  .card.price-card h1 .month {
+    font-size: 18px;
+    position: relative;
+    left: 8px;
+    font-weight: 500; }

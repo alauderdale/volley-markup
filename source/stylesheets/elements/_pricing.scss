@@ -1,0 +1,22 @@
+.card{
+	&.price-card{
+		h1{
+			position:relative;
+			.price{
+				font-size: 20px;
+				position: absolute;
+				top:15px;
+			}
+			.dollar-ammount{
+				position:relative;
+				left:15px;
+			}
+			.month{
+				font-size: 18px;
+				position:relative;
+				left:8px;
+				font-weight: 500;
+			}
+		}
+	}
+}

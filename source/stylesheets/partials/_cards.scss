@@ -8,6 +8,13 @@ $product-card-width:448px;
 		background:white;
 		border-top-left-radius:$base-border-radius;
   		border-top-right-radius:$base-border-radius;
+  		border-color:$border-color;
+	}
+	.card-list{
+	}
+	.card-footer{
+		border-top:none;
+		background-color: transparent;
 	}
 }
 

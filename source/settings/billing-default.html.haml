@@ -13,7 +13,7 @@
 
 				.card.margin-bottom
 					.card-body
-						.row
+						.row.align-items-center
 							.col
 								%p.medium-font.no-margin-bottom
 									Basic plan
@@ -34,10 +34,13 @@
 										%i.material-icons
 											check
 										1 user
-							.col-4
-								%p.no-margin-bottom.text-right
-									%a.light-text-color{:href=>"#"}
-										Cancel plan
+							.col-4.text-center
+								.float-right
+									%a.btn.btn-primary.margin-bottom{:href=>"#"}
+										Change plan
+									%p.no-margin-bottom
+										%a.light-text-color{:href=>"#"}
+											Cancel plan
 
 				.card.margin-bottom
 					.card-body
