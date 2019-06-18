@@ -10,15 +10,15 @@ Volley
 </title>
 <!-- /google material icons -->
 <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-<link href="../stylesheets/style.css" rel="stylesheet" />
-<link href='../images/favicon.ico' rel='shortcut icon'>
-<script src="../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
+<link href="../../stylesheets/style.css" rel="stylesheet" />
+<link href='../../images/favicon.ico' rel='shortcut icon'>
+<script src="../../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
-<body class='styles styles_index'>
+<body class='billing billing_pay billing_pay_index'>
 <nav class='navbar navbar-light bg-light fixed-top navbar-expand-sm' id='primary-nav'>
 <div class='container'>
 <a class='navbar-brand' href='/products'>
-<img src='../images/logo.svg' width='100px'>
+<img src='../../images/logo.svg' width='100px'>
 </a>
 <div class='navbar-nav mr-auto'>
 <!-- .nav-item.dropdown.workspace-selector -->
@@ -68,7 +68,7 @@ Volley
 <!-- People -->
 <div class='nav-item dropdown'>
 <a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
-<img alt='Avatar' class='avatar avatar-xs' src='../images/img_avatar.png'>
+<img alt='Avatar' class='avatar avatar-xs' src='../../images/img_avatar.png'>
 <i class='material-icons'>
 expand_more
 </i>
@@ -117,80 +117,101 @@ Sign out
 <div class='main'>
 <section>
 <div class='container'>
-<div class='row'>
-<div class='col-lg-12'>
+<div class='row justify-content-sm-center'>
+<div class='col-lg-5'>
+<div class='padded'>
 <h1>
-Heading one
+Confirm your subscription
 </h1>
-<h2>
-Heading two
-</h2>
-<h3>
-Heading three
-</h3>
-<h4>
-Heading four
+<p>
+Enter payment details to subscribe
+</p>
+<form>
+<div class='form-row margin-bottom'>
+<div class='form-group col-12'>
+<label>
+Name on card
+</label>
+<input class='form-control form-control-lg' type='text'>
+</div>
+</div>
+<div class='form-row margin-bottom'>
+<div class='form-group col-6'>
+<label>
+Card number
+</label>
+<input class='form-control form-control-lg' placeholder='0000 0000 0000 0000' type='text'>
+</div>
+<div class='form-group col-3'>
+<label>
+Expire date
+</label>
+<input class='form-control form-control-lg' placeholder='10/20' type='text'>
+</div>
+<div class='form-group col-3'>
+<label>
+CVV
+</label>
+<input class='form-control form-control-lg' placeholder='123' type='text'>
+</div>
+</div>
+<div class='form-row margin-bottom'>
+<div class='form-group col-12'>
+<img src='../images/cards.png' width='220px'>
+</div>
+</div>
+<div class='form-row margin-bottom'>
+<div class='form-group col-12'>
+<button class='btn btn-block btn-primary btn-lg' type='submit'>
+Subscribe for $10
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class='col-lg-5'>
+<div class='padded'>
+<div class='card price-card'>
+<div class='card-header'>
+<h1>
+Volley PRO
+</h1>
+<h1 class='display-4'>
+<span class='price medium-font'>
+$
+</span>
+<span class='bold-font dollar-ammount'>
+10
+</span>
+<span class='month'>
+/ month
+</span>
+</h1>
+</div>
+<div class='card-body'>
+<ul class='card-list list-unstyled icon-list-better check-list'>
+<li class='bold-font'>
+unlimited projects
+</li>
+<li>
+User mentions
+</li>
+<li>
+Export to Asana, Monday & Jira
+</li>
+</ul>
+</div>
+</div>
+<div class='text-center double-margin-top'>
+<p class='half-margin-bottom'>
+No stress. Cancel anytime
+</p>
+<h4 class='light-text-color'>
+Your annual plan starts on 6/3/19 at $52.50/yr and renews automatically on 6/3/20 at $69.99. You can cancel any time.
 </h4>
-<h5>
-Heading five
-</h5>
-<h6>
-Heading six
-</h6>
-<p>
-Soluta in velit sint aut commodi quas pariatur quaerat animi adipisci tenetur repellat sit nobis. Ut eos est placeat alias voluptatem quia minus quo quo expedita porro molestiae. Magnam voluptatem consequatur beatae asperiores sit dolorem et nihil inventore voluptatem similique officiis. Aspernatur magnam vitae voluptas nihil explicabo voluptatum incidunt et tenetur labore. Neque excepturi quod et ex omnis cumque vero
-</p>
-<p class='light-font'>
-Light font
-</p>
-<p class='regular-font'>
-Regular font
-</p>
-<p class='medium-font'>
-Semibold font
-</p>
-<p class='bold-font'>
-Bold font
-</p>
-<p class='extra-bold-font'>
-Extra Bold font
-</p>
-<p>
-<a href='#'>
-Linked
-</a>
-</p>
-<p>
-<a class='btn btn-primary' href='http://images6.alphacoders.com/316/316963.jpg'>
-Primary
-</a>
-<a class='btn btn-secondary' href='http://images6.alphacoders.com/316/316963.jpg'>
-Secondary
-</a>
-<a class='btn btn-success' href='http://images6.alphacoders.com/316/316963.jpg'>
-Success
-</a>
-<a class='btn btn-warning' href='http://images6.alphacoders.com/316/316963.jpg'>
-Warning
-</a>
-<a class='btn btn-danger' href='http://images6.alphacoders.com/316/316963.jpg'>
-Danger
-</a>
-<a class='btn btn-flat' href='http://images6.alphacoders.com/316/316963.jpg'>
-Flat
-</a>
-<a class='btn btn-link' href='http://images6.alphacoders.com/316/316963.jpg'>
-Link
-</a>
-</p>
-<i class='material-icons'>
-face
-</i>
-<a class='btn btn-flat' href='#'>
-<i class='material-icons'>
-delete
-</i>
-</a>
+</div>
+</div>
 </div>
 </div>
 </div>
