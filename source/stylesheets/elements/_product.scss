@@ -219,6 +219,13 @@ $control-nav-height: 61px;
     left:0;
     position: absolute;
     display: flex;
+    &.unavailable{
+    	padding-bottom: 0;
+   	.note-container{
+    	width:100%;
+    }
+
+    }
 }
 
 ////left bar

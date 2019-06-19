@@ -1076,6 +1076,10 @@ h3.market {
   left: 0;
   position: absolute;
   display: flex; }
+  .review-container.unavailable {
+    padding-bottom: 0; }
+    .review-container.unavailable .note-container {
+      width: 100%; }
 
 .notes-list-container {
   height: 100%;
