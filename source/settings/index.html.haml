@@ -8,6 +8,8 @@
 				%nav.nav.nav-tabs.double-margin-bottom.primary-tabs
 					%a.nav-link.active{:href=>"/settings/"}
 						Prifile
+					%a.nav-link{:href=>"/settings/password"}
+						Password
 					%a.nav-link{:href=>"/settings/billing-default"}
 						Billing
 
@@ -32,10 +34,6 @@
 								%h4.bold-font
 									Email
 								%input.form-control.form-control-lg{:type=>"text", :value=>"John@doe.com"}
-							.double-margin-bottom
-								%h4.bold-font
-									New password
-								%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Enter new password"}
 							%button.btn.btn-primary.btn-lg{:type=>"submit"}
 								Save
 				.double-margin-top
