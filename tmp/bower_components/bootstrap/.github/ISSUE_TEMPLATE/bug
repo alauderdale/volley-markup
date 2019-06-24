@@ -9,7 +9,7 @@
 <p>Bug reports must include:</p>
 
 <ul>
-  <li>Operating system and version (Windows, Mac OS X, Android, iOS, Win10 Mobile)</li>
+  <li>Operating system and version (Windows, macOS, Android, iOS, Win10 Mobile)</li>
   <li>Browser and version (Chrome, Firefox, Safari, IE, MS Edge, Opera 15+, Android Browser)</li>
   <li><a href="https://css-tricks.com/reduced-test-cases/">Reduced test case</a> and suggested fix using <a href="https://codepen.io/">CodePen</a> or <a href="https://jsbin.com/">JS Bin</a></li>
 </ul>

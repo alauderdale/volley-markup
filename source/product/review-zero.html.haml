@@ -13,6 +13,14 @@
 	}
 
 
+.toast-container{"aria-atomic" => "true", "aria-live" => "polite"}
+	.toast-container-inner
+		- 2.times do
+			.toast{:style => "opacity:1;"}
+				.toast-body
+					%p
+						Your note has been created.
+
 .review-container
 	.notes-list-container
 		.notes-list-body

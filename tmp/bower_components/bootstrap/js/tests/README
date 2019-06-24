@@ -1,6 +1,6 @@
 <h2 id="how-does-bootstraps-test-suite-work">How does Bootstrap's test suite work?</h2>
 
-<p>Bootstrap uses <a href="https://qunitjs.com/">QUnit</a> and <a href="http://sinonjs.org/">Sinon</a>. Each plugin has a file dedicated to its tests in <code>unit/&lt;plugin-name&gt;.js</code>.</p>
+<p>Bootstrap uses <a href="https://qunitjs.com/">QUnit</a> and <a href="https://sinonjs.org/">Sinon</a>. Each plugin has a file dedicated to its tests in <code>unit/&lt;plugin-name&gt;.js</code>.</p>
 
 <ul>
   <li><code>unit/</code> contains the unit test files for each Bootstrap plugin.</li>
