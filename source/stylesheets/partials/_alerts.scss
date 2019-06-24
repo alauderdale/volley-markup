@@ -8,3 +8,37 @@
 		background-color: tint($primary-color,90%);
 	}
 }
+
+.toast-container{
+	position: absolute;
+	bottom:0px;
+	width:100%;
+	left:0;
+	min-height: 200px;
+	.toast-container-inner{
+		position: absolute; 
+		bottom: 15px; 
+		left: 15px; 
+		z-index:1031;
+		
+	}
+}
+
+.toast-header{
+	background-color:transparent;
+	border:none;
+	.close{
+		color:white;
+		text-shadow:none;
+	}
+}
+
+.toast{
+	min-width:200px;
+	color:#fff!important;
+	background-color:rgba(0,0,0,.8)!important;	
+	p{
+		margin:0;
+		
+	}
+}

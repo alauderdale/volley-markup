@@ -13,16 +13,13 @@
 	}
 
 
-%div{"aria-atomic" => "true", "aria-live" => "polite", :style => "position: relative; min-height: 200px;"}
-	.toast{:style => "position: absolute; top: 0; right: 0;"}
-		.toast-header
-			%img.rounded.mr-2{:alt => "...", :src => "..."}/
-			%strong.mr-auto Bootstrap
-			%small 11 mins ago
-			%button.ml-2.mb-1.close{"aria-label" => "Close", "data-dismiss" => "toast", :type => "button"}
-				%span{"aria-hidden" => "true"} ×
-		.toast-body
-			Hello, world! This is a toast message.
+.toast-container{"aria-atomic" => "true", "aria-live" => "polite"}
+	.toast-container-inner
+		- 2.times do
+			.toast{:style => "opacity:1;"}
+				.toast-body
+					%p
+						Your note has been created.
 
 .review-container
 	.notes-list-container
