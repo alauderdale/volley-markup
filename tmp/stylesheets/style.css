@@ -648,6 +648,7 @@ section {
 
 .toast {
   min-width: 200px;
+  max-width: 280px;
   color: #fff !important;
   background-color: rgba(0, 0, 0, 0.8) !important; }
   .toast p {

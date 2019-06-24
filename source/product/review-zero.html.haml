@@ -15,11 +15,14 @@
 
 .toast-container{"aria-atomic" => "true", "aria-live" => "polite"}
 	.toast-container-inner
-		- 2.times do
-			.toast{:style => "opacity:1;"}
-				.toast-body
-					%p
-						Your note has been created.
+		.toast{:style => "opacity:1;"}
+			.toast-body
+				%p
+					I'm a toast
+		.toast{:style => "opacity:1;"}
+			.toast-body
+				%p
+					Just in case we need to stack, im a second toast that breaks to a couple lines.
 
 .review-container
 	.notes-list-container
