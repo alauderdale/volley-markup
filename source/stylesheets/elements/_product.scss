@@ -9,6 +9,7 @@ $control-nav-height: 61px;
 .add-new-product-bar{
 	input{
 		border:3px solid shade($border-color, 10%);
+		height: 49px;
 	}
 	button{
 		box-shadow:0 5px 15px 0 rgba(0,0,0,0.15);
