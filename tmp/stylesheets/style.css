@@ -1243,7 +1243,6 @@ h3.market {
       top: 0;
       padding: 10px 0;
       z-index: 4;
-      min-height: 65px;
       background-color: white;
       display: none; }
       @media (max-width: 992px) {
@@ -1260,7 +1259,10 @@ h3.market {
         .note-container .note-body .note-nav .menu-button i {
           position: relative;
           top: 3px;
-          font-size: 17px; }
+          font-size: 21px; }
+          @media (max-width: 768px) {
+            .note-container .note-body .note-nav .menu-button i {
+              font-size: 17px; } }
       .note-container .note-body .note-nav .mark-resolved button {
         margin-left: 3px; }
     .note-container .note-body .note-info {
