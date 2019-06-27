@@ -1143,6 +1143,9 @@ h3.market {
     padding-bottom: 44px;
     border-right: 1px solid #E6EAEE;
     background: white; }
+    @media (max-width: 768px) {
+      .notes-list-container .notes-list-body {
+        padding-bottom: 85px; } }
     .notes-list-container .notes-list-body .notes-list-header {
       width: 280px;
       position: fixed;
@@ -1335,7 +1338,8 @@ h3.market {
           padding-top: 76px; }
           @media (max-width: 768px) {
             .note-container .note-body .note-info .comments-container .comments-wrapper {
-              padding-top: 40px; } }
+              padding-top: 40px;
+              padding-bottom: 120px; } }
           .note-container .note-body .note-info .comments-container .comments-wrapper .mobile-comments-header {
             position: fixed;
             top: 272px;

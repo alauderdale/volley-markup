@@ -264,6 +264,9 @@ $control-nav-height: 61px;
 	    padding-bottom:44px;
 	    border-right:1px solid $border-color;
 	    background:white;
+	    @include breakpoint(sm) {
+	    	padding-bottom:85px;
+	    }
 
 	    .notes-list-header{
 	    	width:280px;
@@ -512,6 +515,7 @@ $control-nav-height: 61px;
 					padding-top:76px;
 					@include breakpoint(sm) {
 						padding-top:40px;
+						padding-bottom: 120px;
 					}
 					.mobile-comments-header{
 						position: fixed;
