@@ -225,6 +225,9 @@ $control-nav-height: 61px;
    	.note-container{
     	width:100%;
     }
+    .note-info{
+    	padding-top:0!important;
+    }
 
     }
 }
@@ -396,9 +399,13 @@ $control-nav-height: 61px;
 			display: none;
 			@include breakpoint(md) {
 				width: 100%;
-			}
-			@include breakpoint(md) {
 				display: block;
+			}
+			.btn{
+				@include breakpoint(sm) {
+
+					font-size: 13px;
+				}
 			}
 			//visible only on mobile
 			.menu-button{
@@ -409,7 +416,7 @@ $control-nav-height: 61px;
 				i{
 					position:relative;
 					top:3px;
-					font-size: 21px;
+					font-size: 17px;
 				}
 			}
 			.mark-resolved{
@@ -448,6 +455,10 @@ $control-nav-height: 61px;
 						margin-left: auto;
 						margin-right: auto;
 						padding:10px;
+						@include breakpoint(sm) {
+							position:absolute;
+							top:0;
+						}
 						img{
 							display: block;	
 							max-width: 100%;
@@ -467,11 +478,13 @@ $control-nav-height: 61px;
 				border-left:1px solid $border-color;
 				position:relative;
 				@include breakpoint(sm) {
-					position: absolute;
+					position: fixed;
 					width: 100%;
 					right: 0px;
 					bottom:0;
-					z-index: 5;
+					z-index: 1031;
+					top: 278px;
+					box-shadow:0 -10px 10px rgba(0,0,0,.2);
 					display: none;
 					&.comments-bar-open{
 						display: block;
@@ -498,12 +511,28 @@ $control-nav-height: 61px;
 					position:relative;
 					padding-top:76px;
 					@include breakpoint(sm) {
-						padding-top:0px;
+						padding-top:40px;
+					}
+					.mobile-comments-header{
+						position: fixed;
+						bottom: 320px;
+						width: 100%;
+						background: white;
+						z-index: 1040;
 					}
 					.new-comment{
 						width: 100%;
 						padding:16px;
 						position:relative;
+						@include breakpoint(sm) {
+							position: fixed;
+							background: white;
+							z-index: 1032;
+							bottom: 0;
+							border-top:1px solid $border-color;
+							padding: 7px;
+							padding-top: 10px;
+						}
 						textarea{
 							resize: none;
 						}
@@ -516,6 +545,9 @@ $control-nav-height: 61px;
 						}
 						&.focused{
 							margin-bottom:$baseline;
+							@include breakpoint(sm) {
+								margin-bottom:0;	
+							}
 							textarea{
 								height:65px;
 							}
@@ -555,6 +587,8 @@ $control-nav-height: 61px;
 
     }
 }
+
+
 
 //this is both the menu button and the close button
 .show-notes-toggle{

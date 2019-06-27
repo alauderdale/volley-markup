@@ -91,6 +91,9 @@ img {
 .primary-bg {
   background-color: #0042FF !important; }
 
+.cursor-pointer {
+  cursor: pointer; }
+
 .text-uppercase {
   text-transform: uppercase; }
 
@@ -1108,6 +1111,8 @@ h3.market {
     padding-bottom: 0; }
     .review-container.unavailable .note-container {
       width: 100%; }
+    .review-container.unavailable .note-info {
+      padding-top: 0 !important; }
 
 .notes-list-container {
   height: 100%;
@@ -1240,10 +1245,11 @@ h3.market {
       display: none; }
       @media (max-width: 992px) {
         .note-container .note-body .note-nav {
-          width: 100%; } }
-      @media (max-width: 992px) {
-        .note-container .note-body .note-nav {
+          width: 100%;
           display: block; } }
+      @media (max-width: 768px) {
+        .note-container .note-body .note-nav .btn {
+          font-size: 13px; } }
       .note-container .note-body .note-nav .menu-button {
         position: relative; }
         .note-container .note-body .note-nav .menu-button a {
@@ -1251,7 +1257,7 @@ h3.market {
         .note-container .note-body .note-nav .menu-button i {
           position: relative;
           top: 3px;
-          font-size: 21px; }
+          font-size: 17px; }
       .note-container .note-body .note-nav .mark-resolved button {
         margin-left: 3px; }
     .note-container .note-body .note-info {
@@ -1283,6 +1289,10 @@ h3.market {
             margin-left: auto;
             margin-right: auto;
             padding: 10px; }
+            @media (max-width: 768px) {
+              .note-container .note-body .note-info .img-container .img-wrapper .img-comment-container {
+                position: absolute;
+                top: 0; } }
             .note-container .note-body .note-info .img-container .img-wrapper .img-comment-container img {
               display: block;
               max-width: 100%;
@@ -1298,11 +1308,13 @@ h3.market {
         position: relative; }
         @media (max-width: 768px) {
           .note-container .note-body .note-info .comments-container {
-            position: absolute;
+            position: fixed;
             width: 100%;
             right: 0px;
             bottom: 0;
-            z-index: 5;
+            z-index: 1031;
+            top: 278px;
+            box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
             display: none; }
             .note-container .note-body .note-info .comments-container.comments-bar-open {
               display: block; } }
@@ -1323,11 +1335,26 @@ h3.market {
           padding-top: 76px; }
           @media (max-width: 768px) {
             .note-container .note-body .note-info .comments-container .comments-wrapper {
-              padding-top: 0px; } }
+              padding-top: 40px; } }
+          .note-container .note-body .note-info .comments-container .comments-wrapper .mobile-comments-header {
+            position: fixed;
+            bottom: 320px;
+            width: 100%;
+            background: white;
+            z-index: 1040; }
           .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment {
             width: 100%;
             padding: 16px;
             position: relative; }
+            @media (max-width: 768px) {
+              .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment {
+                position: fixed;
+                background: white;
+                z-index: 1032;
+                bottom: 0;
+                border-top: 1px solid #E6EAEE;
+                padding: 7px;
+                padding-top: 10px; } }
             .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment textarea {
               resize: none; }
             .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment .add-comment-btn {
@@ -1337,6 +1364,9 @@ h3.market {
               display: none; }
             .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment.focused {
               margin-bottom: 16px; }
+              @media (max-width: 768px) {
+                .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment.focused {
+                  margin-bottom: 0; } }
               .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment.focused textarea {
                 height: 65px; }
               .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment.focused .add-comment-btn {
