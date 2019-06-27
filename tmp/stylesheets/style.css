@@ -1271,7 +1271,7 @@ h3.market {
       width: 100%; }
       @media (max-width: 768px) {
         .note-container .note-body .note-info {
-          padding-top: 65px; } }
+          padding-top: 54px; } }
       .note-container .note-body .note-info .img-container {
         height: 100%;
         overflow-y: scroll;
