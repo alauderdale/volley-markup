@@ -919,6 +919,9 @@ a.product-card {
 
 .market section {
   padding: 64px 0; }
+  @media (max-width: 768px) {
+    .market section {
+      padding: 16px 0; } }
   .market section#main-hero {
     position: relative;
     padding-bottom: 192px;

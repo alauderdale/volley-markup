@@ -22,6 +22,9 @@ body.market{
 
 .market section{
 	padding:$baseline*4 0;
+	@include breakpoint(sm) {
+		padding:$baseline 0;
+	}
 	&#main-hero{
 		position:relative;
 		padding-bottom:$baseline*12;
