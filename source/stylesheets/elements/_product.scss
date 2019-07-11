@@ -486,13 +486,13 @@ $control-nav-height: 61px;
 					position: fixed;
 					width: 100%;
 					right: 0px;
-					bottom:0;
-					z-index: 1031;
 					top: 278px;
+					z-index: 1031;
 					box-shadow:0 -10px 10px rgba(0,0,0,.2);
-					display: none;
+					display:none;
 					&.comments-bar-open{
-						display: block;
+						visibility:visible;
+						display:block;
 					}
 				}
 

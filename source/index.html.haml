@@ -8,114 +8,147 @@
 %section#main-hero
 	.double-padding-bottom
 		.container
-			.row
-				.col-lg-6.order-lg-2
-					.padded
-						%img.max-width{:src=>"/images/marketing/home-hero.png"}
-				.col-lg-6.order-lg-1
-					.double-margin-top
-						%h2.market.bold-font.double-margin-bottom
-							A new way to collaborate on websites
-						%h2.double-margin-bottom
-							Leave visual feedback directly on your web pages. 
-						%a.btn.btn-primary.btn-lg{:href=>"/welcome/sign-up"}
-							Try it now
+			.row.justify-content-center
+				.col-lg-8
+					.double-margin-top.text-center
+						%h1.market.bold-font.double-margin-bottom
+							The website feedback tool you’ve always wanted.
+						.note-placement-wrapper
+							%h1.double-margin-bottom.comment-text
+								Fast, easy feedback for your website.
+							.note-detail-wrapper.market-note.note-1
+								.note-detail-body
+									.comment-number
+										1
+									.comment-form.animated
+										.comment-form-header
+											.row
+												.col
+													%h4.no-margin-bottom
+														Add a note
+												.col
+													%button.close{:type=>"button"}
+														%i.material-icons
+															close
+										.comment-form-body
+											.text-wrapper.typer
+												%p
+													This text is misaligned. 
+										.comment-form-footer
+											.text-right
+												%a.btn.btn-link{:href=>"#"}
+													%i.material-icons
+														attachment
+												%a.btn.btn-primary{:href=>"#"}
+													Add note
+
 
 %section
 	.container
-		.row
-			.col-md-5
-				.text-container
-					%h2.accent-text
-						Just
-					%h1.bold-font.market
-						Review.
-				%h1.bold-font
-					Make notes directly on your website
-				%p.market
-					Using our live review tool, click through each screen and call-out anything that needs fixing.
-			.col-md-7
-				.padded
-					%img.max-width{:src=>"/images/marketing/review.png"}
-%section.off-white-bg
-	.container
-		.row.align-items-center
-			.col-md-5.order-md-2
-				.text-container
-					%h2.accent-text
-						Then
-					%h1.bold-font.market
-						Resolve.
-				%h1.bold-font
-					Notes are easily viewed and resolved
-				%p.market
-					All the notes you create are sent to the people working to improve your website.
-			.col-md-7.order-md-1
-				%img.max-width{:src=>"/images/marketing/resolve.png", :width=>"497px"}
+		.row.align-items-center.justify-content-around
+			.col-lg-12.text-center
+				%h2.market.bold-font.margin-bottom
+					Here's how it works
+				%img{:src=>"/images/marketing/smile.svg"}
+
+
 %section
 	.container
-		.row.justify-content-center
-			.col-md-4
-				.text-container
-					%h2.accent-text
-						And
-					%h1.bold-font.market.text-center.double-margin-bottom
-						Repeat.
-		.row.align-items-center
-			.col-md-4
-				%h1.bold-font
-					Use Volley to make your product shine
+		.row.align-items-center.justify-content-around
+			.col-lg-6
+				%img.max-width.double-margin-bottom{:src=>"/images/marketing/step-1.png"}
+			.col-lg-4
+				%h3.bold-font.market
+					Create a project and invite your team
 				%p.market
-					Use the review tools to improve every new feature, release and iteration of your website.
-			.col-md-8
-				%img.max-width.float-right{:src=>"/images/marketing/repeat.png", :width=>"615px"}
-%section.inverse-section
+					Works for any website, give your project a name and invite your team. 
+				%p.bold-font
+					Volley is perfect for
+				%ul.check-list
+					%li
+						Designers doing a website review
+					%li
+						Developers looking for feedback
+					%li
+						Project managers reviewing features
+					%li
+						QA teams documenting bugs
+
+
+%section
+	.container
+		.row.align-items-center.justify-content-around
+			.col-lg-6.order-lg-2
+				%img.max-width.double-margin-bottom{:src=>"/images/marketing/step-2.png"}
+			.col-lg-4.order-lg-1
+				%h3.bold-font.market
+					Use the Chrome extension to make notes on your website
+				%p.market
+					Quickly add notes over the top of your website.
+				%p.bold-font
+					Use Volley for
+				%ul.check-list
+					%li
+						Design review
+					%li
+						Bug reporting
+					%li
+						Feature documentation and ideas
+					%li
+						Developer questions
+					%li
+						Client feedback
+
+
+
+%section
+	.container
+		.row.align-items-center.justify-content-around
+			.col-lg-6
+				%img.max-width.double-margin-bottom{:src=>"/images/marketing/step-3.png"}
+			.col-lg-4
+				%h3.bold-font.market
+					Coloborate and resolve
+				%p.market
+					Notes are sent straight to your project with detailed screenshots
+				%p.bold-font
+					Why we’re different than other tools
+				%ul.check-list
+					%li
+						Screenshots are easier to review
+					%li
+						Simple, collaborative workspaces
+					%li
+						Project managers reviewing features
+					%li
+						Upload design attachments with your notes
+
+
+
+
+%section#join
 	.double-padding-top.double-padding-bottom
 		.container
 			.row
 				.col.text-center
-					%h3.market.bold-font.double-margin-bottom
-						Ready to level up your process?
-					%a.btn.btn-secondary.btn-lg{:href=>"/welcome/sign-up"}
-						Try it now
+					.jumbotron.volley-jumbotron
+						%h2.market.bold-font.no-margin-bottom
+							Be the first to try Volley
+						%h3.market.double-margin-bottom
+							We’ll let you know when it’s ready
+						%a.btn.btn-secondary.btn-lg{:href=>"/welcome/sign-up"}
+							Try it now
 %footer
 	%section
 		.container
 			.row
-				.col-sm-3
-					%p.body-small.light-text-color
-						Product
-					%ul.list-unstyled
-						%li
-							%a.text-color{:href=>"#"}
-								How it works
-						%li
-							%a.text-color{:href=>"#"}
-								Pricing
-				.col-sm-3
-					%p.body-small.light-text-color
-						Company
-					%ul.list-unstyled
-						%li
-							%a.text-color{:href=>"#"}
-								About us
-						%li
-							%a.text-color{:href=>"#"}
-								Twitter
-						%li
-							%a.text-color{:href=>"#"}
-								Facebook
-				.col-sm-3
-					%p.body-small.light-text-color
-						Support
-					%ul.list-unstyled
-						%li
-							%a.text-color{:href=>"#"}
-								Email us
-						%li
-							%a.text-color{:href=>"#"}
-								Help center
-				.col-sm-3
+				.col-sm-6
+					%p.light-text-color
+						%img.margin-right.margin-bottom{:src=>"/images/logo.svg", :width=>"100px"}
+						%br
+						© 2019 Volley
+
+				.col-sm-2
 					%p.body-small.light-text-color
 						Legal
 					%ul.list-unstyled
@@ -125,10 +158,21 @@
 						%li
 							%a.text-color{:href=>"#"}
 								Privacy
-	%section.no-padding-top
-		.container
-			.row
-				.col
-					%p.light-text-color
-						%img.margin-right{:src=>"/images/logo-icon.svg"}
-						© 2019 Volley
+				.col-sm-2
+					%p.body-small.light-text-color
+						Connect
+					%ul.list-unstyled
+						%li
+							%a.text-color{:href=>"https://www.facebook.com/meetvolley/"}
+								Facebook
+						%li
+							%a.text-color{:href=>"https://twitter.com/meetvolley"}
+								Twitter
+				.col-sm-2
+					%p.body-small.light-text-color
+						Questions?
+					%ul.list-unstyled
+						%li
+							%a.text-color{:href=>"mailto:hello@meetvolley.com"}
+								hello@meetvolley.com
+
