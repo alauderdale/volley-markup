@@ -6,7 +6,8 @@ body.market{
 	padding:$baseline*4 0;
 	&#main-hero{
 		position:relative;
-		padding-bottom:$baseline*10;
+		padding-bottom:$baseline*12;
+		padding-top:$baseline;
 		@include breakpoint(sm) {
 			padding-top:0;
 		}
@@ -126,7 +127,7 @@ ul{
 	&.note-1{
 		right: 40%;
 		bottom: -260px;
-		@include breakpoint(md) {
+		@include breakpoint(sm) {
 			right: 20%;
 		}
 	}
@@ -134,7 +135,14 @@ ul{
 	    position: relative;
 	    width: 338px;
 	    height: 210px;
+	    @include breakpoint(sm) {
+	    	width:270px;
+	    }
 	    .comment-form{
+	    	@include breakpoint(sm) {
+				width:270px;
+	    	}
+	    	
 	    	.comment-form-body{
 	    		.text-wrapper{
 	    			padding: 10px;
