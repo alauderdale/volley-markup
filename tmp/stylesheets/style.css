@@ -905,6 +905,18 @@ a.product-card {
   .badge.badge-danger {
     background-color: #FF4E4A; }
 
+.browser-wrapper {
+  padding-top: 30px; }
+  .browser-wrapper .browser-header {
+    border: 1px solid #E6EAEE;
+    height: 28px;
+    width: 100%;
+    border-bottom: none;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px; }
+  .browser-wrapper img {
+    border: 1px solid #E6EAEE; }
+
 .market section {
   padding: 64px 0; }
   .market section#main-hero {

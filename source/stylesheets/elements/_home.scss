@@ -1,3 +1,21 @@
+//style the browsers
+
+.browser-wrapper{
+	padding-top:30px;
+	.browser-header{
+		border:1px solid $border-color;
+		height:28px;
+		width:100%;
+		border-bottom:none;
+		border-top-right-radius:3px;
+		border-top-left-radius:3px;
+	}
+	img{
+		border:1px solid $border-color;
+	}
+}
+
+
 body.market{
 
 }
