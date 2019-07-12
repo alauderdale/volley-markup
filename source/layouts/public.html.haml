@@ -3,12 +3,12 @@
   %head
     = partial "shared/scripts"
     %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-143756502-1"}
-      :javascript
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        gtag('config', 'UA-143756502-1');
+      gtag('config', 'UA-143756502-1');
     %body.market{:class => page_classes, :style=>"padding:0;"}
 
       = partial "layouts/marketing/header"
