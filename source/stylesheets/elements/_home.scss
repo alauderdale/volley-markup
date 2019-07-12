@@ -27,7 +27,7 @@ body.market{
 	}
 	&#main-hero{
 		position:relative;
-		padding-bottom:$baseline*12;
+		padding-bottom:$baseline*18;
 		padding-top:$baseline;
 		@include breakpoint(sm) {
 			padding-top:0;
