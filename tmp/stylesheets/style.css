@@ -924,7 +924,7 @@ a.product-card {
       padding: 16px 0; } }
   .market section#main-hero {
     position: relative;
-    padding-bottom: 192px;
+    padding-bottom: 288px;
     padding-top: 16px; }
     @media (max-width: 768px) {
       .market section#main-hero {
