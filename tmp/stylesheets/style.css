@@ -917,6 +917,9 @@ a.product-card {
   .browser-wrapper img {
     border: 1px solid #E6EAEE; }
 
+body.market {
+  padding-top: 87px !important; }
+
 .market section {
   padding: 64px 0; }
   @media (max-width: 768px) {
@@ -942,6 +945,14 @@ a.product-card {
   #primary-header .btn-secondary {
     padding-left: 12px;
     padding-right: 12px; }
+
+#marketing-header {
+  position: fixed;
+  width: 100%;
+  background: white !important;
+  padding: 20px 0;
+  z-index: 9999;
+  top: 0; }
 
 .text-container {
   position: relative; }
