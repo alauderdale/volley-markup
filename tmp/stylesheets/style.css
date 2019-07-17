@@ -905,6 +905,43 @@ a.product-card {
   .badge.badge-danger {
     background-color: #FF4E4A; }
 
+.video-button-wrapper {
+  position: relative;
+  width: 100%; }
+
+.video-btn {
+  padding: 15px 20px 15px 20px;
+  position: relative;
+  top: 250px;
+  margin: 0 auto;
+  color: #0042FF;
+  background: white !important; }
+  .video-btn:hover, .video-btn:active {
+    color: #0042FF; }
+  .video-btn i {
+    line-height: 13px;
+    position: relative;
+    top: 6px;
+    margin-right: 8px; }
+
+.video-modal .modal-dialog {
+  max-width: 800px;
+  margin: 30px auto; }
+
+.video-modal .modal-body {
+  position: relative;
+  padding: 0px; }
+
+.video-modal .close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1; }
+
 .browser-wrapper {
   padding-top: 30px; }
   .browser-wrapper .browser-header {
@@ -951,7 +988,7 @@ body.market {
   width: 100%;
   background: white !important;
   padding: 20px 0;
-  z-index: 9999;
+  z-index: 1000;
   top: 0; }
 
 .text-container {
