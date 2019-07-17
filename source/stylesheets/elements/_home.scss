@@ -1,3 +1,53 @@
+//video modal
+
+.video-button-wrapper{
+	position:relative;
+	width:100%;
+}
+
+.video-btn{
+	padding:15px 20px 15px 20px;
+	position:relative;
+	top:250px;
+	margin:0 auto;
+	color:$link-color;
+	background:white!important;
+	&:hover, &:active{
+		color:$link-color;
+	}
+	i{
+		line-height: 13px;
+		position: relative;
+		top: 6px;
+		margin-right: 8px;
+	}
+}
+
+.video-modal{
+	.modal-dialog {
+	max-width: 800px;
+	margin: 30px auto;
+	}
+
+
+
+	.modal-body {
+	position:relative;
+	padding:0px;
+	}
+	.close {
+	position:absolute;
+	right:-30px;
+	top:0;
+	z-index:999;
+	font-size:2rem;
+	font-weight: normal;
+	color:#fff;
+	opacity:1;
+	}
+}
+
+
 //style the browsers
 
 .browser-wrapper{
@@ -57,7 +107,7 @@ body.market{
 	width:100%;
 	background: white!important;
 	padding:20px 0;
-	z-index: 9999;
+	z-index: 1000;
 	top:0;
 
 }
