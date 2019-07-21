@@ -13,16 +13,16 @@
 	}
 
 
-.toast-container{"aria-atomic" => "true", "aria-live" => "polite"}
-	.toast-container-inner
-		.toast{:style => "opacity:1;"}
-			.toast-body
-				%p
-					I'm a toast
-		.toast{:style => "opacity:1;"}
-			.toast-body
-				%p
-					Just in case we need to stack, im a second toast that breaks to a couple lines.
+/ .toast-container{"aria-atomic" => "true", "aria-live" => "polite"}
+/ 	.toast-container-inner
+/ 		.toast{:style => "opacity:1;"}
+/ 			.toast-body
+/ 				%p
+/ 					I'm a toast
+/ 		.toast{:style => "opacity:1;"}
+/ 			.toast-body
+/ 				%p
+/ 					Just in case we need to stack, im a second toast that breaks to a couple lines.
 
 .review-container
 	.notes-list-container
@@ -65,21 +65,41 @@
 						.col-4
 			.note-info
 				.note-zero
-					%img.margin-auto.double-margin-bottom{:src=>"../images/zero-note.png", :width=>"350px"}
+					%img.margin-auto.d-none.d-sm-block{:src=>"../images/smile.svg", :width=>"90px"}
 					.note-zero-text
-						%h2.text-center
-							Add notes to this project
-						%ol
-							%li
-								Make sure you have the 
-								%a{:href=>"#"}
-									Volley Extension
-							%li
-								Visit the website that needs feedback
-							%li
-								Open the extension and select this project
-							%li
-								Your notes will show up here
+						%h2.text-center.medium-font.double-margin-top
+							Start your project. Here’s how.
+						.card-deck.double-margin-top
+							.card
+								.card-body
+									%h3.card-title.medium-font
+										Install the browser extension
+									%p.card-text
+										Install the Chrome extension to capture notes on any website.
+								.card-footer
+									%a.btn.btn-primary.btn-block{:href=>"#"}
+										%img{:src=>"/images/chrome-icon.svg", :width=>"16px", :style=>"position:relative; top:-1px; margin-right:3px;"}
+										Show Chrome extension
+							.card
+								.card-body
+									%h3.card-title.medium-font
+										Invite your colleagues
+									%p.card-text
+										Invite anyone that will be reviewing your feedback.
+								.card-footer
+									%a.btn.btn-primary.btn-block{:href=>"#"}
+										Invite now
+							.card
+								.card-body
+									%h3.card-title.medium-font
+										Visit your website
+									%p.card-text
+										Open the extension and select this project. your notes will show up here.
+								.card-footer.text-center
+									%img.max-width.margin-auto{:src=>"/images/your-website.svg", :width=>"201px", :style=>"position:relative; top:6px;"}
+
+
+
 		
 							
 

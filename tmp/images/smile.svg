@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="79px" viewBox="0 0 90 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Product" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="project-zero---added" transform="translate(-682.000000, -154.000000)" fill="#7F8FA4">
+            <g id="Group" transform="translate(682.000000, 154.000000)">
+                <path d="M43.3116935,79 C29.1313526,79 15.8471404,73.043931 3.80675482,61.2941991 L0,57.5800411 L7.54898837,50.0740526 L11.3593277,53.7917412 C21.3852159,63.5784769 32.135176,68.6024759 43.5626095,68.4365391 C63.2165047,68.3129693 78.443524,53.2868699 78.5976581,53.1315248 L82.3470607,49.375 L90,56.7432964 L86.2649355,60.5139435 C85.5265254,61.262424 67.8942966,78.795227 43.7382508,79 C43.5984547,79 43.4550741,79 43.3116935,79" id="Fill-1"></path>
+                <polygon id="Fill-4" points="40 49.375 40 14.2655582 40 0 30 0 30 14.2655582 30 49.375"></polygon>
+                <polygon id="Fill-6" points="60 49.375 60 14.2655582 60 0 50 0 50 14.2655582 50 49.375"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
