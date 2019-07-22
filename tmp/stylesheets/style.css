@@ -1806,6 +1806,8 @@ ul.check-list {
 
 .get-started-deck {
   max-width: 875px; }
+  .get-started-deck .card-footer {
+    padding-top: 0; }
 
 @keyframes menu-zoom {
   0% {
