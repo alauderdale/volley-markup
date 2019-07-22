@@ -803,7 +803,7 @@ $control-nav-height: 61px;
   	max-width: 100%;
   	z-index: 0;
   	@include breakpoint(sm) {
-  		max-width: 50%;
+
 	}
   }
   .note-zero-text{
@@ -815,6 +815,9 @@ $control-nav-height: 61px;
   		}
   	}
   }
+  .btn{
+  	font-size: 14px;
+  }
 }
 
 
@@ -822,5 +825,10 @@ $control-nav-height: 61px;
 	i{
 		font-size: 10px;
 	}
+}
+
+
+.get-started-deck{
+	max-width: 875px;
 }
 

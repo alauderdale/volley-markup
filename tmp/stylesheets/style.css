@@ -1786,21 +1786,26 @@ ul.check-list {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto; }
+  @media (max-width: 768px) {
+    .note-zero {
+      justify-content: initial; } }
   .note-zero img {
     max-width: 100%;
     z-index: 0; }
-    @media (max-width: 768px) {
-      .note-zero img {
-        max-width: 50%; } }
   .note-zero .note-zero-text {
     margin: 0 auto; }
     .note-zero .note-zero-text ul, .note-zero .note-zero-text ol {
       margin-top: 16px; }
       .note-zero .note-zero-text ul li, .note-zero .note-zero-text ol li {
         line-height: 30px; }
+  .note-zero .btn {
+    font-size: 14px; }
 
 .new-items i {
   font-size: 10px; }
+
+.get-started-deck {
+  max-width: 875px; }
 
 @keyframes menu-zoom {
   0% {
