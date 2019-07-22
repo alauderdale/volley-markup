@@ -830,5 +830,8 @@ $control-nav-height: 61px;
 
 .get-started-deck{
 	max-width: 875px;
+	.card-footer{
+		padding-top: 0;
+	}
 }
 
