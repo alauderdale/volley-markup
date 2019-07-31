@@ -1845,6 +1845,11 @@ ul.check-list {
         right: -32px;
         top: 16px;
         z-index: 99; }
+      .welcome-container .form-container .form-header .back {
+        position: absolute;
+        left: -32px;
+        top: 16px;
+        z-index: 99; }
     .welcome-container .form-container .form-content-wrapper {
       position: relative;
       display: flex;
