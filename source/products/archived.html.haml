@@ -1,0 +1,74 @@
+;;;
+
+"title": "Archived"
+
+;;;
+
+
+= partial "add-new"
+
+%section
+	.container.product-card-container
+		.row
+			-1.times do
+				.col-sm-12.col-md-12.col-lg-6
+					.product-card-wrapper.margin-bottom
+						.card.product-card
+							.card-header.no-padding-bottom
+								.img-wrapper
+									.no-img
+										%p
+											A
+									.overlay
+										.actions
+											%button.btn.btn-wire{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#unarchiveModal"} 
+												Unarchive
+							.card-body
+								.row
+									.col-8
+										/ %h3.no-margin-bottom.card-title.medium-font
+										/ 	Project title
+										%h3.card-url.no-margin-bottom
+											Archived project
+										%h4.card-text
+											Created Oct 17, 2019
+									.col-4
+						.card-actions
+							.dropdown.show.text-right
+								%button.btn.btn-flat.btn-icon.no-padding.menu-button{"data-toggle" => "dropdown", :type=>"button"}
+									%i.material-icons
+										more_horiz
+								.dropdown-menu.dropdown-menu-right
+									%button.dropdown-item{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#unarchiveModal"} 
+										Unarchive
+									.dropdown-divider
+									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+										Delete
+			
+											
+
+
+
+#unarchiveModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header
+				%h2.padding-left
+					Unarchive project
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					%p
+						Are you sure that you want to activate this project?
+			.modal-footer.no-border-top
+				%button.btn.btn-link{:tyle=>"button", "data-dismiss" => "modal"}
+					Cancel
+				%button.btn.btn-primary{:tyle=>"button", :onclick=>"location.href='/products/archive-zero';"}
+					Yes, unarchive
+
+
+
+
+					

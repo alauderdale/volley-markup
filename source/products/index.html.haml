@@ -1,3 +1,11 @@
+;;;
+
+"title": "All projects"
+
+;;;
+
+
+
 = partial "free-trial-card"
 
 = partial "add-new"
@@ -36,6 +44,9 @@
 										Edit
 									%button.dropdown-item{:type=>"button"} 
 										Share
+									%button.dropdown-item{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#archiveModal"} 
+										Archive
+									.dropdown-divider
 									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
 										Delete
 			-1.times do
@@ -67,6 +78,9 @@
 										Edit
 									%button.dropdown-item{:type=>"button"} 
 										Share
+									%button.dropdown-item{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#archiveModal"} 
+										Archive
+									.dropdown-divider
 									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
 										Delete
 			-1.times do
@@ -98,6 +112,9 @@
 										Edit
 									%button.dropdown-item{:type=>"button"} 
 										Share
+									%button.dropdown-item{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#archiveModal"} 
+										Archive
+									.dropdown-divider
 									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
 										Delete
 			
@@ -129,5 +146,25 @@
 					Save
 
 
+
+
+#archiveModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header
+				%h2.padding-left
+					Confirm archive project
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					%p
+						Are you sure you want to continue? No one will be able to view notes in this project.
+			.modal-footer.no-border-top
+				%button.btn.btn-link{:tyle=>"button", "data-dismiss" => "modal"}
+					Cancel, don't archive
+				%button.btn.btn-primary{:tyle=>"button", "data-dismiss" => "modal"}
+					Yes, archive
 
 					

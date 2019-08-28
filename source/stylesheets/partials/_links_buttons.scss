@@ -58,6 +58,15 @@ a{
 			@include button-hover(white);
 		}
 	}
+	//flat wire
+	&.btn-wire{
+		background:transparent;
+		border-color:white;
+		color:white;
+		&:hover{
+			@include button-hover($link-color);
+		}
+	}
 	//link button
 	&.btn-link{
 		color:$link-color;

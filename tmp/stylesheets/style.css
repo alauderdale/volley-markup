@@ -237,6 +237,13 @@ a {
     .btn.btn-flat:hover {
       background: #f2f2f2;
       border-color: #f2f2f2; }
+  .btn.btn-wire {
+    background: transparent;
+    border-color: white;
+    color: white; }
+    .btn.btn-wire:hover {
+      background: #003ff2;
+      border-color: #003ff2; }
   .btn.btn-link {
     color: #0042FF; }
     .btn.btn-link:hover {
@@ -446,6 +453,25 @@ section {
     background-color: #0042FF; }
   section.off-white-bg {
     background-color: #F5F8FA; }
+
+.tab-nav {
+  text-align: center; }
+  .tab-nav li {
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 12px; }
+    .tab-nav li:first-of-type {
+      margin-left: 0; }
+    .tab-nav li:last-of-type {
+      margin-right: 0; }
+    .tab-nav li a {
+      color: #7F8FA4;
+      padding: 0;
+      padding-bottom: 5px;
+      font-weight: 600; }
+      .tab-nav li a.active {
+        color: #354052;
+        border-bottom: 3px solid #0042FF; }
 
 .navbar a.nav-link {
   color: #354052 !important;
@@ -702,19 +728,19 @@ section {
   .card-actions .dropdown-item:hover {
     cursor: pointer; }
 
-a.product-card {
+.product-card {
   position: relative;
   border: none;
   display: block; }
-  a.product-card .card-header {
+  .product-card .card-header {
     border-color: #E6EAEE;
     position: relative;
     padding: 20px;
     height: 231px; }
     @media (max-width: 768px) {
-      a.product-card .card-header {
+      .product-card .card-header {
         height: auto; } }
-    a.product-card .card-header .img-wrapper {
+    .product-card .card-header .img-wrapper {
       background-image: url("../images/pattern2.svg"), linear-gradient(#0042FF, #00ADFF);
       background-size: 100%;
       border: 1px solid #E6EAEE;
@@ -725,12 +751,12 @@ a.product-card {
       height: 100%;
       position: relative; }
       @media (max-width: 768px) {
-        a.product-card .card-header .img-wrapper {
+        .product-card .card-header .img-wrapper {
           min-height: 171px; } }
-      a.product-card .card-header .img-wrapper img {
+      .product-card .card-header .img-wrapper img {
         height: 100%;
         width: 100%; }
-      a.product-card .card-header .img-wrapper .no-img {
+      .product-card .card-header .img-wrapper .no-img {
         width: 90px;
         height: 90px;
         background: transparent;
@@ -746,25 +772,45 @@ a.product-card {
         max-width: 100%;
         max-height: 100%;
         overflow: auto; }
-        a.product-card .card-header .img-wrapper .no-img p {
+        .product-card .card-header .img-wrapper .no-img p {
           margin: 0;
           position: relative;
           font-size: 37px;
           top: 31px;
           color: white; }
-  a.product-card .card-body {
+      .product-card .card-header .img-wrapper .overlay {
+        transition-timing-function: ease-in-out;
+        transition: 0.2s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0; }
+        .product-card .card-header .img-wrapper .overlay .actions {
+          position: relative;
+          text-align: center;
+          margin: 0 auto;
+          top: calc(50% - 19px); }
+          .product-card .card-header .img-wrapper .overlay .actions .btn {
+            padding-left: 40px;
+            padding-right: 40px; }
+  .product-card .card-body {
     z-index: 99;
     background-color: white; }
-    a.product-card .card-body .card-url {
+    .product-card .card-body .card-url {
       color: #354052; }
-    a.product-card .card-body .card-text {
+    .product-card .card-body .card-text {
       color: #B4BBC6; }
-  a.product-card:hover {
+  .product-card:hover {
     text-decoration: none; }
-    a.product-card:hover .card-body .card-url {
+    .product-card:hover .card-body .card-url {
       color: #0042FF; }
-    a.product-card:hover .no-img {
+    .product-card:hover .no-img {
       border-color: white !important; }
+    .product-card:hover .overlay {
+      opacity: 1 !important; }
 
 .free-trial-card {
   position: fixed;

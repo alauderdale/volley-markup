@@ -155,6 +155,22 @@ Create Project
 </form>
 </div>
 </div>
+<div class='row'>
+<div class='col-sm-12'>
+<ul class='nav tab-nav justify-content-center justify-content-lg-start'>
+<li class='nav-item'>
+<a class='active nav-link' href='/products/'>
+All projects
+</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='/products/archived'>
+Archived
+</a>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -208,6 +224,10 @@ Edit
 <button class='dropdown-item' type='button'>
 Share
 </button>
+<button class='dropdown-item' data-target='#archiveModal' data-toggle='modal' type='button'>
+Archive
+</button>
+<div class='dropdown-divider'></div>
 <button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
 Delete
 </button>
@@ -258,6 +278,10 @@ Edit
 <button class='dropdown-item' type='button'>
 Share
 </button>
+<button class='dropdown-item' data-target='#archiveModal' data-toggle='modal' type='button'>
+Archive
+</button>
+<div class='dropdown-divider'></div>
 <button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
 Delete
 </button>
@@ -308,6 +332,10 @@ Edit
 <button class='dropdown-item' type='button'>
 Share
 </button>
+<button class='dropdown-item' data-target='#archiveModal' data-toggle='modal' type='button'>
+Archive
+</button>
+<div class='dropdown-divider'></div>
 <button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
 Delete
 </button>
@@ -348,6 +376,35 @@ Cancel
 </button>
 <button class='btn btn-primary' data-dismiss='modal' tyle='button'>
 Save
+</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='archiveModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h2 class='padding-left'>
+Confirm archive project
+</h2>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='padded no-padding-top no-padding-bottom'>
+<p>
+Are you sure you want to continue? No one will be able to view notes in this project.
+</p>
+</div>
+</div>
+<div class='modal-footer no-border-top'>
+<button class='btn btn-link' data-dismiss='modal' tyle='button'>
+Cancel, don't archive
+</button>
+<button class='btn btn-primary' data-dismiss='modal' tyle='button'>
+Yes, archive
 </button>
 </div>
 </div>

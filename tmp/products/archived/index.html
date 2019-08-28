@@ -16,7 +16,7 @@ Volley | Fast, easy feedback for your website"
 <link href='../../images/favicon.ico' rel='shortcut icon'>
 <script src="../../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
-<body class='products products_welcome products_welcome_index'>
+<body class='products products_archived products_archived_index'>
 <nav class='navbar navbar-light bg-light fixed-top navbar-expand-sm' id='primary-nav'>
 <div class='container'>
 <a class='navbar-brand' href='/products'>
@@ -117,38 +117,139 @@ Sign out
 
 <!-- end menu -->
 <div class='main'>
-<div class='alert-container'>
-<div class='alert alert-success'>
-<div class='container product-card-container text-center'>
-Please confirm your email address. A confirmation message was sent to
-tonia-blanchard@email.com
-<a class='alert-link' href='#'>
-Resend email
-</a>
-</div>
-</div>
-</div>
-<section>
+<section class='no-padding-bottom'>
 <div class='container product-card-container'>
-<div class='row justify-content-md-center'>
-<div class='col-md-10'>
-<div class='jumbotron text-center welcome-panel'>
-<div class='double-margin-bottom'>
-<h1>
-Let’s get started
-</h1>
-<p>
-Visit the Chrome store to download the Volley commentor.
-</p>
+<div class='row'>
+<div class='col-sm-12'>
+<div class='page-header'>
+<div class='row'>
+<div class='col-sm-12'>
+<form class='add-new-product-bar'>
+<div class='form-row'>
+<div class='col-xl-9 col-lg-9 col-md-9 mb-3'>
+<input class='form-control form-control-lg' placeholder='Project name'>
 </div>
-<a class='btn btn-primary' href='zero'>
-Visit chrome store
+<div class='col-xl-3 col-lg-3 col-md-3 mb-3'>
+<button class='btn btn-primary mb-2 btn-block btn-lg' onclick='location.href=&#39;/product/review-zero&#39;;' type='button'>
+Create Project
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<ul class='nav tab-nav justify-content-center justify-content-lg-start'>
+<li class='nav-item'>
+<a class='nav-link' href='/products/'>
+All projects
 </a>
+</li>
+<li class='nav-item'>
+<a class='active nav-link' href='/products/archived'>
+Archived
+</a>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
+
+<section>
+<div class='container product-card-container'>
+<div class='row'>
+<div class='col-sm-12 col-md-12 col-lg-6'>
+<div class='product-card-wrapper margin-bottom'>
+<div class='card product-card'>
+<div class='card-header no-padding-bottom'>
+<div class='img-wrapper'>
+<div class='no-img'>
+<p>
+A
+</p>
+</div>
+<div class='overlay'>
+<div class='actions'>
+<button class='btn btn-wire' data-target='#unarchiveModal' data-toggle='modal' type='button'>
+Unarchive
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class='card-body'>
+<div class='row'>
+<div class='col-8'>
+<!-- %h3.no-margin-bottom.card-title.medium-font -->
+<!-- Project title -->
+<h3 class='card-url no-margin-bottom'>
+Archived project
+</h3>
+<h4 class='card-text'>
+Created Oct 17, 2019
+</h4>
+</div>
+<div class='col-4'></div>
+</div>
+</div>
+</div>
+<div class='card-actions'>
+<div class='dropdown show text-right'>
+<button class='btn btn-flat btn-icon no-padding menu-button' data-toggle='dropdown' type='button'>
+<i class='material-icons'>
+more_horiz
+</i>
+</button>
+<div class='dropdown-menu dropdown-menu-right'>
+<button class='dropdown-item' data-target='#unarchiveModal' data-toggle='modal' type='button'>
+Unarchive
+</button>
+<div class='dropdown-divider'></div>
+<button class='dropdown-item' onclick='location.href=&#39;products/zero&#39;;' type='button'>
+Delete
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='unarchiveModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h2 class='padding-left'>
+Unarchive project
+</h2>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='padded no-padding-top no-padding-bottom'>
+<p>
+Are you sure that you want to activate this project?
+</p>
+</div>
+</div>
+<div class='modal-footer no-border-top'>
+<button class='btn btn-link' data-dismiss='modal' tyle='button'>
+Cancel
+</button>
+<button class='btn btn-primary' onclick='location.href=&#39;/products/archive-zero&#39;;' tyle='button'>
+Yes, unarchive
+</button>
+</div>
+</div>
+</div>
+</div>
 
 </div>
 <!-- end main content -->
