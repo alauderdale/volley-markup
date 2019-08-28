@@ -1080,10 +1080,9 @@ ul.check-list {
     padding-left: 1.3em;
     margin-bottom: 10px; }
     ul.check-list li:before {
-      content: "check_circle";
+      content: "check";
       /* FontAwesome Unicode */
       font-family: Material Icons;
-      display: inline-block;
       margin-left: -1.3em;
       /* same as padding-left set on li */
       width: 1.3em;

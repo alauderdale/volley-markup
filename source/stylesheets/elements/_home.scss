@@ -178,9 +178,8 @@ ul{
 			padding-left: 1.3em;
 			margin-bottom:10px;
 			&:before{
-				content: "check_circle"; /* FontAwesome Unicode */
+				content: "check"; /* FontAwesome Unicode */
 				font-family: Material Icons;
-				display: inline-block;
 				margin-left: -1.3em; /* same as padding-left set on li */
 				width: 1.3em; /* same as padding-left set on li */
 				position:relative;
