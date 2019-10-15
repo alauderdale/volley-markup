@@ -55,7 +55,7 @@
 							.col
 								%p.no-margin-bottom.text-right
 									Visa ending in 4444, exp: 09/2020
-									%a.margin-left{:href=>"#"}
+									%button.btn.btn-link.margin-left{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#changeCardModal"} 
 										Update
 				.card
 					.card-body
@@ -90,4 +90,42 @@
 
 
 
+#changeCardModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header
+				%h2.padding-left
+					Update billing information
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
 
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					%form
+						.form-row.margin-bottom
+							.form-group.col-12
+								%label
+									Name on card
+								%input.form-control.form-control-lg{:type=>"text"}
+						.form-row.margin-bottom
+							.form-group.col-6
+								%label
+									Card number
+								%input.form-control.form-control-lg{:type=>"text", :placeholder=>"0000 0000 0000 0000"}
+							.form-group.col-3
+								%label
+									Expire date
+								%input.form-control.form-control-lg{:type=>"text", :placeholder=>"10/20"}
+							.form-group.col-3
+								%label
+									CVV
+								%input.form-control.form-control-lg{:type=>"text", :placeholder=>"123"}
+						.form-row.margin-bottom
+							.form-group.col-12
+								%img{:src=>"../images/cards.png",:width=>"220px"}
+
+			.modal-footer.no-border-top
+				%button.btn.btn-link{:tyle=>"button", "data-dismiss" => "modal"}
+					Cancel
+				%button.btn.btn-primary{:tyle=>"button", "data-dismiss" => "modal"}
+					Save changes
