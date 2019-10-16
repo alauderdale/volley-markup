@@ -124,6 +124,9 @@ img {
 .link-color {
   color: #0042FF; }
 
+.regular-font {
+  font-weight: 400; }
+
 .medium-font {
   font-weight: 600; }
 
@@ -199,6 +202,10 @@ a {
   font-size: 16px; }
   .btn.btn-lg {
     padding: .65rem 2rem; }
+  .btn.btn-sm-text {
+    font-size: 14px; }
+    .btn.btn-sm-text.dropdown-toggle:after {
+      vertical-align: 0.10em; }
   .btn.btn-primary {
     background: #0042FF;
     border-color: #0042FF; }

@@ -9,6 +9,14 @@ a{
 	&.btn-lg{
 		padding: .65rem 2rem;
 	}
+	&.btn-sm-text{
+		font-size:14px;
+		&.dropdown-toggle{
+			&:after{
+				vertical-align:0.10em;
+			}
+		}
+	}
 	//primary buttons
 	&.btn-primary{
 		background:$link-color;

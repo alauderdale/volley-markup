@@ -21,13 +21,26 @@
 	.notes-list-container
 		.notes-list-body
 			.notes-list-header.padded.half-padding-bottom
-				.inline-block
-					%h4.bold-font
-						21 Notes
-				.inline-block.align-middle.show-notes-toggle.float-right
-					%a{:href=>"#"}
-						%i.material-icons
-							clear
+				.inline
+					.inline-block.align-middle
+						%h4.bold-font.no-margin-bottom
+							21 Notes
+					.inline-block.align-middle.show-notes-toggle.float-right.margin-left
+						%a{:href=>"#"}
+							%i.material-icons
+								clear
+					.inline-block.align-middle.float-right
+						.dropdown
+							%button.btn.btn-default.dropdown-toggle.no-padding.btn-sm-text.light-text-color.regular-font{:type=>"button", "data-toggle"=>"dropdown"}
+								Oldest first
+							
+							.dropdown-menu
+								%a.dropdown-item{:href=>"#"}
+									Newest first
+								%a.dropdown-item.active{:href=>"#"}
+									Oldest first
+
+				
 			
 			- 3.times do
 				.note-thumbnail
