@@ -15,6 +15,7 @@
 		&.active{
 			background:$off-white-dark-color;
 			box-shadow:inset 3px 0 0 $link-color;
+			color:$dark-text-color;
 			&:hover{
 				background:$off-white-dark-color;
 			}

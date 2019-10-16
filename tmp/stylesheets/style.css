@@ -879,7 +879,8 @@ section {
       color: #354052; }
     .dropdown-menu .dropdown-item.active {
       background: #F5F8FA;
-      box-shadow: inset 3px 0 0 #0042FF; }
+      box-shadow: inset 3px 0 0 #0042FF;
+      color: #393C3E; }
       .dropdown-menu .dropdown-item.active:hover {
         background: #F5F8FA; }
     .dropdown-menu .dropdown-item i {
