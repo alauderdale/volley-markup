@@ -878,7 +878,7 @@ section {
       background: #e9ecee;
       color: #354052; }
     .dropdown-menu .dropdown-item.active {
-      background: white;
+      background: #F5F8FA;
       box-shadow: inset 3px 0 0 #0042FF; }
       .dropdown-menu .dropdown-item.active:hover {
         background: #F5F8FA; }
