@@ -1,31 +1,36 @@
-.alert-container
-	.alert.alert-info.padding-top.padding-bottom
-		.container.product-card-container.text-center
-			%h3.no-margin-bottom
-				%span.bold-font
-					Your free trial has ended.
-				To continue using Volley please subscribe.
 %section
 	.container
-		.row
-			.col-lg-12
+		/ .row
+		/ 	.col-lg-12
+		/ 		.alert-container
+		/ 			.alert.alert-info.padding-top.padding-bottom
+		/ 				.container.product-card-container.text-center
+		/ 					%h3.no-margin-bottom
+		/ 						%span.bold-font
+		/ 							Oops: 
+		/ 						The plan you selected only allows for 4 projects. You currently have 5 projects. You'll need to trim down a bit to use the basic plan.
+		.row.justify-content-center
+			.col-lg-8
 				%h2.text-center.medium-font
-					Subscribe to Volley and colloborate forever.
+					Upgrade and take your process to the next level. 
+				%p.light-text.text-center
+					You've reached your 1 project limit. You can either archive or delete a project, or upgrade for more projects!
+
 %section.padding-top
 	.container
 		.row.justify-content-md-center
-			.col-sm-12.col-md-12.col-lg-9.col-xl-8
+			.col-12
 				.row
-					.col-sm-12.col-md-6
+					.col-sm-12.col-md-4
 						.card.price-card.margin-bottom
 							.card-header
 								%h1
-									Volley basic
+									Volley Free
 								%h1.display-4
 									%span.price.medium-font
 										$
 									%span.bold-font.dollar-ammount
-										4
+										0
 									%span.month
 										\/ month
 							.card-body
@@ -38,9 +43,33 @@
 										Unlimited project members
 
 							.card-footer.text-center.no-padding-top.double-padding-bottom
+								%a.btn.btn-secondary.btn-block.disabled{:href=>"/billing/pay"}
+									Current plan
+					.col-sm-12.col-md-4
+						.card.price-card.margin-bottom
+							.card-header
+								%h1
+									Volley starter
+								%h1.display-4
+									%span.price.medium-font
+										$
+									%span.bold-font.dollar-ammount
+										4
+									%span.month
+										\/ month
+							.card-body
+								%ul.card-list.list-unstyled.icon-list-better.check-list
+									%li
+										4 projects
+									%li
+										Unlimited notes
+									%li
+										Unlimited project members
+
+							.card-footer.text-center.no-padding-top.double-padding-bottom
 								%a.btn.btn-primary.btn-block{:href=>"/billing/pay"}
-									Choose basic
-					.col-sm-12.col-md-6.margin-bottom
+									Choose starter
+					.col-sm-12.col-md-4.margin-bottom
 						.card.price-card
 							.card-header
 								%h1
