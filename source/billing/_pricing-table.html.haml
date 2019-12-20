@@ -1,23 +1,3 @@
-%section
-	.container
-		/ .row
-		/ 	.col-lg-12
-		/ 		.alert-container
-		/ 			.alert.alert-info.padding-top.padding-bottom
-		/ 				.container.product-card-container.text-center
-		/ 					%h3.no-margin-bottom
-		/ 						%span.bold-font
-		/ 							Oops: 
-		/ 						The plan you selected only allows for 4 projects. You currently have 5 projects. You'll need to trim down a bit to use the basic plan.
-		.row.justify-content-center
-			.col-lg-8
-				%h2.text-center.medium-font
-					Upgrade and take your process to the next level. 
-				%p.light-text.text-center
-					You've reached your 1 project limit. You can either archive or delete a project, or upgrade for more projects!
-
-
-
 %section.padding-top
 	.container
 		.row.justify-content-md-center
@@ -45,8 +25,8 @@
 										Unlimited project members
 
 							.card-footer.text-center.no-padding-top.double-padding-bottom
-								%a.btn.btn-secondary.btn-block.disabled{:href=>"/billing/pay"}
-									Current plan
+								%a.btn.btn-primary.btn-block{:href=>"/welcome/sign-up"}
+									Get started free
 					.col-sm-12.col-md-4
 						.card.price-card.margin-bottom
 							.card-header
@@ -69,8 +49,8 @@
 										Unlimited project members
 
 							.card-footer.text-center.no-padding-top.double-padding-bottom
-								%a.btn.btn-primary.btn-block{:href=>"/billing/pay"}
-									Choose starter
+								%a.btn.btn-primary.btn-block{:href=>"/welcome/sign-up"}
+									Get started free
 					.col-sm-12.col-md-4.margin-bottom
 						.card.price-card
 							.card-header
@@ -93,6 +73,5 @@
 										Unlimited project members
 
 							.card-footer.text-center.no-padding-top.double-padding-bottom
-								%a.btn.btn-primary.btn-block{:href=>"/billing/pay"}
-									Choose PRO
-									
+								%a.btn.btn-primary.btn-block{:href=>"/welcome/sign-up"}
+									Get started free

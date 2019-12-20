@@ -1,4 +1,14 @@
+html.market-html{
+	scroll-behavior: smooth;
+}
 
+//fix smooth fixed scolling
+.spacer{
+	height:96px;
+	margin-bottom:-96px;
+	position:relative;
+	top:-96px;
+}
 
 
 
@@ -113,6 +123,11 @@ body.market{
 	padding:20px 0;
 	z-index: 1000;
 	top:0;
+	.nav{
+		.nav-item{
+			font-size: 18px;
+		}
+	}
 
 }
 

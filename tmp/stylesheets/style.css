@@ -959,6 +959,15 @@ section {
   .badge.badge-danger {
     background-color: #FF4E4A; }
 
+html.market-html {
+  scroll-behavior: smooth; }
+
+.spacer {
+  height: 96px;
+  margin-bottom: -96px;
+  position: relative;
+  top: -96px; }
+
 .video-button-wrapper {
   position: relative;
   width: 100%; }
@@ -1044,6 +1053,8 @@ body.market {
   padding: 20px 0;
   z-index: 1000;
   top: 0; }
+  #marketing-header .nav .nav-item {
+    font-size: 18px; }
 
 .text-container {
   position: relative; }

@@ -50,7 +50,7 @@
 							See in in action
 
 
-
+#how-it-works.spacer
 %section.no-padding-bottom
 	.container
 		.row.align-items-center.justify-content-around
@@ -152,61 +152,25 @@
 						Create notes in seconds
 
 
+#pricing.spacer
+%section.no-padding-bottom.off-white-bg
+	.container
+		.row.double-margin-bottom
+			.col-lg-12.text-center
+				%h2.market.bold-font
+					Simple pricing
+				%p.market.text-center
+					Get started Free, pay only for what you need. 
+		.row
+			.col-lg-12
+				=partial('/billing/pricing-table')
 
-%section#join
-	.double-padding-top.double-padding-bottom
-		.container
-			.row
-				.col.text-center
-					.jumbotron.volley-jumbotron
-						%h2.market.bold-font.no-margin-bottom
-							Get early access
-						%h3.market.double-margin-bottom
-							We’ll let you know when Volley is ready.
-						=partial"waitlist-form"
-%footer
-	%section
-		.container
-			.row
-				.col-sm-6
-					%p.light-text-color
-						%img.margin-right.margin-bottom{:src=>"/images/logo.svg", :width=>"100px"}
-						%br
-						© 2019 Volley
 
-				.col-sm-2
-					%p.body-small.light-text-color
-						Legal
-					%ul.list-unstyled
-						%li
-							%a.text-color{:href=>"#"}
-								Terms
-						%li
-							%a.text-color{:href=>"#"}
-								Privacy
-				.col-sm-2
-					%p.body-small.light-text-color
-						Connect
-					%ul.list-unstyled
-						%li
-							%a.text-color{:href=>"https://www.facebook.com/meetvolley/"}
-								Facebook
-						%li
-							%a.text-color{:href=>"https://twitter.com/meetvolley"}
-								Twitter
-						%li
-							%a.text-color{:href=>"https://www.youtube.com/channel/UCeUpquAf-1HTU4IOthZjMlw"}
-								YouTube
-						%li
-							%a.text-color{:href=>"https://www.producthunt.com/upcoming/volley-2"}
-								Product Hunt
-				.col-sm-2
-					%p.body-small.light-text-color
-						Questions?
-					%ul.list-unstyled
-						%li
-							%a.text-color{:href=>"mailto:hello@meetvolley.com"}
-								hello@meetvolley.com
+=partial('/market/promo')
+
+
+
+
 
 
 

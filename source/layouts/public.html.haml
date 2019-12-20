@@ -1,5 +1,5 @@
 <!doctype html>
-%html
+%html.market-html
   %head
     = partial "shared/scripts"
     %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-143756502-1"}
@@ -16,4 +16,5 @@
       .main
         = yield
       /end main content
+      =partial('market/footer')
       
