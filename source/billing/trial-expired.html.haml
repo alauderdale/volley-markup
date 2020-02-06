@@ -20,10 +20,10 @@
 
 %section.padding-top
 	.container
-		.row.justify-content-md-center
+		.row.justify-content-center
 			.col-12
-				.row
-					.col-sm-12.col-md-4
+				.row.justify-content-center
+					.col-sm-12.col-md-6.col-lg-6.col-xl-4
 						.card.price-card.margin-bottom
 							.card-header
 								%h1
@@ -40,59 +40,56 @@
 									%li
 										1 project
 									%li
-										Unlimited notes
+										Unlimited comments
 									%li
-										Unlimited project members
+										User mentions
 
 							.card-footer.text-center.no-padding-top.double-padding-bottom
 								%a.btn.btn-secondary.btn-block.disabled{:href=>"/billing/pay"}
 									Current plan
-					.col-sm-12.col-md-4
-						.card.price-card.margin-bottom
-							.card-header
-								%h1
-									Volley Starter
-								%h1.display-4
-									%span.price.medium-font
-										$
-									%span.bold-font.dollar-ammount
-										4
-									%span.month
-										\/ month
-							.card-body
-								%ul.card-list.list-unstyled.icon-list-better.check-list
-									%li
-										4 projects
-									%li
-										Unlimited notes
-									%li
-										Unlimited project members
-
-							.card-footer.text-center.no-padding-top.double-padding-bottom
-								%a.btn.btn-primary.btn-block{:href=>"/billing/pay"}
-									Choose starter
-					.col-sm-12.col-md-4.margin-bottom
+					.col-sm-12.col-md-6.col-lg-6.col-xl-4.margin-bottom
 						.card.price-card
 							.card-header
+								.card-promo.text-center
+									%h5.bold-font
+										Early subscriber discount!
+									%h2.bold-font.no-margin-bottom
+										$10
+										%span.small-text
+											\ / month for life
 								%h1
-									Volley Pro
-								%h1.display-4
+									Volley 
+									%span.medium-font
+										Unlimited
+								%h1.display-4.strikethrough
 									%span.price.medium-font
 										$
 									%span.bold-font.dollar-ammount
-										10
-									%span.month
-										\/ month
+										25
+								%h5{:style=>"position: relative;top: 12px;"}
+									%span.bold-font.success-text-color
+										Save 60% 
+									by subscribing whithin the next 30 days
 							.card-body
+								%p.bold-font
+									You get unlimited everyhting…
 								%ul.card-list.list-unstyled.icon-list-better.check-list
 									%li.bold-font
-										Unlimited projects
+										Projects
+									%li.bold-font
+										Comments
+									%li.bold-font
+										Collaborators
 									%li
-										Unlimited notes
+										Integrations
+										%small
+											(Asana and Trello coming soon)
 									%li
-										Unlimited project members
+										Instant access to every new feature
 
 							.card-footer.text-center.no-padding-top.double-padding-bottom
-								%a.btn.btn-primary.btn-block{:href=>"/billing/pay"}
-									Choose PRO
+								%a.btn.btn-primary.btn-block{:href=>"/welcome/sign-up"}
+									Get unlimited
+
+
 									
