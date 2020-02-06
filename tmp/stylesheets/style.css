@@ -826,7 +826,7 @@ section {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  width: 290px;
+  width: 270px;
   border: 2px solid #0042FF;
   z-index: 99; }
   .free-trial-card p {
@@ -836,7 +836,7 @@ section {
     right: 10px;
     top: 10px; }
   .free-trial-card .btn {
-    max-width: 100px; }
+    max-width: 130px; }
 
 .avatar {
   vertical-align: middle;
