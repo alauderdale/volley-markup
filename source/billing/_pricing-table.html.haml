@@ -1,9 +1,9 @@
 %section.padding-top
 	.container
-		.row.justify-content-md-center
+		.row.justify-content-center
 			.col-12
-				.row
-					.col-sm-12.col-md-6
+				.row.justify-content-center
+					.col-sm-12.col-md-6.col-lg-6.col-xl-4
 						.card.price-card.margin-bottom
 							.card-header
 								%h1
@@ -27,7 +27,7 @@
 							.card-footer.text-center.no-padding-top.double-padding-bottom
 								%a.btn.btn-primary.btn-block{:href=>"/welcome/sign-up"}
 									Get started free
-					.col-sm-12.col-md-6.margin-bottom
+					.col-sm-12.col-md-6.col-lg-6.col-xl-4.margin-bottom
 						.card.price-card
 							.card-header
 								.card-promo.text-center
@@ -41,7 +41,7 @@
 									Volley 
 									%span.medium-font
 										Unlimited
-								%h1.display-4.light-text-color.strikethrough
+								%h1.display-4.strikethrough
 									%span.price.medium-font
 										$
 									%span.bold-font.dollar-ammount
