@@ -1,10 +1,12 @@
 .free-trial-card.card.alert
 	%p.bold-font
-		13 days left on your trial
+		Early subscriber discount
 	%p.half-margin-bottom
-		Ready to simplify your feedback process?
-	%a.btn.btn-primary{:href=>"/billing/trial-expired"}
-		Subscribe
+		%span.medium-font
+			Save 60% 
+		on unlimited for limited time.
+	%a.btn.btn-primary.btn-block{:href=>"/billing/pay"}
+		Upgrade
 	%a.close.cursor-pointer{"data-dismiss"=>"alert"}
 		%i.material-icons
 			close
