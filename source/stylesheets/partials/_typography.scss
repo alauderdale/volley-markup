@@ -23,6 +23,10 @@
   color:$text-color!important;
 }
 
+.success-text-color{
+  color:$success-color!important;
+}
+
 .dark-text-color{
   color:$dark-text-color!important;
 }
@@ -153,7 +157,7 @@ ul.icon-list{
 
 ul.icon-list-better{
   li{
-    line-height: 1.8rem;
+    line-height: 1.3rem;
     position:relative;
     &:before{
       font-family: 'material icons';

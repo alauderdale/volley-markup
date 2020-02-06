@@ -106,6 +106,9 @@ img {
 .text-color {
   color: #354052 !important; }
 
+.success-text-color {
+  color: #26C164 !important; }
+
 .dark-text-color {
   color: #393C3E !important; }
 
@@ -182,7 +185,7 @@ ul.icon-list li {
     margin-right: 5px; }
 
 ul.icon-list-better li {
-  line-height: 1.8rem;
+  line-height: 1.3rem;
   position: relative; }
   ul.icon-list-better li:before {
     font-family: 'material icons';
@@ -1936,17 +1939,56 @@ ul.check-list {
   .invoice-list .row .unpaid i {
     color: #FF4E4A; }
 
-.card.price-card h1 {
-  position: relative; }
-  .card.price-card h1 .price {
-    font-size: 20px;
+.strikethrough {
+  display: inline; }
+  .strikethrough:before {
     position: absolute;
-    top: 15px; }
-  .card.price-card h1 .dollar-ammount {
+    content: "";
+    left: 13px;
+    top: 34px;
+    right: -17px;
+    border-top: 4px solid;
+    border-color: #FF4E4A;
+    transform: rotate(-49deg);
+    z-index: 99; }
+
+.card.price-card {
+  min-height: 500px; }
+  @media (max-width: 768px) {
+    .card.price-card {
+      min-height: auto; } }
+  .card.price-card .card-header {
     position: relative;
-    left: 15px; }
-  .card.price-card h1 .month {
-    font-size: 18px;
-    position: relative;
-    left: 8px;
-    font-weight: 500; }
+    min-height: 170px; }
+    .card.price-card .card-header .card-promo {
+      background: #FF4E4A;
+      padding: 8px 8px;
+      border-radius: 7px;
+      position: absolute;
+      top: 54px;
+      left: 109px;
+      color: white;
+      transform: rotate(-2deg); }
+      .card.price-card .card-header .card-promo h5 {
+        font-size: 15px;
+        margin-bottom: 4px;
+        line-height: 1; }
+      .card.price-card .card-header .card-promo h2 {
+        font-size: 30px;
+        line-height: 1; }
+      .card.price-card .card-header .card-promo .small-text {
+        font-size: .9rem; }
+  .card.price-card h1 {
+    position: relative; }
+    .card.price-card h1 .price {
+      font-size: 20px;
+      position: absolute;
+      top: 15px; }
+    .card.price-card h1 .dollar-ammount {
+      position: relative;
+      left: 15px; }
+    .card.price-card h1 .month {
+      font-size: 18px;
+      position: relative;
+      left: 8px;
+      font-weight: 500; }
