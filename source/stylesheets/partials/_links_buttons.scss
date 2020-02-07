@@ -34,6 +34,17 @@ a{
 			border-color:shade($lightest-gray-color,90%);
 		}
 	}
+	&.btn-terciary{
+		background:tint($link-color,94%);
+		border-color:tint($link-color,94%);
+		border-radius:100px;
+		padding: 5px 25px;
+		color:$link-color;
+		&:hover{
+			background:tint($link-color,82%);
+			border-color:tint($link-color,82%);
+		}
+	}
 	//alert buttons
 	&.btn-danger{
 		background:$danger-color;

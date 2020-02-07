@@ -221,6 +221,15 @@ a {
     color: #354052; }
     .btn.btn-secondary:hover {
       border-color: #121314; }
+  .btn.btn-terciary {
+    background: #f0f4ff;
+    border-color: #f0f4ff;
+    border-radius: 100px;
+    padding: 5px 25px;
+    color: #0042FF; }
+    .btn.btn-terciary:hover {
+      background: #d1ddff;
+      border-color: #d1ddff; }
   .btn.btn-danger {
     background: #FF4E4A;
     border-color: #FF4E4A; }
