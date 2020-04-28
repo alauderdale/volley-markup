@@ -1957,8 +1957,7 @@ ul.check-list {
     top: 34px;
     right: -17px;
     border-top: 4px solid;
-    border-color: #FF4E4A;
-    transform: rotate(-49deg);
+    border-color: #002eb3;
     z-index: 99; }
 
 .card.price-card {
@@ -1970,23 +1969,7 @@ ul.check-list {
     position: relative;
     min-height: 170px; }
     .card.price-card .card-header .card-promo {
-      background: #FF4E4A;
-      padding: 8px 8px;
-      border-radius: 7px;
-      position: absolute;
-      top: 54px;
-      left: 109px;
-      color: white;
-      transform: rotate(-2deg); }
-      .card.price-card .card-header .card-promo h5 {
-        font-size: 15px;
-        margin-bottom: 4px;
-        line-height: 1; }
-      .card.price-card .card-header .card-promo h2 {
-        font-size: 30px;
-        line-height: 1; }
-      .card.price-card .card-header .card-promo .small-text {
-        font-size: .9rem; }
+      color: #002eb3; }
   .card.price-card h1 {
     position: relative; }
     .card.price-card h1 .price {

@@ -7,8 +7,7 @@
 		top: 34px;
 		right: -17px;
 		border-top: 4px solid;
-		border-color: #FF4E4A;
-		transform: rotate(-49deg);
+		border-color: shade($link-color,30%);
 		z-index: 99;
 	}
 }
@@ -23,26 +22,7 @@
 			position:relative;
 			min-height: 170px;
 			.card-promo{
-				h5{
-					font-size: 15px;
-					margin-bottom:4px;
-					line-height: 1;
-				}
-				h2{
-					font-size: 30px;
-					line-height: 1;
-				}
-				.small-text{
-					font-size:.9rem;
-				}
-				background:$danger-color;
-				padding:8px 8px;
-				border-radius:7px;
-				position:absolute;
-				top: 54px;
-    			left: 109px;
-				color:white;
-				transform: rotate(-2deg);
+				color: shade($link-color,30%);
 			}
 		}
 		h1{
