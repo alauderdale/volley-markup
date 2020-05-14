@@ -667,6 +667,9 @@ section {
       font-size: 24px;
       color: #0042FF; }
 
+.input-group .input-group-append .input-group-text {
+  background-color: white; }
+
 .alert {
   font-size: 14px; }
   .alert .alert-link {

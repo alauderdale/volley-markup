@@ -1,0 +1,40 @@
+;;;
+
+"layout": "blank"
+
+;;;
+
+:css
+  body{
+    background:rgba(0,0,0,.5);
+  }
+
+#exportModal.modal.display-block{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header.no-border-bottom.no-padding-bottom
+        %a.btn.btn-secondary{:href=>"/export/jira/username", :style=>"line-height:0;"}
+          %i.material-icons
+            keyboard_backspace
+        %a.close{:href=>"/product/review"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        .padded.no-padding-top.text-center.margin-bottom
+          %img.margin-bottom{:src=>"/images/jira-logo.png", :width=>"100px"}
+          %h1.no-margin-bottom.bold-font
+            Connect to Jira
+        .margin-bottom.align-middle
+          .row.justify-content-center
+            .col-9
+              %p.text-center
+                Go to your Jira 
+                %a{:href=>"https://id.atlassian.com/manage-profile/security/api-tokens", :target=>"_blank"}
+                  API token dashboard
+                , generate a new API token, and then paste it here.
+              %input.form-control.form-control-lg{:placeholder=>"Enter API token"}
+
+        .margin-bottom.text-center
+          %a.btn.btn-primary.btn-lg{:href=>"/export/jira"}
+            Finish connecting
+
+

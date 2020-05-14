@@ -1,0 +1,47 @@
+;;;
+
+"layout": "blank"
+
+;;;
+
+
+=partial "../header"
+
+%section.export-header
+	.container
+		.row.align-items-center
+			.col-md-6
+				.media
+					%img.mr-3{:src=>"/images/jira-icon.png", :width=>"55px"}
+					.media-body
+						%p.no-margin-bottom
+							Export notes to Jira
+						%h2.medium-font.margin-bottom
+							Choose a project from Jira
+			.col-md-6
+				.text-right.actions.margin-top
+					%a.btn.btn-secondary.btn-lg.half-margin-right{:href=>"/export/jira"}
+						Back
+					%a.btn.btn-primary.btn-lg{:href=>"/product/review"}
+						Export 5 comments
+
+%section.no-padding-top
+	.container
+		.row
+			.col
+				.list-of-options
+					.margin-bottom										
+						-2.times do |index|
+							.list-group
+								.list-group-inner
+									%div
+										%input{:id=>"Radio#{index}" ,:name => "RadioInputName", :type => "radio", :value => "Value1"}
+										%label.list-group-item{:for => "Radio#{index}"}
+											=partial"../name"
+
+
+
+
+
+
+
