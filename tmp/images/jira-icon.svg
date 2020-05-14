@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="153px" viewBox="0 0 148 153" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>jira-software-logo</title>
+    <defs>
+        <linearGradient x1="91.87%" y1="40.33%" x2="28.26%" y2="81.66%" id="linearGradient-1">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="3878%" y1="2561.07%" x2="5439%" y2="1905.37%" id="linearGradient-2">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="jira-software-logo" fill-rule="nonzero">
+            <path d="M145.8,72 L80.14,6.35 L73.78,0 L24.37,49.4 L1.77,72 C-0.580877722,74.3574049 -0.580877722,78.1725951 1.77,80.53 L46.92,125.66 L73.78,152.52 L123.2,103.12 L123.96,102.35 L145.79,80.53 C148.147534,78.171445 148.147534,74.348555 145.79,71.99 L145.8,72 Z M73.77,98.8 L51.23,76.27 L73.78,53.7 L96.34,76.25 L73.78,98.8 L73.77,98.8 Z" id="Shape" fill="#2684FF"></path>
+            <path d="M73.78,53.71 C59.0134214,38.9474746 58.9419341,15.0305348 73.62,0.18 L24.27,49.5 L51.13,76.36 L73.78,53.7 L73.78,53.71 Z" id="Path" fill="url(#linearGradient-1)"></path>
+            <path d="M96.4,76.2 L73.78,98.8 C80.9100375,105.920358 84.9164656,115.583447 84.9164656,125.66 C84.9164656,135.736553 80.9100375,145.399642 73.78,152.52 L123.26,103.05 L96.4,76.2 Z" id="Path" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>
