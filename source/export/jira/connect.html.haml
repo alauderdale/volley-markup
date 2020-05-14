@@ -1,0 +1,55 @@
+;;;
+
+"layout": "blank"
+
+;;;
+
+:css
+  body{
+    background:rgba(0,0,0,.5);
+  }
+
+#exportModal.modal.display-block{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header.no-border-bottom.no-padding-bottom
+        %a.close{:href=>"/product/review"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        .padded.no-padding-top.text-center.margin-bottom
+          %img.margin-bottom{:src=>"/images/jira-software-logo.svg", :width=>"300px"}
+          %h1.no-margin-bottom.bold-font
+            Connect to Jira
+        .margin-bottom
+          .row.justify-content-center
+            .col-12
+              %form
+                .form-group
+                  %label.medium-font
+                    Jira Host
+                  .input-group
+                    %input.form-control.form-control-lg{:placeholder=>"Your-workspae-url"}
+                    .input-group-append
+                      .input-group-text
+                        \.atlassian.net
+                .form-group
+                  %label.medium-font
+                    Jira Email or username
+                  %input.form-control.form-control-lg{:placeholder=>"eg: john@doe.com"}
+                .form-group
+                  %label.full-width.medium-font
+                    .inline-block
+                      API token
+                    .inline-block.float-right
+                      %a{:href=>"https://id.atlassian.com/manage-profile/security/api-tokens", :target=>"_blank"}
+                        Get your API token
+                        %i.material-icons.helper-icon
+                          launch
+
+                  %input.form-control.form-control-lg{:placeholder=>"Enter API token"}
+
+        .margin-bottom
+          %a.btn.btn-primary.btn-lg.btn-block{:href=>"/export/jira"}
+            Connect Jira account
+
+

@@ -94,6 +94,12 @@ img {
 .cursor-pointer {
   cursor: pointer; }
 
+.helper-icon {
+  font-size: 18px;
+  position: relative;
+  top: 4px;
+  margin-left: 5px; }
+
 .text-uppercase {
   text-transform: uppercase; }
 
