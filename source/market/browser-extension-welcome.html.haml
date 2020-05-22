@@ -1,0 +1,99 @@
+;;;
+
+"title": "Home",
+"layout": "public"
+
+;;;
+
+%img.hidden{:src=>"/images/featured.png", :style=>"display:none;"}
+
+%section
+	.container
+		.row.justify-content-center
+			.col-lg-8
+				.double-margin-top.text-center
+					%h1.market.bold-font.double-margin-bottom
+						Congratulations
+					%h3.market
+						for installing Volley for Your Browser
+
+
+%section
+	.container
+		.row.align-items-center.justify-content-around
+			.col-lg-5.order-lg-2
+				%img.full-width.double-margin-bottom{:src=>"/images/marketing/extension/extension-step1.svg"}
+			.col-lg-5.order-lg-1
+				%h2.bold-font.market
+					How to use the browser extension?
+				%p.market
+					Click the Volley button in your browser, login to your account, select any project and start making notes.
+				%hr
+				%p
+					“Signing up for the service and getting started using it on my own site took minutes. There was no configuration required to use it and share my comments.”
+				.media
+					%img{:src=>"/images/marketing/extension/tyler-avatar.png", :width=>"47px"}
+					.media-body.half-margin-left
+						%h4.bold-font.no-margin-bottom
+							Tyler Bindon
+						%img{:src=>"/images/marketing/extension/5-star.svg"}
+
+
+
+%section.off-white-bg
+	.container
+		.row.align-items-center.justify-content-around
+			.col-lg-6
+				%img.full-width.double-margin-bottom{:src=>"/images/marketing/extension/extension-step2.svg"}
+			.col-lg-5
+				%h2.bold-font.market
+					Point. Click. Capture.
+				%p.market
+					Click anywhere on the page to add a note. Type “B” for browse mode, which lets you browse the website normally, and “C” for comment mode.
+
+
+%section
+	.container
+		.row.align-items-center.justify-content-around
+			.col-lg-6.order-lg-2
+				%img.full-width.double-margin-bottom{:src=>"/images/marketing/extension/extension-step3.png"}
+			.col-lg-5.order-lg-1
+				%h2.bold-font.market
+					Review your notes and share with the team
+				%p.market
+					All notes are instantly sent to your Volley project. click “View project” on the extension to view your project, where you can share with your team, reply and resolve your comments. 
+
+
+
+
+%section
+	.double-padding-top.double-padding-bottom
+		.container
+			.row
+				.col.text-center
+					.jumbotron.volley-jumbotron
+						%h2.market.bold-font.no-margin-bottom
+							Need assistance?
+						%h3.market.double-margin-bottom
+							Get in touch with us. We're always happy to help.
+						%a.btn.btn-secondary.btn-lg{:href=>"mailto:hello@meetvolley.com"}
+							Contact us
+						
+
+
+
+
+
+
+
+
+/ Modal
+#myModal.modal.fade.video-modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-body
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+				.embed-responsive.embed-responsive-16by9
+					%iframe#video.embed-responsive-item{:allow => "autoplay", :allowscriptaccess => "always", :src => ""}
+

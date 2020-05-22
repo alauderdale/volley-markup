@@ -1,6 +1,6 @@
 //variables
 $control-nav-height: 61px;
-
+$note-container-width:300px;
 
 .welcome-panel{
 	background:$off-white-dark-color url("../images/welcome-bg.svg") center center no-repeat;
@@ -238,13 +238,13 @@ $control-nav-height: 61px;
     position: relative;
     top: 0;
     left: 0;
-    width:280px;
+    width:$note-container-width;
     display: flex;
     overflow: hidden;
 	@include breakpoint(md) {
 		position: absolute;
 		height: 100%;
-		width: 280px;
+		width: $note-container-width;
 		left: 0px;
 		top: 0;
 		bottom:0;
@@ -269,7 +269,7 @@ $control-nav-height: 61px;
 	    }
 
 	    .notes-list-header{
-	    	width:280px;
+	    	width:$note-container-width;
 	    	position:fixed;
 	    	z-index: 9;
 	    	top:0;
@@ -284,8 +284,21 @@ $control-nav-height: 61px;
 	    	background:white;
 	    	position:relative;
 	    	transition-duration:.2s;
+			padding: 16px;
+			// padding: 18px 16px;
+			// margin: 15px 13px;
+			// border-radius: 10px;
+			// box-shadow: 0 3px 20px rgba(87,112,237,.13);
+
+
+			// h6{
+			// 	margin-bottom:0px;
+			// }
+
+
 	    	&:hover{
 	    		background:$off-white-dark-color;
+	    		// box-shadow:0 3px 25px rgba(87,112,237,0.20);
 
 	    	}
 	    	img{
@@ -294,6 +307,7 @@ $control-nav-height: 61px;
 	    	}
 	    	&.active{
 	    		background:$link-color;
+	    		box-shadow:0 3px 25px rgba(87,112,237,0.50);
 	    		h5, h6{
 	    			color:white!important;
 	    		}
@@ -314,7 +328,7 @@ $control-nav-height: 61px;
 	    	left:0;
 	    	background:white;
 	    	width:100%;
-	    	width:280px;
+	    	width:$note-container-width;
 	    	border-right:1px solid $border-color;
 	    }
     }
@@ -374,7 +388,7 @@ $control-nav-height: 61px;
 
 
 .note-container{
-	width: calc(100% - 280px);
+	width: calc(100% - #{$note-container-width});
     height: 100%;
     position: relative;
     top: 0;
@@ -392,7 +406,7 @@ $control-nav-height: 61px;
     	height: 100%;
     	width: 100%;
 	    .note-nav{
-			width:calc(100% - 280px);
+			width:calc(100% - $note-container-width);
 			position:fixed;
 			top:0;
 			padding:10px 0;
