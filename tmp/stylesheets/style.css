@@ -948,7 +948,8 @@ section {
   .menu-with-button .dropdown-item .text {
     padding: 0 !important; }
   .menu-with-button .dropdown-item .button-container {
-    padding: 0 !important; }
+    padding: 0 !important;
+    line-height: 1; }
     .menu-with-button .dropdown-item .button-container button {
       padding: 0 !important; }
     .menu-with-button .dropdown-item .button-container i {
@@ -1106,7 +1107,7 @@ h1.market {
 
 h2.market {
   font-size: 41px;
-  line-height: 59px; }
+  line-height: 55px; }
 
 h3.market {
   font-size: 23px;
@@ -1435,14 +1436,14 @@ ul.check-list {
   position: relative;
   top: 0;
   left: 0;
-  width: 280px;
+  width: 300px;
   display: flex;
   overflow: hidden; }
   @media (max-width: 992px) {
     .notes-list-container {
       position: absolute;
       height: 100%;
-      width: 280px;
+      width: 300px;
       left: 0px;
       top: 0;
       bottom: 0;
@@ -1463,7 +1464,7 @@ ul.check-list {
       .notes-list-container .notes-list-body {
         padding-bottom: 85px; } }
     .notes-list-container .notes-list-body .notes-list-header {
-      width: 280px;
+      width: 300px;
       position: fixed;
       z-index: 9;
       top: 0;
@@ -1475,14 +1476,16 @@ ul.check-list {
       cursor: pointer;
       background: white;
       position: relative;
-      transition-duration: .2s; }
+      transition-duration: .2s;
+      padding: 16px; }
       .notes-list-container .notes-list-body .note-thumbnail:hover {
         background: #F5F8FA; }
       .notes-list-container .notes-list-body .note-thumbnail img {
         border: 3px solid #E6EAEE;
         border-radius: 4px; }
       .notes-list-container .notes-list-body .note-thumbnail.active {
-        background: #0042FF; }
+        background: #0042FF;
+        box-shadow: 0 3px 25px rgba(87, 112, 237, 0.5); }
         .notes-list-container .notes-list-body .note-thumbnail.active h5, .notes-list-container .notes-list-body .note-thumbnail.active h6 {
           color: white !important; }
       .notes-list-container .notes-list-body .note-thumbnail.resolved:after {
@@ -1497,7 +1500,7 @@ ul.check-list {
       left: 0;
       background: white;
       width: 100%;
-      width: 280px;
+      width: 300px;
       border-right: 1px solid #E6EAEE; }
 
 .check-btn button {
@@ -1537,7 +1540,7 @@ ul.check-list {
       content: "Completed"; }
 
 .note-container {
-  width: calc(100% - 280px);
+  width: calc(100% - 300px);
   height: 100%;
   position: relative;
   top: 0;
@@ -1554,7 +1557,7 @@ ul.check-list {
     height: 100%;
     width: 100%; }
     .note-container .note-body .note-nav {
-      width: calc(100% - 280px);
+      width: calc(100% - $note-container-width);
       position: fixed;
       top: 0;
       padding: 10px 0;

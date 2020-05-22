@@ -16,7 +16,7 @@ Volley | Fast, easy feedback for your website"
 <link href='../../images/favicon.ico' rel='shortcut icon'>
 <script src="../../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
-<body class='products products_loading products_loading_index'>
+<body class='products products_team products_team_index'>
 <nav class='navbar navbar-light bg-light fixed-top navbar-expand-sm' id='primary-nav'>
 <div class='container'>
 <a class='navbar-brand' href='/products'>
@@ -141,16 +141,58 @@ Sign out
 
 <!-- end menu -->
 <div class='main'>
-<section>
+<!-- = partial "free-trial-card" -->
+<section class='no-padding-bottom'>
 <div class='container product-card-container'>
 <div class='row'>
-<div class='col-sm-12 col-md-12 col-lg-6'>
-<div class='product-card-loading'></div>
+<div class='col-sm-12'>
+<div class='page-header'>
+<div class='row'>
+<div class='col-sm-12'>
+<form class='add-new-product-bar'>
+<div class='form-row'>
+<div class='col-xl-9 col-lg-9 col-md-9 mb-3'>
+<input class='form-control form-control-lg' placeholder='Project name'>
 </div>
-<div class='col-sm-12 col-md-12 col-lg-6'>
-<div class='product-card-loading'></div>
+<div class='col-xl-3 col-lg-3 col-md-3 mb-3'>
+<button class='btn btn-primary mb-2 btn-block btn-lg' onclick='location.href=&#39;/product/review-zero&#39;;' type='button'>
+Create Project
+</button>
 </div>
 </div>
+</form>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<ul class='nav tab-nav justify-content-center justify-content-lg-start'>
+<li class='nav-item'>
+<a class='nav-link' href='/products/'>
+Projects
+</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='/products/archived'>
+Archived
+</a>
+</li>
+<li class='nav-item'>
+<a class='active nav-link' href='/products/team'>
+Team
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class='container product-card-container'>
+<div class='row'></div>
 </div>
 </section>
 

@@ -23,39 +23,58 @@ Volley | Fast, easy feedback for your website"
 <img src='../../images/logo.svg' width='100px'>
 </a>
 <div class='navbar-nav mr-auto'>
-<!-- .nav-item.dropdown.workspace-selector -->
-<!-- %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} -->
-<!-- Eternal Contrast -->
-<!-- %i.material-icons -->
-<!-- unfold_more -->
-<!-- .dropdown-menu.workspace-menu.menu-with-button{"aria-labelledby" => "navbarDropdownMenuLink"} -->
-<!-- %a.dropdown-item.d-flex.active{:href => "#"} -->
-<!-- .avatar-container -->
-<!-- .avatar-default -->
-<!-- EC -->
-<!-- %span.text.p-2.mr-auto -->
-<!-- Eternal Contrast -->
-<!-- %span.button-container.p-2 -->
-<!-- %button.btn.btn-link.align-middle.btn-icon{:type=>"button"} -->
-<!-- %i.material-icons -->
-<!-- settings -->
-<!-- %a.dropdown-item.d-flex{:href => "#"} -->
-<!-- .avatar-container -->
-<!-- .avatar-default -->
-<!-- CB -->
-<!-- %span.text.p-2.mr-auto -->
-<!-- CE Broker -->
-<!-- %span.button-container.p-2 -->
-<!-- %button.btn.btn-link.align-middle.btn-icon{:type=>"button"} -->
-<!-- %i.material-icons -->
-<!-- settings -->
-<!-- .dropdown-divider -->
-<!-- %a.dropdown-item.d-flex{:href => "#"} -->
-<!-- .avatar-container.invert-avatar -->
-<!-- .avatar-default -->
-<!-- + -->
-<!-- %span.text.p-2.mr-auto.link-color -->
-<!-- Create a new Workspace -->
+<div class='nav-item dropdown workspace-selector'>
+<a class='nav-link dropdown-toggle medium-font' data-toggle='dropdown' href='#'>
+Eternal Contrast
+<i class='material-icons'>
+unfold_more
+</i>
+</a>
+<div aria-labelledby='navbarDropdownMenuLink' class='dropdown-menu workspace-menu menu-with-button'>
+<a class='dropdown-item d-flex align-items-center active' href='#'>
+<div class='avatar-container'>
+<div class='avatar-default'>
+EC
+</div>
+</div>
+<span class='text p-2 mr-auto align-middle'>
+Eternal Contrast
+<h5 class='light-text-color'>
+Team
+</h5>
+</span>
+<span class='button-container p-2'>
+<button class='btn btn-link btn-icon' type='button'>
+<i class='material-icons'>
+settings
+</i>
+</button>
+</span>
+</a>
+<a class='dropdown-item d-flex align-items-center' href='#'>
+<div class='avatar-container'>
+<img alt='Avatar' class='avatar avatar-xs' src='../../images/img_avatar.png' width='28px'>
+</div>
+<span class='text p-2 mr-auto align-middle'>
+Alex Lauderdale
+<h5 class='light-text-color'>
+My projects
+</h5>
+</span>
+</a>
+<div class='dropdown-divider'></div>
+<a class='dropdown-item d-flex' href='#'>
+<div class='avatar-container invert-avatar'>
+<div class='avatar-default'>
++
+</div>
+</div>
+<span class='text p-2 mr-auto link-color'>
+Create a new team
+</span>
+</a>
+</div>
+</div>
 </div>
 <!-- %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} -->
 <!-- %i.material-icons -->
@@ -148,12 +167,17 @@ Create Project
 <ul class='nav tab-nav justify-content-center justify-content-lg-start'>
 <li class='nav-item'>
 <a class='nav-link' href='/products/'>
-All projects
+Projects
 </a>
 </li>
 <li class='nav-item'>
 <a class='active nav-link' href='/products/archived'>
 Archived
+</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='/products/team'>
+Team
 </a>
 </li>
 </ul>
