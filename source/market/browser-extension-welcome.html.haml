@@ -12,7 +12,7 @@
 		.row.justify-content-center
 			.col-lg-8
 				.double-margin-top.text-center
-					%h1.market.bold-font.double-margin-bottom
+					%h1.market.bold-font.margin-bottom
 						Congratulations
 					%h3.market
 						for installing Volley for Your Browser
@@ -22,7 +22,8 @@
 	.container
 		.row.align-items-center.justify-content-around
 			.col-lg-5.order-lg-2
-				%img.full-width.double-margin-bottom{:src=>"/images/marketing/extension/extension-step1.svg"}
+				.padded
+					%img.max-width.double-margin-bottom{:src=>"/images/marketing/extension/extension-step1.svg", :width=>"527px"}
 			.col-lg-5.order-lg-1
 				%h2.bold-font.market
 					How to use the browser extension?
@@ -44,7 +45,8 @@
 	.container
 		.row.align-items-center.justify-content-around
 			.col-lg-6
-				%img.full-width.double-margin-bottom{:src=>"/images/marketing/extension/extension-step2.svg"}
+				.padded
+					%img.double-margin-bottom.max-width{:src=>"/images/marketing/extension/extension-step2.svg"}
 			.col-lg-5
 				%h2.bold-font.market
 					Point. Click. Capture.
@@ -56,7 +58,8 @@
 	.container
 		.row.align-items-center.justify-content-around
 			.col-lg-6.order-lg-2
-				%img.full-width.double-margin-bottom{:src=>"/images/marketing/extension/extension-step3.png"}
+				.padded
+					%img.max-width.double-margin-bottom{:src=>"/images/marketing/extension/extension-step3.png"}
 			.col-lg-5.order-lg-1
 				%h2.bold-font.market
 					Review your notes and share with the team
