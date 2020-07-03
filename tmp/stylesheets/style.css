@@ -1278,6 +1278,13 @@ ul.check-list {
   100% {
     opacity: 1; } }
 
+.projects-video-wrapper {
+  max-width: 510px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  overflow: hidden; }
+
 .welcome-panel {
   background: #F5F8FA url("../images/welcome-bg.svg") center center no-repeat; }
 
