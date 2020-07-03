@@ -1283,7 +1283,8 @@ ul.check-list {
   margin: 0 auto;
   margin-bottom: 24px;
   border-radius: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 9px 9px 16px #cfcfcf,  -9px -9px 16px #ffffff; }
 
 .welcome-panel {
   background: #F5F8FA url("../images/welcome-bg.svg") center center no-repeat; }
