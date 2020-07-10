@@ -2,42 +2,42 @@
   .container
     %a.navbar-brand{:href => "/products"} 
       %img{:src=>"/images/logo.svg", :width=>"100px"}
-    / .navbar-nav.mr-auto
-    /   .nav-item.dropdown.workspace-selector
-    /     %a.nav-link.dropdown-toggle.medium-font{"data-toggle" => "dropdown", :href => "#"}
-    /       Eternal Contrast
-    /       %i.material-icons
-    /         unfold_more
-    /     .dropdown-menu.workspace-menu.menu-with-button{"aria-labelledby" => "navbarDropdownMenuLink"}
-    /       %a.dropdown-item.d-flex.align-items-center.active{:href => "#"} 
-    /         .avatar-container
-    /           .avatar-default
-    /             EC
-    /         %span.text.p-2.mr-auto.align-middle
-    /           Eternal Contrast
-    /           %h5.light-text-color
-    /             Team
-    /         %span.button-container.p-2
-    /           %button.btn.btn-link.btn-icon{:type=>"button"}
-    /             %i.material-icons
-    /               settings
-    /       %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
-    /         .avatar-container
-    /           %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png", :width=>"28px"}
-    /         %span.text.p-2.mr-auto.align-middle
-    /           Alex Lauderdale
-    /           %h5.light-text-color
-    /             My projects
-    /       .dropdown-divider
-    /       %a.dropdown-item.d-flex{:href => "#"} 
-    /         .avatar-container.invert-avatar
-    /           .avatar-default
-    /             +
-    /         %span.text.p-2.mr-auto.link-color
-    /           Create a new team
-    / %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
-    /   %i.material-icons
-    /     menu
+    .navbar-nav.mr-auto
+      .nav-item.dropdown.workspace-selector
+        %a.nav-link.dropdown-toggle.medium-font{"data-toggle" => "dropdown", :href => "#"}
+          Eternal Contrast
+          %i.material-icons
+            unfold_more
+        .dropdown-menu.workspace-menu.menu-with-button{"aria-labelledby" => "navbarDropdownMenuLink"}
+          %a.dropdown-item.d-flex.align-items-center.active{:href => "#"} 
+            .avatar-container
+              .avatar-default
+                EC
+            %span.text.p-2.mr-auto.align-middle
+              Eternal Contrast
+              %h5.light-text-color
+                Team
+            %span.button-container.p-2
+              %button.btn.btn-link.btn-icon{:type=>"button"}
+                %i.material-icons
+                  settings
+          %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
+            .avatar-container
+              %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png", :width=>"28px"}
+            %span.text.p-2.mr-auto.align-middle
+              Alex Lauderdale
+              %h5.light-text-color
+                My projects
+          .dropdown-divider
+          %a.dropdown-item.d-flex{:href => "#"} 
+            .avatar-container.invert-avatar
+              .avatar-default
+                +
+            %span.text.p-2.mr-auto.link-color
+              Create a new team
+    %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
+      %i.material-icons
+        menu
     %div
       .navbar-nav
         %form.form-inline
