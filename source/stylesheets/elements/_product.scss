@@ -21,11 +21,13 @@ $note-container-width:300px;
 .add-new-product-bar{
 	input{
 		border:3px solid shade($border-color, 10%);
-		height: 49px;
+		height: 59px;
+	    box-shadow: 0 8px 19px 0 rgba(0,0,0,0.06);
 	}
 	button{
-		box-shadow:0 5px 15px 0 rgba(0,0,0,0.15);
-		padding:11.5px 2rem!important;
+		box-shadow: 0 8px 19px 0 #BAC9F2;
+		padding:15.5px 2rem!important;
+		font-size: 16px;
 	}
 }
 

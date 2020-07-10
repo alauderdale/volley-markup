@@ -2,9 +2,13 @@
 .dropdown-menu{
 	box-shadow:$box-shadow-elv-two;
 	border:none;
-	border-radius:2px;
+	border-radius:$base-border-radius;
+	
 	.dropdown-item{
 		color:$text-color;
+		transition-duration: .2s;
+		font-size: 13px;
+		font-weight: 600;
 		&:hover{
 			background:$off-white-dark-color;
 		}

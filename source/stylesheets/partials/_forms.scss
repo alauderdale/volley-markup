@@ -1,4 +1,5 @@
 .form-control{
+  border-radius: $base-border-radius;
 	&.form-control-lg{
 		font-size:16px;
 		padding-top:.65rem;
@@ -9,6 +10,8 @@
 		border-color:$link-color;
 	}
 }
+
+
 
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: $light-text-color;
