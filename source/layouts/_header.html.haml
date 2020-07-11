@@ -4,11 +4,14 @@
       %img{:src=>"/images/logo.svg", :width=>"100px"}
     .navbar-nav.mr-auto
       .nav-item.dropdown.workspace-selector
-        %a.nav-link.dropdown-toggle.medium-font{"data-toggle" => "dropdown", :href => "#"}
+        %a.nav-link.dropdown-toggle.medium-font.menu-avatar{"data-toggle" => "dropdown", :href => "#"}
+          .avatar-container.inline-block
+            .avatar-default
+              EC
           Eternal Contrast
           %i.material-icons
             unfold_more
-        .dropdown-menu.workspace-menu.menu-with-button{"aria-labelledby" => "navbarDropdownMenuLink"}
+        .dropdown-menu.workspace-menu.menu-avatar{"aria-labelledby" => "navbarDropdownMenuLink"}
           %a.dropdown-item.d-flex.align-items-center.active{:href => "#"} 
             .avatar-container
               .avatar-default
@@ -17,10 +20,6 @@
               Eternal Contrast
               %h5.light-text-color
                 Team
-            %span.button-container.p-2
-              %button.btn.btn-link.btn-icon{:type=>"button"}
-                %i.material-icons
-                  settings
           %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
             .avatar-container
               %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png", :width=>"28px"}
@@ -29,7 +28,7 @@
               %h5.light-text-color
                 My projects
           .dropdown-divider
-          %a.dropdown-item.d-flex{:href => "#"} 
+          %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
             .avatar-container.invert-avatar
               .avatar-default
                 +

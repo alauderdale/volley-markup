@@ -1,3 +1,11 @@
+.activity-filter{
+	.dropdown-menu{
+		.dropdown-item{
+			padding:.50rem 1.5rem;
+		}
+	}
+}
+
 //default dropdown menu styling
 .dropdown-menu{
 	box-shadow:$box-shadow-elv-two;
@@ -55,32 +63,36 @@
 	top:83%;
 }
 
+
+.menu-avatar{
+	.avatar-container{
+		margin-right:12px;
+		.avatar-default{
+			padding:6px;
+			background-color:$primary-color;
+			font-size:14px;
+			font-weight:600;
+			color:white;
+			border-radius:6px;
+			line-height:1;
+			min-width:28px;
+			text-align:center;
+
+		}
+		&.invert-avatar{
+			.avatar-default{
+				background:white;
+				color:$text-color;
+				border:1px solid $border-color;
+			}
+		}
+	}
+}
+
 ///menus with biuttons to the right of the text
 .menu-with-button{
 	.dropdown-item{
 		padding:12px 20px;
-		.avatar-container{
-			margin-right:12px;
-			.avatar-default{
-				padding:6px;
-				background-color:$lightest-gray-color;
-				font-size:14px;
-				font-weight:600;
-				color:white;
-				border-radius:3px;
-				line-height:1;
-				min-width:28px;
-				text-align:center;
-
-			}
-			&.invert-avatar{
-				.avatar-default{
-					background:white;
-					color:$text-color;
-					border:1px solid $border-color;
-				}
-			}
-		}
 		.text{
 			padding:0!important;
 		}
