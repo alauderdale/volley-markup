@@ -1,8 +1,11 @@
 %nav.navbar.navbar-light.bg-light.fixed-top.navbar-expand-sm#primary-nav
   .container
-    %a.navbar-brand{:href => "/products"} 
+    %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
+      %i.material-icons
+        menu
+    %a.navbar-brand.d-none.d-lg-block{:href => "/products"} 
       %img{:src=>"/images/logo.svg", :width=>"100px"}
-    .navbar-nav.mr-auto
+    .navbar-nav.mr-auto.d-none.d-lg-block
       .nav-item.dropdown.workspace-selector
         %a.nav-link.dropdown-toggle.medium-font.menu-avatar{"data-toggle" => "dropdown", :href => "#"}
           .avatar-container.inline-block
