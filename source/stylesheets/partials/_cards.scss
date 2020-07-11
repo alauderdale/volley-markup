@@ -1,20 +1,26 @@
 
 $product-card-width:448px;
 
+$card-border-radius:$base-border-radius-2;
 
 .card{
-	border-color:$border-color;
+	border:1px solid $border-color;
+	border-radius: $card-border-radius;
 	.card-header{
 		background:white;
-		border-top-left-radius:$base-border-radius;
-  		border-top-right-radius:$base-border-radius;
-  		border-color:$border-color;
+		border-top-left-radius:$card-border-radius;
+  		border-top-right-radius:$card-border-radius;
+  		border:none;
+  		overflow: hidden;
 	}
 	.card-list{
 	}
 	.card-footer{
-		border-top:none;
+		border:none;
 		background-color: transparent;
+		border-bottom-left-radius: $card-border-radius;
+		border-bottom-right-radius: $card-border-radius;
+		overflow: hidden;
 	}
 }
 
@@ -29,16 +35,20 @@ $product-card-width:448px;
 	position:relative;
 	width:$product-card-width;
 	margin:0 auto;
-	border:1px solid $border-color;
 	display:block;
+	margin-bottom:$baseline*2;
 	@include breakpoint(sm) {
   		width:100%;
   		max-width: $product-card-width;
 	}
 	&:hover{
-		box-shadow: 0 1px 3px 1px rgba(60,64,67,.15);
+		
 		.card-url{
 			color: $text-color!important;
+		}
+		.product-card{
+			border-color:$primary-color;
+			box-shadow:0 8px 19px 0 rgba(0,0,0,0.15), 0 0 0 1px $primary-color;
 		}
 	}
 }
@@ -63,15 +73,18 @@ $product-card-width:448px;
 }
 
 .product-card{
+	box-shadow: 0 8px 19px 0 rgba(0,0,0,0.05);
+	box-shadow:0 3px 20px rgba(87,112,237,.13);
 	position:relative;
-	// transition-timing-function: ease-in-out;
- //  	transition: 0.2s;
  	border:none;
   	display:block;
+  	transition-timing-function: ease-in-out;
+  	transition: 0.1s;
+  	border:1px solid $border-color;
 	.card-header{
-		border-color:$border-color;
+		border:none;
 		position:relative;
-		padding:20px;
+		padding:0px;
 		height: 231px;
 		@include breakpoint(sm) {
 			height: auto;
@@ -80,10 +93,10 @@ $product-card-width:448px;
 		.img-wrapper{
 			background-image:url("/images/pattern2.svg"), linear-gradient(#0042FF,#00ADFF);
 			background-size:100%;
-			border:1px solid $border-color;
+			border:none;
 			border-bottom:none;
-			border-top-left-radius: $base-border-radius;
-			border-top-right-radius: $base-border-radius;
+			border-top-left-radius: $card-border-radius;
+			border-top-right-radius: $card-border-radius;
 			width: 100%;
 			height:100%;
 			position:relative;
@@ -95,8 +108,8 @@ $product-card-width:448px;
 				width:100%;
 			}
 			.no-img{
-				// transition-timing-function: ease-in-out;
-				// transition-duration:.2s;
+				transition-timing-function: ease-in-out;
+  				transition: 0.1s;
 				width:90px;
 				height:90px;
 				background:transparent;
@@ -145,6 +158,8 @@ $product-card-width:448px;
 	.card-body{
 		z-index: 99;
 		background-color: white;
+		border-bottom-left-radius: $card-border-radius;
+		border-bottom-right-radius: $card-border-radius;
 		h3{
 
 		}
@@ -153,6 +168,8 @@ $product-card-width:448px;
 		}
 		.card-url{
 			color: $text-color;
+			font-size: 18px;
+			margin-bottom:4px!important;
 		}
 		.card-text{
 			color:$extra-light-text-color;

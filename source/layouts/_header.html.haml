@@ -1,14 +1,20 @@
 %nav.navbar.navbar-light.bg-light.fixed-top.navbar-expand-sm#primary-nav
   .container
-    %a.navbar-brand{:href => "/products"} 
+    %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
+      %i.material-icons
+        menu
+    %a.navbar-brand.d-none.d-lg-block{:href => "/products"} 
       %img{:src=>"/images/logo.svg", :width=>"100px"}
-    .navbar-nav.mr-auto
+    .navbar-nav.mr-auto.d-none.d-lg-block
       .nav-item.dropdown.workspace-selector
-        %a.nav-link.dropdown-toggle.medium-font{"data-toggle" => "dropdown", :href => "#"}
+        %a.nav-link.dropdown-toggle.medium-font.menu-avatar{"data-toggle" => "dropdown", :href => "#"}
+          .avatar-container.inline-block
+            .avatar-default
+              EC
           Eternal Contrast
           %i.material-icons
             unfold_more
-        .dropdown-menu.workspace-menu.menu-with-button{"aria-labelledby" => "navbarDropdownMenuLink"}
+        .dropdown-menu.workspace-menu.menu-avatar{"aria-labelledby" => "navbarDropdownMenuLink"}
           %a.dropdown-item.d-flex.align-items-center.active{:href => "#"} 
             .avatar-container
               .avatar-default
@@ -17,10 +23,6 @@
               Eternal Contrast
               %h5.light-text-color
                 Team
-            %span.button-container.p-2
-              %button.btn.btn-link.btn-icon{:type=>"button"}
-                %i.material-icons
-                  settings
           %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
             .avatar-container
               %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png", :width=>"28px"}
@@ -29,15 +31,15 @@
               %h5.light-text-color
                 My projects
           .dropdown-divider
-          %a.dropdown-item.d-flex{:href => "#"} 
+          %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
             .avatar-container.invert-avatar
               .avatar-default
                 +
             %span.text.p-2.mr-auto.link-color
               Create a new team
-    %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
-      %i.material-icons
-        menu
+    / %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
+    /   %i.material-icons
+    /     menu
     %div
       .navbar-nav
         %form.form-inline

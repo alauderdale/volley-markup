@@ -1,1 +1,14 @@
-
+.modal-content{
+	border-radius:$base-border-radius-2;
+	.modal-header{
+		border-top-right-radius: $base-border-radius-2;
+		border-top-left-radius: $base-border-radius-2;
+		.close{
+			padding: 1rem 1.4rem;
+		}
+	}
+	.modal-footer{
+		border-bottom-right-radius: $base-border-radius-2;
+		border-bottom-left-radius: $base-border-radius-2;
+	}
+}

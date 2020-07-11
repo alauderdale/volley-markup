@@ -1,4 +1,18 @@
+.simple-prepend{
+  .input-group-prepend, .form-control, .input-group-text {
+    border:none;
+    background-color:transparent;
+  }
+  .input-group-text{
+    padding-left:0;
+    padding-right:0;
+    color:$light-gray-color;
+  }
+}
+
+
 .form-control{
+  border-radius: $base-border-radius;
 	&.form-control-lg{
 		font-size:16px;
 		padding-top:.65rem;
@@ -9,6 +23,8 @@
 		border-color:$link-color;
 	}
 }
+
+
 
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: $light-text-color;
