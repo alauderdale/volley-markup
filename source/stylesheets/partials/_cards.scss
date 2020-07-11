@@ -33,7 +33,7 @@ $card-border-radius:$base-border-radius-2;
 
 .product-card-wrapper{
 	position:relative;
-	width:$product-card-width;
+	max-width:$product-card-width;
 	margin:0 auto;
 	display:block;
 	margin-bottom:$baseline*2;

@@ -45,7 +45,10 @@ $('#myModal').on('hide.bs.modal', function (e) {
     $("#video").attr('src',$videoSrc); 
 }) 
     
-
+//toggle mobile menu
+  $('.menu-toggle').on('click', function(e) {
+    $('#main-nav').toggleClass("menu-open"); 
+  });
 
 
   });

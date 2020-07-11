@@ -1,83 +1,93 @@
-%nav.navbar.navbar-light.bg-light.fixed-top.navbar-expand-sm#primary-nav
-  .container
-    %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
-      %i.material-icons
-        menu
-    %a.navbar-brand.d-none.d-lg-block{:href => "/products"} 
+#main-nav
+  %a.menu-toggle.menu-close{:href=>"#"}
+    .material-icons
+      clear
+  %nav.navbar.admin-bar
+    .nav-item.dropup
+      %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+        %img.avatar.avatar-xs.quarter-margin-right.align-middle{:alt => "Avatar", :src => "/images/img_avatar.png"}
+        %span.medium-font.menu-text.align-middle
+          Alex Lauderdale
+        %i.material-icons.align-middle
+          expand_more
+      .dropdown-menu.dropdown-menu-top.admin-menu
+        .dropdown-header
+          %p.medium-font.no-margin-bottom.text-color
+            Alex Lauderdale
+          %h5.extra-light-text-color
+            alauderdale@mac.com
+        .dropdown-divider
+        %a.dropdown-item{:href => "/settings"} 
+          %i.material-icons.icon-left
+            settings
+          Profile
+        / %a.dropdown-item{:href => "/settings"} 
+        /   %i.material-icons.icon-left
+        /     group
+        /   Team
+        %a.dropdown-item{:href=>"/settings/billing-default"}
+          %i.material-icons.icon-left
+            insert_drive_file
+          Billing
+        .dropdown-divider
+        %a.dropdown-item{:href => "/welcome/login"} 
+          %i.material-icons.icon-left
+            exit_to_app
+          Sign out
+  .logo-container.text-center
+    %a.navbar-brand{:href => "/products"} 
       %img{:src=>"/images/logo.svg", :width=>"100px"}
-    .navbar-nav.mr-auto.d-none.d-lg-block
-      .nav-item.dropdown.workspace-selector
-        %a.nav-link.dropdown-toggle.medium-font.menu-avatar{"data-toggle" => "dropdown", :href => "#"}
-          .avatar-container.inline-block
+  %nav.navbar.team-select-container
+    .nav-item.dropdown.workspace-selector
+      %a.nav-link.dropdown-toggle.medium-font.menu-avatar{"data-toggle" => "dropdown", :href => "#"}
+        .avatar-container.inline-block.align-middle
+          .avatar-default
+            EC
+        %p.menu-text.no-margin.align-middle
+          Eternal Contrast
+        %i.material-icons.align-middle
+          unfold_more
+      .dropdown-menu.workspace-menu.menu-avatar{"aria-labelledby" => "navbarDropdownMenuLink"}
+        %a.dropdown-item.d-flex.align-items-center.active{:href => "#"} 
+          .avatar-container
             .avatar-default
               EC
-          Eternal Contrast
-          %i.material-icons
-            unfold_more
-        .dropdown-menu.workspace-menu.menu-avatar{"aria-labelledby" => "navbarDropdownMenuLink"}
-          %a.dropdown-item.d-flex.align-items-center.active{:href => "#"} 
-            .avatar-container
-              .avatar-default
-                EC
-            %span.text.p-2.mr-auto.align-middle
-              Eternal Contrast
-              %h5.light-text-color
-                Team
-          %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
-            .avatar-container
-              %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png", :width=>"28px"}
-            %span.text.p-2.mr-auto.align-middle
-              Alex Lauderdale
-              %h5.light-text-color
-                My projects
-          .dropdown-divider
-          %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
-            .avatar-container.invert-avatar
-              .avatar-default
-                +
-            %span.text.p-2.mr-auto.link-color
-              Create a new team
-    / %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} 
-    /   %i.material-icons
-    /     menu
-    %div
-      .navbar-nav
-        %form.form-inline
-          %a.btn.btn-terciary.d-none.d-md-block{:href=>"/billing/pay", :style=>"font-size:14px;"}
-            Upgrade
-        / .nav-item.active
-        /   %a.nav-link{:href => "/products"}
-        /     Products
-        / .nav-item
-        /   %a.nav-link{:href => "#"}
-        /     People
-        .nav-item.dropdown
-          %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-            %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png"}
-            %i.material-icons
-              expand_more
-          .dropdown-menu.dropdown-menu-right.admin-menu
-            .dropdown-header
-              %p.medium-font.no-margin-bottom.text-color
-                Alex Lauderdale
-              %h5.extra-light-text-color
-                alauderdale@mac.com
-            .dropdown-divider
-            %a.dropdown-item{:href => "/settings"} 
-              %i.material-icons.icon-left
-                settings
-              Profile
-            / %a.dropdown-item{:href => "/settings"} 
-            /   %i.material-icons.icon-left
-            /     group
-            /   Team
-            %a.dropdown-item{:href=>"/settings/billing-default"}
-              %i.material-icons.icon-left
-                insert_drive_file
-              Billing
-            .dropdown-divider
-            %a.dropdown-item{:href => "/welcome/login"} 
-              %i.material-icons.icon-left
-                exit_to_app
-              Sign out
-              
+          %span.text.p-2.mr-auto.align-middle
+            Eternal Contrast
+            %h5.light-text-color
+              Team
+        %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
+          .avatar-container
+            %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png", :width=>"28px"}
+          %span.text.p-2.mr-auto.align-middle
+            Alex Lauderdale
+            %h5.light-text-color
+              My projects
+        .dropdown-divider
+        %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
+          .avatar-container.invert-avatar
+            .avatar-default
+              +
+          %span.text.p-2.mr-auto.link-color
+            Create a new team
+  %nav.navbar.nav.flex-column.margin-bottom
+    %a.nav-link{:href=>"/products/", :class => (current_page.data.title === "All projects") ? "active" : ""}
+      Projects
+    %a.nav-link{:href=>"/products/archived", :class => (current_page.data.title === "Archived") ? "active" : ""}
+      Archive
+    %a.nav-link{:href=>"/products/team", :class => (current_page.data.title === "Team") ? "active" : ""}
+      Members
+    %a.nav-link{:href=>"#"}
+      Team settings
+  .upgrade-button-container
+    %a.btn.btn-terciary{:href=>"/billing/pay", :style=>"font-size:14px;"}
+      Upgrade
+      
+
+
+
+%nav.navbar.fixed-top#mobile-nav
+  .container.product-card-container
+    %button.btn.btn-sm.btn-flat.menu-toggle{:type => "button"} 
+      %i.material-icons
+        menu
