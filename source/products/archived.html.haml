@@ -5,13 +5,19 @@
 ;;;
 
 
+%section.no-padding-bottom
+	.container.product-card-container
+		.row.margin-bottom
+			.col
+				= partial("shared/page_header", :locals => { :title => "Archive" })
 
+
+%section.no-padding-top.no-padding-bottom
+	.container.product-card-container
+		=partial "search_sort" 
 
 %section
 	.container.product-card-container
-		.row.double-margin-bottom
-			.col
-				= partial("shared/page_header", :locals => { :title => "Archive" })
 		.row
 			-1.times do
 				.col-sm-12.col-md-12.col-lg-6
