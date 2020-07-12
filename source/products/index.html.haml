@@ -11,8 +11,7 @@
 = partial "add-new"
 %section.padding-top.no-padding-bottom
 	.container.product-card-container
-		=partial "search_sort"
- 
+		=partial "search_sort" 
 
 %section
 	.container.product-card-container
@@ -51,7 +50,7 @@
 									%button.dropdown-item{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#archiveModal"} 
 										Archive
 									.dropdown-divider
-									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+									%button.dropdown-item{:type=>"button", :onclick=>"location.href='/products/zero';"} 
 										Delete
 			-1.times do
 				.col-sm-12.col-md-12.col-lg-6
