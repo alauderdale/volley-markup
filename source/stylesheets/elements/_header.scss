@@ -23,7 +23,7 @@ $menu-width:250px;
 	
 	padding:8px;
 	border-radius:100px;
-	border:2px solid $border-color;
+	border:2px solid shade($border-color,20%);
 	margin: 0;
 	color:$text-color;
 	line-height: 1;
