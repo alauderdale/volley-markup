@@ -1,7 +1,6 @@
 %section
 	.container
-		.row
-			.col-xl-1
+		.row.justify-content-center
 			.col-xl-10
 				= partial("shared/page_header", :locals => { :title => "Good morning, John!" })
 				%nav.nav.double-margin-bottom.primary-tabs
@@ -81,7 +80,6 @@
 									%a{:href=>"#"}
 										Show full invoice history
 
-			.col-xl-1
 
 
 #changeCardModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}

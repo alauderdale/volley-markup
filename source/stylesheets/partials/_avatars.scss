@@ -20,6 +20,9 @@
 	    font-size:34px;
 	    line-height:80px;
     }
+    &.avatar-rounded{
+        border-radius: $base-border-radius;
+    }
 }
 
 .avatars-list{

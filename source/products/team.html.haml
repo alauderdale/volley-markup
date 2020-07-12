@@ -12,11 +12,11 @@
 
 %section
 	.container.product-card-container
-		.row
-			.col
+		.row.justify-content-center
+			.col-xl-10
 				= partial("shared/page_header_with_action", :locals => { :title => "Members" })
-		.row
-			.col
+		.row.justify-content-center
+			.col-xl-10
 				.list-default.margin-top
 					.row.align-items-center
 						.col-sm-6
@@ -88,7 +88,38 @@
 										%button.dropdown-item{:type=>"button"} 
 											Resend invite
 											
-											
+
+
+
+
+#inViteMembers.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.no-padding-bottom
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					%h2.text-center
+						Invite people to your team
+					%p.light-text-color.text-center
+						Team members can view, comment, or also create and edit all projects. Typically used for employees.
+					.padding-top
+						.position-relative
+							%textarea.input-lg.form-control.form-control-lg{:type=>"text", :autofocus=>"", :placeholder=>"Enter emails seporated by commas", :rows=>"4"}
+					.double-margin-bottom.margin-top
+						%h5.light-text-color
+							Enter the email addresses (comma separated) of the people you want to invite to view the 
+							%strong
+								Eternal Contrast 
+							organization.
+					.text-center
+						%button.btn.btn-primary.btn-lg.btn-block{:type => "button", "data-dismiss"=>"modal"} 
+							Invite 3 people
+			.modal-footer.no-border-top 
+
+
+							
 
 
 					

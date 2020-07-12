@@ -8,82 +8,80 @@
 	.container
 		.row.justify-content-sm-center
 			.col-lg-6
-				.padded
-					%h1
-						Confirm your subscription
-					%p
-						Enter payment details to subscribe
-					%form
-						.form-row.margin-bottom
-							.form-group.col-12
-								%label
-									Name on card
-								%input.form-control.form-control-lg{:type=>"text"}
-						.form-row.margin-bottom
-							.form-group.col-6
-								%label
-									Card number
-								%input.form-control.form-control-lg{:type=>"text", :placeholder=>"0000 0000 0000 0000"}
-							.form-group.col-3
-								%label
-									Expiration
-								%input.form-control.form-control-lg{:type=>"text", :placeholder=>"10/20"}
-							.form-group.col-3
-								%label
-									CVV
-								%input.form-control.form-control-lg{:type=>"text", :placeholder=>"123"}
-						.form-row.margin-bottom
-							.form-group.col-12
-								%img{:src=>"../images/cards.png",:width=>"220px"}
-						.form-row.margin-bottom
-							.form-group.col-12
-								%button.btn.btn-block.btn-primary.btn-lg{:type=>"submit"}
-									Pay $10 and upgrade now
+				%h1
+					Confirm your subscription
+				%p
+					Enter payment details to subscribe
+				%form
+					.form-row.margin-bottom
+						.form-group.col-12
+							%label
+								Name on card
+							%input.form-control.form-control-lg{:type=>"text"}
+					.form-row.margin-bottom
+						.form-group.col-6
+							%label
+								Card number
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"0000 0000 0000 0000"}
+						.form-group.col-3
+							%label
+								Expiration
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"10/20"}
+						.form-group.col-3
+							%label
+								CVV
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"123"}
+					.form-row.margin-bottom
+						.form-group.col-12
+							%img{:src=>"../images/cards.png",:width=>"220px"}
+					.form-row.margin-bottom
+						.form-group.col-12
+							%button.btn.btn-block.btn-primary.btn-lg{:type=>"submit"}
+								Pay $10 and upgrade now
 			.col-lg-5
-				.padded
-					.card.price-card{:style=>"min-height:auto;"}
-						.card-header
-							%h1
-								Volley 
-								%span.medium-font
-									Unlimited
-							%h1.display-4.strikethrough.inline.double-margin-right
-								%span.price.bold-font
-									$
-								%span.bold-font.dollar-ammount
-									25
-							%h1.display-4.inline.card-promo
-								%span.price.bold-font
-									$
-								%span.bold-font.dollar-ammount
-									10
-								%span.month
-									\/ month
+				.card.price-card{:style=>"min-height:auto;"}
+					.card-header
+						%h1
+							Volley 
+							%span.medium-font
+								Unlimited
+						%h1.display-4.strikethrough.inline.double-margin-right
+							%span.price.bold-font
+								$
+							%span.bold-font.dollar-ammount
+								25
+						%h1.display-4.inline.card-promo
+							%span.price.bold-font
+								$
+							%span.bold-font.dollar-ammount
+								10
+							%span.month
+								\/ month
 
-							%h5{:style=>"position: relative;top: 12px;"}
-								%em
-									Lifetime deal offered through July to support startups & SMBs.
-						.card-body
-							%p.bold-font
-								You get unlimited everyhting…
-							%ul.card-list.list-unstyled.icon-list-better.check-list
-								%li.bold-font
-									Projects
-								%li.bold-font
-									Comments
-								%li.bold-font
-									Collaborators
-								%li
-									%span.bold-font
-										Export to Trello
-									%small
-										(Others coming soon)
-								%li
-									Instant access to every new feature
-					.text-center.double-margin-top
-						%p.half-margin-bottom
-							No stress. Cancel anytime
-						%h4.light-text-color
-							Your annual plan starts on 6/3/19 at $52.50/yr and renews automatically on 6/3/20 at $69.99. You can cancel any time.
+						%h5{:style=>"position: relative;top: 12px;"}
+							%em
+								Lifetime deal offered through July to support startups & SMBs.
+					.card-body
+						%p.bold-font
+							You get unlimited everyhting…
+						%ul.card-list.list-unstyled.icon-list-better.check-list
+							%li.bold-font
+								Projects
+							%li.bold-font
+								Comments
+							%li.bold-font
+								Collaborators
+							%li
+								%span.bold-font
+									Export to Trello
+								%small
+									(Others coming soon)
+							%li
+								Instant access to every new feature
+				.text-center.double-margin-top
+					%p.half-margin-bottom
+						No stress. Cancel anytime
+					%h4.light-text-color
+						Your annual plan starts on 6/3/19 at $52.50/yr and renews automatically on 6/3/20 at $69.99. You can cancel any time.
 
 

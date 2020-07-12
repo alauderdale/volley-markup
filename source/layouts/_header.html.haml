@@ -7,7 +7,7 @@
       %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
         %img.avatar.avatar-xs.quarter-margin-right.align-middle{:alt => "Avatar", :src => "/images/img_avatar.png"}
         %span.medium-font.menu-text.align-middle
-          Alex Lauderdale
+          =lorem.name
         %i.material-icons.align-middle
           expand_more
       .dropdown-menu.dropdown-menu-top.admin-menu
@@ -79,7 +79,7 @@
       Archive
     %a.nav-link{:href=>"/products/team", :class => (current_page.data.title === "Team") ? "active" : ""}
       Members
-    %a.nav-link{:href=>"#"}
+    %a.nav-link{:href=>"/products/team-settings", :class => (current_page.data.title === "Team settings") ? "active" : ""}
       Team settings
   .upgrade-button-container
     %a.btn.btn-terciary{:href=>"/billing/pay", :style=>"font-size:14px;"}
@@ -93,6 +93,8 @@
     %button.btn.btn-sm.btn-flat.menu-toggle.menu-toggle-action{:type => "button"} 
       %i.material-icons
         menu
+
+
 
 
 
