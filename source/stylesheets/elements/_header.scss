@@ -1,9 +1,11 @@
 $menu-width:250px;
 
 #mobile-nav{
+	z-index: 800;
 	display: none;
 	width:100%;
 	background:white;
+	border-bottom:1px solid $border-color;
 	@include breakpoint(md) {
 		display: block;
 	}
@@ -59,7 +61,7 @@ $menu-width:250px;
 	bottom: 0;
 	height: 100%;
 	background:white;
-	z-index: 999;
+	z-index: 900;
 	border-right:1px solid $border-color;
 	padding:0 20px;
 	padding-top:40px;

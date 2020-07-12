@@ -14,7 +14,7 @@
 
 .card{
 	&.price-card{
-		min-height: 500px;
+		min-height: 525px;
 		@include breakpoint(sm) {
 			min-height: auto;
 		}

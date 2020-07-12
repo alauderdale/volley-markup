@@ -1,6 +1,4 @@
-.dropup:hover > .dropdown-menu {
-    display: block;    
-}
+
 
 
 .navbar{
@@ -24,13 +22,22 @@
 	padding-top:$baseline;
 }
 
+.page-header-for-title{
+	padding-bottom:$baseline;
+	margin-bottom:$baseline;
+	border-bottom:1px solid $border-color;
+	.title{
+		margin-bottom:0;
+	}
+}
+
 
 // tabs
 
 .primary-tabs{
 	a.nav-link{
 		font-size: 16px;
-		padding:$baseline/2 0px;
+		padding:$baseline/4 0px;
 		margin: 0 12px;
 		border:none;
 		color: $gray-color;
@@ -41,7 +48,7 @@
 			color: $link-color;
 		}
 		&.active{
-			border-bottom:1px solid $link-color;
+			border-bottom:2px solid $link-color;
 			color: $link-color;
 		}
 	}

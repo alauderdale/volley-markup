@@ -8,11 +8,13 @@
 
 / = partial "free-trial-card"
 
-= partial "add-new"
+
 
 %section
 	.container.product-card-container
 		.row
+			.col
+				= partial("shared/page_header_with_action", :locals => { :title => "Team members" })
 
 
 					

@@ -3,9 +3,8 @@
 		.row
 			.col-xl-1
 			.col-xl-10
-				%h2
-					Account settings
-				%nav.nav.nav-tabs.double-margin-bottom.primary-tabs
+				= partial("shared/page_header", :locals => { :title => "Good morning, John!" })
+				%nav.nav.double-margin-bottom.primary-tabs
 					%a.nav-link.active{:href=>"/settings/"}
 						Prifile
 					%a.nav-link{:href=>"/settings/password"}
@@ -22,7 +21,7 @@
 							.avatar.avatar-xl.margin-right
 								AL
 							.media-body
-								%a.btn.btn-secondary.margin-top{:href=>"#"}
+								%a.btn.btn-secondary{:href=>"#", :style=>"margin-top:24px;"}
 									Change avatar
 						.margin-top
 						%form
