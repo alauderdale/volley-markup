@@ -14,24 +14,23 @@
 	.container.product-card-container
 		.row
 			.col
-				= partial("shared/page_header_with_action", :locals => { :title => "Team members" })
+				= partial("shared/page_header_with_action", :locals => { :title => "Members" })
 		.row
 			.col
 				.list-default.margin-top
 					.row.align-items-center
-						.col-7
+						.col-sm-6
 							.media.align-items-center
-								.avatar.avatar-sm.mr-3
+								.avatar.avatar-xs.mr-3
 									AL
 								.media-body
 									%h4.no-margin.medium-font
 										=lorem.name
 									%h5.no-margin
 										=lorem.email
-						.col.text-center
-							.badge.badge-pill.badge-light.pr-3.pl-3
-								%h4.no-margin
-									Owner
+						.col
+							%h4.no-margin.medium-font
+								Owner
 						.col
 							.justify-content-end.d-flex
 								.dropdown
@@ -43,16 +42,16 @@
 											Remove from team
 					-2.times do
 						.row.align-items-center
-							.col-7
+							.col-sm-6
 								.media.align-items-center
-									.avatar.avatar-sm.mr-3
+									.avatar.avatar-xs.mr-3
 										AL
 									.media-body
 										%h4.no-margin.medium-font
 											=lorem.name
 										%h5.no-margin
 											=lorem.email
-							.col.text-center
+							.col
 								%h4.no-margin
 									Member
 							.col
@@ -65,16 +64,16 @@
 											%button.dropdown-item{:type=>"button"} 
 												Remove from team
 					.row.align-items-center
-						.col-7
+						.col-sm-6
 							.media.align-items-center
-								.avatar.avatar-sm.mr-3
+								.avatar.avatar-xs.mr-3
 									AL
 								.media-body
 									%h4.no-margin.medium-font
 										=lorem.name
 									%h5.no-margin
 										=lorem.email
-						.col.text-center
+						.col
 							%h4.no-margin.extra-light-text-color
 								Invited
 						.col
