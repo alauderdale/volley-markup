@@ -15,6 +15,81 @@
 		.row
 			.col
 				= partial("shared/page_header_with_action", :locals => { :title => "Team members" })
+		.row
+			.col
+				.list-default.margin-top
+					.row.align-items-center
+						.col-7
+							.media.align-items-center
+								.avatar.avatar-sm.mr-3
+									AL
+								.media-body
+									%h4.no-margin.medium-font
+										=lorem.name
+									%h5.no-margin
+										=lorem.email
+						.col.text-center
+							.badge.badge-pill.badge-light.pr-3.pl-3
+								%h4.no-margin
+									Owner
+						.col
+							.justify-content-end.d-flex
+								.dropdown
+									%button.btn.btn-flat.btn-icon.menu-button{"data-toggle" => "dropdown", :type=>"button"}
+										%i.material-icons
+											more_horiz
+									.dropdown-menu.dropdown-menu-right
+										%button.dropdown-item{:type=>"button"} 
+											Remove from team
+					-2.times do
+						.row.align-items-center
+							.col-7
+								.media.align-items-center
+									.avatar.avatar-sm.mr-3
+										AL
+									.media-body
+										%h4.no-margin.medium-font
+											=lorem.name
+										%h5.no-margin
+											=lorem.email
+							.col.text-center
+								%h4.no-margin
+									Member
+							.col
+								.justify-content-end.d-flex
+									.dropdown
+										%button.btn.btn-flat.btn-icon.menu-button{"data-toggle" => "dropdown", :type=>"button"}
+											%i.material-icons
+												more_horiz
+										.dropdown-menu.dropdown-menu-right
+											%button.dropdown-item{:type=>"button"} 
+												Remove from team
+					.row.align-items-center
+						.col-7
+							.media.align-items-center
+								.avatar.avatar-sm.mr-3
+									AL
+								.media-body
+									%h4.no-margin.medium-font
+										=lorem.name
+									%h5.no-margin
+										=lorem.email
+						.col.text-center
+							%h4.no-margin.extra-light-text-color
+								Invited
+						.col
+							.justify-content-end.d-flex
+								.dropdown
+									%button.btn.btn-flat.btn-icon.menu-button{"data-toggle" => "dropdown", :type=>"button"}
+										%i.material-icons
+											more_horiz
+									.dropdown-menu.dropdown-menu-right
+										%button.dropdown-item{:type=>"button"} 
+											Remove from team
+										%button.dropdown-item{:type=>"button"} 
+											Resend invite
+											
+											
 
 
 					
