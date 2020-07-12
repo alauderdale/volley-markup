@@ -17,6 +17,30 @@ $menu-width:250px;
 	}
 }
 
+.close-x{
+	
+	padding:8px;
+	border-radius:100px;
+	border:2px solid $border-color;
+	margin: 0;
+	color:$text-color;
+	line-height: 1;
+	.material-icons{
+		font-size: 14px;
+		line-height: 1;
+		position: relative;
+		top: 1px;
+	}
+}
+
+
+.menu-close{
+	//this positions the close button in the top right of any element
+	position:absolute;
+	top:15px;
+	right:15px;
+}
+
 #main-nav{
 	transition-duration: .2s;
 	@include breakpoint(md) {
@@ -26,29 +50,6 @@ $menu-width:250px;
 		left:0!important;
 		@include breakpoint(md) {
 			left:0!important;
-		}
-	}
-	a.menu-close{
-		position:absolute;
-		top:15px;
-		right:15px;
-		display: none;
-		padding:8px;
-		border-radius:100px;
-		border:2px solid $border-color;
-		margin: 0;
-		color:$text-color;
-		line-height: 1;
-		// height: 50px;
-  //   	width: 48px;
-    	.material-icons{
-    		font-size: 14px;
-    		line-height: 1;
-    		position: relative;
-    		top: 1px;
-    	}
-		@include breakpoint(md) {
-			display: block;
 		}
 	}
 	position: fixed;
@@ -76,6 +77,10 @@ $menu-width:250px;
 		left:0;
 		width:100%;
 		background: white;
+		//make it fire on hover
+		.dropup:hover > .dropdown-menu {
+    		display: block;    
+		}
 	}
 	.logo-container{
 		margin-bottom:$baseline*2; 
@@ -99,8 +104,12 @@ $menu-width:250px;
 
 		//workspace dropdown menu styles
 		&.workspace-selector{
-			.nav-link{
-
+			.workspace-menu{
+				.menu-title{
+					//this includes "+ create new" link
+					margin: 0;
+					font-size: 14px;
+				}
 			}
 		}
 	}

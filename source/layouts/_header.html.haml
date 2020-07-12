@@ -1,6 +1,6 @@
 #main-nav
-  %a.menu-toggle.menu-close{:href=>"#"}
-    .material-icons
+  %a.menu-close.menu-toggle-action.close-x.d-lg-none{:href=>"#"}
+    %i.material-icons
       clear
   %nav.navbar.admin-bar
     .nav-item.dropup
@@ -53,18 +53,20 @@
             .avatar-default
               EC
           %span.text.p-2.mr-auto.align-middle
-            Eternal Contrast
+            %p.menu-title
+              Eternal Contrast
             %h5.light-text-color
               Team
         %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
           .avatar-container
             %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png", :width=>"28px"}
           %span.text.p-2.mr-auto.align-middle
-            Alex Lauderdale
+            %p.menu-title
+              Alex Lauderdale
             %h5.light-text-color
               My projects
         .dropdown-divider
-        %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
+        %a.dropdown-item.d-flex.align-items-center.menu-title{:href => "#"} 
           .avatar-container.invert-avatar
             .avatar-default
               +
@@ -88,6 +90,6 @@
 
 %nav.navbar.fixed-top#mobile-nav
   .container.product-card-container
-    %button.btn.btn-sm.btn-flat.menu-toggle{:type => "button"} 
+    %button.btn.btn-sm.btn-flat.menu-toggle.menu-toggle-action{:type => "button"} 
       %i.material-icons
         menu

@@ -1,3 +1,8 @@
+.dropup:hover > .dropdown-menu {
+    display: block;    
+}
+
+
 .navbar{
 		a.nav-link{
 			color:$text-color!important;
