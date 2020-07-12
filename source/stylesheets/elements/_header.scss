@@ -79,6 +79,7 @@ $menu-width:250px;
 		left:0;
 		width:100%;
 		background: white;
+		border-top:1px solid $border-color;
 		//make it fire on hover
 		.dropup:hover > .dropdown-menu {
     		display: block;    
