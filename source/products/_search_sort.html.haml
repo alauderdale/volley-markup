@@ -1,0 +1,23 @@
+.row
+	.col-6
+		.input-group.simple-prepend
+			.input-group-prepend
+			.input-group-text 
+				.material-icons
+					search
+			%input#inlineFormInputGroup.form-control{:placeholder => "Search...", :type => "text"}
+	.col-6
+		.inline-block.align-middle.float-right{:style=>"line-height:36px;"}
+			.inline-block.align-middle
+				%h4.no-margin.medium-font.align-middle
+					Sort by
+					%span.link-color.activity-filter.cursor-pointer{ "data-toggle"=>"dropdown"}
+						Recent 
+						%span.material-icons.align-middle.dropdown
+							expand_more
+							
+						.dropdown-menu
+							%a.dropdown-item{:href=>"#"}
+								Recent  
+							%a.dropdown-item{:href=>"#"}
+								Alphanumeric  
