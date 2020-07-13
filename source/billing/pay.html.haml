@@ -6,8 +6,8 @@
 
 %section
 	.container
-		.row.justify-content-sm-center
-			.col-lg-6
+		.row.justify-content-center
+			.col-lg-5
 				%h1
 					Confirm your subscription
 				%p
@@ -39,49 +39,36 @@
 							%button.btn.btn-block.btn-primary.btn-lg{:type=>"submit"}
 								Pay $10 and upgrade now
 			.col-lg-5
-				.card.price-card{:style=>"min-height:auto;"}
-					.card-header
-						%h1
-							Volley 
-							%span.medium-font
-								Unlimited
-						%h1.display-4.strikethrough.inline.double-margin-right
-							%span.price.bold-font
-								$
-							%span.bold-font.dollar-ammount
-								25
-						%h1.display-4.inline.card-promo
-							%span.price.bold-font
-								$
-							%span.bold-font.dollar-ammount
-								10
-							%span.month
-								\/ month
-
-						%h5{:style=>"position: relative;top: 12px;"}
-							%em
-								Lifetime deal offered through July to support startups & SMBs.
-					.card-body
-						%p.bold-font
-							You get unlimited everyhting…
-						%ul.card-list.list-unstyled.icon-list-better.check-list
-							%li.bold-font
-								Projects
-							%li.bold-font
-								Comments
-							%li.bold-font
-								Collaborators
-							%li
-								%span.bold-font
+				.padded
+					.card.price-card{:style=>"min-height:auto;"}
+						.card-header
+							%h1.medium-font.no-margin
+								Volley Pro
+							%h5
+								Great for freelancers
+							%h1.display-5.inline
+								%span.price.bold-font
+									$
+								%span.bold-font.dollar-ammount
+									25
+								%span.month
+									\/ month
+						.card-body
+							%ul.card-list.list-unstyled.icon-list-better.check-list
+								%li.bold-font
+									Unlimited projects
+								%li.bold-font
+									Unlimited colloborators
+								%li
+									Unlimited notes
+								%li
 									Export to Trello
-								%small
-									(Others coming soon)
-							%li
-								Instant access to every new feature
-				.text-center.double-margin-top
-					%p.half-margin-bottom
-						No stress. Cancel anytime
-					%h4.light-text-color
-						Your annual plan starts on 6/3/19 at $52.50/yr and renews automatically on 6/3/20 at $69.99. You can cancel any time.
+								%li
+									Export to Jira
+					.text-center.double-margin-top
+						%p.half-margin-bottom
+							No stress. Cancel anytime
+						%h4.light-text-color
+							Your annual plan starts on 6/3/19 at $52.50/yr and renews automatically on 6/3/20 at $69.99. You can cancel any time.
 
 
