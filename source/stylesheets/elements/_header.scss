@@ -1,0 +1,144 @@
+$menu-width:250px;
+
+#mobile-nav{
+	z-index: 800;
+	display: none;
+	width:100%;
+	background:white;
+	border-bottom:1px solid $border-color;
+	@include breakpoint(md) {
+		display: block;
+	}
+}
+
+
+#dashboard-container, #mobile-nav{
+	padding-left:$menu-width; 
+	@include breakpoint(md) {
+		padding-left:0;
+	}
+}
+
+.close-x{
+	
+	padding:8px;
+	border-radius:100px;
+	border:2px solid shade($border-color,20%);
+	margin: 0;
+	color:$text-color;
+	line-height: 1;
+	.material-icons{
+		font-size: 14px;
+		line-height: 1;
+		position: relative;
+		top: 1px;
+	}
+}
+
+
+.menu-close{
+	//this positions the close button in the top right of any element
+	position:absolute;
+	top:15px;
+	right:15px;
+}
+
+#main-nav{
+	@include breakpoint(md) {
+		left:-($menu-width);
+	}
+	&.menu-open{
+		left:0!important;
+		@include breakpoint(md) {
+			left:0!important;
+		}
+	}
+	transition-duration: .2s;
+	position: fixed;
+	width:$menu-width;
+	top:0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	background:#F9FCFF;
+	z-index: 900;
+	border-right:1px solid $border-color;
+	padding:0 20px;
+	padding-top:40px;
+	.menu-text{
+		width: 130px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: inline-block;
+		line-height: 1.2;
+	}
+	.admin-bar{
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+		background: white;
+		border-top:1px solid $border-color;
+		//make it fire on hover
+		.dropup:hover > .dropdown-menu {
+    		display: block;    
+		}
+	}
+	.logo-container{
+		margin-bottom:$baseline*2; 
+	}
+	.navbar-brand{
+		padding:0;
+	}
+	.navbar{
+		align-items: start;
+		.nav-link{
+			padding:$baseline/2 0;
+			margin:0;
+			display: block;
+			width:100%;
+			&.active{
+				font-weight: 900;
+			}
+		}
+	}
+	.nav-item{
+
+		//workspace dropdown menu styles
+		&.workspace-selector{
+			.workspace-menu{
+				.menu-title{
+					//this includes "+ create new" link
+					margin: 0;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	//menu button shown on mobile
+	.menu-toggle{
+		border-radius:0;
+		@include breakpoint(md) {
+			padding:$baseline 20;
+		}
+		@include breakpoint(xs) {
+			padding:$baseline 20px;
+		}
+		.material-icons{
+			line-height:30px;
+		}
+	}
+	//general dropdown toggle styles
+	.dropdown-toggle{
+		&:after{
+			display:none;
+		}
+		.material-icons{
+			font-size:16px;
+			position:relative;
+			top:3px;
+			color:$lightest-gray-color;
+		}
+	}
+}

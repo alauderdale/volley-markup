@@ -16,69 +16,27 @@ Volley | Fast, easy feedback for your website"
 <link href='../images/favicon.ico' rel='shortcut icon'>
 <script src="../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
 
+</head>
 <body class='settings settings_index'>
-<nav class='navbar navbar-light bg-light fixed-top navbar-expand-sm' id='primary-nav'>
-<div class='container'>
-<a class='navbar-brand' href='/products'>
-<img src='../images/logo.svg' width='100px'>
-</a>
-<!-- .navbar-nav.mr-auto -->
-<!-- .nav-item.dropdown.workspace-selector -->
-<!-- %a.nav-link.dropdown-toggle.medium-font{"data-toggle" => "dropdown", :href => "#"} -->
-<!-- Eternal Contrast -->
-<!-- %i.material-icons -->
-<!-- unfold_more -->
-<!-- .dropdown-menu.workspace-menu.menu-with-button{"aria-labelledby" => "navbarDropdownMenuLink"} -->
-<!-- %a.dropdown-item.d-flex.align-items-center.active{:href => "#"} -->
-<!-- .avatar-container -->
-<!-- .avatar-default -->
-<!-- EC -->
-<!-- %span.text.p-2.mr-auto.align-middle -->
-<!-- Eternal Contrast -->
-<!-- %h5.light-text-color -->
-<!-- Team -->
-<!-- %span.button-container.p-2 -->
-<!-- %button.btn.btn-link.btn-icon{:type=>"button"} -->
-<!-- %i.material-icons -->
-<!-- settings -->
-<!-- %a.dropdown-item.d-flex.align-items-center{:href => "#"} -->
-<!-- .avatar-container -->
-<!-- %img.avatar.avatar-xs{:alt => "Avatar", :src => "../images/img_avatar.png", :width=>"28px"} -->
-<!-- %span.text.p-2.mr-auto.align-middle -->
-<!-- Alex Lauderdale -->
-<!-- %h5.light-text-color -->
-<!-- My projects -->
-<!-- .dropdown-divider -->
-<!-- %a.dropdown-item.d-flex{:href => "#"} -->
-<!-- .avatar-container.invert-avatar -->
-<!-- .avatar-default -->
-<!-- + -->
-<!-- %span.text.p-2.mr-auto.link-color -->
-<!-- Create a new team -->
-<!-- %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} -->
-<!-- %i.material-icons -->
-<!-- menu -->
-<div>
-<div class='navbar-nav'>
-<form class='form-inline'>
-<a class='btn btn-terciary d-none d-md-block' href='/billing/pay' style='font-size:14px;'>
-Upgrade
-</a>
-</form>
-<!-- .nav-item.active -->
-<!-- %a.nav-link{:href => "/products"} -->
-<!-- Products -->
-<!-- .nav-item -->
-<!-- %a.nav-link{:href => "#"} -->
-<!-- People -->
-<div class='nav-item dropdown'>
-<a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
-<img alt='Avatar' class='avatar avatar-xs' src='../images/img_avatar.png'>
+<div id='dashboard-container'>
+<div id='main-nav'>
+<a class='menu-close menu-toggle-action close-x d-lg-none' href='#'>
 <i class='material-icons'>
-expand_more
+clear
 </i>
 </a>
-<div class='dropdown-menu dropdown-menu-right admin-menu'>
+<nav class='navbar admin-bar'>
+<div class='nav-item dropup'>
+<a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
+<img alt='Avatar' class='avatar avatar-xs quarter-margin-right align-middle' src='../images/img_avatar.png'>
+<span class='medium-font menu-text align-middle'>
+Samuel Graves
+</span>
+<i class='material-icons align-middle'>
+unfold_more
+</i>
+</a>
+<div class='dropdown-menu dropdown-menu-top admin-menu'>
 <div class='dropdown-header'>
 <p class='medium-font no-margin-bottom text-color'>
 Alex Lauderdale
@@ -113,22 +71,147 @@ Sign out
 </a>
 </div>
 </div>
+</nav>
+<div class='logo-container text-center'>
+<a class='navbar-brand' href='/products'>
+<img src='../images/logo.svg' width='100px'>
+</a>
 </div>
+<nav class='navbar team-select-container'>
+<div class='nav-item dropdown workspace-selector'>
+<a class='nav-link dropdown-toggle medium-font menu-avatar' data-toggle='dropdown' href='#'>
+<div class='avatar-container inline-block align-middle'>
+<div class='avatar-default'>
+EC
+</div>
+</div>
+<p class='menu-text no-margin align-middle'>
+Eternal Contrast
+</p>
+<i class='material-icons align-middle'>
+unfold_more
+</i>
+</a>
+<div aria-labelledby='navbarDropdownMenuLink' class='dropdown-menu workspace-menu menu-avatar'>
+<a class='dropdown-item d-flex align-items-center active' href='#'>
+<div class='avatar-container'>
+<div class='avatar-default'>
+EC
+</div>
+</div>
+<span class='text p-2 mr-auto align-middle'>
+<p class='menu-title'>
+Eternal Contrast
+</p>
+<h5 class='light-text-color'>
+Team
+</h5>
+</span>
+</a>
+<a class='dropdown-item d-flex align-items-center' href='#'>
+<div class='avatar-container'>
+<img alt='Avatar' class='avatar avatar-xs' src='../images/img_avatar.png' width='28px'>
+</div>
+<span class='text p-2 mr-auto align-middle'>
+<p class='menu-title'>
+Alex Lauderdale
+</p>
+<h5 class='light-text-color'>
+My projects
+</h5>
+</span>
+</a>
+<div class='dropdown-divider'></div>
+<a class='dropdown-item d-flex align-items-center menu-title' data-target='#newTeamModal' data-toggle='modal' href='#'>
+<div class='avatar-container invert-avatar'>
+<div class='avatar-default'>
++
+</div>
+</div>
+<span class='text p-2 mr-auto link-color'>
+Create a new team
+</span>
+</a>
 </div>
 </div>
 </nav>
+<nav class='navbar nav flex-column margin-bottom'>
+<a class='nav-link' href='/products/'>
+Projects
+</a>
+<a class='nav-link' href='/products/archived'>
+Archive
+</a>
+<a class='nav-link' href='/products/team'>
+Members
+</a>
+<a class='nav-link' href='/products/team-settings'>
+Team settings
+</a>
+</nav>
+<div class='upgrade-button-container'>
+<a class='btn btn-terciary' href='/billing/trial-expired' style='font-size:14px;'>
+Upgrade
+</a>
+</div>
+</div>
+<nav class='navbar fixed-top' id='mobile-nav'>
+<div class='container product-card-container'>
+<button class='btn btn-sm btn-flat menu-toggle menu-toggle-action' type='button'>
+<i class='material-icons'>
+menu
+</i>
+</button>
+<a class='navbar-brand mx-auto' href='/products'>
+<img src='../images/logo.svg' width='90px'>
+</a>
+</div>
+</nav>
+<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='newTeamModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header no-border-bottom no-padding-bottom'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='padded no-padding-top no-padding-bottom'>
+<h2 class='text-center'>
+Create your team
+</h2>
+<p class='light-text-color text-center'>
+Create a workspace where you can colloborate on projects with your whole team
+</p>
+<div class='double-margin-bottom'>
+<div class='position-relative'>
+<input autofocus='' class='input-lg form-control form-control-lg' placeholder='E.g. Acme or Acme design' type='text'>
+</div>
+</div>
+<div class='text-center'>
+<button class='btn btn-primary btn-lg' data-dismiss='modal' type='button'>
+Create team
+</button>
+</div>
+</div>
+</div>
+<div class='modal-footer no-border-top'></div>
+</div>
+</div>
+</div>
 
-<!-- end menu -->
 <div class='main'>
 <section>
 <div class='container'>
-<div class='row'>
-<div class='col-xl-2'></div>
-<div class='col-xl-8'>
-<h2>
-Account settings
+<div class='row justify-content-center'>
+<div class='col-xl-10'>
+<div class='page-header-for-title'>
+<h2 class='medium-font title'>
+Good morning, John!
 </h2>
-<nav class='nav nav-tabs double-margin-bottom primary-tabs'>
+</div>
+
+<nav class='nav double-margin-bottom primary-tabs'>
 <a class='nav-link active' href='/settings/'>
 Prifile
 </a>
@@ -149,7 +232,7 @@ Avatar
 AL
 </div>
 <div class='media-body'>
-<a class='btn btn-secondary margin-top' href='#'>
+<a class='btn btn-secondary' href='#' style='margin-top:24px;'>
 Change avatar
 </a>
 </div>
@@ -180,7 +263,6 @@ Delete account
 </button>
 </div>
 </div>
-<div class='col-xl-2'></div>
 </div>
 </div>
 </section>
@@ -220,8 +302,7 @@ Yes, delete my account
 </div>
 
 </div>
-<!-- end main content -->
 
+</div>
 </body>
-</head>
 </html>

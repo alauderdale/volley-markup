@@ -16,110 +16,14 @@ Volley | Fast, easy feedback for your website"
 <link href='../../images/favicon.ico' rel='shortcut icon'>
 <script src="../../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
+</head>
 <body class='billing billing_trial-expired billing_trial-expired_index'>
-<nav class='navbar navbar-light bg-light fixed-top navbar-expand-sm' id='primary-nav'>
-<div class='container'>
-<a class='navbar-brand' href='/products'>
-<img src='../../images/logo.svg' width='100px'>
-</a>
-<!-- .navbar-nav.mr-auto -->
-<!-- .nav-item.dropdown.workspace-selector -->
-<!-- %a.nav-link.dropdown-toggle.medium-font{"data-toggle" => "dropdown", :href => "#"} -->
-<!-- Eternal Contrast -->
-<!-- %i.material-icons -->
-<!-- unfold_more -->
-<!-- .dropdown-menu.workspace-menu.menu-with-button{"aria-labelledby" => "navbarDropdownMenuLink"} -->
-<!-- %a.dropdown-item.d-flex.align-items-center.active{:href => "#"} -->
-<!-- .avatar-container -->
-<!-- .avatar-default -->
-<!-- EC -->
-<!-- %span.text.p-2.mr-auto.align-middle -->
-<!-- Eternal Contrast -->
-<!-- %h5.light-text-color -->
-<!-- Team -->
-<!-- %span.button-container.p-2 -->
-<!-- %button.btn.btn-link.btn-icon{:type=>"button"} -->
-<!-- %i.material-icons -->
-<!-- settings -->
-<!-- %a.dropdown-item.d-flex.align-items-center{:href => "#"} -->
-<!-- .avatar-container -->
-<!-- %img.avatar.avatar-xs{:alt => "Avatar", :src => "../../images/img_avatar.png", :width=>"28px"} -->
-<!-- %span.text.p-2.mr-auto.align-middle -->
-<!-- Alex Lauderdale -->
-<!-- %h5.light-text-color -->
-<!-- My projects -->
-<!-- .dropdown-divider -->
-<!-- %a.dropdown-item.d-flex{:href => "#"} -->
-<!-- .avatar-container.invert-avatar -->
-<!-- .avatar-default -->
-<!-- + -->
-<!-- %span.text.p-2.mr-auto.link-color -->
-<!-- Create a new team -->
-<!-- %button.btn.btn-sm.btn-flat.d-lg-none.menu-toggle{:type => "button"} -->
-<!-- %i.material-icons -->
-<!-- menu -->
-<div>
-<div class='navbar-nav'>
-<form class='form-inline'>
-<a class='btn btn-terciary d-none d-md-block' href='/billing/pay' style='font-size:14px;'>
-Upgrade
-</a>
-</form>
-<!-- .nav-item.active -->
-<!-- %a.nav-link{:href => "/products"} -->
-<!-- Products -->
-<!-- .nav-item -->
-<!-- %a.nav-link{:href => "#"} -->
-<!-- People -->
-<div class='nav-item dropdown'>
-<a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
-<img alt='Avatar' class='avatar avatar-xs' src='../../images/img_avatar.png'>
-<i class='material-icons'>
-expand_more
-</i>
-</a>
-<div class='dropdown-menu dropdown-menu-right admin-menu'>
-<div class='dropdown-header'>
-<p class='medium-font no-margin-bottom text-color'>
-Alex Lauderdale
-</p>
-<h5 class='extra-light-text-color'>
-alauderdale@mac.com
-</h5>
-</div>
-<div class='dropdown-divider'></div>
-<a class='dropdown-item' href='/settings'>
-<i class='material-icons icon-left'>
-settings
-</i>
-Profile
-</a>
-<!-- %a.dropdown-item{:href => "/settings"} -->
-<!-- %i.material-icons.icon-left -->
-<!-- group -->
-<!-- Team -->
-<a class='dropdown-item' href='/settings/billing-default'>
-<i class='material-icons icon-left'>
-insert_drive_file
-</i>
-Billing
-</a>
-<div class='dropdown-divider'></div>
-<a class='dropdown-item' href='/welcome/login'>
-<i class='material-icons icon-left'>
-exit_to_app
-</i>
-Sign out
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</nav>
-
-<!-- end menu -->
 <div class='main'>
+<a class='close-x menu-close' href='/products'>
+<div class='material-icons'>
+clear
+</div>
+</a>
 <section>
 <div class='container'>
 <!-- .row -->
@@ -148,18 +52,21 @@ You've reached your 1 project limit. You can either archive or delete a project,
 <div class='row justify-content-center'>
 <div class='col-12'>
 <div class='row justify-content-center'>
-<div class='col-sm-12 col-md-6 col-lg-6 col-xl-5'>
-<div class='card price-card margin-bottom'>
+<div class='col-sm-12 col-md-6 col-lg-3 col-xl-3 margin-bottom'>
+<div class='card price-card'>
 <div class='card-header'>
-<h1>
-Volley Free
+<h1 class='medium-font no-margin'>
+Free
 </h1>
-<h1 class='display-4'>
-<span class='price medium-font'>
+<h5>
+Level up your process
+</h5>
+<h1 class='display-5 inline'>
+<span class='price bold-font'>
 $
 </span>
 <span class='bold-font dollar-ammount'>
-0
+25
 </span>
 <span class='month'>
 / month
@@ -172,84 +79,139 @@ $
 1 project
 </li>
 <li>
-Unlimited comments
+Unlimited notes
 </li>
 <li>
 User mentions
 </li>
 </ul>
 </div>
-<div class='card-footer text-center no-padding-top double-padding-bottom'>
-<a class='btn btn-secondary btn-block disabled' href='/billing/pay'>
+<div class='card-footer text-center no-padding-top padding-bottom'>
+<a class='btn btn-secondary btn-block btn-lg disabled' href='/billing/pay'>
 Current plan
 </a>
 </div>
 </div>
 </div>
-<div class='col-sm-12 col-md-6 col-lg-6 col-xl-5 margin-bottom'>
+<div class='col-sm-12 col-md-6 col-lg-3 col-xl-3 margin-bottom'>
 <div class='card price-card'>
 <div class='card-header'>
-<h1>
-Volley
-<span class='medium-font'>
-Unlimited
-</span>
+<h1 class='medium-font no-margin'>
+Pro
 </h1>
-<h1 class='display-4 strikethrough inline double-margin-right'>
+<h5>
+Great for freelancers
+</h5>
+<h1 class='display-5 inline'>
 <span class='price bold-font'>
 $
 </span>
 <span class='bold-font dollar-ammount'>
 25
 </span>
+<span class='month'>
+/ month
+</span>
 </h1>
-<h1 class='display-4 inline card-promo'>
+</div>
+<div class='card-body'>
+<ul class='card-list list-unstyled icon-list-better check-list'>
+<li class='bold-font'>
+Unlimited projects
+</li>
+<li class='bold-font'>
+Unlimited colloborators
+</li>
+<li>
+Unlimited notes
+</li>
+<li>
+Export to Trello
+</li>
+<li>
+Export to Jira
+</li>
+</ul>
+</div>
+<div class='card-footer text-center no-padding-top padding-bottom'>
+<a class='btn btn-primary btn-block btn-lg' href='/billing/pay'>
+Get Pro
+</a>
+</div>
+</div>
+</div>
+<div class='col-sm-12 col-md-6 col-lg-3 col-xl-3 margin-bottom'>
+<div class='card price-card popular'>
+<div class='card-header'>
+<h1 class='medium-font no-margin'>
+Team
+</h1>
+<h5>
+Great for small teams
+</h5>
+<h1 class='display-5 inline'>
 <span class='price bold-font'>
 $
 </span>
 <span class='bold-font dollar-ammount'>
-10
+45
 </span>
 <span class='month'>
 / month
 </span>
 </h1>
-<h5 style='position: relative;top: 12px;'>
-<em>
-Lifetime deal offered through July to support startups & SMBs.
-</em>
-</h5>
 </div>
 <div class='card-body'>
-<p class='bold-font'>
-You get unlimited everyhting…
-</p>
 <ul class='card-list list-unstyled icon-list-better check-list'>
 <li class='bold-font'>
-Projects
-</li>
-<li class='bold-font'>
-Comments
-</li>
-<li class='bold-font'>
-Collaborators
+Everything in Pro
 </li>
 <li>
-<span class='bold-font'>
-Export to Trello
-</span>
-<small>
-(Others coming soon)
-</small>
-</li>
-<li>
-Instant access to every new feature
+3 team members
 </li>
 </ul>
 </div>
-<div class='card-footer text-center no-padding-top double-padding-bottom'>
-<a class='btn btn-primary btn-block' href='/billing/pay'>
-Get unlimited
+<div class='card-footer text-center no-padding-top padding-bottom'>
+<a class='btn btn-primary btn-block btn-lg' href='/billing/pay'>
+Get Team
+</a>
+</div>
+</div>
+</div>
+<div class='col-sm-12 col-md-6 col-lg-3 col-xl-3 margin-bottom'>
+<div class='card price-card'>
+<div class='card-header'>
+<h1 class='medium-font no-margin'>
+Team Plus
+</h1>
+<h5>
+Great for larger teams
+</h5>
+<h1 class='display-5 inline'>
+<span class='price bold-font'>
+$
+</span>
+<span class='bold-font dollar-ammount'>
+85
+</span>
+<span class='month'>
+/ month
+</span>
+</h1>
+</div>
+<div class='card-body'>
+<ul class='card-list list-unstyled icon-list-better check-list'>
+<li class='bold-font'>
+Everything in Pro
+</li>
+<li>
+15 team members
+</li>
+</ul>
+</div>
+<div class='card-footer text-center no-padding-top padding-bottom'>
+<a class='btn btn-primary btn-block btn-lg' href='/billing/pay'>
+Get Team +
 </a>
 </div>
 </div>
@@ -335,8 +297,5 @@ Get unlimited
 <!-- Choose PRO -->
 
 </div>
-<!-- end main content -->
-
 </body>
-</head>
 </html>

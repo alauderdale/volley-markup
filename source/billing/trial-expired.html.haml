@@ -1,3 +1,9 @@
+;;;
+
+"layout": "full-screen"
+
+;;;
+
 %section
 	.container
 		/ .row
@@ -23,16 +29,18 @@
 		.row.justify-content-center
 			.col-12
 				.row.justify-content-center
-					.col-sm-12.col-md-6.col-lg-6.col-xl-5
-						.card.price-card.margin-bottom
+					.col-sm-12.col-md-6.col-lg-3.col-xl-3.margin-bottom
+						.card.price-card
 							.card-header
-								%h1
-									Volley Free
-								%h1.display-4
-									%span.price.medium-font
+								%h1.medium-font.no-margin
+									Free
+								%h5
+									Level up your process
+								%h1.display-5.inline
+									%span.price.bold-font
 										$
 									%span.bold-font.dollar-ammount
-										0
+										25
 									%span.month
 										\/ month
 							.card-body
@@ -40,57 +48,95 @@
 									%li
 										1 project
 									%li
-										Unlimited comments
+										Unlimited notes
 									%li
 										User mentions
 
-							.card-footer.text-center.no-padding-top.double-padding-bottom
-								%a.btn.btn-secondary.btn-block.disabled{:href=>"/billing/pay"}
+
+							.card-footer.text-center.no-padding-top.padding-bottom
+								%a.btn.btn-secondary.btn-block.btn-lg.disabled{:href=>"/billing/pay"}
 									Current plan
-					.col-sm-12.col-md-6.col-lg-6.col-xl-5.margin-bottom
+
+					.col-sm-12.col-md-6.col-lg-3.col-xl-3.margin-bottom
 						.card.price-card
 							.card-header
-								%h1
-									Volley 
-									%span.medium-font
-										Unlimited
-								%h1.display-4.strikethrough.inline.double-margin-right
+								%h1.medium-font.no-margin
+									Pro
+								%h5
+									Great for freelancers
+								%h1.display-5.inline
 									%span.price.bold-font
 										$
 									%span.bold-font.dollar-ammount
 										25
-								%h1.display-4.inline.card-promo
+									%span.month
+										\/ month
+							.card-body
+								%ul.card-list.list-unstyled.icon-list-better.check-list
+									%li.bold-font
+										Unlimited projects
+									%li.bold-font
+										Unlimited colloborators
+									%li
+										Unlimited notes
+									%li
+										Export to Trello
+									%li
+										Export to Jira
+
+							.card-footer.text-center.no-padding-top.padding-bottom
+								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+									Get Pro
+
+					.col-sm-12.col-md-6.col-lg-3.col-xl-3.margin-bottom
+						.card.price-card.popular
+							.card-header
+								%h1.medium-font.no-margin
+									Team
+								%h5
+									Great for small teams
+								%h1.display-5.inline
 									%span.price.bold-font
 										$
 									%span.bold-font.dollar-ammount
-										10
+										45
 									%span.month
 										\/ month
-
-								%h5{:style=>"position: relative;top: 12px;"}
-									%em
-										Lifetime deal offered through July to support startups & SMBs.
 							.card-body
-								%p.bold-font
-									You get unlimited everyhting…
 								%ul.card-list.list-unstyled.icon-list-better.check-list
 									%li.bold-font
-										Projects
-									%li.bold-font
-										Comments
-									%li.bold-font
-										Collaborators
+										Everything in Pro
 									%li
-										%span.bold-font
-											Export to Trello
-										%small
-											(Others coming soon)
-									%li
-										Instant access to every new feature
+										3 team members
 
-							.card-footer.text-center.no-padding-top.double-padding-bottom
-								%a.btn.btn-primary.btn-block{:href=>"/billing/pay"}
-									Get unlimited
+							.card-footer.text-center.no-padding-top.padding-bottom
+								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+									Get Team
+
+					.col-sm-12.col-md-6.col-lg-3.col-xl-3.margin-bottom
+						.card.price-card
+							.card-header
+								%h1.medium-font.no-margin
+									Team Plus
+								%h5
+									Great for larger teams 
+								%h1.display-5.inline
+									%span.price.bold-font
+										$
+									%span.bold-font.dollar-ammount
+										85
+									%span.month
+										\/ month
+							.card-body
+								%ul.card-list.list-unstyled.icon-list-better.check-list
+									%li.bold-font
+										Everything in Pro
+									%li
+										15 team members
+
+							.card-footer.text-center.no-padding-top.padding-bottom
+								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+									Get Team +
 
 / %section.padding-top
 / 	.container

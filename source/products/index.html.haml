@@ -11,33 +11,7 @@
 = partial "add-new"
 %section.padding-top.no-padding-bottom
 	.container.product-card-container
-		.row
-			.col-6
-				.input-group.simple-prepend
-					.input-group-prepend
-					.input-group-text 
-						.material-icons
-							search
-					%input#inlineFormInputGroup.form-control{:placeholder => "Search...", :type => "text"}
-			.col-6
-				.inline-block.align-middle.float-right{:style=>"line-height:36px;"}
-					.inline-block.align-middle
-						%h4.no-margin.medium-font.align-middle
-							Sort by
-							%span.link-color.activity-filter{ "data-toggle"=>"dropdown"}
-								Latest activity 
-								%span.material-icons.align-middle.dropdown
-									expand_more
-									
-								.dropdown-menu
-									%a.dropdown-item{:href=>"#"}
-										Latest activity  
-									%a.dropdown-item{:href=>"#"}
-										Newest projects  
-									%a.dropdown-item{:href=>"#"}
-										A-z
-									%a.dropdown-item{:href=>"#"}
-										Z-A 
+		=partial "search_sort" 
 
 %section
 	.container.product-card-container
@@ -76,7 +50,7 @@
 									%button.dropdown-item{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#archiveModal"} 
 										Archive
 									.dropdown-divider
-									%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+									%button.dropdown-item{:type=>"button", :onclick=>"location.href='/products/zero';"} 
 										Delete
 			-1.times do
 				.col-sm-12.col-md-12.col-lg-6

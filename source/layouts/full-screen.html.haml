@@ -1,0 +1,10 @@
+<!doctype html>
+%html
+	%head
+		= partial "shared/scripts"
+	%body{:class => page_classes}
+		.main
+			%a.close-x.menu-close{:href=>"/products"}
+				.material-icons
+					clear
+			= yield

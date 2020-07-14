@@ -5,7 +5,14 @@
 ;;;
 
 
-= partial "add-new"
+
+
+%section.no-padding-bottom
+	.container.product-card-container
+		.row.margin-bottom
+			.col
+				= partial("shared/page_header", :locals => { :title => "Archive" })
+
 
 %section
 	.container.product-card-container
@@ -17,7 +24,7 @@
 							.text-center
 								%img.marign-bottom.double-margin-bottom{:src=>"../images/products-zero.svg", :width=>"204"}
 								%h2
-									No projects in your archive yet
+									No archived projects
 								%p.light-text-color.no-margin-bottom
 									Once you archive a project, it will appear here.
 

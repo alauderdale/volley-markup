@@ -14,13 +14,35 @@
 
 .card{
 	&.price-card{
-		min-height: 500px;
+		min-height: 425px;
+		overflow: hidden;
+		position:relative;
 		@include breakpoint(sm) {
 			min-height: auto;
 		}
+		&.popular{
+			border:2px solid $primary-color;
+			&:before{
+			content: "popular";
+			position: absolute;
+			top: 13px;
+    		right: -123px;
+			width: 300px;
+			height: 27px;
+			transform: rotate(45deg);
+			font-size: 14px;
+			font-weight: 900;
+			color: white;
+			background: $link-color;
+			text-align: center;
+			display: block;
+			z-index: 99;
+			}
+		}
 		.card-header{
 			position:relative;
-			min-height: 170px;
+			// min-height: 170px;
+			border-bottom:1px solid $border-color;
 			.card-promo{
 				color: shade($link-color,30%);
 			}
@@ -29,17 +51,13 @@
 			position:relative;
 			.price{
 				font-size: 20px;
-				position: absolute;
-				top:15px;
 			}
 			.dollar-ammount{
 				position:relative;
-				left:15px;
 			}
 			.month{
-				font-size: 18px;
+				font-size: 16px;
 				position:relative;
-				left:8px;
 				font-weight: 500;
 			}
 		}

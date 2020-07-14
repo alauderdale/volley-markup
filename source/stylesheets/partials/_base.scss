@@ -25,7 +25,10 @@ body{
   font-family: $regular-font-name;
   font-weight:400;
   background-color:$background-color;
-  padding-top:$navbar-height;
+  padding-top:$body-padding-height;
+  @include breakpoint(md) {
+    padding-top:$baseline*3;
+  }
 }
 
 .flex{
