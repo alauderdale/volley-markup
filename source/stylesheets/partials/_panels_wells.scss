@@ -1,8 +1,18 @@
 .panel{
 	border:1px solid $link-color;
 	border-radius: $base-border-radius;
-	background: tint($link-color,90%);
+	background: tint($link-color,95%);
 	.panel-body{
-		padding:$baseline;
+		padding:20px;
+		@include breakpoint(md) {
+			padding:16px;
+		}
+	}
+}
+
+.lifetime-redeem-panel{
+	min-height: 305px;
+	@include breakpoint(sm) {
+		min-height: auto;
 	}
 }
