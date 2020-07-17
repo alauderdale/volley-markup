@@ -604,6 +604,13 @@ section {
       color: #0042FF;
       content: "check_circle"; }
 
+.panel {
+  border: 1px solid #0042FF;
+  border-radius: 8px;
+  background: #e6ecff; }
+  .panel .panel-body {
+    padding: 16px; }
+
 .modal-content {
   border-radius: 16px; }
   .modal-content .modal-header {

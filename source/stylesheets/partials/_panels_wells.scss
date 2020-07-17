@@ -1,0 +1,8 @@
+.panel{
+	border:1px solid $link-color;
+	border-radius: $base-border-radius;
+	background: tint($link-color,90%);
+	.panel-body{
+		padding:$baseline;
+	}
+}
