@@ -21,14 +21,13 @@
           %i.material-icons.icon-left
             settings
           Profile
-        / %a.dropdown-item{:href => "/settings"} 
-        /   %i.material-icons.icon-left
-        /     group
-        /   Team
         %a.dropdown-item{:href=>"/settings/billing-default"}
           %i.material-icons.icon-left
             insert_drive_file
           Billing
+        %a.dropdown-item{:href=>"/settings/appsumo"}
+          %img.icon-left{:src=>"../images/as-taco.svg", :width=>"16px"}
+          AppSumo
         .dropdown-divider
         %a.dropdown-item{:href => "/welcome/login"} 
           %i.material-icons.icon-left

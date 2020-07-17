@@ -1,0 +1,59 @@
+%section
+	.container
+		.row.justify-content-center
+			.col-xl-10
+				= partial("shared/page_header", :locals => { :title => "Good morning, John!" })
+				%nav.nav.double-margin-bottom.primary-tabs
+					%a.nav-link{:href=>"/settings/"}
+						Prifile
+					%a.nav-link{:href=>"/settings/password"}
+						Password
+					%a.nav-link{:href=>"/settings/billing-appsumo"}
+						Subbscription
+					%a.nav-link.active{:href=>"/settings/appsumo"}
+						AppSumo
+
+				.card.margin-bottom
+					.card-body
+						.row.align-items-center
+							.col-12
+								%img{:src=>"../images/appsumo-logo.svg", :width=>"140px"}
+								%p.medium-font.no-margin-bottom
+									Redeem a new AppSumo code
+								%form.form-inline.margin-top.margin-bottom
+									.form-group.half-margin-right
+										%input.form-control{:placeholder=>"AppSumo Code"}
+									.form-group
+										%button.btn.btn-primary{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#AppSumoConfirmModal", :style=>"padding: 8px 20px;"}
+											Redeem
+									
+
+								%h4.no-margin-bottom
+									Need more AppSumo codes? 
+									%a{:href=>"#"}
+										Click here
+
+
+#AppSumoConfirmModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+
+			.modal-body
+				.padded
+					.text-center
+						%img.double-margin-bottom.max-width{:src=>"../images/volley-appsumo.svg", :width=>"300px"}
+						%h3
+							Congratulations! You have successfully upgraded to:
+						%h3.bold-font
+							Volley AppSumo 1 code plan
+						.double-margin-top
+							%a.btn-primary.btn.btn-lg.margin-bottom{:href=>"/projects"}
+								Go to dashboard
+							%br
+							%a{:href=>"#", "data-dismiss" => "modal"}
+								Enter another code
+					
+

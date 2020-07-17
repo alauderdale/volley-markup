@@ -1,0 +1,54 @@
+%section
+	.container
+		.row.justify-content-center
+			.col-xl-10
+				= partial("shared/page_header", :locals => { :title => "Good morning, John!" })
+				%nav.nav.double-margin-bottom.primary-tabs
+					%a.nav-link{:href=>"/settings/"}
+						Prifile
+					%a.nav-link{:href=>"/settings/password"}
+						Password
+					%a.nav-link.active{:href=>"/settings/billing-default"}
+						Subbscription
+					%a.nav-link{:href=>"/settings/appsumo"}
+						AppSumo
+
+				.card.margin-bottom
+					.card-body
+						.row.align-items-center
+							.col
+								%p.medium-font.no-margin-bottom
+									AppSumo 1 code plan
+								%h4.light-text-color.no-margin-bottom
+									Free for life!
+								%ul.list-unstyled.margin-top.icon-list.no-margin-bottom
+									%li
+										%i.material-icons
+											check
+										Unlimited projects
+									%li
+										%i.material-icons
+											check
+										Unlimited comments
+									%li
+										%i.material-icons
+											check
+										3 team members
+							.col-4.text-center
+								.float-right
+									%a.btn.btn-primary.margin-bottom{:href=>"/billing/trial-expired"}
+										Change plan
+
+				.card.margin-bottom
+					.card-body
+						.row.align-items-center
+							.col
+								%p.medium-font.no-margin-bottom
+									Payment method
+								%h4.light-text-color.no-margin-bottom
+									You are currently on a Free forever plan.
+
+
+
+
+

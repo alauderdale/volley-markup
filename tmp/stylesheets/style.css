@@ -927,8 +927,8 @@ section {
       position: relative;
       top: 4px;
       color: #B4BBC6; }
-      .dropdown-menu .dropdown-item i.icon-left {
-        margin-right: 12px; }
+    .dropdown-menu .dropdown-item .icon-left {
+      margin-right: 12px; }
 
 .workspace-menu {
   min-width: 280px;
