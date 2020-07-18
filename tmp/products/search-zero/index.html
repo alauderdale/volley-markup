@@ -17,7 +17,7 @@ Volley | Fast, easy feedback for your website"
 <script src="../../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
 </head>
-<body class='settings settings_password settings_password_index'>
+<body class='products products_search-zero products_search-zero_index'>
 <div id='dashboard-container'>
 <div id='main-nav'>
 <a class='menu-close menu-toggle-action close-x d-lg-none' href='#'>
@@ -30,7 +30,7 @@ clear
 <a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
 <img alt='Avatar' class='avatar avatar-xs quarter-margin-right align-middle' src='../../images/img_avatar.png'>
 <span class='medium-font menu-text align-middle'>
-Angelina Lucas
+Uriel Terrell
 </span>
 <i class='material-icons align-middle'>
 unfold_more
@@ -136,7 +136,7 @@ Create a new team
 </div>
 </nav>
 <nav class='navbar nav flex-column margin-bottom'>
-<a class='nav-link' href='/products/'>
+<a class='active nav-link' href='/products/'>
 Projects
 </a>
 <a class='nav-link' href='/products/archived'>
@@ -201,55 +201,106 @@ Create team
 </div>
 
 <div class='main'>
-<section>
-<div class='container'>
-<div class='row justify-content-center'>
-<div class='col-xl-10'>
-<div class='page-header-for-title'>
-<h2 class='medium-font title'>
-Good morning, John!
-</h2>
+<!-- .alert-container -->
+<!-- .alert.alert-success -->
+<!-- .container.product-card-container.text-center -->
+<!-- Password changed successfully. -->
+<!-- = partial "free-trial-card" -->
+<section class='no-padding-bottom'>
+<div class='container product-card-container'>
+<div class='row'>
+<div class='col-sm-12'>
+<div class='page-header no-border'>
+<div class='row'>
+<div class='col-sm-12'>
+<form class='add-new-product-bar'>
+<div class='form-row'>
+<div class='col-xl-9 col-lg-8 col-md-8 mb-3'>
+<input class='form-control form-control-lg' placeholder='Project name'>
+</div>
+<div class='col-xl-3 col-lg-4 col-md-4 mb-3'>
+<button class='btn btn-primary mb-2 btn-block btn-lg' onclick='location.href=&#39;/product/review-zero&#39;;' type='button'>
+Create Project
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- .row -->
+<!-- .col-sm-12 -->
+<!-- %ul.nav.tab-nav.justify-content-center.justify-content-lg-start -->
+<!-- %li.nav-item -->
+<!-- %a.nav-link{:href=>"/products/", :class => (current_page.data.title === "All projects") ? "active" : ""} -->
+<!-- Projects -->
+<!-- %li.nav-item -->
+<!-- %a.nav-link{:href=>"/products/archived", :class => (current_page.data.title === "Archived") ? "active" : ""} -->
+<!-- Archived -->
+<!-- %li.nav-item -->
+<!-- %a.nav-link{:href=>"/products/team", :class => (current_page.data.title === "Team") ? "active" : ""} -->
+<!-- Team -->
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class='padding-top no-padding-bottom'>
+<div class='container product-card-container'>
+<div class='row'>
+<div class='col-6'>
+<div class='input-group simple-prepend'>
+<div class='input-group-prepend'></div>
+<div class='input-group-text'>
+<div class='material-icons'>
+search
+</div>
+</div>
+<input class='form-control' id='inlineFormInputGroup' placeholder='Search...' type='text'>
+</div>
+</div>
+<div class='col-6'>
+<div class='inline-block align-middle float-right' style='line-height:36px;'>
+<div class='inline-block align-middle'>
+<h4 class='no-margin medium-font align-middle'>
+Sort by
+<span class='link-color activity-filter cursor-pointer' data-toggle='dropdown'>
+Recent
+<span class='material-icons align-middle dropdown'>
+expand_more
+</span>
+<div class='dropdown-menu'>
+<a class='dropdown-item' href='#'>
+Recent
+</a>
+<a class='dropdown-item' href='#'>
+Alphanumeric
+</a>
+</div>
+</span>
+</h4>
+</div>
+</div>
+</div>
 </div>
 
-<nav class='nav double-margin-bottom primary-tabs'>
-<a class='nav-link' href='/settings/'>
-Prifile
-</a>
-<a class='nav-link active' href='/settings/password'>
-Password
-</a>
-<a class='nav-link' href='/settings/billing-default'>
-Subbscription
-</a>
-<a class='nav-link' href='/settings/appsumo'>
-AppSumo
-</a>
-</nav>
-<div class='card'>
-<div class='card-body'>
-<form>
-<div class='margin-bottom'>
-<h4 class='bold-font'>
-Current password
-</h4>
-<input class='form-control form-control-lg' placeholder='Enter your current password' type='password'>
 </div>
-<div class='margin-bottom'>
-<h4 class='bold-font'>
-New password
-</h4>
-<input class='form-control form-control-lg' placeholder='Enter your new password' type='password'>
+</section>
+<section>
+<div class='container product-card-container'>
+<div class='row'>
+<div class='col-lg-12'>
+<div class='padded double-padding-top double-padding-bottom'>
+<div class='double-padding-top double-padding-bottom'>
+<div class='text-center'>
+<img class='max-width double-margin-bottom' src='../images/no-results.svg' width='200px'>
+<h2>
+No results found
+</h2>
+<p class='light-text-color no-margin-bottom'>
+Try adjusting your search or filter to find what you're looking for.
+</p>
 </div>
-<div class='double-margin-bottom'>
-<h4 class='bold-font'>
-Confirm new password
-</h4>
-<input class='form-control form-control-lg' placeholder='Confirm your new password' type='password'>
-</div>
-<button class='btn btn-primary btn-lg' type='submit'>
-Change
-</button>
-</form>
 </div>
 </div>
 </div>

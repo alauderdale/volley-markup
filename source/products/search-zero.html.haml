@@ -1,0 +1,45 @@
+;;;
+
+"title": "All projects"
+
+;;;
+
+/ .alert-container
+/ 	.alert.alert-success
+/ 		.container.product-card-container.text-center
+/ 			Password changed successfully.
+
+/ = partial "free-trial-card"
+
+		
+
+
+= partial "add-new"
+
+
+%section.padding-top.no-padding-bottom
+	.container.product-card-container
+		=partial "search_sort" 
+
+
+%section
+	.container.product-card-container
+		.row
+			.col-lg-12
+				.padded.double-padding-top.double-padding-bottom
+					.double-padding-top.double-padding-bottom
+						.text-center
+							%img.max-width.double-margin-bottom{:src=>"../images/no-results.svg",:width=>"200px"}
+							%h2
+								No results found
+							%p.light-text-color.no-margin-bottom
+								Try adjusting your search or filter to find what you're looking for.
+
+
+
+
+
+
+
+
+					
