@@ -28,10 +28,14 @@
 											Redeem
 									
 
-								%h4.no-margin-bottom
+								%h4
 									Need more AppSumo codes? 
 									%a{:href=>"#"}
 										Click here
+								%h4.no-margin-bottom
+									Need to re-apply your codes that have been previously entered? 
+									%a{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#AppSumoConfirmModal"}
+										Restack now
 
 
 #AppSumoConfirmModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
