@@ -34,9 +34,34 @@
 										Click here
 								%h4.no-margin-bottom
 									Need to re-apply your codes that have been previously entered? 
-									%a{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#AppSumoConfirmModal"}
+									%a{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#restackConfirmModal"}
 										Restack now
 
+
+#restackConfirmModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header
+				%h2.padding-left
+					Restack codes
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					%p
+						Are you sure you want to continue? Your plan will be changed from
+						%strong
+							Volley Pro
+						to
+						%strong
+							AppSumo 2 code plan
+						\. This is based on 2 previously applied codes.
+			.modal-footer.no-border-top
+				%button.btn.btn-link{:tyle=>"button", "data-dismiss" => "modal"}
+					Cancel
+				%button.btn.btn-primary{:tyle=>"button", "data-dismiss" => "modal", "data-toggle"=>"modal", "data-target"=>"#AppSumoConfirmModal"}
+					Yes, change plan
 
 #AppSumoConfirmModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
 	.modal-dialog{:role => "document"}
