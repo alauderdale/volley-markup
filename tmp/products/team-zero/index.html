@@ -17,7 +17,7 @@ Volley | Fast, easy feedback for your website"
 <script src="../../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
 </head>
-<body class='settings settings_appsumo settings_appsumo_index'>
+<body class='products products_team-zero products_team-zero_index'>
 <div id='dashboard-container'>
 <div id='main-nav'>
 <a class='menu-close menu-toggle-action close-x d-lg-none' href='#'>
@@ -30,7 +30,7 @@ clear
 <a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
 <img alt='Avatar' class='avatar avatar-xs quarter-margin-right align-middle' src='../../images/img_avatar.png'>
 <span class='medium-font menu-text align-middle'>
-Denis Olsen
+Elaine Adkins
 </span>
 <i class='material-icons align-middle'>
 unfold_more
@@ -136,7 +136,7 @@ Create a new team
 </div>
 </nav>
 <nav class='navbar nav flex-column margin-bottom'>
-<a class='nav-link' href='/products/'>
+<a class='active nav-link' href='/products/'>
 Projects
 </a>
 <a class='nav-link' href='/products/archived'>
@@ -201,60 +201,65 @@ Create team
 </div>
 
 <div class='main'>
-<section>
-<div class='container'>
-<div class='row justify-content-center'>
-<div class='col-xl-10'>
-<div class='page-header-for-title'>
-<h2 class='medium-font title'>
-Good morning, John!
-</h2>
+<!-- .alert-container -->
+<!-- .alert.alert-success -->
+<!-- .container.product-card-container.text-center -->
+<!-- Password changed successfully. -->
+<!-- = partial "free-trial-card" -->
+<section class='no-padding-bottom'>
+<div class='container product-card-container'>
+<div class='row'>
+<div class='col-sm-12'>
+<div class='page-header no-border'>
+<div class='row'>
+<div class='col-sm-12'>
+<form class='add-new-product-bar'>
+<div class='form-row'>
+<div class='col-xl-9 col-lg-8 col-md-8 mb-3'>
+<input class='form-control form-control-lg' placeholder='Project name'>
 </div>
-
-<nav class='nav double-margin-bottom primary-tabs'>
-<a class='nav-link' href='/settings/'>
-Prifile
-</a>
-<a class='nav-link' href='/settings/password'>
-Password
-</a>
-<a class='nav-link' href='/settings/billing-appsumo'>
-Subbscription
-</a>
-<a class='nav-link active' href='/settings/appsumo'>
-AppSumo
-</a>
-</nav>
-<div class='card margin-bottom'>
-<div class='card-body'>
-<div class='row align-items-center'>
-<div class='col-12'>
-<img src='../images/appsumo-logo.svg' width='140px'>
-<p class='medium-font no-margin-bottom'>
-Redeem a new AppSumo code
-</p>
-<form class='form-inline margin-top margin-bottom'>
-<div class='form-group half-margin-right'>
-<input class='form-control' placeholder='AppSumo Code'>
-</div>
-<div class='form-group'>
-<button class='btn btn-primary' data-target='#AppSumoConfirmModal' data-toggle='modal' style='padding: 8px 20px;' type='button'>
-Redeem
+<div class='col-xl-3 col-lg-4 col-md-4 mb-3'>
+<button class='btn btn-primary mb-2 btn-block btn-lg' onclick='location.href=&#39;/product/review-zero&#39;;' type='button'>
+Create Project
 </button>
 </div>
+</div>
 </form>
-<h4>
-Need more AppSumo codes?
-<a href='#'>
-Click here
-</a>
-</h4>
-<h4 class='no-margin-bottom'>
-Need to re-apply your codes that have been previously entered?
-<a data-target='#restackConfirmModal' data-toggle='modal' href='#'>
-Restack now
-</a>
-</h4>
+</div>
+</div>
+<!-- .row -->
+<!-- .col-sm-12 -->
+<!-- %ul.nav.tab-nav.justify-content-center.justify-content-lg-start -->
+<!-- %li.nav-item -->
+<!-- %a.nav-link{:href=>"/products/", :class => (current_page.data.title === "All projects") ? "active" : ""} -->
+<!-- Projects -->
+<!-- %li.nav-item -->
+<!-- %a.nav-link{:href=>"/products/archived", :class => (current_page.data.title === "Archived") ? "active" : ""} -->
+<!-- Archived -->
+<!-- %li.nav-item -->
+<!-- %a.nav-link{:href=>"/products/team", :class => (current_page.data.title === "Team") ? "active" : ""} -->
+<!-- Team -->
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class='container product-card-container'>
+<div class='row'>
+<div class='col-lg-12'>
+<div class='card'>
+<div class='padded double-padding-top double-padding-bottom'>
+<div class='double-padding-top double-padding-bottom'>
+<div class='text-center'>
+<img class='marign-bottom double-margin-bottom' src='../images/team-zero.svg' width='404'>
+<h2>
+No team projects... yet
+</h2>
+<p class='light-text-color no-margin-bottom'>
+Once team members create projects, they’ll appear here
+</p>
 </div>
 </div>
 </div>
@@ -263,82 +268,6 @@ Restack now
 </div>
 </div>
 </section>
-<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='restackConfirmModal' role='dialog' tabindex='-1'>
-<div class='modal-dialog' role='document'>
-<div class='modal-content'>
-<div class='modal-header'>
-<h2 class='padding-left'>
-Restack codes
-</h2>
-<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
-<span aria-hidden='true'>×</span>
-</button>
-</div>
-<div class='modal-body'>
-<div class='padded no-padding-top no-padding-bottom'>
-<p>
-Are you sure you want to continue? Your plan will be changed from
-<strong>
-Volley Pro
-</strong>
-to
-<strong>
-AppSumo 2 code plan
-</strong>
-. This is based on 2 previously applied codes.
-</p>
-</div>
-</div>
-<div class='modal-footer no-border-top'>
-<button class='btn btn-link' data-dismiss='modal' tyle='button'>
-Cancel
-</button>
-<button class='btn btn-primary' data-dismiss='modal' data-target='#AppSumoConfirmModal' data-toggle='modal' tyle='button'>
-Yes, change plan
-</button>
-</div>
-</div>
-</div>
-</div>
-<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='AppSumoConfirmModal' role='dialog' tabindex='-1'>
-<div class='modal-dialog' role='document'>
-<div class='modal-content'>
-<div class='modal-header no-border'>
-<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
-<span aria-hidden='true'>×</span>
-</button>
-</div>
-<div class='modal-body'>
-<div class='padded'>
-<div class='text-center'>
-<img class='double-margin-bottom max-width' src='../images/volley-appsumo.svg' width='300px'>
-<h3>
-Congratulations! You have successfully upgraded to:
-</h3>
-<div class='card double-margin-top'>
-<div class='card-body'>
-<h3 class='bold-font'>
-Volley AppSumo 1 code plan
-</h3>
-</div>
-</div>
-</div>
-<div class='text-center'>
-<div class='double-margin-top'>
-<a class='btn-primary btn btn-lg margin-bottom' href='/products'>
-Go to dashboard
-</a>
-<br>
-<a data-dismiss='modal' href='#'>
-Enter another code
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 </div>
 
