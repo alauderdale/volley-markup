@@ -32,29 +32,6 @@
 							%h4.no-margin.medium-font
 								Owner
 						.col
-					-2.times do
-						.row.align-items-center
-							.col-sm-6
-								.media.align-items-center
-									.avatar.avatar-xs.mr-3
-										AL
-									.media-body
-										%h4.no-margin.medium-font
-											=lorem.name
-										%h5.no-margin
-											=lorem.email
-							.col
-								%h4.no-margin
-									Member
-							.col
-								.justify-content-end.d-flex
-									.dropdown
-										%button.btn.btn-flat.btn-icon.menu-button{"data-toggle" => "dropdown", :type=>"button"}
-											%i.material-icons
-												more_horiz
-										.dropdown-menu.dropdown-menu-right
-											%button.dropdown-item{:type=>"button"} 
-												Remove from team
 					.row.align-items-center
 						.col-sm-6
 							.media.align-items-center
@@ -65,6 +42,50 @@
 										=lorem.name
 									%h5.no-margin
 										=lorem.email
+						.col
+							%h4.no-margin
+								Member
+						.col
+							.justify-content-end.d-flex
+								.dropdown
+									%button.btn.btn-flat.btn-icon.menu-button{"data-toggle" => "dropdown", :type=>"button"}
+										%i.material-icons
+											more_horiz
+									.dropdown-menu.dropdown-menu-right
+										%button.dropdown-item{:type=>"button"} 
+											Leave team
+					.row.align-items-center
+						.col-sm-6
+							.media.align-items-center
+								.avatar.avatar-xs.mr-3
+									AL
+								.media-body
+									%h4.no-margin.medium-font
+										=lorem.name
+									%h5.no-margin
+										=lorem.email
+						.col
+							%h4.no-margin
+								Member
+						.col
+							.justify-content-end.d-flex
+								.dropdown
+									%button.btn.btn-flat.btn-icon.menu-button{"data-toggle" => "dropdown", :type=>"button"}
+										%i.material-icons
+											more_horiz
+									.dropdown-menu.dropdown-menu-right
+										%button.dropdown-item{:type=>"button"} 
+											Remove from team
+					.row.align-items-center
+						.col-sm-6
+							.media.align-items-center
+								.avatar.avatar-xs.mr-3
+									J
+								.media-body
+									%h4.no-margin.medium-font
+										john
+									%h5.no-margin
+										john@doe.com
 						.col
 							%h4.no-margin.extra-light-text-color
 								Invited
