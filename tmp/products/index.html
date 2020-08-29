@@ -30,7 +30,7 @@ clear
 <a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
 <img alt='Avatar' class='avatar avatar-xs quarter-margin-right align-middle' src='../images/img_avatar.png'>
 <span class='medium-font menu-text align-middle'>
-Dwayne Chung
+Gretchen Wagner
 </span>
 <i class='material-icons align-middle'>
 unfold_more
@@ -42,7 +42,7 @@ unfold_more
 Alex Lauderdale
 </p>
 <h5 class='extra-light-text-color'>
-alauderdale@mac.com
+alauderdale+11111111111111@mac.com
 </h5>
 </div>
 <div class='dropdown-divider'></div>
@@ -289,8 +289,8 @@ Alphanumeric
 <div class='product-card-wrapper'>
 <a class='card product-card' href='/product/review'>
 <div class='card-header no-padding-bottom'>
-<div class='img-wrapper'>
-<img alt='Card image cap' class='card-img-top' src='../images/tmp/ceb-shot.png'>
+<div class='thumbnail-wrapper'>
+<div class='thumbnail' style='background-image:url(&#39;/images/tmp/ceb-shot.png&#39;);'></div>
 </div>
 </div>
 <div class='card-body'>
@@ -345,12 +345,8 @@ Delete
 <div class='product-card-wrapper'>
 <a class='card product-card' href='/product/review-zero'>
 <div class='card-header'>
-<div class='img-wrapper'>
-<div class='no-img'>
-<p>
-A
-</p>
-</div>
+<div class='thumbnail-wrapper'>
+<div class='thumbnail' style='background-image:url(&#39;/images/tmp/ceb-shot.png&#39;);'></div>
 </div>
 </div>
 <div class='card-body'>
@@ -399,12 +395,11 @@ Delete
 <div class='product-card-wrapper margin-bottom'>
 <a class='card product-card' href='/product/unavailable'>
 <div class='card-header no-padding-bottom'>
-<div class='img-wrapper'>
-<div class='no-img'>
-<p>
-A
-</p>
-</div>
+<div class='thumbnail-wrapper'>
+<div class='thumbnail' style='background-image:url(&#39;/images/tmp/ceb-shot.png&#39;);'></div>
+<!-- .no-img -->
+<!-- %p -->
+<!-- A -->
 </div>
 </div>
 <div class='card-body'>
@@ -465,6 +460,7 @@ Edit this project
 </div>
 <div class='modal-body'>
 <div class='padded no-padding-top no-padding-bottom'>
+<div class='margin-bottom'>
 <label>
 Title
 </label>
@@ -473,6 +469,18 @@ Title
 <input class='form-control form-control-lg' type='text' value='Project title'>
 </div>
 </form>
+</div>
+<label>
+Thumbnail image
+</label>
+<div class='media'>
+<img class='half-margin-right' src='../images/tmp/ceb-shot.png' width='200px'>
+<div class='media-body'>
+<a class='btn btn-secondary' href='#' style='margin-top:24px;'>
+Change image
+</a>
+</div>
+</div>
 </div>
 </div>
 <div class='modal-footer no-border-top'>

@@ -90,8 +90,9 @@ $card-border-radius:$base-border-radius-2;
 			height: auto;
 		}
 		
-		.img-wrapper{
-			background-image:url("/images/pattern2.svg"), linear-gradient(#0042FF,#00ADFF);
+		.thumbnail-wrapper{
+			// background-image:url("/images/pattern2.svg"), linear-gradient(#0042FF,#00ADFF);
+			background-color:$off-white-darker-color;
 			background-size:100%;
 			border:none;
 			border-bottom:none;
@@ -103,9 +104,22 @@ $card-border-radius:$base-border-radius-2;
 			@include breakpoint(sm) {
 				min-height: 171px;
 			}
-			img{
-				height:100%;
-				width:100%;
+			.thumbnail{
+				    position: absolute;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translate(-50%, -50%);
+					-moz-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					-o-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					height: 80%;
+					width: 80%;
+					background-size: 100% auto;
+					background-position: center top;
+					background-repeat: no-repeat;
+					box-shadow: 10px 10px 20px rgba(0,0,0,.10);
+					border-radius:4px;
 			}
 			.no-img{
 				transition-timing-function: ease-in-out;

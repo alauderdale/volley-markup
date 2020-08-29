@@ -21,8 +21,8 @@
 					.product-card-wrapper
 						%a.card.product-card{:href=>"/product/review"}
 							.card-header.no-padding-bottom
-								.img-wrapper
-									%img.card-img-top{:alt => "Card image cap", :src => "/images/tmp/ceb-shot.png"}
+								.thumbnail-wrapper
+									.thumbnail{:style=>"background-image:url('/images/tmp/ceb-shot.png');"}
 							.card-body
 								.row
 									.col-8
@@ -57,10 +57,8 @@
 					.product-card-wrapper
 						%a.card.product-card{:href=>"/product/review-zero"}
 							.card-header
-								.img-wrapper
-									.no-img
-										%p
-											A
+								.thumbnail-wrapper
+									.thumbnail{:style=>"background-image:url('/images/tmp/ceb-shot.png');"}
 							.card-body
 								.row
 									.col-8
@@ -91,10 +89,11 @@
 					.product-card-wrapper.margin-bottom
 						%a.card.product-card{:href=>"/product/unavailable"}
 							.card-header.no-padding-bottom
-								.img-wrapper
-									.no-img
-										%p
-											A
+								.thumbnail-wrapper
+									.thumbnail{:style=>"background-image:url('/images/tmp/ceb-shot.png');"}
+									/ .no-img
+									/ 	%p
+									/ 		A
 							.card-body
 								.row
 									.col-8
@@ -136,11 +135,19 @@
 
 			.modal-body
 				.padded.no-padding-top.no-padding-bottom
+					.margin-bottom
+						%label
+							Title
+						%form
+							.margin-bottom
+								%input.form-control.form-control-lg{:type=>"text", :value=>"Project title"}
 					%label
-						Title
-					%form
-						.margin-bottom
-							%input.form-control.form-control-lg{:type=>"text", :value=>"Project title"}
+						Thumbnail image
+					.media
+						%img.half-margin-right{:src=>"/images/tmp/ceb-shot.png", :width=>"200px"}
+						.media-body
+							%a.btn.btn-secondary{:href=>"#", :style=>"margin-top:24px;"}
+								Change image
 
 			.modal-footer.no-border-top
 				%button.btn.btn-link{:tyle=>"button", "data-dismiss" => "modal"}
