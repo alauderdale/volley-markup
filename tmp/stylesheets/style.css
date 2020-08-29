@@ -783,7 +783,7 @@ section {
     border: none;
     position: relative;
     padding: 0px;
-    height: 231px; }
+    height: 250px; }
     @media (max-width: 768px) {
       .product-card .card-header {
         height: auto; } }
@@ -800,6 +800,8 @@ section {
       @media (max-width: 768px) {
         .product-card .card-header .thumbnail-wrapper {
           min-height: 171px; } }
+      .product-card .card-header .thumbnail-wrapper.no-thumbnail .thumbnail {
+        background-image: url("../images/pattern2.svg"), linear-gradient(#0042FF, #00ADFF); }
       .product-card .card-header .thumbnail-wrapper .thumbnail {
         position: absolute;
         top: 50%;
@@ -833,7 +835,8 @@ section {
         margin: auto;
         max-width: 100%;
         max-height: 100%;
-        overflow: auto; }
+        overflow: auto;
+        z-index: 99; }
         .product-card .card-header .thumbnail-wrapper .no-img p {
           margin: 0;
           position: relative;
