@@ -783,10 +783,11 @@ section {
     border: none;
     position: relative;
     padding: 0px;
-    height: 250px; }
+    height: 230px; }
     @media (max-width: 768px) {
       .product-card .card-header {
-        height: auto; } }
+        height: auto;
+        height: 200px; } }
     .product-card .card-header .thumbnail-wrapper {
       background-color: #E6EAEE;
       background-size: 100%;
@@ -799,9 +800,7 @@ section {
       position: relative; }
       @media (max-width: 768px) {
         .product-card .card-header .thumbnail-wrapper {
-          min-height: 171px; } }
-      .product-card .card-header .thumbnail-wrapper.no-thumbnail .thumbnail {
-        background-image: url("../images/pattern2.svg"), linear-gradient(#0042FF, #00ADFF); }
+          min-height: 290px; } }
       .product-card .card-header .thumbnail-wrapper .thumbnail {
         position: absolute;
         top: 50%;

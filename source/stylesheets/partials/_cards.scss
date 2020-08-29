@@ -85,9 +85,11 @@ $card-border-radius:$base-border-radius-2;
 		border:none;
 		position:relative;
 		padding:0px;
-		height: 250px;
+		height: 230px;
 		@include breakpoint(sm) {
 			height: auto;
+			height: 200px;
+
 		}
 		
 		.thumbnail-wrapper{
@@ -102,13 +104,13 @@ $card-border-radius:$base-border-radius-2;
 			height:100%;
 			position:relative;
 			@include breakpoint(sm) {
-				min-height: 171px;
+				min-height: 290px;
 			}
-			&.no-thumbnail{
-				.thumbnail{
-					background-image:url("/images/pattern2.svg"), linear-gradient(#0042FF,#00ADFF);				
-				}
-			}
+			// &.no-thumbnail{
+			// 	.thumbnail{
+			// 		background-image:url("/images/pattern2.svg"), linear-gradient(#0042FF,#00ADFF);				
+			// 	}
+			// }
 			.thumbnail{
 				    position: absolute;
 					top: 50%;

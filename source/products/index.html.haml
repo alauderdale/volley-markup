@@ -21,11 +21,8 @@
 					.product-card-wrapper
 						%a.card.product-card{:href=>"/product/review"}
 							.card-header.no-padding-bottom
-								.thumbnail-wrapper.no-thumbnail
-									.no-img
-										%p
-											A
-									.thumbnail
+								.thumbnail-wrapper
+									.thumbnail{:style=>"background-image:url('/images/default-thumbnail.png');"}
 							.card-body
 								.row
 									.col-8
@@ -62,6 +59,11 @@
 							.card-header
 								.thumbnail-wrapper
 									.thumbnail{:style=>"background-image:url('/images/tmp/ceb-shot.png');"}
+								/ .thumbnail-wrapper.no-thumbnail
+								/ 	.no-img
+								/ 		%p
+								/ 			A
+								/ 	.thumbnail
 							.card-body
 								.row
 									.col-8
