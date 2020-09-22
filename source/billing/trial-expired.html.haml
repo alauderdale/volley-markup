@@ -24,46 +24,58 @@
 
 
 
-%section.padding-top
+%section.no-padding-top.no-padding-bottom
 	.container
 		.row.justify-content-center
 			.col-12
 				.row.justify-content-center
-					.col-sm-12.col-md-6.col-lg-3.col-xl-3.margin-bottom
-						.card.price-card
-							.card-header
-								%h1.medium-font.no-margin
-									Free
-								%h5
-									Level up your process
+					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
+						.card.price-card.margin-auto
+							.card-header{:style=>"border-top-color:#B4BBC6;"}
+								%h1.medium-font.margin-bottom
+									Basic
 								%h1.display-5.inline
 									%span.price.bold-font
 										$
 									%span.bold-font.dollar-ammount
-										25
+										0
 									%span.month
 										\/ month
 							.card-body
+								%h5.text-uppercase.bold-font.light-text-color
+									Get the basics free
 								%ul.card-list.list-unstyled.icon-list-better.check-list
 									%li
+										%span.bold-font
+											Start with 
 										1 project
 									%li
-										Unlimited notes
+										%span.bold-font
+											Unlimited 
+										notes
 									%li
-										User mentions
+										%span.bold-font
+											Unlimited 
+										colloborators
+									%li
+										%span.bold-font
+											User 
+										mentions & notifications
+									%li
+										%span.bold-font
+											Email 
+										support
 
 
 							.card-footer.text-center.no-padding-top.padding-bottom
 								%a.btn.btn-secondary.btn-block.btn-lg.disabled{:href=>"/billing/pay"}
 									Current plan
 
-					.col-sm-12.col-md-6.col-lg-3.col-xl-3.margin-bottom
-						.card.price-card
-							.card-header
-								%h1.medium-font.no-margin
+					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
+						.card.price-card.margin-auto
+							.card-header.pro-header
+								%h1.medium-font.margin-bottom
 									Pro
-								%h5
-									Great for freelancers
 								%h1.display-5.inline
 									%span.price.bold-font
 										$
@@ -72,29 +84,26 @@
 									%span.month
 										\/ month
 							.card-body
+								%h5.text-uppercase.bold-font.light-text-color
+									Everything in Basic, plus
 								%ul.card-list.list-unstyled.icon-list-better.check-list
-									%li.bold-font
-										Unlimited projects
-									%li.bold-font
-										Unlimited colloborators
 									%li
-										Unlimited notes
+										%span.bold-font
+											Unlimited 
+										projects
 									%li
-										Export to Trello
-									%li
-										Export to Jira
-
+										%span.bold-font
+											Third party 
+										integrations
 							.card-footer.text-center.no-padding-top.padding-bottom
 								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
 									Get Pro
 
-					.col-sm-12.col-md-6.col-lg-3.col-xl-3.margin-bottom
-						.card.price-card.popular
-							.card-header
-								%h1.medium-font.no-margin
+					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
+						.card.price-card.margin-auto
+							.card-header.team-header
+								%h1.medium-font.margin-bottom
 									Team
-								%h5
-									Great for small teams
 								%h1.display-5.inline
 									%span.price.bold-font
 										$
@@ -103,40 +112,23 @@
 									%span.month
 										\/ month
 							.card-body
+								%h5.text-uppercase.bold-font.light-text-color
+									Everything in Pro, plus
 								%ul.card-list.list-unstyled.icon-list-better.check-list
-									%li.bold-font
-										Everything in Pro
 									%li
-										6 team members
+										%span.bold-font
+											6 
+										users
+									%li
+										%span.bold-font
+											Unlimited 
+										team workspaces
 
 							.card-footer.text-center.no-padding-top.padding-bottom
 								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
 									Get Team
 
-					.col-sm-12.col-md-6.col-lg-3.col-xl-3.margin-bottom
-						.card.price-card
-							.card-header
-								%h1.medium-font.no-margin
-									Team Plus
-								%h5
-									Great for larger teams 
-								%h1.display-5.inline
-									%span.price.bold-font
-										$
-									%span.bold-font.dollar-ammount
-										85
-									%span.month
-										\/ month
-							.card-body
-								%ul.card-list.list-unstyled.icon-list-better.check-list
-									%li.bold-font
-										Everything in Pro
-									%li
-										15 team members
 
-							.card-footer.text-center.no-padding-top.padding-bottom
-								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
-									Get Team Plus
 %section
 	.text-center
 		%img{:src=>"../images/appsumo-logo.svg", :width=>"140px"}
@@ -144,81 +136,4 @@
 			Have an AppSumo code? 
 			%a{:href=>"/settings/appsumo"}
 				Redeem here
-/ %section.padding-top
-/ 	.container
-/ 		.row.justify-content-md-center
-/ 			.col-12
-/ 				.row
-/ 					.col-sm-12.col-md-4
-/ 						.card.price-card.margin-bottom
-/ 							.card-header
-/ 								%h1
-/ 									Volley Free
-/ 								%h1.display-4
-/ 									%span.price.medium-font
-/ 										$
-/ 									%span.bold-font.dollar-ammount
-/ 										0
-/ 									%span.month
-/ 										\/ month
-/ 							.card-body
-/ 								%ul.card-list.list-unstyled.icon-list-better.check-list
-/ 									%li
-/ 										1 project
-/ 									%li
-/ 										Unlimited notes
-/ 									%li
-/ 										Unlimited project members
 
-/ 							.card-footer.text-center.no-padding-top.double-padding-bottom
-/ 								%a.btn.btn-secondary.btn-block.disabled{:href=>"/billing/pay"}
-/ 									Current plan
-/ 					.col-sm-12.col-md-4
-/ 						.card.price-card.margin-bottom
-/ 							.card-header
-/ 								%h1
-/ 									Volley Starter
-/ 								%h1.display-4
-/ 									%span.price.medium-font
-/ 										$
-/ 									%span.bold-font.dollar-ammount
-/ 										4
-/ 									%span.month
-/ 										\/ month
-/ 							.card-body
-/ 								%ul.card-list.list-unstyled.icon-list-better.check-list
-/ 									%li
-/ 										4 projects
-/ 									%li
-/ 										Unlimited notes
-/ 									%li
-/ 										Unlimited project members
-
-/ 							.card-footer.text-center.no-padding-top.double-padding-bottom
-/ 								%a.btn.btn-primary.btn-block{:href=>"/billing/pay"}
-/ 									Choose starter
-/ 					.col-sm-12.col-md-4.margin-bottom
-/ 						.card.price-card
-/ 							.card-header
-/ 								%h1
-/ 									Volley Pro
-/ 								%h1.display-4
-/ 									%span.price.medium-font
-/ 										$
-/ 									%span.bold-font.dollar-ammount
-/ 										10
-/ 									%span.month
-/ 										\/ month
-/ 							.card-body
-/ 								%ul.card-list.list-unstyled.icon-list-better.check-list
-/ 									%li.bold-font
-/ 										Unlimited projects
-/ 									%li
-/ 										Unlimited notes
-/ 									%li
-/ 										Unlimited project members
-
-/ 							.card-footer.text-center.no-padding-top.double-padding-bottom
-/ 								%a.btn.btn-primary.btn-block{:href=>"/billing/pay"}
-/ 									Choose PRO
-									

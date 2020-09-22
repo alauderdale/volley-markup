@@ -28,6 +28,23 @@
 						%input.form-control.form-control-lg{:type=>"text", :placeholder=>"john@doe.com"}
 					.margin-bottom
 						%h4.bold-font
+							What best describes you?
+						%select.form-control.form-control-lg
+							%option{:disabled => "disabled", :selected => "true", :value => ""} 
+								Choose a role
+							%option{:value => "project-manager"} Project / Product Manager
+							%option{:value => "account-manager"} Account Manager
+							%option{:value => "designer"} Designer
+							%option{:value => "engineer"} Engineer / Developer
+							%option{:value => "qatester"} QA Tester
+							%option{:value => "operations-it"} Operations &amp; IT
+							%option{:value => "customer-support"} Customer Support
+							%option{:value => "marketing-sales"} Marketing &amp; Sales
+							%option{:value => "entrepreneur"} Entrepreneur
+							%option{:value => "student"} Student
+							%option{:value => "other"} Other
+					.margin-bottom
+						%h4.bold-font
 							Password
 						%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Min 6 chars."}
 					%h5.light-text-color

@@ -14,9 +14,14 @@
 
 .card{
 	&.price-card{
-		min-height: 425px;
+		min-height: 495px;
+		max-width:350px;
 		overflow: hidden;
 		position:relative;
+		border-radius:8px;
+		// border:2px solid $border-color;
+		box-shadow:0 8px 16px rgba(81,107,152,.24);
+
 		@include breakpoint(sm) {
 			min-height: auto;
 		}
@@ -42,22 +47,40 @@
 		.card-header{
 			position:relative;
 			// min-height: 170px;
+			border-radius:0;
 			border-bottom:1px solid $border-color;
+			border-top:10px solid $border-color;
 			.card-promo{
 				color: shade($link-color,30%);
 			}
+			&.pro-header{
+				border-top-color:#FFAA00;
+			}
+			&.team-header{
+				border-top-color:#FF4E4A;
+			}
 		}
+		.card-body{
+			min-height: 240px;
+		}
+		.card-header, .card-body, .card-footer{
+			padding:30px;
+		}
+
 		h1{
 			position:relative;
+			font-weight: 700;
 			.price{
-				font-size: 20px;
+				font-size: 30px;
 			}
 			.dollar-ammount{
 				position:relative;
+				font-size: 55px;
 			}
 			.month{
 				font-size: 16px;
 				position:relative;
+				right:8px;
 				font-weight: 500;
 			}
 		}

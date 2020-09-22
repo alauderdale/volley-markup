@@ -2140,9 +2140,12 @@ ul.check-list {
     z-index: 99; }
 
 .card.price-card {
-  min-height: 425px;
+  min-height: 495px;
+  max-width: 350px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(81, 107, 152, 0.24); }
   @media (max-width: 768px) {
     .card.price-card {
       min-height: auto; } }
@@ -2165,16 +2168,29 @@ ul.check-list {
       z-index: 99; }
   .card.price-card .card-header {
     position: relative;
-    border-bottom: 1px solid #E6EAEE; }
+    border-radius: 0;
+    border-bottom: 1px solid #E6EAEE;
+    border-top: 10px solid #E6EAEE; }
     .card.price-card .card-header .card-promo {
       color: #002eb3; }
+    .card.price-card .card-header.pro-header {
+      border-top-color: #FFAA00; }
+    .card.price-card .card-header.team-header {
+      border-top-color: #FF4E4A; }
+  .card.price-card .card-body {
+    min-height: 240px; }
+  .card.price-card .card-header, .card.price-card .card-body, .card.price-card .card-footer {
+    padding: 30px; }
   .card.price-card h1 {
-    position: relative; }
+    position: relative;
+    font-weight: 700; }
     .card.price-card h1 .price {
-      font-size: 20px; }
+      font-size: 30px; }
     .card.price-card h1 .dollar-ammount {
-      position: relative; }
+      position: relative;
+      font-size: 55px; }
     .card.price-card h1 .month {
       font-size: 16px;
       position: relative;
+      right: 8px;
       font-weight: 500; }
