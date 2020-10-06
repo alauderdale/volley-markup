@@ -59,9 +59,9 @@
 			.col-lg-5
 				.padded
 					.card.price-card.margin-auto{:style=>"min-height:auto;"}
-						.card-header{:style=>"border-top-color:#FFAA00;"}
-							%h1.medium-font.margin-bottom
-								Pro
+						.card-header.pro-header
+							%h1.medium-font
+								Volley Pro
 							%h1.display-5.inline
 								%span.price.bold-font
 									$
@@ -70,17 +70,17 @@
 								%span.month
 									\/ month
 						.card-body
-							%h5.text-uppercase.bold-font.light-text-color
-								Everything in Basic, plus
 							%ul.card-list.list-unstyled.icon-list-better.check-list
+								%li.bold-font
+									Unlimited projects
+								%li.bold-font
+									Unlimited colloborators
 								%li
-									%span.bold-font
-										Unlimited 
-									projects
+									Unlimited notes
 								%li
-									%span.bold-font
-										Third party 
-									integrations
+									Export to Trello
+								%li
+									Export to Jira
 					.text-center.double-margin-top
 						%p.half-margin-bottom
 							Cancel anytime
