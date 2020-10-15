@@ -42,13 +42,22 @@
 									%span.month
 										\/ month
 							.card-body
-								%h5.text-uppercase.bold-font.light-text-color
-									Get the basics free
+								/ %h5.text-uppercase.bold-font.light-text-color
+								/ 	Get the basics free
 								%ul.card-list.list-unstyled.icon-list-better.check-list
 									%li
 										%span.bold-font
-											Start with 
-										1 project
+											1
+										project
+									%li
+										%span.bold-font
+											1
+										user
+									%li
+										%span.bold-font
+											Email 
+										support
+									%hr
 									%li
 										%span.bold-font
 											Unlimited 
@@ -56,15 +65,11 @@
 									%li
 										%span.bold-font
 											Unlimited 
-										colloborators
+										collaborators
 									%li
 										%span.bold-font
 											User 
 										mentions & notifications
-									%li
-										%span.bold-font
-											Email 
-										support
 
 
 							.card-footer.text-center.no-padding-top.padding-bottom
@@ -73,7 +78,7 @@
 
 					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
 						.card.price-card.margin-auto
-							.card-header.pro-header
+							.card-header{:style=>"border-top-color:#FFAA00;"}
 								%h1.medium-font.margin-bottom
 									Pro
 								%h1.display-5.inline
@@ -84,26 +89,43 @@
 									%span.month
 										\/ month
 							.card-body
-								%h5.text-uppercase.bold-font.light-text-color
-									Everything in Basic, plus
+								/ %h5.text-uppercase.bold-font.light-text-color
+								/ 	Everything in Basic, plus
 								%ul.card-list.list-unstyled.icon-list-better.check-list
 									%li
 										%span.bold-font
-											Unlimited 
+											Unlimited
 										projects
 									%li
 										%span.bold-font
-											Third party 
-										integrations
+											3
+										users
+									%li
+										%span.bold-font
+											Priority 
+										support
+									%hr
+									%li
+										%span.bold-font
+											Unlimited 
+										notes
+									%li
+										%span.bold-font
+											Unlimited 
+										collaborators
+									%li
+										%span.bold-font
+											User 
+										mentions & notifications
 							.card-footer.text-center.no-padding-top.padding-bottom
 								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
 									Get Pro
 
 					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
 						.card.price-card.margin-auto
-							.card-header.team-header
+							.card-header{:style=>"border-top-color:#FF4E4A;"}
 								%h1.medium-font.margin-bottom
-									Team
+									Pro +
 								%h1.display-5.inline
 									%span.price.bold-font
 										$
@@ -112,17 +134,34 @@
 									%span.month
 										\/ month
 							.card-body
-								%h5.text-uppercase.bold-font.light-text-color
-									Everything in Pro, plus
+								/ %h5.text-uppercase.bold-font.light-text-color
+								/ 	Everything in Pro, plus
 								%ul.card-list.list-unstyled.icon-list-better.check-list
 									%li
 										%span.bold-font
-											6 
-										team members
+											Unlimited
+										projects
+									%li
+										%span.bold-font
+											6
+										users
+									%li
+										%span.bold-font
+											Priority 
+										support
+									%hr
 									%li
 										%span.bold-font
 											Unlimited 
-										team workspaces
+										notes
+									%li
+										%span.bold-font
+											Unlimited 
+										collaborators
+									%li
+										%span.bold-font
+											User 
+										mentions & notifications
 
 							.card-footer.text-center.no-padding-top.padding-bottom
 								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay-team"}
