@@ -2,6 +2,10 @@ a{
 	color:$link-color;
 }
 
+
+
+
+
 .btn{
 	border-radius:$base-border-radius;
 	font-weight:600;
@@ -47,6 +51,13 @@ a{
 		&:hover{
 			background:tint($link-color,82%);
 			border-color:tint($link-color,82%);
+		}
+	}
+	&.btn-label{
+		background:$off-white-dark-color;
+		border:none;
+		&.disabled{
+			opacity: 100%
 		}
 	}
 	//alert buttons

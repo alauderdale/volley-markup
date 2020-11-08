@@ -248,6 +248,11 @@ a {
     .btn.btn-terciary:hover {
       background: #d1ddff;
       border-color: #d1ddff; }
+  .btn.btn-label {
+    background: #F5F8FA;
+    border: none; }
+    .btn.btn-label.disabled {
+      opacity: 100%; }
   .btn.btn-danger {
     background: #FF4E4A;
     border-color: #FF4E4A; }
