@@ -278,6 +278,9 @@ $note-container-width:300px;
 	    padding-bottom:44px;
 	    border-right:1px solid $border-color;
 	    background:white;
+	    &.promo-active{
+	    	padding-bottom:183px;
+	    }
 	    @include breakpoint(sm) {
 	    	padding-bottom:85px;
 	    }
@@ -345,12 +348,20 @@ $note-container-width:300px;
 	    	width:$note-container-width;
 	    	border-right:1px solid $border-color;
 	    }
-	    .white-faded-background{
-	    	background:transparent;
-	    	background-image: linear-gradient(180deg, rgba(255,255,255,0.80) 0%, rgba(255,255,255,1) 27%);
+	    .notes-footer-upgrade-promo{
+	    	bottom:96px;
+	    	padding:$baseline;
+	    	background-color:rgba(255,255,255,.9);
+	    	.alert-container{
+	    		.alert{
+	    			border-radius:$base-border-radius;
+	    		}
+	    	}
 	    }
     }
 }
+
+
 
 
 .check-btn{

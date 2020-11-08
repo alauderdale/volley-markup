@@ -19,7 +19,7 @@
 
 .review-container
 	.notes-list-container
-		.notes-list-body
+		.notes-list-body.promo-active
 			.notes-list-header.padded.half-padding-bottom
 				.inline
 					.inline-block.align-middle
@@ -42,26 +42,9 @@
 
 				
 			
-			- 30.times do
-				.note-thumbnail
-					.media
-						/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
-						.comment-number.comment-number-sm.margin-right
-							1
-						.media-body
-							%h5.bold-font.quarter-margin-bottom
-								=lorem.first_name
-								,
-								=lorem.first_name
-							%h5
-								=lorem.words(7)
-							%h6.light-text-color
-								Comment left on 
-								%span.bold-font
-									Chrome 71 
-								on 
-								%span.bold-font
-									Mac OS 10.14.0
+
+
+
 			.note-thumbnail
 				.media
 					/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
@@ -102,13 +85,33 @@
 							on 
 							%span.bold-font
 								Mac OS 10.14.0
+			- 30.times do
+				.note-thumbnail
+					.media
+						/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
+						.comment-number.comment-number-sm.margin-right
+							1
+						.media-body
+							%h5.bold-font.quarter-margin-bottom
+								=lorem.first_name
+								,
+								=lorem.first_name
+							%h5
+								=lorem.words(7)
+							%h6.light-text-color
+								Comment left on 
+								%span.bold-font
+									Chrome 71 
+								on 
+								%span.bold-font
+									Mac OS 10.14.0
 
 
-			.notes-list-footer.white-faded-background#notes-footer-upgrade-promo
-				.padded.double-padding-top
-					.double-padding-top
-					.alert.alert-warning
-						.text-center.half-padding-top.padding-bottom
+
+			.notes-list-footer.notes-footer-upgrade-promo
+				.alert-container
+					.alert.alert-warning.no-margin
+						.text-center
 							%h5.bold-font.text-color
 								Unlock unlimited notes
 							%h5.text-color{:style=>"font-size:12px;"}
