@@ -169,7 +169,7 @@
 									Delete this 
 									%span.bold-font
 										entire 
-									conversation?
+									note?
 								.inline-block.half-margin-top
 									%a.btn.btn-primary{:href=>"/product/review-zero"}
 										Yes, delete
@@ -205,7 +205,7 @@
 							
 							
 						.comments-list-container
-							.comment
+							.comment.border-bottom
 								.media
 									.avatar.avatar-initial.avatar-xs.half-margin-right
 										JD
@@ -219,7 +219,7 @@
 													%button.dropdown-item{:type=>"button"} 
 														Edit
 													%button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.delete-this-convo').addClass('visible').removeClass('invisible');"} 
-														Delete
+														Delete note
 										%h4.bold-font.quarter-margin-bottom
 											=lorem.name
 										%h4
@@ -243,7 +243,7 @@
 														%button.dropdown-item{:type=>"button"} 
 															Edit
 														%button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.delete-this-comment').addClass('visible').removeClass('invisible');"} 
-															Delete
+															Delete comment
 											%h4.bold-font.quarter-margin-bottom
 												=lorem.name
 											%h4
