@@ -106,6 +106,9 @@ img {
   top: 4px;
   margin-left: 5px; }
 
+.border-top, .border-bottom, .border-left, .border-right {
+  border-color: #E6EAEE; }
+
 .text-uppercase {
   text-transform: uppercase; }
 
@@ -234,6 +237,8 @@ a {
     color: #354052; }
     .btn.btn-secondary:hover {
       border-color: #121314; }
+    .btn.btn-secondary.disabled {
+      border-color: #B4BBC6; }
   .btn.btn-terciary {
     background: #f0f4ff;
     border-color: #f0f4ff;
@@ -1668,6 +1673,9 @@ ul.check-list {
       width: 100%;
       width: 300px;
       border-right: 1px solid #E6EAEE; }
+    .notes-list-container .notes-list-body .white-faded-background {
+      background: transparent;
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, white 27%); }
 
 .check-btn button {
   color: #7F8FA4; }
@@ -1704,6 +1712,26 @@ ul.check-list {
     border: #26C164 !important; }
     .complete-btn button.active:after {
       content: "Completed"; }
+
+.comment-list-confirm-overlay {
+  background: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3; }
+  .comment-list-confirm-overlay .confirm-items {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%; }
+    @media (max-width: 768px) {
+      .comment-list-confirm-overlay .confirm-items {
+        top: 80px; } }
 
 .note-container {
   width: calc(100% - 300px);
@@ -1868,7 +1896,8 @@ ul.check-list {
               .note-container .note-body .note-info .comments-container .comments-wrapper .new-comment.focused .attachment {
                 display: block; }
           .note-container .note-body .note-info .comments-container .comments-wrapper .comments-list-container {
-            width: 100%; }
+            width: 100%;
+            position: relative; }
             .note-container .note-body .note-info .comments-container .comments-wrapper .comments-list-container .comment {
               padding: 16px;
               width: 100%;
