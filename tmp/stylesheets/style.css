@@ -1720,14 +1720,17 @@ ul.check-list {
 
 .comment-list-confirm-overlay {
   background: rgba(255, 255, 255, 0.95);
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
   right: 0;
-  width: 100%;
+  width: 319px;
   height: 100%;
   z-index: 3; }
+  @media (max-width: 768px) {
+    .comment-list-confirm-overlay {
+      width: 100%;
+      top: 278px; } }
   .comment-list-confirm-overlay .confirm-items {
     left: 0;
     position: absolute;
@@ -1736,7 +1739,7 @@ ul.check-list {
     top: 50%; }
     @media (max-width: 768px) {
       .comment-list-confirm-overlay .confirm-items {
-        top: 80px; } }
+        top: 40px; } }
 
 .note-container {
   width: calc(100% - 300px);

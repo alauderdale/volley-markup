@@ -169,24 +169,24 @@
 									Delete this 
 									%span.bold-font
 										entire 
-									note?
+									note and all comments?
 								.inline-block.half-margin-top
 									%a.btn.btn-primary{:href=>"/product/review-zero"}
 										Yes, delete
 									%button.btn.btn-link{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').removeClass('visible').addClass('invisible');"} 
 										Cancel
-							.comment-list-confirm-overlay.text-center.invisible.delete-this-comment
-								.confirm-items
-									%h5
-										Delete 
-										%span.bold-font
-											this 
-										comment?
-									.inline-block.half-margin-top
-										%a.btn.btn-primary{:href=>"/product/review-zero"}
-											Yes, delete
-										%button.btn.btn-link{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').removeClass('visible').addClass('invisible');"} 
-											Cancel
+						.comment-list-confirm-overlay.text-center.invisible.delete-this-comment
+							.confirm-items
+								%h5
+									Delete 
+									%span.bold-font
+										this 
+									comment?
+								.inline-block.half-margin-top
+									%a.btn.btn-primary{:href=>"/product/review-zero"}
+										Yes, delete
+									%button.btn.btn-link{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').removeClass('visible').addClass('invisible');"} 
+										Cancel
 
 
 						.padded.text-right.no-padding-bottom.show-comment-toggle.d-sm-block.d-md-none.mobile-comments-header

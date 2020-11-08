@@ -419,25 +419,26 @@ $note-container-width:300px;
 
 .comment-list-confirm-overlay{
 	background: rgba(255,255,255,.95);
-	position:absolute;
+	position:fixed;
 	top: 0;
 	bottom:0;
-	left:0;
 	right:0;
-	width: 100%;
+	width: 319px;
 	height: 100%;
 	z-index: 3;
+	@include breakpoint(sm) {
+		width: 100%;
+		top:278px;
+	}
 	.confirm-items{
 		left: 0;
 		position: absolute;
 		right: 0;
 		text-align: center;
 		top: 50%;
-
 		@include breakpoint(sm) {
-			top: 80px;
+			top:40px;
 		}
-
 	}
 
 }
