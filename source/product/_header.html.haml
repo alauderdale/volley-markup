@@ -53,15 +53,69 @@
             %h5.light-text-color.margin-bottom
               Who has access
             .people-list
-              -4.times do
-                .media.half-margin-top
+              .media.half-margin-top.border-bottom.half-padding-top.half-padding-bottom
+                .avatar.avatar-initial.avatar-xs.half-margin-right
+                  JD
+                .media-body
+                  .row
+                    .col
+                      %h4.bold-font.no-margin-bottom
+                        =lorem.name
+                      %h5.light-font-name
+                        Owner •
+                        =lorem.email
+                    .col-4.text-right
+                      %button.btn.btn-secondary.btn-sm.disabled{:type=>"button", :style=>"min-width:99px;",  "data-toggle"=>"tooltip", :title=>"Owner can't be removed"}
+                        owner
+              .media.half-margin-top.border-bottom.half-padding-top.half-padding-bottom
+                .avatar.avatar-initial.avatar-xs.half-margin-right
+                  JD
+                .media-body
+                  .row
+                    .col
+                      %h4.bold-font.no-margin-bottom
+                        =lorem.name
+                      %h5.light-font-name
+                        Member •
+                        =lorem.email
+                    .col-4.text-right
+                      %button.btn.btn-secondary.btn-sm.disabled{:type=>"button", :style=>"min-width:99px;",  "data-toggle"=>"tooltip", :title=>"Team members can't be removed"}
+                        Team member
+              -2.times do
+                .media.half-margin-top.border-bottom.half-padding-top.half-padding-bottom
                   .avatar.avatar-initial.avatar-xs.half-margin-right
                     JD
                   .media-body
-                    %h4.bold-font.no-margin-bottom
-                      =lorem.name
-                    %h5.light-font-name
-                      =lorem.email
+                    .row
+                      .col
+                        %h4.bold-font.no-margin-bottom
+                          =lorem.name
+                        %h5.light-font-name
+                          Guest •
+                          =lorem.email
+                      .col-4.text-right
+                        %button.btn.btn-secondary.btn-sm{:type=>"button", :style=>"min-width:99px;"}
+                          Remove
+              .media.half-margin-top.border-bottom.half-padding-top.half-padding-bottom
+                .avatar.avatar-initial.avatar-xs.half-margin-right
+                  JD
+                .media-body
+                  .row
+                    .col
+                      %h4.bold-font.no-margin-bottom.extra-light-text-color
+                        =lorem.name
+                        (invited)
+                      %h5.light-font-name
+                        Invited •
+                        =lorem.email
+                    .col-4.text-right
+                      %button.btn.btn-secondary.btn-sm{:type=>"button", "data-toggle" => "dropdown", :style=>"min-width:99px;"}
+                        •••
+                      .dropdown-menu.dropdown-menu-right
+                        %button.dropdown-item{:type=>"button"} 
+                          Resend invite
+                        %button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').addClass('visible').removeClass('invisible');"} 
+                          Remove
       .modal-footer.no-border-top
 
        

@@ -345,6 +345,10 @@ $note-container-width:300px;
 	    	width:$note-container-width;
 	    	border-right:1px solid $border-color;
 	    }
+	    .white-faded-background{
+	    	background:transparent;
+	    	background-image: linear-gradient(180deg, rgba(255,255,255,0.80) 0%, rgba(255,255,255,1) 27%);
+	    }
     }
 }
 
@@ -400,6 +404,32 @@ $note-container-width:300px;
 	}
 }
 
+
+
+.comment-list-confirm-overlay{
+	background: rgba(255,255,255,.95);
+	position:absolute;
+	top: 0;
+	bottom:0;
+	left:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	.confirm-items{
+		left: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 50%;
+
+		@include breakpoint(sm) {
+			top: 80px;
+		}
+
+	}
+
+}
 
 .note-container{
 	width: calc(100% - #{$note-container-width});
@@ -598,6 +628,7 @@ $note-container-width:300px;
 					}
 					.comments-list-container{
 						width:100%;
+						position:relative;
 						.comment{
 							padding:16px;
 							width:100%;

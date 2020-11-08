@@ -34,6 +34,9 @@ a{
 		&:hover{
 			border-color:shade($lightest-gray-color,90%);
 		}
+		&.disabled{
+			border-color:$lightest-gray-color;
+		}
 	}
 	&.btn-terciary{
 		background:tint($link-color,94%);

@@ -42,7 +42,7 @@
 
 				
 			
-			- 3.times do
+			- 30.times do
 				.note-thumbnail
 					.media
 						/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
@@ -104,6 +104,19 @@
 								Mac OS 10.14.0
 
 
+			.notes-list-footer.white-faded-background#notes-footer-upgrade-promo
+				.padded.double-padding-top
+					.double-padding-top
+					.alert.alert-warning
+						.text-center.half-padding-top.padding-bottom
+							%h5.bold-font.text-color
+								Unlock unlimited notes
+							%h5.text-color{:style=>"font-size:12px;"}
+								To unlock unlimited notes, rather than just the most recent 50, upgrade to a paid plan.
+							%a.btn.btn-success.btn-sm{:href=>"/billing/trial-expired"}
+								See upgrade options
+							
+
 			.notes-list-footer
 				.show-resolved.check-btn
 					%button.no-margin-bottom.btn-link.btn{:type=>"button"}
@@ -147,23 +160,26 @@
 									%a.btn.btn-secondary.float-right.page-btn{:href=>"/product/browse"}
 										Go to page
 					.comments-wrapper
+						.comment-list-confirm-overlay.text-center.invisible
+							.confirm-items
+								%h5
+									Delete this 
+									%span.bold-font
+										entire 
+									conversation?
+								.inline-block.half-margin-top
+									%a.btn.btn-primary{:href=>"/product/review-zero"}
+										Yes, delete
+									%button.btn.btn-link{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').removeClass('visible').addClass('invisible');"} 
+										Cancel
+
+
 						.padded.text-right.no-padding-bottom.show-comment-toggle.d-sm-block.d-md-none.mobile-comments-header
 							%a{:href=>"#"}
 								%i.material-icons
 									close
 						.new-comment
 							%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
-							/ .dropdown-menu.display-block.mention-menu{:style=>"top:80px; left:20px;"}
-							/ 	-4.times do
-							/ 		%a.dropdown-item{:href=>"#"}
-							/ 			.media.half-padding-top.half-padding-bottom
-							/ 				.avatar.avatar-initial.avatar-xs.half-margin-right
-							/ 					JD
-							/ 				.media-body
-							/ 					%h4.bold-font.no-margin-bottom
-							/ 						=lorem.name
-							/ 					%h5.light-text-color.no-margin-bottom
-							/ 						=lorem.email
 							%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
 								Comment
 							%button.btn.btn-link.attachment.float-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
@@ -188,7 +204,7 @@
 													.dropdown-menu.dropdown-menu-right
 														%button.dropdown-item{:type=>"button"} 
 															Edit
-														%button.dropdown-item{:type=>"button", :onclick=>"location.href='products/zero';"} 
+														%button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').addClass('visible').removeClass('invisible');"} 
 															Delete
 											%h4.bold-font.quarter-margin-bottom
 												=lorem.name

@@ -124,3 +124,9 @@ img{
     top: 4px;
     margin-left: 5px;
 }
+
+//borders
+
+.border-top, .border-bottom, .border-left, .border-right{
+  border-color:$border-color;
+}
