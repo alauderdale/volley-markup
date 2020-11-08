@@ -896,3 +896,12 @@ $note-container-width:300px;
 	}
 }
 
+.people-list{
+	.media{
+		border-bottom:1px solid $border-color;
+		&:last-of-type{
+			border-bottom:none;
+		}
+	}
+}
+

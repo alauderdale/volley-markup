@@ -2094,6 +2094,11 @@ ul.check-list {
   .get-started-deck .card-footer {
     padding-top: 0; }
 
+.people-list .media {
+  border-bottom: 1px solid #E6EAEE; }
+  .people-list .media:last-of-type {
+    border-bottom: none; }
+
 @keyframes menu-zoom {
   0% {
     opacity: 0;

@@ -53,63 +53,63 @@
             %h5.light-text-color.margin-bottom
               Who has access
             .people-list
-              .media.half-margin-top.border-bottom.half-padding-top.half-padding-bottom
+              .media.half-margin-top.half-padding-top.half-padding-bottom
                 .avatar.avatar-initial.avatar-xs.half-margin-right
                   JD
                 .media-body
                   .row
-                    .col
+                    .col-md-8
                       %h4.bold-font.no-margin-bottom
                         =lorem.name
                       %h5.light-font-name
                         Owner •
                         =lorem.email
-                    .col-4.text-right
-                      %button.btn.btn-secondary.btn-sm.disabled{:type=>"button", :style=>"min-width:99px;",  "data-toggle"=>"tooltip", :title=>"Owner can't be removed"}
+                    .col-md-4
+                      %button.btn.btn-secondary.btn-sm.disabled.btn-block{:type=>"button", "data-toggle"=>"tooltip", :title=>"Owner can't be removed"}
                         owner
-              .media.half-margin-top.border-bottom.half-padding-top.half-padding-bottom
+              .media.half-margin-top.half-padding-top.half-padding-bottom
                 .avatar.avatar-initial.avatar-xs.half-margin-right
                   JD
                 .media-body
                   .row
-                    .col
+                    .col-md-8
                       %h4.bold-font.no-margin-bottom
                         =lorem.name
                       %h5.light-font-name
                         Member •
                         =lorem.email
-                    .col-4.text-right
-                      %button.btn.btn-secondary.btn-sm.disabled{:type=>"button", :style=>"min-width:99px;",  "data-toggle"=>"tooltip", :title=>"Team members can't be removed"}
+                    .col-md-4
+                      %button.btn.btn-secondary.btn-sm.disabled.btn-block{:type=>"button", "data-toggle"=>"tooltip", :title=>"Team members can't be removed"}
                         Team member
               -2.times do
-                .media.half-margin-top.border-bottom.half-padding-top.half-padding-bottom
+                .media.half-margin-top.half-padding-top.half-padding-bottom
                   .avatar.avatar-initial.avatar-xs.half-margin-right
                     JD
                   .media-body
                     .row
-                      .col
+                      .col-md-8
                         %h4.bold-font.no-margin-bottom
                           =lorem.name
                         %h5.light-font-name
                           Guest •
                           =lorem.email
-                      .col-4.text-right
-                        %button.btn.btn-secondary.btn-sm{:type=>"button", :style=>"min-width:99px;"}
+                      .col-md-4
+                        %button.btn.btn-secondary.btn-sm.btn-block{:type=>"button"}
                           Remove
-              .media.half-margin-top.border-bottom.half-padding-top.half-padding-bottom
+              .media.half-margin-top.half-padding-top.half-padding-bottom
                 .avatar.avatar-initial.avatar-xs.half-margin-right
                   JD
                 .media-body
                   .row
-                    .col
+                    .col-md-8
                       %h4.bold-font.no-margin-bottom.extra-light-text-color
                         =lorem.name
                         (invited)
                       %h5.light-font-name
                         Invited •
                         =lorem.email
-                    .col-4.text-right
-                      %button.btn.btn-secondary.btn-sm{:type=>"button", "data-toggle" => "dropdown", :style=>"min-width:99px;"}
+                    .col-md-4
+                      %button.btn.btn-secondary.btn-sm.btn-block{:type=>"button", "data-toggle" => "dropdown"}
                         •••
                       .dropdown-menu.dropdown-menu-right
                         %button.dropdown-item{:type=>"button"} 
