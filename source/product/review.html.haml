@@ -115,7 +115,7 @@
 							%h5.bold-font.text-color
 								View all your notes
 							%h5.text-color{:style=>"font-size:12px;"}
-								To unlock unlimited notes, rather than just the most recent 50, upgrade to a paid plan.
+								To unlock unlimited notes, rather than just the first 50, upgrade to a paid plan.
 							%a.btn.btn-success.btn-sm{:href=>"/billing/trial-expired"}
 								See upgrade options
 							
@@ -163,7 +163,7 @@
 									%a.btn.btn-secondary.float-right.page-btn{:href=>"/product/browse"}
 										Go to page
 					.comments-wrapper
-						.comment-list-confirm-overlay.text-center.invisible
+						.comment-list-confirm-overlay.text-center.invisible.delete-this-convo
 							.confirm-items
 								%h5
 									Delete this 
@@ -175,6 +175,18 @@
 										Yes, delete
 									%button.btn.btn-link{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').removeClass('visible').addClass('invisible');"} 
 										Cancel
+							.comment-list-confirm-overlay.text-center.invisible.delete-this-comment
+								.confirm-items
+									%h5
+										Delete 
+										%span.bold-font
+											this 
+										comment?
+									.inline-block.half-margin-top
+										%a.btn.btn-primary{:href=>"/product/review-zero"}
+											Yes, delete
+										%button.btn.btn-link{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').removeClass('visible').addClass('invisible');"} 
+											Cancel
 
 
 						.padded.text-right.no-padding-bottom.show-comment-toggle.d-sm-block.d-md-none.mobile-comments-header
@@ -193,6 +205,29 @@
 							
 							
 						.comments-list-container
+							.comment
+								.media
+									.avatar.avatar-initial.avatar-xs.half-margin-right
+										JD
+									.media-body
+										.actions
+											.dropdown.show.text-right
+												%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+													%i.material-icons
+														more_horiz
+												.dropdown-menu.dropdown-menu-right
+													%button.dropdown-item{:type=>"button"} 
+														Edit
+													%button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.delete-this-convo').addClass('visible').removeClass('invisible');"} 
+														Delete
+										%h4.bold-font.quarter-margin-bottom
+											=lorem.name
+										%h4
+											=lorem.words(20)
+										%a{:href=>"#"}
+											%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
+										%h5.light-text-color
+											2m ago
 							-20.times do
 								.comment
 									.media
@@ -207,7 +242,7 @@
 													.dropdown-menu.dropdown-menu-right
 														%button.dropdown-item{:type=>"button"} 
 															Edit
-														%button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').addClass('visible').removeClass('invisible');"} 
+														%button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.delete-this-comment').addClass('visible').removeClass('invisible');"} 
 															Delete
 											%h4.bold-font.quarter-margin-bottom
 												=lorem.name
