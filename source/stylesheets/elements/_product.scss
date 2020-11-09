@@ -577,8 +577,9 @@ $note-container-width:300px;
 					}
 					.page-btn{
 						position:relative;
-						&.icon-bbtn{
+						&.icon-btn{
 							padding:3px 7px;
+							border:none;
 						}
 						i{
 							font-size: 24px;

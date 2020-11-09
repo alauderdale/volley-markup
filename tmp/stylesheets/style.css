@@ -1865,8 +1865,9 @@ ul.check-list {
               display: none; } }
           .note-container .note-body .note-info .comments-container .resolved-header .page-btn {
             position: relative; }
-            .note-container .note-body .note-info .comments-container .resolved-header .page-btn.icon-bbtn {
-              padding: 3px 7px; }
+            .note-container .note-body .note-info .comments-container .resolved-header .page-btn.icon-btn {
+              padding: 3px 7px;
+              border: none; }
             .note-container .note-body .note-info .comments-container .resolved-header .page-btn i {
               font-size: 24px;
               position: relative;
