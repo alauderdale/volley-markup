@@ -738,6 +738,11 @@ section {
     border-top-right-radius: 16px;
     border: none;
     overflow: hidden; }
+  .card .card-list i {
+    font-size: 18px;
+    position: relative;
+    top: 4px;
+    color: #7F8FA4; }
   .card .card-footer {
     border: none;
     background-color: transparent;
