@@ -700,8 +700,9 @@ $note-container-width:300px;
 	width: 100%;
 	padding:10px;
 	padding-top:0;
-	background:$off-white-color;
+
 	.note-details{
+		background:$off-white-color;
 		border:1px solid $border-color;
 		border-radius: $base-border-radius;
 		border-top-left-radius:0;

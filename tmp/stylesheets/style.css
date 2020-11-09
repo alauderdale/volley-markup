@@ -1952,9 +1952,9 @@ ul.check-list {
   display: block;
   width: 100%;
   padding: 10px;
-  padding-top: 0;
-  background: #FAFBFC; }
+  padding-top: 0; }
   .note-details-container .note-details {
+    background: #FAFBFC;
     border: 1px solid #E6EAEE;
     border-radius: 8px;
     border-top-left-radius: 0;
