@@ -1867,7 +1867,8 @@ ul.check-list {
             position: relative; }
             .note-container .note-body .note-info .comments-container .resolved-header .page-btn.icon-btn {
               padding: 3px 7px;
-              border: none; }
+              border: none;
+              color: #7F8FA4; }
             .note-container .note-body .note-info .comments-container .resolved-header .page-btn i {
               font-size: 24px;
               position: relative;
