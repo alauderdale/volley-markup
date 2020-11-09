@@ -121,8 +121,15 @@
 								=partial"mark-resolved-btn"
 						.col-4
 							.float-right{:style=>"position:relative;"}
-								%a.btn.btn-secondary{:href=>"/product/browse"}
-									Go to page
+								%a.btn.btn-secondary.float-right.page-btn.icon-bbtn.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
+									•••
+								.dropdown-menu.dropdown-menu-right
+									%button.dropdown-item{:type=>"button"} 
+										Go to page
+									%button.dropdown-item.delete-comment{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
+										Delete note
+									
+
 			.note-info
 				.img-container
 					.img-wrapper
@@ -140,21 +147,28 @@
 								.col-7
 									=partial"mark-resolved-btn"		
 								.col
-									%a.btn.btn-secondary.float-right.page-btn.inline{:href=>"/product/browse"}
-										Go to page
+									%a.btn.btn-secondary.float-right.page-btn.icon-bbtn.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
+										%i.material-icons
+											more_horiz
+									.dropdown-menu.dropdown-menu-right
+										%button.dropdown-item.delete-comment{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
+											Delete note
+									%a.btn.btn-secondary.float-right.page-btn.icon-bbtn.inline.half-margin-right{:href=>"/product/browse", "data-toggle"=>"tooltip", :title=>"Go to page"}
+										%i.material-icons
+											launch
 					.comments-wrapper
-						.comment-list-confirm-overlay.text-center.invisible.delete-this-convo
-							.confirm-items
-								%h5
-									Delete this 
-									%span.bold-font
-										entire 
-									note and all comments?
-								.inline-block.half-margin-top
-									%a.btn.btn-primary{:href=>"/product/review-zero"}
-										Yes, delete
-									%button.btn.btn-link{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').removeClass('visible').addClass('invisible');"} 
-										Cancel
+						/ .comment-list-confirm-overlay.text-center.invisible.delete-this-convo
+						/ 	.confirm-items
+						/ 		%h5
+						/ 			Delete this 
+						/ 			%span.bold-font
+						/ 				entire 
+						/ 			note and all comments?
+						/ 		.inline-block.half-margin-top
+						/ 			%a.btn.btn-primary{:href=>"/product/review-zero"}
+						/ 				Yes, delete
+						/ 			%button.btn.btn-link{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').removeClass('visible').addClass('invisible');"} 
+						/ 				Cancel
 						.comment-list-confirm-overlay.text-center.invisible.delete-this-comment
 							.confirm-items
 								%h5
@@ -173,48 +187,30 @@
 							%a{:href=>"#"}
 								%i.material-icons
 									close
-						.new-comment
-							%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
-							%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
-								Comment
-							%button.btn.btn-link.attachment.float-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
-								%i.material-icons
-									attachment
-							
-							
-							
-							
 						.comments-list-container
-							.comment.border-bottom
-								.media
-									.avatar.avatar-initial.avatar-xs.half-margin-right
-										JD
-									.media-body
-										.actions
-											.dropdown.show.text-right
-												%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
-													%i.material-icons
-														more_horiz
-												.dropdown-menu.dropdown-menu-right
-													%button.dropdown-item{:type=>"button"} 
-														Edit
-													%button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.delete-this-convo').addClass('visible').removeClass('invisible');"} 
-														Delete note
-										%h4.bold-font.no-margin-bottom
-											=lorem.name
-										%h5.light-text-color
-											2m ago
-										%h4
-											=lorem.words(20)
-										/ %a{:href=>"#"}
-										/ 	%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
-								.comment-details-container
-									%h5
+							.note-comment-container
+								.comment.note-comment
+									.media
+										.avatar.avatar-initial.avatar-xs.half-margin-right
+											JD
+										.media-body
+											%h4.bold-font.no-margin-bottom
+												=lorem.name
+											%h5.light-text-color
+												2m ago
+											%h4
+												=lorem.words(20)
+											/ %a{:href=>"#"}
+											/ 	%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
+							.note-details-container
+								.note-details
+									%h5.text-center
 										%a.collapsed.details-toggle{"data-toggle"=>"collapse", :href=>"#noteDetailsCollapse", :role=>"button", "aria-expanded"=>"false"}
+											Details
 											%i.material-icons.align-middle
-												chevron_right
-											More details
-									#noteDetailsCollapse.note-details.collapse
+												expand_more
+
+									#noteDetailsCollapse.note-details-items.collapse
 										%dl.row
 											%dt.col-sm-5
 												Browser
@@ -230,7 +226,16 @@
 												URL
 											%dd.col-sm-7
 												https://app.productstash.io/roadmaps/5f9325ec9b327f002fa32b3d/public
-								
+
+							.new-comment
+								%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
+								%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
+									Comment
+								%button.btn.btn-link.attachment.float-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
+									%i.material-icons
+										attachment
+
+
 							-20.times do
 								.comment
 									.media
@@ -285,5 +290,22 @@
 				
 				
 
+#confirmDeleteNoteModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header
+				%h2.padding-left
+					Delete note
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
 
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					%p
+						Are you sure you want to delete this note and all comments?
+			.modal-footer.no-border-top
+				%button.btn.btn-link{:tyle=>"button", "data-dismiss" => "modal"}
+					Cancel
+				%button.btn.btn-primary{:tyle=>"button", "data-dismiss" => "modal"}
+					Yes, delete
 				
