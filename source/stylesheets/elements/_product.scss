@@ -668,6 +668,40 @@ $note-container-width:300px;
     }
 }
 
+//comment details
+
+.comment-details-container{
+	margin-left: 38px;
+	i{
+		 transform: rotate(90deg);
+	}
+	a.collapsed{
+		i{
+			transform: rotate(0deg);
+		}
+	}
+	a.details-toggle{
+		
+		i{
+			font-size: 15px;
+		}
+		&:hover{
+			text-decoration:none;
+		}
+	}
+	.note-details{
+		dl{
+			font-size: 11px;
+			margin-bottom:8px;
+			line-height: 1.2;
+			dd{
+				margin-bottom: 0;
+				word-wrap: break-word;
+			}
+		}
+	}
+
+}
 
 
 //this is both the menu button and the close button

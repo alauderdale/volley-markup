@@ -1925,6 +1925,24 @@ ul.check-list {
                 .note-container .note-body .note-info .comments-container .comments-wrapper .comments-list-container .comment .actions button.btn-action {
                   color: #7F8FA4; }
 
+.comment-details-container {
+  margin-left: 38px; }
+  .comment-details-container i {
+    transform: rotate(90deg); }
+  .comment-details-container a.collapsed i {
+    transform: rotate(0deg); }
+  .comment-details-container a.details-toggle i {
+    font-size: 15px; }
+  .comment-details-container a.details-toggle:hover {
+    text-decoration: none; }
+  .comment-details-container .note-details dl {
+    font-size: 11px;
+    margin-bottom: 8px;
+    line-height: 1.2; }
+    .comment-details-container .note-details dl dd {
+      margin-bottom: 0;
+      word-wrap: break-word; }
+
 .show-notes-toggle {
   display: none; }
   @media (max-width: 992px) {

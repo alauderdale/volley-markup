@@ -58,14 +58,7 @@
 							%span.badge.badge-danger.quarter-margin-left
 								3
 						%h5
-							=lorem.words(7)
-						%h6.light-text-color
-							Comment left on 
-							%span.bold-font
-								Chrome 71 
-							on 
-							%span.bold-font
-								Mac OS 10.14.0
+							=lorem.words(10)
 			.note-thumbnail.resolved
 				.media
 					/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
@@ -77,14 +70,7 @@
 							,
 							=lorem.first_name
 						%h5
-							=lorem.words(8)
-						%h6.light-text-color
-							Comment left on 
-							%span.bold-font
-								Chrome 71 
-							on 
-							%span.bold-font
-								Mac OS 10.14.0
+							=lorem.words(10)
 			- 30.times do
 				.note-thumbnail
 					.media
@@ -97,14 +83,8 @@
 								,
 								=lorem.first_name
 							%h5
-								=lorem.words(7)
-							%h6.light-text-color
-								Comment left on 
-								%span.bold-font
-									Chrome 71 
-								on 
-								%span.bold-font
-									Mac OS 10.14.0
+								=lorem.words(10)
+
 
 
 
@@ -220,14 +200,37 @@
 														Edit
 													%button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.delete-this-convo').addClass('visible').removeClass('invisible');"} 
 														Delete note
-										%h4.bold-font.quarter-margin-bottom
+										%h4.bold-font.no-margin-bottom
 											=lorem.name
-										%h4
-											=lorem.words(20)
-										%a{:href=>"#"}
-											%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
 										%h5.light-text-color
 											2m ago
+										%h4
+											=lorem.words(20)
+										/ %a{:href=>"#"}
+										/ 	%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
+								.comment-details-container
+									%h5
+										%a.collapsed.details-toggle{"data-toggle"=>"collapse", :href=>"#noteDetailsCollapse", :role=>"button", "aria-expanded"=>"false"}
+											%i.material-icons.align-middle
+												chevron_right
+											More details
+									#noteDetailsCollapse.note-details.collapse
+										%dl.row
+											%dt.col-sm-5
+												Browser
+											%dd.col-sm-7
+												Mac OS 10.14.0
+										%dl.row
+											%dt.col-sm-5
+												Operating system
+											%dd.col-sm-7
+												Chrome 71
+										%dl.row
+											%dt.col-sm-5
+												URL
+											%dd.col-sm-7
+												https://app.productstash.io/roadmaps/5f9325ec9b327f002fa32b3d/public
+								
 							-20.times do
 								.comment
 									.media
@@ -244,14 +247,14 @@
 															Edit
 														%button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.delete-this-comment').addClass('visible').removeClass('invisible');"} 
 															Delete comment
-											%h4.bold-font.quarter-margin-bottom
+											%h4.bold-font.no-margin-bottom
 												=lorem.name
+											%h5.light-text-color
+												2m ago
 											%h4
 												=lorem.words(20)
 											%a{:href=>"#"}
 												%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
-											%h5.light-text-color
-												2m ago
 
 
 #guestModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
