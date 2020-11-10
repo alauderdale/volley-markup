@@ -194,6 +194,14 @@
 										.avatar.avatar-initial.avatar-xs.half-margin-right
 											JD
 										.media-body
+											.actions
+												.dropdown.show.text-right
+													%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+														%i.material-icons
+															more_horiz
+													.dropdown-menu.dropdown-menu-right
+														%button.dropdown-item{:type=>"button"} 
+															Edit note
 											%h4.bold-font.no-margin-bottom
 												=lorem.name
 											%h5.light-text-color
