@@ -65,17 +65,41 @@
 									%span.month
 										\/ month
 							.card-body
-								%h5.text-uppercase.bold-font.light-text-color
-									Everything in Basic, plus
+								/ %h5.text-uppercase.bold-font.light-text-color
+								/ 	Everything in Basic, plus
 								%ul.card-list.list-unstyled.icon-list-better.check-list
 									%li
 										%span.bold-font
-											Unlimited 
+											Unlimited
 										projects
 									%li
 										%span.bold-font
-											Third party 
-										integrations
+											3
+										users
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A user can create projects and collaborate with other users within a Volley workspace."}
+											info
+									
+									
+									%li
+										%span.bold-font
+											Unlimited 
+										notes
+									%li
+										%span.bold-font
+											Priority 
+										support
+									%hr
+									%li
+										%span.bold-font
+											Unlimited 
+										collaborators
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A collaborator is a guest invited into a simgle project."}
+											info
+									%li
+										%span.bold-font
+											User 
+										mentions & notifications
+									
 							.card-footer.text-center.no-padding-top.padding-bottom
 								%a.btn.btn-primary.btn-block.btn-lg{:href=>"https://app.meetvolley.com/sign-up"}
 									Get started free

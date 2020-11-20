@@ -81,20 +81,15 @@
 									Current plan
 
 					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
-						.card.price-card.margin-auto.popular
+						.card.price-card.margin-auto
 							.card-header{:style=>"border-top-color:#FFAA00;"}
 								%h1.medium-font.margin-bottom
 									Pro
-								%h1.display-5.inline.strikethrough
+								%h1.display-5.inline
 									%span.price.bold-font
 										$
 									%span.bold-font.dollar-ammount
 										25
-								%h1.display-5.inline.quarter-margin-left
-									%span.price.bold-font
-										$
-									%span.bold-font.dollar-ammount
-										9
 									%span.month
 										\/ month
 							.card-body
@@ -107,16 +102,14 @@
 										projects
 									%li
 										%span.bold-font
-											3
+											Unlimited 
+										notes
+									%li
+										%span.bold-font
+											4
 										users
 										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A user can create projects and collaborate with other users within a Volley workspace."}
 											info
-									
-									
-									%li
-										%span.bold-font
-											Unlimited 
-										notes
 									%li
 										%span.bold-font
 											Priority 
@@ -132,10 +125,10 @@
 										%span.bold-font
 											User 
 										mentions & notifications
-									
 							.card-footer.text-center.no-padding-top.padding-bottom
 								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
 									Get Pro
+
 					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
 						.card.price-card.margin-auto
 							.card-header{:style=>"border-top-color:#FF4E4A;"}

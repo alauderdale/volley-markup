@@ -694,6 +694,37 @@ section {
 .input-group .input-group-append .input-group-text {
   background-color: white; }
 
+.alert-promo {
+  background-image: linear-gradient(270deg, #0013FF 0%, #CC00FF 100%);
+  color: white;
+  border-radius: 0;
+  margin: 0;
+  z-index: 99;
+  font-size: 17px;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  width: calc(100%-250px);
+  left: 250px;
+  right: 0; }
+  @media (max-width: 992px) {
+    .alert-promo {
+      display: none; } }
+  .alert-promo .btn {
+    margin: 10px 0;
+    margin-left: 10px;
+    background: #FFAA00;
+    color: #000;
+    border: none; }
+    .alert-promo .btn:hover, .alert-promo .btn:active {
+      background: #ffbb33 !important;
+      color: #000 !important;
+      border: none !important; }
+  .alert-promo .close {
+    box-shadow: none; }
+    .alert-promo .close:hover {
+      color: white; }
+
 .alert {
   font-size: 14px; }
   .alert .alert-link {
@@ -2233,56 +2264,72 @@ ul.check-list {
 .invoice-list .row i {
   font-size: 12px; }
 
+.border-text {
+  width: 100%;
+  display: block; }
+  .border-text:before {
+    display: block;
+    height: 1px;
+    background: #E6EAEE;
+    width: 100%;
+    position: relative;
+    top: 24px;
+    content: "";
+    z-index: -1; }
+  .border-text h1, .border-text h2, .border-text h3, .border-text h4, .border-text h5, .border-text h6, .border-text p {
+    background: white;
+    padding: 4px 20px;
+    display: inline-block;
+    z-index: 999; }
+
 .strikethrough {
   display: inline; }
   .strikethrough:before {
     position: absolute;
     content: "";
     left: 13px;
-    top: 34px;
-    right: -17px;
-    border-top: 4px solid;
-    border-color: #002eb3;
-    z-index: 99; }
+    right: 2px;
+    border-top: 8px solid;
+    border-color: #FFAA00;
+    z-index: 99;
+    top: 13px;
+    transform: rotate(-20deg); }
 
 .card.price-card {
-  min-height: 495px;
+  min-height: 536px;
   max-width: 350px;
   overflow: hidden;
   position: relative;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 8px 16px rgba(81, 107, 152, 0.24); }
   @media (max-width: 768px) {
     .card.price-card {
       min-height: auto; } }
   .card.price-card.popular {
-    border: 2px solid #0042FF; }
+    border: 4px solid #FFAA00;
+    position: relative;
+    border-radius: 20px; }
     .card.price-card.popular:before {
-      content: "popular";
+      content: "SAVE 60%";
       position: absolute;
-      top: 13px;
-      right: -123px;
+      top: 33px;
+      right: -111px;
       width: 300px;
       height: 27px;
       transform: rotate(45deg);
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 900;
-      color: white;
-      background: #0042FF;
+      color: #000;
+      background: #ffcc66;
       text-align: center;
       display: block;
       z-index: 99; }
   .card.price-card .card-header {
     position: relative;
-    border-radius: 0;
     border-bottom: 1px solid #E6EAEE;
     border-top: 10px solid #E6EAEE; }
     .card.price-card .card-header .card-promo {
       color: #002eb3; }
-    .card.price-card .card-header.pro-header {
-      border-top-color: #FFAA00; }
-    .card.price-card .card-header.team-header {
-      border-top-color: #FF4E4A; }
   .card.price-card .card-body {
     min-height: 240px; }
   .card.price-card .card-header, .card.price-card .card-body, .card.price-card .card-footer {

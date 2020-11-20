@@ -1,3 +1,44 @@
+.alert-promo{
+	background-image: linear-gradient(270deg, #0013FF 0%, #CC00FF 100%);
+	color:white;
+	border-radius:0;
+	margin: 0;
+	z-index: 99;
+	font-size: 17px;
+	padding:0px;
+	position:fixed;
+	top:0;
+	width:calc(100%-250px);
+	left:250px;
+	right:0;
+	@include breakpoint(md) {
+		display: none;
+	}
+	.btn{
+		margin:10px 0;
+		margin-left:10px;
+		background:$warning-color;
+		color:#000;
+		border:none;
+		&:hover, &:active{
+			background:tint($warning-color,20%)!important;
+			color:#000!important;
+			border:none!important;
+		}
+	}
+	.close{
+		box-shadow: none;
+		&:hover{
+			color:white;
+		}
+	}
+}
+
+
+
+
+
+
 .alert{
 	font-size: 14px;
 	.alert-link{
