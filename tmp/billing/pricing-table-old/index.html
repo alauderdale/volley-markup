@@ -18,278 +18,217 @@ Volley | Fast, easy feedback for your website"
 
 </head>
 <body class='billing billing_pricing-table-old billing_pricing-table-old_index'>
-<div class='main'>
-<a class='close-x menu-close' href='/products'>
-<div class='material-icons'>
+<div id='dashboard-container'>
+<div class='alert alert-promo alert-dismissible fade show' role='alert'>
+<div class='container text-center'>
+<div class='align-middle'>
+<div class='inline align-middle'>
+<strong>
+Black Friday Sale
+</strong>
+Get Volley PRO for
+<strong>
+$9/month
+</strong>
+for life
+</div>
+<div class='inline align-middle'>
+<a class='btn-primary btn' href='/billing/black-friday'>
+Claim deal
+</a>
+</div>
+</div>
+</div>
+<button aria-label='Close' class='close' data-dismiss='alert' type='button'>
+<span aria-hidden='true'>
+×
+</span>
+</button>
+</div>
+<div id='main-nav'>
+<a class='menu-close menu-toggle-action close-x d-lg-none' href='#'>
+<i class='material-icons'>
 clear
-</div>
+</i>
 </a>
-<section>
-<div class='container'>
-<!-- .row -->
-<!-- .col-lg-12 -->
-<!-- .alert-container -->
-<!-- .alert.alert-info.padding-top.padding-bottom -->
-<!-- .container.product-card-container.text-center -->
-<!-- %h3.no-margin-bottom -->
-<!-- %span.bold-font -->
-<!-- Oops: -->
-<!-- The plan you selected only allows for 4 projects. You currently have 5 projects. You'll need to trim down a bit to use the basic plan. -->
-<div class='row justify-content-center'>
-<div class='col-lg-8'>
-<h2 class='text-center medium-font'>
-Upgrade and take your process to the next level.
+<nav class='navbar admin-bar'>
+<div class='nav-item dropup'>
+<a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
+<img alt='Avatar' class='avatar avatar-xs quarter-margin-right align-middle' src='../../images/img_avatar.png'>
+<span class='medium-font menu-text align-middle'>
+Yvonne Joseph
+</span>
+<i class='material-icons align-middle'>
+unfold_more
+</i>
+</a>
+<div class='dropdown-menu dropdown-menu-top admin-menu'>
+<div class='dropdown-header'>
+<p class='medium-font no-margin-bottom text-color'>
+Alex Lauderdale
+</p>
+<h5 class='extra-light-text-color'>
+alauderdale+11111111111111@mac.com
+</h5>
+</div>
+<div class='dropdown-divider'></div>
+<a class='dropdown-item' href='/settings'>
+<i class='material-icons icon-left'>
+settings
+</i>
+Profile
+</a>
+<a class='dropdown-item' href='/settings/billing-default'>
+<i class='material-icons icon-left'>
+insert_drive_file
+</i>
+Subscription
+</a>
+<a class='dropdown-item' href='/settings/appsumo'>
+<img class='icon-left' src='../images/as-taco.svg' width='16px'>
+AppSumo
+</a>
+<div class='dropdown-divider'></div>
+<a class='dropdown-item' href='/welcome/login'>
+<i class='material-icons icon-left'>
+exit_to_app
+</i>
+Sign out
+</a>
+</div>
+</div>
+</nav>
+<div class='logo-container text-center'>
+<a class='navbar-brand' href='/products'>
+<img src='../../images/logo.svg' width='100px'>
+</a>
+</div>
+<nav class='navbar team-select-container'>
+<div class='nav-item dropdown workspace-selector'>
+<a class='nav-link dropdown-toggle medium-font menu-avatar' data-toggle='dropdown' href='#'>
+<div class='avatar-container inline-block align-middle'>
+<div class='avatar-default'>
+EC
+</div>
+</div>
+<p class='menu-text no-margin align-middle'>
+Eternal Contrast
+</p>
+<i class='material-icons align-middle'>
+unfold_more
+</i>
+</a>
+<div aria-labelledby='navbarDropdownMenuLink' class='dropdown-menu workspace-menu menu-avatar'>
+<a class='dropdown-item d-flex align-items-center active' href='#'>
+<div class='avatar-container'>
+<div class='avatar-default'>
+EC
+</div>
+</div>
+<span class='text p-2 mr-auto align-middle'>
+<p class='menu-title'>
+Eternal Contrast
+</p>
+<h5 class='light-text-color'>
+Team
+</h5>
+</span>
+</a>
+<a class='dropdown-item d-flex align-items-center' href='#'>
+<div class='avatar-container'>
+<img alt='Avatar' class='avatar avatar-xs' src='../../images/img_avatar.png' width='28px'>
+</div>
+<span class='text p-2 mr-auto align-middle'>
+<p class='menu-title'>
+Alex Lauderdale
+</p>
+<h5 class='light-text-color'>
+My projects
+</h5>
+</span>
+</a>
+<div class='dropdown-divider'></div>
+<a class='dropdown-item d-flex align-items-center menu-title' data-target='#newTeamModal' data-toggle='modal' href='#'>
+<div class='avatar-container invert-avatar'>
+<div class='avatar-default'>
++
+</div>
+</div>
+<span class='text p-2 mr-auto link-color'>
+Create a new team
+</span>
+</a>
+</div>
+</div>
+</nav>
+<nav class='navbar nav flex-column margin-bottom'>
+<a class='nav-link' href='/products/'>
+Projects
+</a>
+<a class='nav-link' href='/products/archived'>
+Archive
+</a>
+<a class='nav-link' href='/products/team'>
+Members
+</a>
+<a class='nav-link' href='/products/team-settings'>
+Team settings
+</a>
+</nav>
+<div class='upgrade-button-container'>
+<a class='btn btn-terciary' href='/billing/trial-expired' style='font-size:14px;'>
+Upgrade
+</a>
+</div>
+</div>
+<nav class='navbar fixed-top' id='mobile-nav'>
+<div class='container product-card-container'>
+<button class='btn btn-sm btn-flat menu-toggle menu-toggle-action' type='button'>
+<i class='material-icons'>
+menu
+</i>
+</button>
+<a class='navbar-brand mx-auto' href='/products'>
+<img src='../../images/logo.svg' width='90px'>
+</a>
+</div>
+</nav>
+<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='newTeamModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header no-border-bottom no-padding-bottom'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='padded no-padding-top no-padding-bottom'>
+<h2 class='text-center'>
+Create your team
 </h2>
-<p class='light-text text-center'>
-You've reached your 1 project limit. You can either archive or delete a project, or upgrade for more projects!
+<p class='light-text-color text-center'>
+Create a workspace where you can colloborate on projects with your whole team
 </p>
+<div class='double-margin-bottom'>
+<div class='position-relative'>
+<input autofocus='' class='input-lg form-control form-control-lg' placeholder='E.g. Acme or Acme design' type='text'>
 </div>
 </div>
-</div>
-</section>
-<section class='no-padding-top no-padding-bottom'>
-<div class='container'>
-<div class='row justify-content-center'>
-<div class='col-12'>
-<div class='row justify-content-center'>
-<div class='col-sm-12 col-md-12 col-lg-4 col-xl-4 margin-bottom'>
-<div class='card price-card margin-auto'>
-<div class='card-header' style='border-top-color:#B4BBC6;'>
-<h1 class='medium-font margin-bottom'>
-Basic
-</h1>
-<h1 class='display-5 inline'>
-<span class='price bold-font'>
-$
-</span>
-<span class='bold-font dollar-ammount'>
-0
-</span>
-<span class='month'>
-/ month
-</span>
-</h1>
-</div>
-<div class='card-body'>
-<!-- %h5.text-uppercase.bold-font.light-text-color -->
-<!-- Get the basics free -->
-<ul class='card-list list-unstyled icon-list-better check-list'>
-<li>
-<span class='bold-font'>
-1
-</span>
-project
-</li>
-<li>
-<span class='bold-font'>
-50
-</span>
-notes
-</li>
-<li class='align-middle'>
-<span class='bold-font'>
-1
-</span>
-user
-<i class='material-icons cursor-pointer' data-toggle='tooltip' title='A user can create projects and collaborate with other users within a Volley workspace.'>
-info
-</i>
-</li>
-<li>
-<span class='bold-font'>
-Email
-</span>
-support
-</li>
-<hr>
-<li>
-<span class='bold-font'>
-Unlimited
-</span>
-collaborators
-<i class='material-icons cursor-pointer' data-toggle='tooltip' title='A collaborator is a guest invited into a simgle project.'>
-info
-</i>
-</li>
-<li>
-<span class='bold-font'>
-User
-</span>
-mentions & notifications
-</li>
-</ul>
-</div>
-<div class='card-footer text-center no-padding-top padding-bottom'>
-<a class='btn btn-secondary btn-block btn-lg disabled' href='/billing/pay'>
-Current plan
-</a>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-12 col-lg-4 col-xl-4 margin-bottom'>
-<div class='card price-card margin-auto'>
-<div class='card-header' style='border-top-color:#FFAA00;'>
-<h1 class='medium-font margin-bottom'>
-Pro
-</h1>
-<h1 class='display-5 inline'>
-<span class='price bold-font'>
-$
-</span>
-<span class='bold-font dollar-ammount'>
-25
-</span>
-<span class='month'>
-/ month
-</span>
-</h1>
-</div>
-<div class='card-body'>
-<!-- %h5.text-uppercase.bold-font.light-text-color -->
-<!-- Everything in Basic, plus -->
-<ul class='card-list list-unstyled icon-list-better check-list'>
-<li>
-<span class='bold-font'>
-Unlimited
-</span>
-projects
-</li>
-<li>
-<span class='bold-font'>
-Unlimited
-</span>
-notes
-</li>
-<li>
-<span class='bold-font'>
-4
-</span>
-users
-<i class='material-icons cursor-pointer' data-toggle='tooltip' title='A user can create projects and collaborate with other users within a Volley workspace.'>
-info
-</i>
-</li>
-<li>
-<span class='bold-font'>
-Priority
-</span>
-support
-</li>
-<hr>
-<li>
-<span class='bold-font'>
-Unlimited
-</span>
-collaborators
-<i class='material-icons cursor-pointer' data-toggle='tooltip' title='A collaborator is a guest invited into a simgle project.'>
-info
-</i>
-</li>
-<li>
-<span class='bold-font'>
-User
-</span>
-mentions & notifications
-</li>
-</ul>
-</div>
-<div class='card-footer text-center no-padding-top padding-bottom'>
-<a class='btn btn-primary btn-block btn-lg' href='/billing/pay'>
-Get Pro
-</a>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-12 col-lg-4 col-xl-4 margin-bottom'>
-<div class='card price-card margin-auto'>
-<div class='card-header' style='border-top-color:#FF4E4A;'>
-<h1 class='medium-font margin-bottom'>
-Pro +
-</h1>
-<h1 class='display-5 inline'>
-<span class='price bold-font'>
-$
-</span>
-<span class='bold-font dollar-ammount'>
-45
-</span>
-<span class='month'>
-/ month
-</span>
-</h1>
-</div>
-<div class='card-body'>
-<!-- %h5.text-uppercase.bold-font.light-text-color -->
-<!-- Everything in Pro, plus -->
-<ul class='card-list list-unstyled icon-list-better check-list'>
-<li>
-<span class='bold-font'>
-Unlimited
-</span>
-projects
-</li>
-<li>
-<span class='bold-font'>
-Unlimited
-</span>
-notes
-</li>
-<li>
-<span class='bold-font'>
-7
-</span>
-users
-<i class='material-icons cursor-pointer' data-toggle='tooltip' title='A user can create projects and collaborate with other users within a Volley workspace.'>
-info
-</i>
-</li>
-<li>
-<span class='bold-font'>
-Priority
-</span>
-support
-</li>
-<hr>
-<li>
-<span class='bold-font'>
-Unlimited
-</span>
-collaborators
-<i class='material-icons cursor-pointer' data-toggle='tooltip' title='A collaborator is a guest invited into a simgle project.'>
-info
-</i>
-</li>
-<li>
-<span class='bold-font'>
-User
-</span>
-mentions & notifications
-</li>
-</ul>
-</div>
-<div class='card-footer text-center no-padding-top padding-bottom'>
-<a class='btn btn-primary btn-block btn-lg' href='/billing/pay-team'>
-Get Team
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section>
 <div class='text-center'>
-<img src='../images/appsumo-logo.svg' width='140px'>
-<p class='medium-font no-margin-bottom'>
-Have an AppSumo code?
-<a href='/settings/appsumo'>
-Redeem here
-</a>
-</p>
+<button class='btn btn-primary btn-lg' data-dismiss='modal' type='button'>
+Create team
+</button>
 </div>
-</section>
+</div>
+</div>
+<div class='modal-footer no-border-top'></div>
+</div>
+</div>
+</div>
+
+<div class='main'>
+
+</div>
 
 </div>
 </body>

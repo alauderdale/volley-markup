@@ -1,0 +1,119 @@
+;;;
+
+"layout": "full-screen"
+
+;;;
+
+%section
+	.container
+		.row.justify-content-center
+			.col-lg-5
+				%h1
+					Confirm your subscription
+				%p
+					Enter payment details to subscribe
+				%form
+					.form-row.margin-bottom
+						.form-group.col-12
+							%label
+								Name on card
+							%input.form-control.form-control-lg{:type=>"text"}
+					.form-row.margin-bottom
+						.form-group.col-6
+							%label
+								Card number
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"0000 0000 0000 0000"}
+						.form-group.col-3
+							%label
+								Expiration
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"10/20"}
+						.form-group.col-3
+							%label
+								CVV
+							%input.form-control.form-control-lg{:type=>"text", :placeholder=>"123"}
+					.form-row.margin-bottom
+						.form-group.col-12
+							%img{:src=>"../images/cards.png",:width=>"220px"}
+					.form-row.margin-bottom
+						.form-group.col-12
+							%button.btn.btn-block.btn-primary.btn-lg{:type=>"submit"}
+								Pay $9 and upgrade now
+					.text-center
+						%h4.align-middle
+							%i.material-icons.align-middle
+								lock
+							Your payment is secure
+					%hr
+					.double-margin-bottom
+						%p
+							"Volley is without doubt the biggest timesaver I have come across in a very long time. It literally takes seconds to create a note that includes both a screenshot of the problem and a written description."
+						.media
+							%img{:src=>"/images/avatar-mathias.png", :width=>"47px"}
+							.media-body.half-margin-left
+								%h4.no-margin-bottom
+									%span.bold-font
+										Mathias Hoffmann
+									%span.light-text-color
+										CTO
+								%img{:src=>"/images/denti-logo.png", :width=>"70px"}
+			.col-lg-5
+				.padded
+					.card.price-card.margin-auto.popular{:style=>"min-height:auto;"}
+						.card-header{:style=>"border-top-color:#FFAA00;"}
+							%h1.medium-font.margin-bottom
+								Pro
+							%h1.display-5.inline.strikethrough
+								%span.price.bold-font
+									$
+								%span.bold-font.dollar-ammount
+									25
+							%h1.display-5.inline.quarter-margin-left
+								%span.price.bold-font
+									$
+								%span.bold-font.dollar-ammount
+									9
+								%span.month
+									\/ month
+						.card-body
+							/ %h5.text-uppercase.bold-font.light-text-color
+							/ 	Everything in Basic, plus
+							%ul.card-list.list-unstyled.icon-list-better.check-list
+								%li
+									%span.bold-font
+										Unlimited
+									projects
+								%li
+									%span.bold-font
+										3
+									users
+									%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A user can create projects and collaborate with other users within a Volley workspace."}
+										info
+								
+								
+								%li
+									%span.bold-font
+										Unlimited 
+									notes
+								%li
+									%span.bold-font
+										Priority 
+									support
+								%hr
+								%li
+									%span.bold-font
+										Unlimited 
+									collaborators
+									%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A collaborator is a guest invited into a simgle project."}
+										info
+								%li
+									%span.bold-font
+										User 
+									mentions & notifications
+					.text-center.double-margin-top
+						%p.half-margin-bottom
+							Cancel anytime
+						%h4.light-text-color
+							Your annual plan starts on 6/3/19 at $52.50/yr and renews automatically on 6/3/20 at $69.99. You can cancel any time.
+
+
+
