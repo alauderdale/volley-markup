@@ -26,100 +26,6 @@
 
 
 
-#shareModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
-  .modal-dialog{:role => "document"}
-    .modal-content
-      .modal-header.no-border-bottom.no-padding-bottom
-        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-          %span{"aria-hidden" => "true"} ×
-      .modal-body
-        .padded.no-padding-top.no-padding-bottom
-          %h2.text-center
-            Invite prople to this product
-          %p.light-text-color.text-center
-            Invite others to work in this workspace
-          .double-margin-bottom
-            .position-relative
-              %input.input-lg.form-control.form-control-lg{:type=>"text", :autofocus=>"", :style=>"padding-left:170px; position:relative;"}
-                .chip{:style=>"position:absolute; top:7px; left:7px;"}
-                  john@doe.com
-                  .close
-                    %i.material-icons
-                      cancel
-          .text-center
-            %button.btn.btn-primary.btn-lg{:type => "button", "data-dismiss"=>"modal"} 
-              Send invite
-          .double-margin-top
-            %h5.light-text-color.margin-bottom
-              Who has access
-            .people-list
-              .media.half-margin-top.half-padding-top.half-padding-bottom
-                .avatar.avatar-initial.avatar-xs.half-margin-right
-                  JD
-                .media-body
-                  .row
-                    .col-md-8
-                      %h4.bold-font.no-margin-bottom
-                        =lorem.name
-                      %h5.light-font-name
-                        Owner •
-                        =lorem.email
-                    .col-md-4
-                      %button.btn.btn-secondary.btn-sm.disabled.btn-block.btn-label{:type=>"button", "data-toggle"=>"tooltip", :title=>"Owner can't be removed"}
-                        owner
-              .media.half-margin-top.half-padding-top.half-padding-bottom
-                .avatar.avatar-initial.avatar-xs.half-margin-right
-                  JD
-                .media-body
-                  .row
-                    .col-md-8
-                      %h4.bold-font.no-margin-bottom
-                        =lorem.name
-                      %h5.light-font-name
-                        Member •
-                        =lorem.email
-                    .col-md-4
-                      %button.btn.btn-secondary.btn-label.btn-sm.disabled.btn-block{:type=>"button", "data-toggle"=>"tooltip", :title=>"Team members can't be removed"}
-                        Team member
-              -2.times do
-                .media.half-margin-top.half-padding-top.half-padding-bottom
-                  .avatar.avatar-initial.avatar-xs.half-margin-right
-                    JD
-                  .media-body
-                    .row
-                      .col-md-8
-                        %h4.bold-font.no-margin-bottom
-                          =lorem.name
-                        %h5.light-font-name
-                          Guest •
-                          =lorem.email
-                      .col-md-4
-                        %button.btn.btn-secondary.btn-sm.btn-block{:type=>"button"}
-                          Remove
-              .media.half-margin-top.half-padding-top.half-padding-bottom
-                .avatar.avatar-initial.avatar-xs.half-margin-right
-                  JD
-                .media-body
-                  .row
-                    .col-md-8
-                      %h4.bold-font.no-margin-bottom.extra-light-text-color
-                        =lorem.name
-                        (invited)
-                      %h5.light-font-name
-                        Invited •
-                        =lorem.email
-                    .col-md-4
-                      %button.btn.btn-secondary.btn-sm.btn-block{:type=>"button", "data-toggle" => "dropdown"}
-                        •••
-                      .dropdown-menu.dropdown-menu-right
-                        %button.dropdown-item{:type=>"button"} 
-                          Resend invite
-                        %button.dropdown-item.delete-comment{:type=>"button", :onclick=>"$('.comment-list-confirm-overlay').addClass('visible').removeClass('invisible');"} 
-                          Remove
-      .modal-footer.no-border-top
-
-      
-
 
 
 #shareModalGuest.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
@@ -131,7 +37,7 @@
       .modal-body
         .padded.no-padding-top.no-padding-bottom
           %h2.text-center
-            Invite prople to this product
+            Invite prople to this project
           %p.light-text-color.text-center
             Invite others to work in this workspace
           .double-margin-bottom
@@ -187,7 +93,7 @@
                       %h4.bold-font.no-margin-bottom
                         =lorem.name
                       %h5.light-font-name
-                        Guest •
+                        Collaborator •
                         =lorem.email
                     .col-md-4
                       %button.btn.btn-secondary.btn-sm.btn-block
@@ -201,7 +107,7 @@
                       %h4.bold-font.no-margin-bottom
                         =lorem.name
                       %h5.light-font-name
-                        Guest •
+                        Collaborator •
                         =lorem.email
                     .col-md-4
                       %button.btn.btn-secondary.btn-sm.btn-block
