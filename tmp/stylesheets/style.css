@@ -622,18 +622,18 @@ section {
       content: "check_circle"; }
 
 .list-of-options.style-checkbox .list-group input[type="checkbox"] + .list-group-item:before {
-  content: "check_box_outline_blank";
+  content: "radio_button_unchecked";
   transition: all 0.2s linear 0s; }
 
 .list-of-options.style-checkbox .list-group input[type="checkbox"]:checked + .list-group-item:before {
-  content: "check_box"; }
+  content: "check_circle"; }
 
 .list-of-options.style-checkbox .list-group input[type="radio"] + .list-group-item:before {
-  content: "check_box_outline_blank";
+  content: "radio_button_unchecked";
   transition: all 0.2s linear 0s; }
 
 .list-of-options.style-checkbox .list-group input[type="radio"]:checked + .list-group-item:before {
-  content: "check_box"; }
+  content: "check_circle"; }
 
 .list-of-options.simple .list-group-item {
   margin-bottom: 0px;
