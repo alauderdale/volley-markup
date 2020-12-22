@@ -3,9 +3,16 @@ $product-card-width:448px;
 
 $card-border-radius:$base-border-radius-2;
 
+.card-checkbox-fix{
+	border:1px solid $border-color;
+	border-radius: $card-border-radius;
+	display:block;	
+}
+
 .card{
 	border:1px solid $border-color;
 	border-radius: $card-border-radius;
+	display:block;
 	.card-header{
 		background:white;
 		border-top-left-radius:$card-border-radius;

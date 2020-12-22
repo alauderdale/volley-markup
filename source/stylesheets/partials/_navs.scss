@@ -192,37 +192,37 @@
 		  }
 		}
 	}
-	// &.simple{
-	// 	.list-group-item {
-	// 		margin-bottom: 0px;
-	// 		border:none;
-	// 		padding:10px 0 10px 0;
-	// 	    &:hover{
-	// 	    	background-color: transparent;
-	// 	    }
-	// 	}
-	// 	.list-group input {
-	// 	  &[type="checkbox"] {
-	// 	    + .list-group-item {
-	// 	      &:before {
-	// 	    	left: -5px;
-	// 	      }
-	// 	    }
-	// 	    &:checked + .list-group-item {
-	// 			background-color: transparent;
-	// 	    }
-	// 	  }
-	// 	  &[type="radio"] {
-	// 	    + .list-group-item {
-	// 	      &:before {
-	// 	    	left: -5px;
-	// 	      }
-	// 	    }
-	// 	    &:checked + .list-group-item {
-	// 	    	background-color: transparent;
-	// 	    }
-	// 	  }
-	// 	}
-	// }
+	&.simple{
+		.list-group-item {
+			margin-bottom: 0px;
+			border:none;
+			padding:10px 0 10px 0;
+		    &:hover{
+		    	background-color: transparent;
+		    }
+		}
+		.list-group input {
+		  &[type="checkbox"] {
+		    + .list-group-item {
+		      &:before {
+		    	left: -5px;
+		      }
+		    }
+		    &:checked + .list-group-item {
+				background-color: transparent;
+		    }
+		  }
+		  &[type="radio"] {
+		    + .list-group-item {
+		      &:before {
+		    	left: -5px;
+		      }
+		    }
+		    &:checked + .list-group-item {
+		    	background-color: transparent;
+		    }
+		  }
+		}
+	}
 
 }

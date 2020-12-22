@@ -635,6 +635,25 @@ section {
 .list-of-options.style-checkbox .list-group input[type="radio"]:checked + .list-group-item:before {
   content: "check_box"; }
 
+.list-of-options.simple .list-group-item {
+  margin-bottom: 0px;
+  border: none;
+  padding: 10px 0 10px 0; }
+  .list-of-options.simple .list-group-item:hover {
+    background-color: transparent; }
+
+.list-of-options.simple .list-group input[type="checkbox"] + .list-group-item:before {
+  left: -5px; }
+
+.list-of-options.simple .list-group input[type="checkbox"]:checked + .list-group-item {
+  background-color: transparent; }
+
+.list-of-options.simple .list-group input[type="radio"] + .list-group-item:before {
+  left: -5px; }
+
+.list-of-options.simple .list-group input[type="radio"]:checked + .list-group-item {
+  background-color: transparent; }
+
 .panel {
   border: 1px solid #0042FF;
   border-radius: 8px;
@@ -781,9 +800,15 @@ section {
   .toast p {
     margin: 0; }
 
+.card-checkbox-fix {
+  border: 1px solid #E6EAEE;
+  border-radius: 16px;
+  display: block; }
+
 .card {
   border: 1px solid #E6EAEE;
-  border-radius: 16px; }
+  border-radius: 16px;
+  display: block; }
   .card .card-header {
     background: white;
     border-top-left-radius: 16px;
