@@ -17,7 +17,7 @@ Volley | Fast, easy feedback for your website"
 <script src="../../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
 </head>
-<body class='settings settings_billing-default settings_billing-default_index'>
+<body class='settings settings_notifications settings_notifications_index'>
 <div id='dashboard-container'>
 <!-- .alert.alert-promo.alert-dismissible.fade.show{:role => "alert"} -->
 <!-- .container.text-center -->
@@ -46,7 +46,7 @@ clear
 <a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
 <img alt='Avatar' class='avatar avatar-xs quarter-margin-right align-middle' src='../../images/img_avatar.png'>
 <span class='medium-font menu-text align-middle'>
-Angelo Matthews
+Harrison Moss
 </span>
 <i class='material-icons align-middle'>
 unfold_more
@@ -234,10 +234,10 @@ Prifile
 <a class='nav-link' href='/settings/password'>
 Password
 </a>
-<a class='nav-link' href='/settings/notifications'>
+<a class='nav-link active' href='/settings/notifications'>
 Notifications
 </a>
-<a class='nav-link active' href='/settings/billing-default'>
+<a class='nav-link' href='/settings/billing-appsumo'>
 Subbscription
 </a>
 <a class='nav-link' href='/settings/appsumo'>
@@ -247,183 +247,130 @@ AppSumo
 <div class='card margin-bottom'>
 <div class='card-body'>
 <div class='row align-items-center'>
-<div class='col'>
-<p class='medium-font no-margin-bottom'>
-Professional plan
+<div class='col-12'>
+<p class='medium-font'>
+Send me an email when someone:
 </p>
-<h4 class='light-text-color no-margin-bottom'>
-$10/month
-</h4>
-<ul class='list-unstyled margin-top icon-list no-margin-bottom'>
-<li>
-<i class='material-icons'>
-check
-</i>
-Unlimited projects
-</li>
-<li>
-<i class='material-icons'>
-check
-</i>
-Unlimited comments
-</li>
-<li>
-<i class='material-icons'>
-check
-</i>
-1 user
-</li>
-</ul>
-</div>
-<div class='col-4 text-center'>
-<div class='float-right'>
-<a class='btn btn-primary margin-bottom' href='/billing/trial-expired'>
-Change plan
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='card margin-bottom'>
-<div class='card-body'>
-<div class='row align-items-center'>
+<div class='list-of-options simple style-checkbox'>
+<div class='margin-bottom'>
+<div class='list-group'>
+<div class='list-group-inner'>
+<div>
+<input checked='checked' id='Checkbox0' name='RadioInputName' type='checkbox' value='Value2'>
+<label class='list-group-item' for='Checkbox0'>
+<div class='row align-items-center margin-left'>
 <div class='col'>
-<p class='medium-font no-margin-bottom'>
-Payment method
-</p>
-<h4 class='light-text-color no-margin-bottom'>
-Enter your payment details.
+<h4 class='quarter-margin-bottom'>
+Replies to any note
 </h4>
 </div>
+</div>
+</label>
+</div>
+</div>
+</div>
+<div class='list-group disabled'>
+<div class='list-group-inner'>
+<div>
+<input checked='checked' disabled='disabled' id='Checkbox1' name='RadioInputName' type='checkbox' value='Value2'>
+<label class='list-group-item' for='Checkbox1'>
+<div class='row align-items-center margin-left'>
 <div class='col'>
-<p class='no-margin-bottom text-right'>
-Visa ending in 4444, exp: 09/2020
-<button class='btn btn-link margin-left' data-target='#changeCardModal' data-toggle='modal' type='button'>
-Update
-</button>
-</p>
+<h4 class='quarter-margin-bottom'>
+Replies to a note I've made
+</h4>
+</div>
+</div>
+</label>
 </div>
 </div>
 </div>
-</div>
-<div class='card'>
-<div class='card-body'>
-<div class='row align-items-center'>
+<div class='list-group disabled'>
+<div class='list-group-inner'>
+<div>
+<input checked='checked' disabled='disabled' id='Checkbox2' name='RadioInputName' type='checkbox' value='Value2'>
+<label class='list-group-item' for='Checkbox2'>
+<div class='row align-items-center margin-left'>
 <div class='col'>
-<p class='medium-font no-margin-bottom'>
-Billing history
-</p>
-<h4 class='light-text-color no-margin-bottom'>
-View billing history for your Volley account.
+<h4 class='quarter-margin-bottom'>
+Replies to a note I've replied to
 </h4>
 </div>
 </div>
-<div class='invoice-list margin-top list-default'>
-<div class='row align-items-center'>
-<div class='col-sm-3'>
-<h4 class='no-margin'>
-November 27, 2018
-</h4>
+</label>
 </div>
+</div>
+</div>
+</div>
+<div class='margin-bottom'>
+<div class='list-group'>
+<div class='list-group-inner'>
+<div>
+<input id='Checkbox3' name='RadioInputName' type='checkbox' value='Value2'>
+<label class='list-group-item' for='Checkbox3'>
+<div class='row align-items-center margin-left'>
 <div class='col'>
-<h4 class='light-text-color no-margin'>
-$20.00
+<h4 class='quarter-margin-bottom'>
+Resolves any note
 </h4>
 </div>
+</div>
+</label>
+</div>
+</div>
+</div>
+<div class='list-group'>
+<div class='list-group-inner'>
+<div>
+<input id='Checkbox4' name='RadioInputName' type='checkbox' value='Value2'>
+<label class='list-group-item' for='Checkbox4'>
+<div class='row align-items-center margin-left'>
 <div class='col'>
-<h4 class='no-margin'>
-Pro subscription
+<h4 class='quarter-margin-bottom'>
+Resolves a note I've made
 </h4>
 </div>
+</div>
+</label>
+</div>
+</div>
+</div>
+<div class='list-group'>
+<div class='list-group-inner'>
+<div>
+<input id='Checkbox5' name='RadioInputName' type='checkbox' value='Value2'>
+<label class='list-group-item' for='Checkbox5'>
+<div class='row align-items-center margin-left'>
 <div class='col'>
-<h4 class='text-right no-margin'>
-<a href='#'>
-View PDF
-</a>
+<h4 class='quarter-margin-bottom'>
+Resolves a note I've replied to
 </h4>
 </div>
 </div>
-<div class='row align-items-center'>
-<div class='col-sm-3'>
-<h4 class='no-margin'>
-November 27, 2018
-</h4>
+</label>
 </div>
+</div>
+</div>
+</div>
+<div class='margin-bottom'>
+<div class='list-group'>
+<div class='list-group-inner'>
+<div>
+<input id='Checkbox6' name='RadioInputName' type='checkbox' value='Value2'>
+<label class='list-group-item' for='Checkbox6'>
+<div class='row align-items-center margin-left'>
 <div class='col'>
-<h4 class='light-text-color no-margin'>
-$20.00
-</h4>
-</div>
-<div class='col'>
-<h4 class='no-margin'>
-Pro subscription
-</h4>
-</div>
-<div class='col'>
-<h4 class='text-right no-margin'>
-<a href='#'>
-View PDF
-</a>
+<h4 class='quarter-margin-bottom'>
+Creates a note
 </h4>
 </div>
 </div>
-<div class='row align-items-center'>
-<div class='col-sm-3'>
-<h4 class='no-margin'>
-November 27, 2018
-</h4>
-</div>
-<div class='col'>
-<h4 class='light-text-color no-margin'>
-$20.00
-</h4>
-</div>
-<div class='col'>
-<h4 class='no-margin'>
-Pro subscription
-</h4>
-</div>
-<div class='col'>
-<h4 class='text-right no-margin'>
-<a href='#'>
-View PDF
-</a>
-</h4>
-</div>
-</div>
-<div class='row align-items-center'>
-<div class='col-sm-3'>
-<h4 class='no-margin'>
-November 27, 2018
-</h4>
-</div>
-<div class='col'>
-<h4 class='light-text-color no-margin'>
-$20.00
-</h4>
-</div>
-<div class='col'>
-<h4 class='no-margin'>
-Pro subscription
-</h4>
-</div>
-<div class='col'>
-<h4 class='text-right no-margin'>
-<a href='#'>
-View PDF
-</a>
-</h4>
+</label>
 </div>
 </div>
 </div>
-<div class='row'>
-<div class='col'>
-<h4 class='margin-top'>
-<a href='#'>
-Show full invoice history
-</a>
-</h4>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -432,67 +379,6 @@ Show full invoice history
 </div>
 </div>
 </section>
-<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal' id='changeCardModal' role='dialog' tabindex='-1'>
-<div class='modal-dialog' role='document'>
-<div class='modal-content'>
-<div class='modal-header'>
-<h2 class='padding-left'>
-Update billing information
-</h2>
-<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
-<span aria-hidden='true'>×</span>
-</button>
-</div>
-<div class='modal-body'>
-<div class='padded no-padding-top no-padding-bottom'>
-<form>
-<div class='form-row margin-bottom'>
-<div class='form-group col-12'>
-<label>
-Name on card
-</label>
-<input class='form-control form-control-lg' type='text'>
-</div>
-</div>
-<div class='form-row margin-bottom'>
-<div class='form-group col-6'>
-<label>
-Card number
-</label>
-<input class='form-control form-control-lg' placeholder='0000 0000 0000 0000' type='text'>
-</div>
-<div class='form-group col-3'>
-<label>
-Expire date
-</label>
-<input class='form-control form-control-lg' placeholder='10/20' type='text'>
-</div>
-<div class='form-group col-3'>
-<label>
-CVV
-</label>
-<input class='form-control form-control-lg' placeholder='123' type='text'>
-</div>
-</div>
-<div class='form-row margin-bottom'>
-<div class='form-group col-12'>
-<img src='../images/cards.png' width='220px'>
-</div>
-</div>
-</form>
-</div>
-</div>
-<div class='modal-footer no-border-top'>
-<button class='btn btn-link' data-dismiss='modal' tyle='button'>
-Cancel
-</button>
-<button class='btn btn-primary' data-dismiss='modal' tyle='button'>
-Save changes
-</button>
-</div>
-</div>
-</div>
-</div>
 
 </div>
 
