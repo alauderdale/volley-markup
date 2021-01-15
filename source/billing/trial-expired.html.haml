@@ -4,7 +4,7 @@
 
 ;;;
 
-%section
+%section.no-padding-bottom
 	.container
 		/ .row
 		/ 	.col-lg-12
@@ -26,6 +26,23 @@
 
 %section.no-padding-top.no-padding-bottom
 	.container
+		.row.text-center
+			.col-12
+				.margin-top.double-margin-bottom
+					.form-check.form-check-inline
+						%input#inlineRadio1.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option1"}
+							%label.form-check-label{:for => "inlineRadio1"} 
+								%h3.no-margin.medium-font
+									Billed monthly
+					.form-check.form-check-inline
+						%input#inlineRadio2.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option2", :checked=>"checked"}
+							%label.form-check-label{:for => "inlineRadio2"} 
+								%h3.no-margin.medium-font
+									Billed annually (30% savings)
+
+
+
+
 		.row.justify-content-center
 			.col-12
 				.row.justify-content-center
@@ -41,6 +58,8 @@
 										0
 									%span.month
 										\/ month
+								%h5.no-margin-bottom.half-margin-top
+									&nbsp;
 							.card-body
 								/ %h5.text-uppercase.bold-font.light-text-color
 								/ 	Get the basics free
@@ -57,7 +76,7 @@
 										%span.bold-font
 											1
 										user
-										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A user can create projects and collaborate with other users within a Volley workspace."}
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"You are limited to 1 User who can create 1 project, but you can invite unlimited colloborator accounts into your project."}
 											info
 									%li
 										%span.bold-font
@@ -68,7 +87,7 @@
 										%span.bold-font
 											Unlimited 
 										collaborators
-										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A collaborator is a guest invited into a simgle project."}
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
 											info
 									%li
 										%span.bold-font
@@ -89,9 +108,11 @@
 									%span.price.bold-font
 										$
 									%span.bold-font.dollar-ammount
-										25
+										17
 									%span.month
 										\/ month
+								%h5.no-margin-bottom.half-margin-top
+									Billed yearly
 							.card-body
 								/ %h5.text-uppercase.bold-font.light-text-color
 								/ 	Everything in Basic, plus
@@ -108,7 +129,7 @@
 										%span.bold-font
 											4
 										users
-										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A user can create projects and collaborate with other users within a Volley workspace."}
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"You only pay for accounts that can create projects. A User account can create and join projects within a shared Volley workspace. Collaborators are invited into single projects. Collaborator accounts are completely free."}
 											info
 									%li
 										%span.bold-font
@@ -119,7 +140,7 @@
 										%span.bold-font
 											Unlimited 
 										collaborators
-										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A collaborator is a guest invited into a simgle project."}
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
 											info
 									%li
 										%span.bold-font
@@ -138,9 +159,11 @@
 									%span.price.bold-font
 										$
 									%span.bold-font.dollar-ammount
-										45
+										30
 									%span.month
 										\/ month
+								%h5.no-margin-bottom.half-margin-top
+									Billed yearly
 							.card-body
 								/ %h5.text-uppercase.bold-font.light-text-color
 								/ 	Everything in Pro, plus
@@ -157,7 +180,7 @@
 										%span.bold-font
 											7
 										users
-										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A user can create projects and collaborate with other users within a Volley workspace."}
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"You only pay for accounts that can create projects. A User account can create and join projects within a shared Volley workspace. Collaborators are invited into single projects. Collaborator accounts are completely free."}
 											info
 									%li
 										%span.bold-font
@@ -169,7 +192,7 @@
 										%span.bold-font
 											Unlimited 
 										collaborators
-										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"A collaborator is a guest invited into a simgle project."}
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
 											info
 									%li
 										%span.bold-font
