@@ -66,30 +66,42 @@
         %i.material-icons.align-middle
           unfold_more
       .dropdown-menu.workspace-menu.menu-avatar{"aria-labelledby" => "navbarDropdownMenuLink"}
-        %a.dropdown-item.d-flex.align-items-center.active{:href => "#"} 
-          .avatar-container
-            .avatar-default
-              EC
-          %span.text.p-2.mr-auto.align-middle
-            %p.menu-title
-              Eternal Contrast
-            %h5.light-text-color
-              Team
-        %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
-          .avatar-container
-            %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png", :width=>"28px"}
-          %span.text.p-2.mr-auto.align-middle
-            %p.menu-title
-              Alex Lauderdale
-            %h5.light-text-color
-              My projects
-        .dropdown-divider
-        %a.dropdown-item.d-flex.align-items-center.menu-title{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#newTeamModal"} 
-          .avatar-container.invert-avatar
-            .avatar-default
-              +
-          %span.text.p-2.mr-auto.link-color
-            Create a new team
+        .workspace-menu-inner
+          %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
+            .avatar-container
+              %img.avatar.avatar-xs{:alt => "Avatar", :src => "/images/img_avatar.png", :width=>"28px"}
+            %span.text.p-2.mr-auto.align-middle
+              %p.menu-title
+                Alex Lauderdale
+              %h5.light-text-color
+                My projects
+          %a.dropdown-item.d-flex.align-items-center.active{:href => "#"} 
+            .avatar-container
+              .avatar-default
+                EC
+            %span.text.p-2.mr-auto.align-middle
+              %p.menu-title
+                Eternal Contrast
+              %h5.light-text-color
+                Team
+          - 20.times do
+            %a.dropdown-item.d-flex.align-items-center{:href => "#"} 
+              .avatar-container
+                .avatar-default
+                  EC
+              %span.text.p-2.mr-auto.align-middle
+                %p.menu-title
+                  Eternal Contrast
+                %h5.light-text-color
+                  Team
+        .add-team-option
+          .dropdown-divider
+          %a.dropdown-item.d-flex.align-items-center.menu-title{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#newTeamModal"} 
+            .avatar-container.invert-avatar
+              .avatar-default
+                +
+            %span.text.p-2.mr-auto.link-color
+              Create a new team
   %nav.navbar.nav.flex-column.margin-bottom
     %a.nav-link{:href=>"/products/", :class => (current_page.data.title === "All projects") ? "active" : ""}
       Projects

@@ -1099,6 +1099,24 @@ section {
     .dropdown-menu .dropdown-item .icon-left {
       margin-right: 12px; }
 
+.workspace-menu-inner {
+  position: relative;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  background: white;
+  max-height: 450px;
+  padding-bottom: 50px; }
+
+.add-team-option {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: white;
+  width: 100%; }
+  .add-team-option .dropdown-divider {
+    margin-top: 0; }
+
 .workspace-menu {
   min-width: 280px;
   position: absolute !important;
