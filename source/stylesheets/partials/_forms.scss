@@ -60,6 +60,20 @@
 	  	color: $link-color;
   	}
   }
+  &.promo-code-chip{
+    border:1px solid $link-color;
+    background:white;
+    color:$text-color;
+    height:44px;
+    line-height: 40px;
+    border-radius: 100px;
+    .close{
+      line-height: 40px;
+      i{
+
+      }
+    }
+  }
 }
 
 //appends

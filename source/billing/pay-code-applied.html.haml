@@ -20,20 +20,18 @@
 						.col-9
 							%input.form-control{:type=>"text"}
 						.col-3
-							%a.btn.btn-secondary.btn-block{:href=>"/billing/pay-code-applied", :style=>"padding:8px;"}
+							%a.btn.btn-secondary.btn-block{:href=>"", :style=>"padding:8px;"}
 								Apply
 							
 				.double-margin-top.double-margin-bottom
-					.form-check.form-check-inline.custom-radio.quarter-margin-bottom
-						%input#inlineRadio1.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option1"}
-							%label.form-check-label{:for => "inlineRadio1"} 
-								%h3.no-margin.medium-font
-									Billed monthly
-					.form-check.form-check-inline.custom-radio.quarter-margin-bottom
-						%input#inlineRadio2.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option2", :checked=>"checked"}
-							%label.form-check-label{:for => "inlineRadio2"} 
-								%h3.no-margin.medium-font
-									Billed yearly (30% savings)
+					.chip.full-width.promo-code-chip
+						Applied: 
+						%span.bold-font
+							1MONTHFREE - 100% OFF
+						%a.close{:href=>"/billing/pay"}
+							.material-icons.align-middle
+								clear
+						
 				%form
 					.form-row
 						.form-group.col-12
@@ -87,17 +85,14 @@
 							%h1.medium-font
 								Volley Pro
 							%h4
-								Total per year
+								Total per month
 							%h1.display-5.inline
 								%span.price.bold-font
 									$
 								%span.bold-font.dollar-ammount
-									204
-								.line-through.inline{:style=>"font-size:16px; position:relative; top:-20px;"}
-									%span.regular-font
-										$
-									%span.regular-font{:style=>"text-decoration:line-through;"}
-										300
+									0
+							%p.bold-font.no-margin-bottom.quarter-margin-top
+								Then $25/month after 1 month
 
 								
 						.card-body

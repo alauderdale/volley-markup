@@ -17,7 +17,7 @@ Volley | Fast, easy feedback for your website"
 <script src="../../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
 </head>
-<body class='billing billing_pay billing_pay_index'>
+<body class='billing billing_pay-code-applied billing_pay-code-applied_index'>
 <div class='main'>
 <a class='close-x menu-close' href='/products'>
 <div class='material-icons'>
@@ -45,30 +45,23 @@ Promo code
 <input class='form-control' type='text'>
 </div>
 <div class='col-3'>
-<a class='btn btn-secondary btn-block' href='/billing/pay-code-applied' style='padding:8px;'>
+<a class='btn btn-secondary btn-block' href='' style='padding:8px;'>
 Apply
 </a>
 </div>
 </div>
 </form>
 <div class='double-margin-top double-margin-bottom'>
-<div class='form-check form-check-inline custom-radio quarter-margin-bottom'>
-<input class='form-check-input' id='inlineRadio1' name='inlineRadioOptions' type='radio' value='option1'>
-<label class='form-check-label' for='inlineRadio1'>
-<h3 class='no-margin medium-font'>
-Billed monthly
-</h3>
-</label>
-</input>
+<div class='chip full-width promo-code-chip'>
+Applied:
+<span class='bold-font'>
+1MONTHFREE - 100% OFF
+</span>
+<a class='close' href='/billing/pay'>
+<div class='material-icons align-middle'>
+clear
 </div>
-<div class='form-check form-check-inline custom-radio quarter-margin-bottom'>
-<input checked='checked' class='form-check-input' id='inlineRadio2' name='inlineRadioOptions' type='radio' value='option2'>
-<label class='form-check-label' for='inlineRadio2'>
-<h3 class='no-margin medium-font'>
-Billed yearly (30% savings)
-</h3>
-</label>
-</input>
+</a>
 </div>
 </div>
 <form>
@@ -149,24 +142,19 @@ CTO
 Volley Pro
 </h1>
 <h4>
-Total per year
+Total per month
 </h4>
 <h1 class='display-5 inline'>
 <span class='price bold-font'>
 $
 </span>
 <span class='bold-font dollar-ammount'>
-204
+0
 </span>
-<div class='line-through inline' style='font-size:16px; position:relative; top:-20px;'>
-<span class='regular-font'>
-$
-</span>
-<span class='regular-font' style='text-decoration:line-through;'>
-300
-</span>
-</div>
 </h1>
+<p class='bold-font no-margin-bottom quarter-margin-top'>
+Then $25/month after 1 month
+</p>
 </div>
 <div class='card-body'>
 <ul class='card-list list-unstyled icon-list-better check-list'>

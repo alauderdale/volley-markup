@@ -730,6 +730,15 @@ section {
       line-height: 32px;
       font-size: 24px;
       color: #0042FF; }
+  .chip.promo-code-chip {
+    border: 1px solid #0042FF;
+    background: white;
+    color: #354052;
+    height: 44px;
+    line-height: 40px;
+    border-radius: 100px; }
+    .chip.promo-code-chip .close {
+      line-height: 40px; }
 
 .input-group .input-group-append .input-group-text {
   background-color: white; }
