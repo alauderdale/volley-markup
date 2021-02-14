@@ -33,7 +33,7 @@
 						%input#inlineRadio2.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option2", :checked=>"checked"}
 							%label.form-check-label{:for => "inlineRadio2"} 
 								%h3.no-margin.medium-font
-									Billed yearly (30% savings)
+									Billed yearly (20% savings)
 				%form
 					.form-row
 						.form-group.col-12
@@ -85,14 +85,14 @@
 					.card.price-card.margin-auto{:style=>"min-height:auto;"}
 						.card-header.pro-header{:style=>"border-top-color:#FFAA00;"}
 							%h1.medium-font
-								Volley Pro
+								Volley Team
 							%h4
 								Total per year
 							%h1.display-5.inline
 								%span.price.bold-font
 									$
 								%span.bold-font.dollar-ammount
-									204
+									228
 								.line-through.inline{:style=>"font-size:16px; position:relative; top:-20px;"}
 									%span.regular-font
 										$
@@ -108,25 +108,37 @@
 									projects
 								%li
 									%span.bold-font
-										3
-									users
-								%li
-									%span.bold-font
-										Priority 
-									support
-								%hr
-								%li
-									%span.bold-font
 										Unlimited 
 									notes
 								%li
 									%span.bold-font
-										Unlimited 
-									collaborators
+										5
+									users
+									%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Users can create and join projects within a shared Volley workspace."}
+										info
 								%li
 									%span.bold-font
-										User 
-									mentions & notifications
+										Priority 
+									support
+								%li
+									%span.bold-font
+										Export 
+									to Trello & Jira
+								%hr
+								%li
+									%span.bold-font
+										Draw
+									tools
+								%li
+									%span.bold-font
+										Invite unlimited 
+									collaborators
+									%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
+										info
+								%li
+									%span.bold-font
+										@ mentions 
+									\& notifications
 					.double-margin-top.padded.no-padding-top
 						%h4.light-text-color
 							Your new subscription will begin immediately. Any previous payments you made will be credited towards your new plan. The amount you owe today is the difference in price between your old plan and your new plan, for the remainder of the billing period. Each year you will be charged at a rate of $204/yr until you cancel your subscription.

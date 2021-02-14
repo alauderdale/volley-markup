@@ -185,25 +185,7 @@ h3{
 
 
 ul{
-	&.check-list{
-		list-style: none;
-		padding: 0;
-		li{
-			font-size: 16px;
-			padding-left: 1.3em;
-			margin-bottom:10px;
-			&:before{
-				content: "check"; /* FontAwesome Unicode */
-				font-family: Material Icons;
-				margin-left: -1.3em; /* same as padding-left set on li */
-				width: 1.3em; /* same as padding-left set on li */
-				position:relative;
-				top:4px;
-				font-size:20px;
-				color:font-color;
-			}
-		}
-	}
+
 }
 
 

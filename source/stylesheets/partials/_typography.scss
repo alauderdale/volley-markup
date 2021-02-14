@@ -142,6 +142,27 @@ h6{
 //lists
 
 
+ul.check-list{
+    list-style: none;
+    padding: 0;
+    li{
+      font-size: 16px;
+      padding-left: 1.3em;
+      margin-bottom:5px;
+      &:before{
+        content: "check"; /* FontAwesome Unicode */
+        font-family: Material Icons;
+        margin-left: -1.3em; /* same as padding-left set on li */
+        width: 1.3em; /* same as padding-left set on li */
+        position:relative;
+        top:4px;
+        font-size:20px;
+        color:font-color;
+      }
+    }
+  }
+
+
 ul.icon-list{
   li{
     font-size: 14px;
@@ -164,9 +185,20 @@ ul.icon-list-better{
       content: 'check';
       color: $primary-color;
     }
+    &.no-deal{
+      color:$light-text-color;
+      &:before{
+        color:$light-text-color;
+        content: 'clear';
+      }
+    }
   }
 }
 
+
+.line-through{
+  text-decoration: line-through;
+}
 
 //truncate
 

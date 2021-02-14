@@ -16,7 +16,7 @@
 		/ 							Oops: 
 		/ 						The plan you selected only allows for 4 projects. You currently have 5 projects. You'll need to trim down a bit to use the basic plan.
 		.row.justify-content-center
-			.col-lg-9
+			.col-lg-8
 				%h2.text-center.medium-font
 					Upgrade and take your process to the next level. 
 				%p.light-text.text-center
@@ -38,7 +38,7 @@
 						%input#inlineRadio2.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option2", :checked=>"checked"}
 							%label.form-check-label{:for => "inlineRadio2"} 
 								%h3.no-margin.medium-font
-									Billed yearly (20% savings)
+									Billed yearly (30% savings)
 
 
 
@@ -50,7 +50,7 @@
 						.card.price-card.margin-auto
 							.card-header{:style=>"border-top-color:#B4BBC6;"}
 								%h1.medium-font.margin-bottom
-									Starter
+									Basic
 								%h1.display-5.inline
 									%span.price.bold-font
 										$
@@ -75,33 +75,24 @@
 									%li.align-middle
 										%span.bold-font
 											1
-										user only
-										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"You are limited to 1 User who can create 1 project. You can invite unlimited colloborators into your project."}
+										user
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"You are limited to 1 User who can create 1 project, but you can invite unlimited colloborator accounts into your project."}
 											info
 									%li
 										%span.bold-font
 											Email 
 										support
-									%li.no-deal
-										%span.line-through
-											%span.bold-font
-												Export 
-											to Trello & Jira
 									%hr
 									%li
 										%span.bold-font
-											Draw
-										tools
-									%li
-										%span.bold-font
-											Invite unlimited 
+											Unlimited 
 										collaborators
 										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
 											info
 									%li
 										%span.bold-font
-											@ mentions 
-										\& notifications
+											User 
+										mentions & notifications
 
 
 							.card-footer.text-center.no-padding-top.padding-bottom
@@ -110,79 +101,14 @@
 
 					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
 						.card.price-card.margin-auto
-							.card-header{:style=>"border-top-color:#FF4E4A;"}
-								%h1.medium-font.margin-bottom
-									Solo
-								%h1.display-5.inline
-									%span.price.bold-font
-										$
-									%span.bold-font.dollar-ammount
-										8
-									%span.month
-										\/ month
-								%h5.no-margin-bottom.half-margin-top
-									Billed yearly
-							.card-body
-								/ %h5.text-uppercase.bold-font.light-text-color
-								/ 	Everything in Pro, plus
-								%ul.card-list.list-unstyled.icon-list-better.check-list
-									%li
-										%span.bold-font
-											Unlimited
-										projects
-									%li
-										%span.bold-font
-											Unlimited 
-										notes
-									%li
-										%span.bold-font
-											1
-										user only
-										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"You are limited to 1 User who can create unlimited projects.  You can invite unlimited colloborators into your projects."}
-											info
-									%li
-										%span.bold-font
-											Priority 
-										support
-									%li
-										%span.bold-font
-											Export 
-										to Trello & Jira
-
-									%hr
-									%li
-										%span.bold-font
-											Draw
-										tools
-									%li
-										%span.bold-font
-											Invite unlimited 
-										collaborators
-										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
-											info
-									%li
-										%span.bold-font
-											@ mentions 
-										\& notifications
-
-
-							.card-footer.text-center.no-padding-top.padding-bottom
-								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay-team"}
-									Get Solo
-
-
-
-
-					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
-						.card.price-card.margin-auto
 							.card-header{:style=>"border-top-color:#FFAA00;"}
 								%h1.medium-font.margin-bottom
-									Team
+									Pro
 								%h1.display-5.inline
 									%span.price.bold-font
 										$
 									%span.bold-font.dollar-ammount
-										19
+										17
 									%span.month
 										\/ month
 								%h5.no-margin-bottom.half-margin-top
@@ -201,38 +127,81 @@
 										notes
 									%li
 										%span.bold-font
-											5
+											4
 										users
-										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Users can create and join projects within a shared Volley workspace."}
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"You only pay for accounts that can create projects. A User account can create and join projects within a shared Volley workspace. Collaborators are invited into single projects. Collaborator accounts are completely free."}
 											info
 									%li
 										%span.bold-font
 											Priority 
 										support
-									%li
-										%span.bold-font
-											Export 
-										to Trello & Jira
 									%hr
 									%li
 										%span.bold-font
-											Draw
-										tools
-									%li
-										%span.bold-font
-											Invite unlimited 
+											Unlimited 
 										collaborators
 										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
 											info
 									%li
 										%span.bold-font
-											@ mentions 
-										\& notifications
+											User 
+										mentions & notifications
 							.card-footer.text-center.no-padding-top.padding-bottom
 								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
-									Get Team
+									Get Pro
 
+					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
+						.card.price-card.margin-auto
+							.card-header{:style=>"border-top-color:#FF4E4A;"}
+								%h1.medium-font.margin-bottom
+									Pro +
+								%h1.display-5.inline
+									%span.price.bold-font
+										$
+									%span.bold-font.dollar-ammount
+										30
+									%span.month
+										\/ month
+								%h5.no-margin-bottom.half-margin-top
+									Billed yearly
+							.card-body
+								/ %h5.text-uppercase.bold-font.light-text-color
+								/ 	Everything in Pro, plus
+								%ul.card-list.list-unstyled.icon-list-better.check-list
+									%li
+										%span.bold-font
+											Unlimited
+										projects
+									%li
+										%span.bold-font
+											Unlimited 
+										notes
+									%li
+										%span.bold-font
+											7
+										users
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"You only pay for accounts that can create projects. A User account can create and join projects within a shared Volley workspace. Collaborators are invited into single projects. Collaborator accounts are completely free."}
+											info
+									%li
+										%span.bold-font
+											Priority 
+										support
 
+									%hr
+									%li
+										%span.bold-font
+											Unlimited 
+										collaborators
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
+											info
+									%li
+										%span.bold-font
+											User 
+										mentions & notifications
+
+							.card-footer.text-center.no-padding-top.padding-bottom
+								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay-team"}
+									Get Pro +
 
 
 %section
