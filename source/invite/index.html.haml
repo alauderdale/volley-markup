@@ -31,6 +31,12 @@
 									%input.form-control.form-control-lg{:type=>"text", :value=>"john@doe.com", :disabled=>"disabled"}
 								.margin-bottom
 									%input.form-control.form-control-lg{:type=>"password", :placeholder=>"Passowrd"}
+								.custom-checkbox.half-padding-top{:style=>"position:relative; left:2px;"}
+									%input#inlineRadio1.form-check-input{:name => "inlineRadioOptions", :type => "checkbox", :value => "option1", :checked=>"checked"}
+										%label.form-check-label{:for => "inlineRadio1"} 
+											%h4.no-margin
+												It's okay to send me product updates
+								
 								.double-margin-top
 									%a.btn.btn-primary.btn-lg.btn-block{:href=>"/product/review-zero"}
 										Sign up and view Alex’s project
