@@ -65,6 +65,9 @@
 											\/ month
 									%h5.no-margin-bottom.half-margin-top
 										&nbsp;
+									.padding-top
+										%a.btn.btn-secondary.btn-block.btn-lg.disabled{:href=>"/billing/pay"}
+											Current plan
 								.card-body
 									/ %h5.text-uppercase.bold-font.light-text-color
 									/ 	Get the basics free
@@ -110,9 +113,6 @@
 											
 
 
-								.card-footer.text-center.no-padding-top.padding-bottom
-									%a.btn.btn-secondary.btn-block.btn-lg.disabled{:href=>"/billing/pay"}
-										Current plan
 
 						.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
 							.card.price-card.margin-auto
@@ -130,6 +130,10 @@
 											\/ month
 									%h5.no-margin-bottom.half-margin-top
 										Billed yearly
+									.padding-top
+										%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+											%span.bold-font
+												Get Freelance
 								.card-body
 									%ul.card-list.list-unstyled.icon-list-better.check-list
 										%li
@@ -174,10 +178,6 @@
 											
 
 
-								.card-footer.text-center.no-padding-top.padding-bottom
-									%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
-										%span.bold-font
-											Get Freelance
 
 
 						.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
@@ -196,9 +196,11 @@
 											\/ month
 									%h5.no-margin-bottom.half-margin-top
 										Billed yearly
+									.padding-top
+										%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+											%span.bold-font
+												Get Pro
 								.card-body
-									/ %h5.text-uppercase.bold-font.light-text-color
-									/ 	Everything in Pro, plus
 									%ul.card-list.list-unstyled.icon-list-better.check-list
 										%li
 											%span.bold-font
@@ -241,10 +243,6 @@
 										
 
 
-								.card-footer.text-center.no-padding-top.padding-bottom
-									%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
-										%span.bold-font
-											Get Pro
 
 
 
@@ -264,6 +262,10 @@
 											\/ month
 									%h5.no-margin-bottom.half-margin-top
 										Billed yearly
+									.padding-top
+										%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+											%span.bold-font
+												Get Unmimited
 								.card-body
 									/ %h5.text-uppercase.bold-font.light-text-color
 									/ 	Everything in Basic, plus
@@ -306,10 +308,6 @@
 												@ 
 											mentions 
 										
-								.card-footer.text-center.no-padding-top.padding-bottom
-									%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
-										%span.bold-font
-											Get Unmimited
 
 
 
@@ -320,6 +318,7 @@
 			Have an AppSumo code? 
 			%a{:href=>"/settings/appsumo"}
 				Redeem here
+
 
 
 
