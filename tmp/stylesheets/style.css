@@ -2501,7 +2501,7 @@ h3.market {
     position: relative;
     border-radius: 20px; }
     .card.price-card.popular:before {
-      content: "SAVE 60%";
+      content: "POPULAR";
       position: absolute;
       top: 33px;
       right: -111px;
