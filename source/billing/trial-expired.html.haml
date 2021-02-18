@@ -25,7 +25,7 @@
 
 
 %section.no-padding-top.no-padding-bottom
-	.container
+	.container-fluid{:style=>"max-width:1250px;"}
 		.row.text-center
 			.col-12
 				.margin-top.double-margin-bottom
@@ -48,11 +48,11 @@
 				.row.justify-content-center
 
 
-					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
+					.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
 						.card.price-card.margin-auto
-							.card-header{:style=>"border-top-color:#B4BBC6;"}
+							.card-header{:style=>"border-top-color:#000;"}
 								%h1.medium-font.quarter-margin-bottom
-									Starter
+									Free
 								%h5
 									Get a feel for Volley
 								%h1.display-5.inline
@@ -70,12 +70,12 @@
 								%ul.card-list.list-unstyled.icon-list-better.check-list
 									%li
 										%span.bold-font
-											1
-										project
-									%li
-										%span.bold-font
 											50 
 										notes
+									%li
+										%span.bold-font
+											1
+										project
 									%li.align-middle
 										%span.bold-font
 											1
@@ -98,28 +98,28 @@
 										tools
 									%li
 										%span.bold-font
-											Invite unlimited 
+											Unlimited 
 										collaborators
 										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
 											info
 									%li
 										%span.bold-font
-											@ mentions 
-										\& notifications
+											@ 
+										mentions 
+										
 
 
 							.card-footer.text-center.no-padding-top.padding-bottom
 								%a.btn.btn-secondary.btn-block.btn-lg.disabled{:href=>"/billing/pay"}
 									Current plan
 
-
-					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
+					.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
 						.card.price-card.margin-auto
 							.card-header{:style=>"border-top-color:#FF4E4A;"}
 								%h1.medium-font.quarter-margin-bottom
 									Freelance
 								%h5
-									For freelancers,  small teams & startups
+									For freelancers and small teams 
 								%h1.display-5.inline
 									%span.price.bold-font
 										$
@@ -130,17 +130,15 @@
 								%h5.no-margin-bottom.half-margin-top
 									Billed yearly
 							.card-body
-								/ %h5.text-uppercase.bold-font.light-text-color
-								/ 	Everything in Pro, plus
 								%ul.card-list.list-unstyled.icon-list-better.check-list
-									%li
-										%span.bold-font
-											Unlimited
-										projects
 									%li
 										%span.bold-font
 											Unlimited 
 										notes
+									%li
+										%span.bold-font
+											10
+										projects
 									%li
 										%span.bold-font
 											1
@@ -163,14 +161,15 @@
 										tools
 									%li
 										%span.bold-font
-											Invite unlimited 
+											Unlimited 
 										collaborators
 										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
 											info
 									%li
 										%span.bold-font
-											@ mentions 
-										\& notifications
+											@ 
+										mentions 
+										
 
 
 							.card-footer.text-center.no-padding-top.padding-bottom
@@ -179,14 +178,13 @@
 										Get Freelance
 
 
-
-					.col-sm-12.col-md-12.col-lg-4.col-xl-4.margin-bottom
-						.card.price-card.margin-auto
+					.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
+						.card.price-card.margin-auto.popular
 							.card-header{:style=>"border-top-color:#FFAA00;"}
 								%h1.medium-font.quarter-margin-bottom
-									Studio
+									Pro
 								%h5
-									For larger companies and agencies
+									Perfect for startups and agencies 
 								%h1.display-5.inline
 									%span.price.bold-font
 										$
@@ -198,16 +196,16 @@
 									Billed yearly
 							.card-body
 								/ %h5.text-uppercase.bold-font.light-text-color
-								/ 	Everything in Basic, plus
+								/ 	Everything in Pro, plus
 								%ul.card-list.list-unstyled.icon-list-better.check-list
-									%li
-										%span.bold-font
-											Unlimited
-										projects
 									%li
 										%span.bold-font
 											Unlimited 
 										notes
+									%li
+										%span.bold-font
+											Unlimited
+										projects
 									%li
 										%span.bold-font
 											5
@@ -222,12 +220,7 @@
 										%span.bold-font
 											Export 
 										to Trello & Jira
-									/ %li
-									/ 	%span.bold-font
-									/ 		Team 
-									/ 	workspaces
-									/ 	%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Add  users to team workspaces. Here every user gets instant access to every project. It's possible to add users to multiple workspaces."}
-									/ 		info
+
 									%hr
 									%li
 										%span.bold-font
@@ -235,18 +228,86 @@
 										tools
 									%li
 										%span.bold-font
-											Invite unlimited 
+											Unlimited 
 										collaborators
 										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
 											info
 									%li
 										%span.bold-font
-											@ mentions 
-										\& notifications
+											@ 
+										mentions 
+									
+
+
 							.card-footer.text-center.no-padding-top.padding-bottom
 								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
 									%span.bold-font
-										Get Studio
+										Get Pro
+
+
+
+					.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
+						.card.price-card.margin-auto
+							.card-header{:style=>"border-top-color:#77C4FF;"}
+								%h1.medium-font.quarter-margin-bottom
+									Unlimited
+								%h5
+									Fully unlimited for large companies 
+								%h1.display-5.inline
+									%span.price.bold-font
+										$
+									%span.bold-font.dollar-ammount
+										79
+									%span.month
+										\/ month
+								%h5.no-margin-bottom.half-margin-top
+									Billed yearly
+							.card-body
+								/ %h5.text-uppercase.bold-font.light-text-color
+								/ 	Everything in Basic, plus
+								%ul.card-list.list-unstyled.icon-list-better.check-list
+									%li
+										%span.bold-font
+											Unlimited
+										notes
+									%li
+										%span.bold-font
+											Unlimited
+										projects
+									%li
+										%span.bold-font
+											Unlimited
+										users
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Users can create and join projects within shared team workspaces. It is posible to add users to multiple team workspaces."}
+											info
+									%li
+										%span.bold-font
+											Dedicated 
+										support
+									%li
+										%span.bold-font
+											Export 
+										to Trello & Jira
+									%hr
+									%li
+										%span.bold-font
+											Draw
+										tools
+									%li
+										%span.bold-font
+											Unlimited 
+										collaborators
+										%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
+											info
+									%li
+										%span.bold-font
+											@ 
+										mentions 
+									
+							.card-footer.text-center.no-padding-top.padding-bottom
+								%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+									%span.bold-font
+										Get Unmimited
 
 
 
@@ -257,4 +318,6 @@
 			Have an AppSumo code? 
 			%a{:href=>"/settings/appsumo"}
 				Redeem here
+
+
 
