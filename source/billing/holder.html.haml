@@ -24,7 +24,7 @@
 
 
 
-%section.no-padding-top
+%section.no-padding-top.no-padding-bottom
 	.padded
 		.container-fluid{:style=>"max-width:1350px;"}
 			.row.text-center
@@ -65,9 +65,6 @@
 											\/ month
 									%h5.no-margin-bottom.half-margin-top
 										&nbsp;
-									.padding-top
-										%a.btn.btn-secondary.btn-block.btn-lg.disabled{:href=>"/billing/pay"}
-											Current plan
 								.card-body
 									/ %h5.text-uppercase.bold-font.light-text-color
 									/ 	Get the basics free
@@ -80,11 +77,22 @@
 											%span.bold-font
 												1
 											project
+										%li.align-middle
+											%span.bold-font
+												1
+											user only
+											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"You are limited to 1 User who can create 1 project. You can invite unlimited colloborators into your project."}
+												info
 										%li
 											%span.bold-font
 												Email 
 											support
-										%hr.half-margin-bottom
+										%li.no-deal
+											%span.line-through
+												%span.bold-font
+													Export 
+												to Trello & Jira
+										%hr
 										%li
 											%span.bold-font
 												Draw
@@ -102,6 +110,9 @@
 											
 
 
+								.card-footer.text-center.no-padding-top.padding-bottom
+									%a.btn.btn-secondary.btn-block.btn-lg.disabled{:href=>"/billing/pay"}
+										Current plan
 
 						.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
 							.card.price-card.margin-auto
@@ -119,10 +130,6 @@
 											\/ month
 									%h5.no-margin-bottom.half-margin-top
 										Billed yearly
-									.padding-top
-										%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
-											%span.bold-font
-												Get Freelance
 								.card-body
 									%ul.card-list.list-unstyled.icon-list-better.check-list
 										%li
@@ -135,10 +142,21 @@
 											projects
 										%li
 											%span.bold-font
+												1
+											user only
+											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"You are limited to 1 User who can create projects. You can invite unlimited colloborators into your projects."}
+												info
+										%li
+											%span.bold-font
 												Email 
 											support
+										%li.no-deal
+											%span.line-through
+												%span.bold-font
+													Export 
+												to Trello & Jira
 
-										%hr.half-margin-bottom
+										%hr
 										%li
 											%span.bold-font
 												Draw
@@ -156,6 +174,10 @@
 											
 
 
+								.card-footer.text-center.no-padding-top.padding-bottom
+									%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+										%span.bold-font
+											Get Freelance
 
 
 						.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
@@ -174,11 +196,9 @@
 											\/ month
 									%h5.no-margin-bottom.half-margin-top
 										Billed yearly
-									.padding-top
-										%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
-											%span.bold-font
-												Get Pro
 								.card-body
+									/ %h5.text-uppercase.bold-font.light-text-color
+									/ 	Everything in Pro, plus
 									%ul.card-list.list-unstyled.icon-list-better.check-list
 										%li
 											%span.bold-font
@@ -188,6 +208,12 @@
 											%span.bold-font
 												Unlimited
 											projects
+										%li
+											%span.bold-font
+												4
+											users
+											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Users can create and join projects within shared team workspaces. It is posible to add users to multiple team workspaces."}
+												info
 										%li
 											%span.bold-font
 												Priority 
@@ -196,93 +222,6 @@
 											%span.bold-font
 												Export 
 											to Trello & Jira
-										%li
-											%span.bold-font
-												4
-											team members
-											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Team members can create and join projects within shared team workspaces. It is posible to add members to multiple workspaces."}
-												info
-										%li
-											%span.bold-font
-												Team
-											workspaces
-
-										%hr.half-margin-bottom
-										%li
-											%span.bold-font
-												Draw
-											tools
-										%li
-											%span.bold-font
-												Unlimited 
-											collaborators
-											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
-												info
-										%li
-											%span.bold-font
-												@ 
-											mentions 
-										
-
-
-
-
-
-						.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
-							.card.price-card.margin-auto
-								.card-header{:style=>"border-top-color:#77C4FF;"}
-									%h1.medium-font.quarter-margin-bottom
-										Unlimited
-									%h5
-										Unlimited for large companies 
-									%h1.display-5.inline
-										%span.price.bold-font
-											$
-										%span.bold-font.dollar-ammount
-											79
-										%span.month
-											\/ month
-									%h5.no-margin-bottom.half-margin-top
-										Billed yearly
-									.padding-top
-										%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
-											%span.bold-font
-												Get Unmimited
-								.card-body
-									/ %h5.text-uppercase.bold-font.light-text-color
-									/ 	Everything in Basic, plus
-									%ul.card-list.list-unstyled.icon-list-better.check-list
-										%li
-											%span.bold-font
-												Unlimited 
-											notes
-										%li
-											%span.bold-font
-												Unlimited
-											projects
-										%li
-											%span.bold-font
-												Dedicated 
-											account representative
-										%li
-											%span.bold-font
-												Export 
-											to Trello & Jira
-										%li
-											%span.bold-font
-												Unlimited
-											team members
-											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Team members can create and join projects within shared team workspaces. It is posible to add members to multiple workspaces."}
-												info
-										%li
-											%span.bold-font
-												Team
-											workspaces
-										
-										%li
-											%span.bold-font
-												Remove 
-											Volley branding
 
 										%hr
 										%li
@@ -302,15 +241,85 @@
 										
 
 
+								.card-footer.text-center.no-padding-top.padding-bottom
+									%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+										%span.bold-font
+											Get Pro
 
-/ %section
-/ 	.text-center
-/ 		%img{:src=>"../images/appsumo-logo.svg", :width=>"140px"}
-/ 		%p.medium-font.no-margin-bottom
-/ 			Have an AppSumo code? 
-/ 			%a{:href=>"/settings/appsumo"}
-/ 				Redeem here
 
+
+						.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
+							.card.price-card.margin-auto
+								.card-header{:style=>"border-top-color:#77C4FF;"}
+									%h1.medium-font.quarter-margin-bottom
+										Unlimited
+									%h5
+										Unlimited for large companies 
+									%h1.display-5.inline
+										%span.price.bold-font
+											$
+										%span.bold-font.dollar-ammount
+											79
+										%span.month
+											\/ month
+									%h5.no-margin-bottom.half-margin-top
+										Billed yearly
+								.card-body
+									/ %h5.text-uppercase.bold-font.light-text-color
+									/ 	Everything in Basic, plus
+									%ul.card-list.list-unstyled.icon-list-better.check-list
+										%li
+											%span.bold-font
+												Unlimited
+											notes
+										%li
+											%span.bold-font
+												Unlimited
+											projects
+										%li
+											%span.bold-font
+												Unlimited
+											users
+											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Users can create and join projects within shared team workspaces. It is posible to add users to multiple team workspaces."}
+												info
+										%li
+											%span.bold-font
+												Dedicated 
+											support
+										%li
+											%span.bold-font
+												Export 
+											to Trello & Jira
+										%hr
+										%li
+											%span.bold-font
+												Draw
+											tools
+										%li
+											%span.bold-font
+												Unlimited 
+											collaborators
+											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
+												info
+										%li
+											%span.bold-font
+												@ 
+											mentions 
+										
+								.card-footer.text-center.no-padding-top.padding-bottom
+									%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+										%span.bold-font
+											Get Unmimited
+
+
+
+%section
+	.text-center
+		%img{:src=>"../images/appsumo-logo.svg", :width=>"140px"}
+		%p.medium-font.no-margin-bottom
+			Have an AppSumo code? 
+			%a{:href=>"/settings/appsumo"}
+				Redeem here
 
 
 

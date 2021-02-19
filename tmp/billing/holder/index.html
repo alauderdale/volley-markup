@@ -17,7 +17,7 @@ Volley | Fast, easy feedback for your website"
 <script src="../../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
 
 </head>
-<body class='billing billing_trial-expired billing_trial-expired_index'>
+<body class='billing billing_holder billing_holder_index'>
 <div class='main'>
 <a class='close-x menu-close' href='/products'>
 <div class='material-icons'>
@@ -47,7 +47,7 @@ You've reached your 1 project limit. You can either archive or delete a project,
 </div>
 </div>
 </section>
-<section class='no-padding-top'>
+<section class='no-padding-top no-padding-bottom'>
 <div class='padded'>
 <div class='container-fluid' style='max-width:1350px;'>
 <div class='row text-center'>
@@ -100,11 +100,6 @@ $
 <h5 class='no-margin-bottom half-margin-top'>
 &nbsp;
 </h5>
-<div class='padding-top'>
-<a class='btn btn-secondary btn-block btn-lg disabled' href='/billing/pay'>
-Current plan
-</a>
-</div>
 </div>
 <div class='card-body'>
 <!-- %h5.text-uppercase.bold-font.light-text-color -->
@@ -122,13 +117,30 @@ notes
 </span>
 project
 </li>
+<li class='align-middle'>
+<span class='bold-font'>
+1
+</span>
+user only
+<i class='material-icons cursor-pointer' data-toggle='tooltip' title='You are limited to 1 User who can create 1 project. You can invite unlimited colloborators into your project.'>
+info
+</i>
+</li>
 <li>
 <span class='bold-font'>
 Email
 </span>
 support
 </li>
-<hr class='half-margin-bottom'>
+<li class='no-deal'>
+<span class='line-through'>
+<span class='bold-font'>
+Export
+</span>
+to Trello & Jira
+</span>
+</li>
+<hr>
 <li>
 <span class='bold-font'>
 Draw
@@ -151,6 +163,11 @@ info
 mentions
 </li>
 </ul>
+</div>
+<div class='card-footer text-center no-padding-top padding-bottom'>
+<a class='btn btn-secondary btn-block btn-lg disabled' href='/billing/pay'>
+Current plan
+</a>
 </div>
 </div>
 </div>
@@ -177,13 +194,6 @@ $
 <h5 class='no-margin-bottom half-margin-top'>
 Billed yearly
 </h5>
-<div class='padding-top'>
-<a class='btn btn-primary btn-block btn-lg' href='/billing/pay'>
-<span class='bold-font'>
-Get Freelance
-</span>
-</a>
-</div>
 </div>
 <div class='card-body'>
 <ul class='card-list list-unstyled icon-list-better check-list'>
@@ -201,11 +211,28 @@ projects
 </li>
 <li>
 <span class='bold-font'>
+1
+</span>
+user only
+<i class='material-icons cursor-pointer' data-toggle='tooltip' title='You are limited to 1 User who can create projects. You can invite unlimited colloborators into your projects.'>
+info
+</i>
+</li>
+<li>
+<span class='bold-font'>
 Email
 </span>
 support
 </li>
-<hr class='half-margin-bottom'>
+<li class='no-deal'>
+<span class='line-through'>
+<span class='bold-font'>
+Export
+</span>
+to Trello & Jira
+</span>
+</li>
+<hr>
 <li>
 <span class='bold-font'>
 Draw
@@ -228,6 +255,13 @@ info
 mentions
 </li>
 </ul>
+</div>
+<div class='card-footer text-center no-padding-top padding-bottom'>
+<a class='btn btn-primary btn-block btn-lg' href='/billing/pay'>
+<span class='bold-font'>
+Get Freelance
+</span>
+</a>
 </div>
 </div>
 </div>
@@ -254,15 +288,10 @@ $
 <h5 class='no-margin-bottom half-margin-top'>
 Billed yearly
 </h5>
-<div class='padding-top'>
-<a class='btn btn-primary btn-block btn-lg' href='/billing/pay'>
-<span class='bold-font'>
-Get Pro
-</span>
-</a>
-</div>
 </div>
 <div class='card-body'>
+<!-- %h5.text-uppercase.bold-font.light-text-color -->
+<!-- Everything in Pro, plus -->
 <ul class='card-list list-unstyled icon-list-better check-list'>
 <li>
 <span class='bold-font'>
@@ -278,6 +307,15 @@ projects
 </li>
 <li>
 <span class='bold-font'>
+4
+</span>
+users
+<i class='material-icons cursor-pointer' data-toggle='tooltip' title='Users can create and join projects within shared team workspaces. It is posible to add users to multiple team workspaces.'>
+info
+</i>
+</li>
+<li>
+<span class='bold-font'>
 Priority
 </span>
 support
@@ -288,22 +326,7 @@ Export
 </span>
 to Trello & Jira
 </li>
-<li>
-<span class='bold-font'>
-4
-</span>
-team members
-<i class='material-icons cursor-pointer' data-toggle='tooltip' title='Team members can create and join projects within shared team workspaces. It is posible to add members to multiple workspaces.'>
-info
-</i>
-</li>
-<li>
-<span class='bold-font'>
-Team
-</span>
-workspaces
-</li>
-<hr class='half-margin-bottom'>
+<hr>
 <li>
 <span class='bold-font'>
 Draw
@@ -326,6 +349,13 @@ info
 mentions
 </li>
 </ul>
+</div>
+<div class='card-footer text-center no-padding-top padding-bottom'>
+<a class='btn btn-primary btn-block btn-lg' href='/billing/pay'>
+<span class='bold-font'>
+Get Pro
+</span>
+</a>
 </div>
 </div>
 </div>
@@ -352,13 +382,6 @@ $
 <h5 class='no-margin-bottom half-margin-top'>
 Billed yearly
 </h5>
-<div class='padding-top'>
-<a class='btn btn-primary btn-block btn-lg' href='/billing/pay'>
-<span class='bold-font'>
-Get Unmimited
-</span>
-</a>
-</div>
 </div>
 <div class='card-body'>
 <!-- %h5.text-uppercase.bold-font.light-text-color -->
@@ -378,36 +401,24 @@ projects
 </li>
 <li>
 <span class='bold-font'>
+Unlimited
+</span>
+users
+<i class='material-icons cursor-pointer' data-toggle='tooltip' title='Users can create and join projects within shared team workspaces. It is posible to add users to multiple team workspaces.'>
+info
+</i>
+</li>
+<li>
+<span class='bold-font'>
 Dedicated
 </span>
-account representative
+support
 </li>
 <li>
 <span class='bold-font'>
 Export
 </span>
 to Trello & Jira
-</li>
-<li>
-<span class='bold-font'>
-Unlimited
-</span>
-team members
-<i class='material-icons cursor-pointer' data-toggle='tooltip' title='Team members can create and join projects within shared team workspaces. It is posible to add members to multiple workspaces.'>
-info
-</i>
-</li>
-<li>
-<span class='bold-font'>
-Team
-</span>
-workspaces
-</li>
-<li>
-<span class='bold-font'>
-Remove
-</span>
-Volley branding
 </li>
 <hr>
 <li>
@@ -433,6 +444,13 @@ mentions
 </li>
 </ul>
 </div>
+<div class='card-footer text-center no-padding-top padding-bottom'>
+<a class='btn btn-primary btn-block btn-lg' href='/billing/pay'>
+<span class='bold-font'>
+Get Unmimited
+</span>
+</a>
+</div>
 </div>
 </div>
 </div>
@@ -441,13 +459,17 @@ mentions
 </div>
 </div>
 </section>
-<!-- %section -->
-<!-- .text-center -->
-<!-- %img{:src=>"../images/appsumo-logo.svg", :width=>"140px"} -->
-<!-- %p.medium-font.no-margin-bottom -->
-<!-- Have an AppSumo code? -->
-<!-- %a{:href=>"/settings/appsumo"} -->
-<!-- Redeem here -->
+<section>
+<div class='text-center'>
+<img src='../images/appsumo-logo.svg' width='140px'>
+<p class='medium-font no-margin-bottom'>
+Have an AppSumo code?
+<a href='/settings/appsumo'>
+Redeem here
+</a>
+</p>
+</div>
+</section>
 
 </div>
 </body>
