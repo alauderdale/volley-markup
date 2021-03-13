@@ -50,12 +50,12 @@
 							Who can view this project?
 						%form
 							.form-check.custom-radio.no-padding-left
-								%input#inlineRadio1.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option1"}
+								%input#inlineRadio1.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option1",:checked=>"checked"}
 									%label.form-check-label{:for => "inlineRadio1"} 
 										%p.half-margin-bottom
 											Only people invited into the project
 							.form-check.custom-radio.no-padding-left
-								%input#inlineRadio2.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option2", :checked=>"checked"}
+								%input#inlineRadio2.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option2"}
 									%label.form-check-label{:for => "inlineRadio2"} 
 										%p.no-margin
 											Anyone with the link
