@@ -19,10 +19,14 @@
               JD
           .avatar.avatar-initial.avatar-xs.d-inline-block.primary-bg{"data-toggle"=>"modal", "data-target"=>"#shareModal"}
             +4
+        %a.btn.btn-primary.share-button.d-inline-block.quarter-margin-right{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#shareModalGuest"}
+          Share
         %a.btn.btn-secondary.share-button.d-inline-block.quarter-margin-right{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#exportModal"}
           Export
-        %a.btn.btn-primary.share-button.d-inline-block{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#shareModalGuest"}
-          Share
+        %a.btn.btn-secondary.icon-btn.d-inline-block{:href=>"/product/settings"}
+          %i.material-icons
+            settings
+        
 
 
 

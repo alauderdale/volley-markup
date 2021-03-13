@@ -1,0 +1,116 @@
+;;;
+
+"layout": "blank"
+
+;;;
+
+
+%nav.navbar.navbar-light.bg-light.fixed-top.navbar-expand-sm.border-bottom
+	.container-fluid
+		.navbar-nav.mr-auto
+		%div
+			.navbar-nav
+				.nav-item
+					%a.nav-link.primary-text-color{:href => "/product/review"}
+						%i.material-icons
+							close
+
+%section.export-header
+	.container
+		.row.align-items-center.justify-content-center
+			.col-md-9
+				%h2.double-margin-bottom
+					Project settings
+				%nav.nav.primary-tabs
+					%a.nav-link{:href=>"/product/settings"}
+						General
+					%a.nav-link.active{:href=>"/product/settings/widget"}
+						Widget
+				%hr.no-margin
+				.settings-container.double-margin-top
+					.settings-section.double-margin-bottom
+						%img.margin-bottom{:src=>"/images/widget-logo.svg", :width=>"317px"}
+						%p
+							Embed this brandable widget on your site to quickly capture feedback from anyone, sent directly to this project.
+					.settings-section.double-margin-bottom
+						%h3.half-margin-bottom.medium-font
+							Widget code
+						%p
+							Paste the Volley code before the closing </body> tag on every page you want to display this widget.	
+						.code-panel
+							.panel-body
+								%code
+									=lorem.paragraphs(1)
+								.text-right.padding-top
+									%button.btn.btn-primary{:tyle=>"button", "data-dismiss" => "modal"}
+										Copy
+					.settings-section.double-margin-bottom
+						%h3.half-margin-bottom.medium-font
+							Widget button
+						%p
+							Style the appearance of your feedback button
+						.row
+							.col-12.col-sm-5
+								%img.max-width.margin-bottom{:src=>"/images/widget-button-preview.svg", :width=>"272px"}
+							.col-12.col-sm-7
+								.row
+									.col-6
+										.margin-bottom
+											%h4.medium-font
+												Text color
+											%input.form-control.form-control-lg{:type=>"text", :value=>"#FFFFFF"}
+									.col-6
+										.margin-bottom
+											%h4.medium-font
+												Background color
+											%input.form-control.form-control-lg{:type=>"text", :value=>"#FFFFFF"}
+								.margin-bottom
+									%h4.medium-font
+										Button text
+									%input.form-control.form-control-lg{:type=>"text", :value=>"NuAge Website"}
+								.margin-bottom
+									%h4.medium-font
+										Position
+									%select.form-control.form-control-lg
+										%option
+											Center right
+										%option
+											Center left
+					.settings-section.double-margin-bottom
+						%h3.half-margin-bottom.medium-font
+							Widget panel
+						%p
+							Style the appearance of your Volley widget
+						.row
+							.col-12.col-sm-5
+								%img.max-width.margin-bottom{:src=>"/images/widget-panel.svg"}
+							.col-12.col-sm-7
+								.margin-bottom
+									%h4.medium-font
+										Upload your logo
+									.media.margin-top
+										%img.margin-right{:src=>"/images/widget-default-logo.svg", :width=>"130px"}
+										.media-body
+											%a.btn.btn-link.text-color{:href=>"#"}
+												%i.material-icons
+													delete
+											%a.btn.btn-secondary{:href=>"#"}
+												Change image
+								%hr
+								%h4.medium-font.d-inline.align-middle
+									Powered by Volley
+								.d-inline.float-right
+									%span.margin-left.light-text-color
+										Toggle here
+								%i.material-icons.d-inline.float-right.align-middle{:style=>"color:#FFAA00;"}
+									lock
+								%hr
+
+
+
+
+
+					%hr
+					.text-right
+						%button.btn.btn-primary.btn-lg{:tyle=>"button", "data-dismiss" => "modal"}
+							Save changes

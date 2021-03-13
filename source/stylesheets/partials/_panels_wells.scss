@@ -16,3 +16,18 @@
 		min-height: auto;
 	}
 }
+
+.code-panel{
+	border-radius: $base-border-radius;
+	background: tint($border-color,80%);
+	border:1px solid $border-color;
+	.panel-body{
+		padding:20px;
+		@include breakpoint(md) {
+			padding:16px;
+		}
+		code{
+			color:$light-text-color;
+		}
+	}
+}
