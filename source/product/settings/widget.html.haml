@@ -101,7 +101,7 @@
 								%h4.medium-font.d-inline.align-middle
 									Powered by Volley
 								.d-inline.float-right
-									%span.margin-left.light-text-color
+									%span.margin-left.light-text-color{"data-toggle"=>"modal", "data-target"=>"#lockedModal"}
 										Toggle here
 								%i.material-icons.d-inline.float-right.align-middle{:style=>"color:#FFAA00;"}
 									lock
@@ -115,3 +115,25 @@
 					.text-right
 						%button.btn.btn-primary.btn-lg{:tyle=>"button", "data-dismiss" => "modal"}
 							Save changes
+
+
+#lockedModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.no-padding-bottom
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					.text-center
+						%img.margin-bottom{:src=>"/images/unlock.svg", :width=>"70px"}
+					%h2.text-center
+						Upgrade to unlock
+					%p.light-text-color.text-center
+						This feature is not available in your plan. Upgrade your account for access.
+
+
+					.text-center
+						%button.btn.btn-primary.btn-lg{:type => "button", "data-dismiss"=>"modal"} 
+							Upgrade
+			.modal-footer.no-border-top
