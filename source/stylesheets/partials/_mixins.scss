@@ -1,5 +1,29 @@
 
+//primary button
+
 @mixin button-hover($button-color) {
-	background:shade($button-color,5%);
-	border-color:shade($button-color,5%);
+	background: shade($button-color,20%);
+	border-color: shade($button-color,20%);
 }
+
+@mixin button-active($button-color) {
+	background: shade($button-color,50%)!important;
+	border-color: shade($button-color,50%)!important;
+}
+
+
+//secondary buttons
+
+@mixin button-hover-light-button($button-color) {
+	background: tint($button-color,95%);
+	border-color:$button-border-color;
+	color: shade($button-color,50%);
+}
+
+@mixin button-active-light-button($button-color) {
+	background: tint($link-color,90%)!important;
+	color: shade($link-color,50%)!important;
+	border-color:$button-border-color!important;
+}
+
+

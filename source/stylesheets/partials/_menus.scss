@@ -1,10 +1,14 @@
-.activity-filter{
-	.dropdown-menu{
-		.dropdown-item{
-			padding:.50rem 1.5rem;
+
+
+.dropdown{
+	&.show{
+		.btn-secondary, .btn-flat{
+			@include button-active-light-button($link-color);
 		}
 	}
 }
+
+
 
 //default dropdown menu styling
 .dropdown-menu{
@@ -33,17 +37,16 @@
 			}
 		}
 		i{
-				font-size:1rem;
-				line-height:1;
-				position:relative;
-				top:4px;
-				color:$lightest-gray-color;
+			vertical-align: middle;
+			line-height: 0 !important;
+			position: relative;
+			top: -1px;
+			font-size: 17px;
 			}
 		.icon-left{
 			margin-right:12px;
 		}
 	}
-
 }
 
 
@@ -66,6 +69,8 @@
     left: 0;
     background: white;
     width: 100%;
+    border-radius:$base-border-radius;
+    margin-bottom:8px;
     .dropdown-divider{
     	margin-top: 0;
     }

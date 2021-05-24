@@ -27,8 +27,9 @@
 							21 Notes
 					.inline-block.align-middle.show-notes-toggle.float-right.margin-left
 						%a{:href=>"#"}
-							%i.material-icons
+							%i.material-icons.text-color{:style=>"font-size:14px; position:relative; top:3px;"}
 								clear
+							
 					.inline-block.align-middle.float-right
 						.dropdown
 							%button.btn.btn-default.dropdown-toggle.no-padding.btn-sm-text.light-text-color.regular-font{:type=>"button", "data-toggle"=>"dropdown"}
@@ -101,11 +102,12 @@
 							
 
 			.notes-list-footer
-				.show-resolved.check-btn
-					%button.no-margin-bottom.btn-link.btn{:type=>"button"}
-						%i.material-icons
-							check_box
-						Show resolved
+				.show-resolved
+					.custom-checkbox.half-padding-top{:style=>"position:relative; left:2px;"}
+						%input#inlineRadio1.form-check-input{:name => "inlineRadioOptions", :type => "checkbox", :value => "option1", :checked=>"checked"}
+							%label.form-check-label{:for => "inlineRadio1"} 
+								%h4.no-margin
+									Show resolved
 
 	.note-container
 		.note-body
@@ -120,8 +122,9 @@
 							.inline-block
 								=partial"mark-resolved-btn"
 						.col-4
-							.float-right{:style=>"position:relative;"}
-								%a.btn.btn-secondary.float-right.page-btn.icon-bbtn.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
+							.dropdown.float-right{:style=>"position:relative;"}
+								
+								%a.btn.btn-secondary.float-right.btn-icon.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
 									•••
 								.dropdown-menu.dropdown-menu-right
 									%button.dropdown-item{:type=>"button"} 
@@ -147,13 +150,14 @@
 								.col-7
 									=partial"mark-resolved-btn"		
 								.col
-									%a.btn.btn-secondary.float-right.page-btn.icon-btn.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
-										%i.material-icons
-											more_horiz
-									.dropdown-menu.dropdown-menu-right
-										%button.dropdown-item.delete-comment{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
-											Delete note
-									%a.btn.btn-secondary.float-right.page-btn.icon-btn.inline.half-margin-right{:href=>"/product/browse", "data-toggle"=>"tooltip", :title=>"Go to page"}
+									.dropdown
+										%a.btn.btn-flat.float-right.btn-icon.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
+											%i.material-icons
+												more_horiz
+										.dropdown-menu.dropdown-menu-right
+											%button.dropdown-item.delete-comment{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
+												Delete note
+									%a.btn.btn-flat.float-right.btn-icon.inline.half-margin-right{:href=>"/product/browse", "data-toggle"=>"tooltip", :title=>"Go to page"}
 										%i.material-icons
 											launch
 					.comments-wrapper
@@ -195,8 +199,8 @@
 											JD
 										.media-body
 											.actions
-												.dropdown.show.text-right
-													%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+												.dropdown.text-right
+													%button.btn.btn-flat.btn-icon{"data-toggle" => "dropdown", :type=>"button"}
 														%i.material-icons
 															more_horiz
 													.dropdown-menu.dropdown-menu-right
@@ -239,7 +243,7 @@
 								%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
 								%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
 									Comment
-								%button.btn.btn-link.attachment.float-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
+								%button.btn.btn-flat.btn-icon.attachment.float-right.quarter-margin-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
 									%i.material-icons
 										attachment
 
@@ -251,8 +255,8 @@
 											JD
 										.media-body
 											.actions
-												.dropdown.show.text-right
-													%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+												.dropdown.text-right
+													%button.btn.btn-flat.btn-icon{"data-toggle" => "dropdown", :type=>"button"}
 														%i.material-icons
 															more_horiz
 													.dropdown-menu.dropdown-menu-right

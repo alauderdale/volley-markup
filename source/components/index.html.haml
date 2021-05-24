@@ -10,6 +10,9 @@
 					Primary button
 				%a.btn.btn-secondary{:href=>"#"}
 					Secondary button
+				%a.btn.btn-icon.btn-secondary{:href=>"#"}
+					%i.material-icons
+						settings
 				%a.btn.btn-terciary{:href=>"#"}
 					Terciary button
 				%a.btn.btn-label{:href=>"#"}
@@ -21,3 +24,38 @@
 						Wire button
 				%a.btn.btn-link{:href=>"#"}
 					Link button
+		.row
+			.col
+				%h2
+					Dropdowns
+		.row
+			.col
+				.dropdown
+					%button.btn.btn-secondary{:type=>"button", "data-toggle" => "dropdown"}
+						%i.material-icons{:style=>"font-size:20px; left:-5px;"}
+							check_box_outline_blank
+						To Do
+						%i.material-icons.pull-right
+							expand_more
+					.dropdown-menu.dropdown-menu-right
+						%button.dropdown-item{:type=>"button"} 
+							%i.material-icons-outlined.icon-left
+								settings
+							To Do
+						%button.dropdown-item.active{:type=>"button"} 
+							%i.material-icons-outlined.icon-left
+								settings
+							In Progress
+						%button.dropdown-item{:type=>"button"} 
+							%i.material-icons-outlined.icon-left
+								settings
+							Completed
+						%button.dropdown-item{:type=>"button"} 
+							%i.material-icons-outlined.icon-left
+								settings
+							Blocked
+						%button.dropdown-item{:type=>"button"} 
+							%i.material-icons-outlined.icon-left
+								settings
+							Cancelled
+
