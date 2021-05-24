@@ -20,7 +20,7 @@
 .review-container
 	.notes-list-container
 		.notes-list-body.promo-active
-			.notes-list-header.padded.half-padding-bottom
+			.notes-list-header.padded
 				.inline
 					.inline-block.align-middle
 						%h4.bold-font.no-margin-bottom
@@ -31,15 +31,45 @@
 								clear
 							
 					.inline-block.align-middle.float-right
-						.dropdown
-							%button.btn.btn-default.dropdown-toggle.no-padding.btn-sm-text.light-text-color.regular-font{:type=>"button", "data-toggle"=>"dropdown"}
+						.dropdown.d-inline.half-margin-right
+							%button.btn.btn-default.no-padding.btn-sm-text.light-text-color.regular-font{:type=>"button", "data-toggle"=>"dropdown"}
 								Oldest 
+								%i.material-icons
+									expand_more
 							
 							.dropdown-menu
 								%a.dropdown-item{:href=>"#"}
 									Newest 
 								%a.dropdown-item.active{:href=>"#"}
 									Oldest 
+						.dropdown.d-inline
+							.btn-group
+								.btn.btn-secondary.btn-icon.filter-button{:type=>"button", "data-toggle"=>"dropdown"}
+									%span.light-text-color
+										.material-icons
+											filter_list
+										2
+								.dropdown-menu{:style=>"min-width:250px;"}
+									.padded
+										%h4
+											Status
+										.dropdown
+											%button.btn.btn-secondary.text-left.full-width{:type=>"button", "data-toggle" => "dropdown"}
+												Submenu
+											.dropdown-menu
+												%button.dropdown-item{:type=>"button"}
+													Dropdown item
+												%button.dropdown-item{:type=>"button"}
+													Dropdown item
+												%button.dropdown-item{:type=>"button"}
+													Dropdown item
+								
+								%a.btn.btn-secondary.btn-icon.filter-button{:href=>"#"}
+									%span.light-text-color
+										.material-icons
+											clear
+								
+							
 
 				
 			
@@ -155,11 +185,15 @@
 											%i.material-icons
 												more_horiz
 										.dropdown-menu.dropdown-menu-right
-											%button.dropdown-item.delete-comment{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
+											%a.dropdown-item.delete-comment{ :href=>"/product/browse"} 
+												%i.material-icons-outlined.icon-left
+													launch
+												Go to page
+											.dropdown-divider
+											%button.dropdown-item.delete-comment.text-danger{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
+												%i.material-icons-outlined.icon-left
+													delete
 												Delete note
-									%a.btn.btn-flat.float-right.btn-icon.inline.half-margin-right{:href=>"/product/browse", "data-toggle"=>"tooltip", :title=>"Go to page"}
-										%i.material-icons
-											launch
 					.comments-wrapper
 						/ .comment-list-confirm-overlay.text-center.invisible.delete-this-convo
 						/ 	.confirm-items
@@ -214,30 +248,36 @@
 												I just want to see how this note will look with a very long note written in it .Notes often are not all that long but just wanting to make sure this area provides the best UX possible for prople.
 											/ %a{:href=>"#"}
 											/ 	%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
-							.note-details-container
-								.note-details
-									%h5.text-center
-										%a.collapsed.details-toggle{"data-toggle"=>"collapse", :href=>"#noteDetailsCollapse", :role=>"button", "aria-expanded"=>"false"}
-											Details
-											%i.material-icons.align-middle
-												expand_more
+								.note-details-container
+									.note-details
+										%h4.medium-font
+											%a.collapsed.details-toggle{"data-toggle"=>"collapse", :href=>"#noteDetailsCollapse", :role=>"button", "aria-expanded"=>"false"}
+												%i.material-icons.align-middle
+													expand_more
+												Details
+												
 
-									#noteDetailsCollapse.note-details-items.collapse
-										%dl.row
-											%dt.col-sm-3
-												Browser
-											%dd.col-sm-9
-												Mac OS 10.14.0
-										%dl.row
-											%dt.col-sm-3
-												OS
-											%dd.col-sm-9
-												Chrome 71
-										%dl.row
-											%dt.col-sm-3
-												URL
-											%dd.col-sm-9
-												https://app.productstash.io/
+										#noteDetailsCollapse.note-details-items.collapse
+											%dl.row
+												%dt.col-sm-3
+													Browser
+												%dd.col-sm-9
+													Mac OS 10.14.0
+											%dl.row
+												%dt.col-sm-3
+													OS
+												%dd.col-sm-9
+													Chrome 71
+											%dl.row
+												%dt.col-sm-3
+													Viewport
+												%dd.col-sm-9
+													400x400
+											%dl.row
+												%dt.col-sm-3
+													URL
+												%dd.col-sm-9.truncated-url
+													https://app.productstash.io/superlongurldontyouknow
 
 							.new-comment
 								%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}

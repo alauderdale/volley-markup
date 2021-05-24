@@ -1,4 +1,32 @@
 .mark-resolved.complete-btn
-	%button.no-margin-bottom.btn-secondary.btn{:type=>"button", "data-toggle"=>"button"}
-		%i.material-icons
-			check
+	.dropdown
+		%button.btn.btn-secondary.text-left{:type=>"button", "data-toggle" => "dropdown", :style=>"min-width:150px;"}	
+			.d-inline-block
+				%i.material-icons{:style=>"font-size:20px; left:-5px;"}
+					check_box_outline_blank
+			.d-inline-block
+				To Do
+			.d-inline-block.float-right
+				%i.material-icons
+					expand_more
+		.dropdown-menu.dropdown-menu-right
+			%button.dropdown-item.active{:type=>"button"} 
+				%i.material-icons-outlined.icon-left{:style=>"font-size:20px; left:-5px;"}
+					check_box_outline_blank
+				To Do
+			%button.dropdown-item{:type=>"button"} 
+				%i.material-icons-outlined.icon-left{:style=>"font-size:20px; left:-5px;"}
+					remove_red_eye
+				Needs review
+			%button.dropdown-item{:type=>"button"} 
+				%i.material-icons.icon-left{:style=>"font-size:20px; left:-5px;"}
+					check_box
+				Completed
+			%button.dropdown-item{:type=>"button"} 
+				%i.material-icons-outlined.icon-left{:style=>"font-size:20px; left:-5px;"}
+					warning
+				Blocked
+			%button.dropdown-item{:type=>"button"} 
+				%i.material-icons.icon-left{:style=>"font-size:20px; left:-5px;"}
+					disabled_by_default
+				Cancelled}

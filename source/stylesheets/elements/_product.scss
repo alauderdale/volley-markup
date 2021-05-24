@@ -266,7 +266,7 @@ $note-container-width:300px;
 	    overflow-y:scroll;
 	    height: 100%;
 	    width:100%;
-	    padding-top:50px;
+	    padding-top:58px;
 	    padding-bottom:44px;
 	    border-right:1px solid $border-color;
 	    background:white;
@@ -285,6 +285,10 @@ $note-container-width:300px;
 	    	left:0;
 	    	background:white;
 	    	border-right:1px solid $border-color;
+
+	    	.filter-button{
+	    		padding:5px 10px;
+	    	}
 
 	    }
 	    .note-thumbnail{
@@ -371,20 +375,7 @@ $note-container-width:300px;
 
 
 
-.complete-btn{
-	button{
-		&:after{
-			content: "Mark complete";
-		}
-		&.active{
-			&:after{
-				content: "Completed";
-			}
-			background:$success-color!important;
-			border:$success-color!important;
-		}
-	}
-}
+
 
 
 
@@ -519,6 +510,7 @@ $note-container-width:300px;
 					background-color: white;
 					top:0;
 					z-index: 99;
+					border-bottom:$border-color 1px solid;
 					@include breakpoint(md) {
 						display: none;
 					}
@@ -588,6 +580,7 @@ $note-container-width:300px;
 							padding:16px;
 							width:100%;
 							position:relative;
+							padding-bottom:10px;
 							img{
 								border-radius:4px;
 								margin-bottom:5px;
@@ -610,16 +603,8 @@ $note-container-width:300px;
 .note-comment-container{
 	display: block;
 	width: 100%;
-	padding:10px;
-	padding-bottom:0;
-
-	.note-comment{
-		border:1px solid $border-color;
-		border-radius: $base-border-radius;
-		border-bottom:none;
-		border-bottom-left-radius:0;
-		border-bottom-right-radius:0;
-	}
+	padding:$baseline 0;
+	border-bottom:1px solid $border-color;
 }
 
 
@@ -628,30 +613,24 @@ $note-container-width:300px;
 .note-details-container{
 	display: block;
 	width: 100%;
-	padding:10px;
 	padding-top:0;
 
 	.note-details{
-		background:$off-white-color;
-		border:1px solid $border-color;
-		border-radius: $base-border-radius;
-		border-top-left-radius:0;
-		border-top-right-radius:0;
-		padding:$baseline/2;
-		padding-bottom:0;
+		padding:0 10px 0 22px;
 		i{
-			 transform: rotate(180deg);
+			 transform: rotate(0deg);
+			 margin-right:10px;
 		}
 		a.collapsed{
 			i{
-				transform: rotate(0deg);
+				transform: rotate(-90deg);
 			}
 		}
 		a.details-toggle{
 			display: block;
-			color: $light-text-color;s
+			color: $text-color;
 			i{
-				font-size: 15px;
+				font-size: 18px;
 			}
 			&:hover{
 				text-decoration:none;
@@ -659,13 +638,22 @@ $note-container-width:300px;
 		}
 		.note-details-items{
 			padding:10px;
+			padding-left:30px;
 			dl{
-				font-size: 11px;
+				font-size: 12px;
 				margin-bottom:8px;
 				line-height: 1.2;
+				dt{
+					color:$extra-light-text-color;
+				}
 				dd{
 					margin-bottom: 0;
 					word-wrap: break-word;
+					&.truncated-url{
+						// white-space: nowrap;
+						// overflow: hidden;
+						// text-overflow: ellipsis;
+					}
 				}
 			}
 		}
@@ -678,6 +666,7 @@ $note-container-width:300px;
 //this is both the menu button and the close button
 .show-notes-toggle{
 	display: none;
+	position: relative;
 	@include breakpoint(md) {
 		display: inline-block;
 	}
