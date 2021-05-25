@@ -1,5 +1,13 @@
 
 
+.btn-group{
+	&.show{
+		.btn.dropdown-action{
+			@include button-active-light-button($link-color);
+		}
+	}
+}
+
 .dropdown{
 	&.show{
 		.btn-secondary, .btn-flat{
@@ -43,8 +51,9 @@
 			vertical-align: middle;
 			line-height: 0 !important;
 			position: relative;
-			top: -1px;
-			font-size: 17px;
+			top: -2px;
+			font-size: 20px;
+			left:-5px;
 			}
 		.icon-left{
 			margin-right:12px;

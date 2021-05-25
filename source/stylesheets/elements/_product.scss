@@ -329,14 +329,26 @@ $note-container-width:300px;
 	    		h5, h6{
 	    			color:white!important;
 	    		}
+	    		.note-status-preview{
+	    			i{
+	    				color: white!important;
+	    			}
+	    		}
 	    	}
 	    	&.resolved{
-	    		&:after{
-	    			content:"✓";
-	    			position:absolute;
-	    			right:10px;
-	    			top:13px;
-	    			color:$success-color;
+	    		.note-status-preview{
+	    			i{
+	    				color:$success-color;
+	    			}
+	    		}
+	    	}
+	    	h5{
+	    		margin-bottom: $baseline/2;
+	    	}
+	    	.note-status-preview{
+	    		i{
+	    			font-size: 18px;
+	    			color:$light-text-color;
 	    		}
 	    	}
 	    }

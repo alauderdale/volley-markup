@@ -43,26 +43,22 @@
 								%a.dropdown-item.active{:href=>"#"}
 									Oldest 
 						.dropdown.d-inline
+							/ %button.btn.btn-secondary.btn-icon.filter-button{:type=>"button", "data-toggle"=>"dropdown"}
+							/ 	%span.light-text-color
+							/ 		.material-icons
+							/ 			filter_list
+							/ .dropdown-menu.dropdown-with-menu-nested{:style=>"min-width:250px;"}		
+							/ 	=partial"/product/filter-menu"
+
 							.btn-group
-								%button.btn.btn-secondary.btn-icon.filter-button{:type=>"button", "data-toggle"=>"dropdown"}
+								%button.btn.btn-secondary.btn-icon.filter-button.dropdown-action{:type=>"button", "data-toggle"=>"dropdown"}
 									%span.light-text-color
 										.material-icons
 											filter_list
-										2
-								.dropdown-menu{:style=>"min-width:250px;"}
-									.padded
-										%h4
-											Status
-										.dropdown
-											%button.btn.btn-secondary.text-left.full-width{:type=>"button", "data-toggle" => "dropdown"}
-												Submenu
-											.dropdown-menu
-												%button.dropdown-item{:type=>"button"}
-													Dropdown item
-												%button.dropdown-item{:type=>"button"}
-													Dropdown item
-												%button.dropdown-item{:type=>"button"}
-													Dropdown item
+										1
+								.dropdown-menu.dropdown-with-menu-nested{:style=>"min-width:250px;"}		
+									%form	
+										=partial"/product/filter-menu"
 								
 								%a.btn.btn-secondary.btn-icon.filter-button{:href=>"#"}
 									%span.light-text-color
@@ -90,6 +86,11 @@
 								3
 						%h5
 							=lorem.words(10)
+						.note-status-preview
+							%i.material-icons-outlined{"data-toggle"=>"tooltip", :title=>"Needs review"}
+								remove_red_eye
+						
+
 			.note-thumbnail.resolved
 				.media
 					/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
@@ -102,6 +103,10 @@
 							=lorem.first_name
 						%h5
 							=lorem.words(10)
+						.note-status-preview
+							%i.material-icons{"data-toggle"=>"tooltip", :title=>"Completed"}
+								check_box
+
 			- 30.times do
 				.note-thumbnail
 					.media
@@ -115,6 +120,9 @@
 								=lorem.first_name
 							%h5
 								=lorem.words(10)
+							.note-status-preview
+								%i.material-icons-outlined{"data-toggle"=>"tooltip", :title=>"To Do"}
+									crop_free
 
 
 

@@ -55,6 +55,12 @@ $('#myModal').on('hide.bs.modal', function (e) {
 
 //nested dropdown support
 
+// PREVENT INSIDE CLICK DROPDOWN 
+  $('.dropdown-with-menu-nested').on("click.bs.dropdown", function (e) { 
+    // e.stopPropagation();                 
+    // e.preventDefault();                             
+  });
+
 //toggle mobile menu
 
 

@@ -1,38 +1,42 @@
 .mark-resolved.complete-btn
-	.dropdown
-		.btn-group
-			%button.btn.btn-secondary.text-left{:type=>"button", "data-toggle" => "dropdown"}
-				.d-inline-block
-					%i.material-icons{:style=>"font-size:20px; left:-5px;"}
-						check_box_outline_blank
-				.d-inline-block
-					To Do
-				.d-inline-block.float-right
-					%i.material-icons
-						expand_more
-			.dropdown-menu.dropdown-menu-right
-				%button.dropdown-item.active{:type=>"button"} 
-					%i.material-icons-outlined.icon-left{:style=>"font-size:20px; left:-5px;"}
-						check_box_outline_blank
-					To Do
-				%button.dropdown-item{:type=>"button"} 
-					%i.material-icons-outlined.icon-left{:style=>"font-size:20px; left:-5px;"}
-						remove_red_eye
-					Needs review
-				%button.dropdown-item{:type=>"button"} 
-					%i.material-icons-outlined.icon-left{:style=>"font-size:20px; left:-5px;"}
-						warning
-					Blocked
-				%button.dropdown-item{:type=>"button"} 
-					%i.material-icons.icon-left{:style=>"font-size:20px; left:-5px;"}
-						disabled_by_default
-					Cancelled
-				.dropdown-divider
-				%button.dropdown-item{:type=>"button"} 
-					%i.material-icons.icon-left{:style=>"font-size:20px; left:-5px;"}
-						check_box
-					Completed
-			%a.btn.btn-secondary.btn-icon.filter-button{:href=>"#", "data-toggle"=>"tooltip", :title=>"Mark complete"}
-				%span
-					.material-icons
-						check
+	
+	.btn-group
+		%button.btn.btn-secondary.text-left.dropdown-action{:type=>"button", "data-toggle" => "dropdown"}
+			.d-inline-block
+				%i.material-icons-outlined
+					crop_free
+			.d-inline-block
+				To Do
+			.d-inline-block.float-right
+				%i.material-icons
+					expand_more
+		.dropdown-menu.dropdown-menu-right
+			%button.dropdown-item.active{:type=>"button"} 
+				%i.material-icons-outlined.icon-left
+					crop_free
+				To Do
+			%button.dropdown-item{:type=>"button"} 
+				%i.material-icons-outlined.icon-left
+					smart_display
+				In progress
+			%button.dropdown-item{:type=>"button"} 
+				%i.material-icons-outlined.icon-left
+					remove_red_eye
+				Needs review
+			%button.dropdown-item{:type=>"button"} 
+				%i.material-icons-outlined.icon-left
+					pause_presentation
+				On hold
+			%button.dropdown-item{:type=>"button"} 
+				%i.material-icons-outlined.icon-left
+					disabled_by_default
+				Cancelled
+			.dropdown-divider
+			%button.dropdown-item{:type=>"button"} 
+				%i.material-icons.icon-left
+					check_box
+				Completed
+		%a.btn.btn-secondary.btn-icon.filter-button{:href=>"#", "data-toggle"=>"tooltip", :title=>"Mark complete"}
+			%span
+				.material-icons
+					check
