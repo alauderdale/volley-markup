@@ -33,7 +33,6 @@ $note-container-width:300px;
 
 #bottom-bar{
 	border-top:1px solid #bcc2ce;
-
 	.product-title{
 		position:relative;
 		top:3px;
@@ -46,6 +45,12 @@ $note-container-width:300px;
 				font-size: 13px;
 			}
 
+		}
+	}
+	.btn{
+		@include breakpoint(sm) {
+			padding-left:7px;
+			padding-right:7px;
 		}
 	}
 	a{

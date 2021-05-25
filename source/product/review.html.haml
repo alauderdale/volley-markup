@@ -155,11 +155,17 @@
 							.dropdown.float-right{:style=>"position:relative;"}
 								
 								%a.btn.btn-secondary.float-right.btn-icon.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
-									•••
+									%i.material-icons
+										more_horiz
 								.dropdown-menu.dropdown-menu-right
-									%button.dropdown-item{:type=>"button"} 
+									%a.dropdown-item.delete-comment{ :href=>"/product/browse"} 
+										%i.material-icons-outlined.icon-left
+											launch
 										Go to page
-									%button.dropdown-item.delete-comment{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
+									.dropdown-divider
+									%button.dropdown-item.delete-comment.text-danger{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
+										%i.material-icons-outlined.icon-left
+											delete
 										Delete note
 									
 
@@ -181,7 +187,7 @@
 									=partial"mark-resolved-btn"		
 								.col
 									.dropdown
-										%a.btn.btn-flat.float-right.btn-icon.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
+										%a.btn.btn-secondary.float-right.btn-icon.inline{:href=>"/product/browse", "data-toggle"=>"dropdown", :style=>"position:relative; left:4px;"}
 											%i.material-icons
 												more_horiz
 										.dropdown-menu.dropdown-menu-right
