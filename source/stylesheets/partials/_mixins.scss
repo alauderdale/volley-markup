@@ -21,9 +21,9 @@
 }
 
 @mixin button-active-light-button($button-color) {
-	background: tint($link-color,90%)!important;
+	background: tint($link-color,93%)!important;
 	color: shade($link-color,50%)!important;
-	border-color:$button-border-color!important;
+	border-color:tint($link-color,20%)!important;
 }
 
 
