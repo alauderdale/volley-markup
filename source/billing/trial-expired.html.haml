@@ -49,7 +49,7 @@
 					.row.justify-content-center
 
 
-						.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
+						.col-sm-12.col-md-12.col-lg-4.col-xl-3.margin-bottom
 							.card.price-card.margin-auto
 								.card-header{:style=>"border-top-color:#000;"}
 									%h1.medium-font.quarter-margin-bottom
@@ -103,7 +103,7 @@
 
 
 
-						.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
+						.col-sm-12.col-md-12.col-lg-4.col-xl-3.margin-bottom
 							.card.price-card.margin-auto
 								.card-header{:style=>"border-top-color:#FF4E4A;"}
 									%h1.medium-font.quarter-margin-bottom
@@ -158,11 +158,11 @@
 
 
 
-						.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
-							.card.price-card.margin-auto.popular
+						.col-sm-12.col-md-12.col-lg-4.col-xl-3.margin-bottom
+							.card.price-card.margin-auto
 								.card-header{:style=>"border-top-color:#FFAA00;"}
 									%h1.medium-font.quarter-margin-bottom
-										Pro
+										Team
 									%h5
 										Perfect for startups and agencies 
 									%h1.display-5.inline
@@ -177,7 +177,7 @@
 									.padding-top
 										%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
 											%span.bold-font
-												Get Pro
+												Get Team
 								.card-body
 									%ul.card-list.list-unstyled.icon-list-better.check-list
 										%li
@@ -198,14 +198,29 @@
 											to Trello & Jira
 										%li
 											%span.bold-font
+												Remove 
+											Volley branding
+										%li
+											%span.bold-font
+												Widget
+											access control
+											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Control who sees your embeddable widget."}
+												info
+											
+										%li
+											%span.bold-font
 												Team
 											workspaces
 										%li
+											Start at 
 											%span.bold-font
 												4
 											team members
 											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Team members can create and join projects within shared team workspaces. It is posible to add members to multiple workspaces."}
 												info
+											%span.light-text-color
+												%span{:style=>"font-size:13px;"}
+													$5/member/mo for more team members
 										
 
 										%hr.half-margin-bottom
@@ -229,84 +244,84 @@
 
 
 
-						.col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
-							.card.price-card.margin-auto
-								.card-header{:style=>"border-top-color:#77C4FF;"}
-									%h1.medium-font.quarter-margin-bottom
-										Unlimited
-									%h5
-										Unlimited for large companies 
-									%h1.display-5.inline
-										%span.price.bold-font
-											$
-										%span.bold-font.dollar-ammount
-											79
-										%span.month
-											\/ month
-									%h5.no-margin-bottom.half-margin-top
-										Billed yearly
-									.padding-top
-										%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
-											%span.bold-font
-												Get Unlimited
-								.card-body
-									/ %h5.text-uppercase.bold-font.light-text-color
-									/ 	Everything in Basic, plus
-									%ul.card-list.list-unstyled.icon-list-better.check-list
-										%li
-											%span.bold-font
-												Unlimited 
-											notes
-										%li
-											%span.bold-font
-												Unlimited
-											projects
-										%li
-											%span.bold-font
-												Dedicated 
-											account representative
-										%li
-											%span.bold-font
-												Export 
-											to Trello & Jira
+						/ .col-sm-12.col-md-12.col-lg-3.col-xl-3.margin-bottom
+						/ 	.card.price-card.margin-auto
+						/ 		.card-header{:style=>"border-top-color:#77C4FF;"}
+						/ 			%h1.medium-font.quarter-margin-bottom
+						/ 				Unlimited
+						/ 			%h5
+						/ 				Unlimited for large companies 
+						/ 			%h1.display-5.inline
+						/ 				%span.price.bold-font
+						/ 					$
+						/ 				%span.bold-font.dollar-ammount
+						/ 					79
+						/ 				%span.month
+						/ 					\/ month
+						/ 			%h5.no-margin-bottom.half-margin-top
+						/ 				Billed yearly
+						/ 			.padding-top
+						/ 				%a.btn.btn-primary.btn-block.btn-lg{:href=>"/billing/pay"}
+						/ 					%span.bold-font
+						/ 						Get Unlimited
+						/ 		.card-body
+						/ 			/ %h5.text-uppercase.bold-font.light-text-color
+						/ 			/ 	Everything in Basic, plus
+						/ 			%ul.card-list.list-unstyled.icon-list-better.check-list
+						/ 				%li
+						/ 					%span.bold-font
+						/ 						Unlimited 
+						/ 					notes
+						/ 				%li
+						/ 					%span.bold-font
+						/ 						Unlimited
+						/ 					projects
+						/ 				%li
+						/ 					%span.bold-font
+						/ 						Dedicated 
+						/ 					account representative
+						/ 				%li
+						/ 					%span.bold-font
+						/ 						Export 
+						/ 					to Trello & Jira
 										
-										%li
-											%span.bold-font
-												Remove 
-											Volley branding
-										%li
-											%span.bold-font
-												Team
-											workspaces
-										%li
-											Start at 
-											%span.bold-font
-												15
-											team members
-											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Team members can create and join projects within shared team workspaces. It is posible to add members to multiple workspaces."}
-												info
-											%span.light-text-color
-												%span{:style=>"font-size:13px;"}
-													$5/member/mo for more team members
+						/ 				%li
+						/ 					%span.bold-font
+						/ 						Remove 
+						/ 					Volley branding
+						/ 				%li
+						/ 					%span.bold-font
+						/ 						Team
+						/ 					workspaces
+						/ 				%li
+						/ 					Start at 
+						/ 					%span.bold-font
+						/ 						15
+						/ 					team members
+						/ 					%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Team members can create and join projects within shared team workspaces. It is posible to add members to multiple workspaces."}
+						/ 						info
+						/ 					%span.light-text-color
+						/ 						%span{:style=>"font-size:13px;"}
+						/ 							$5/member/mo for more team members
 										
 										
 										
 
-										%hr
-										%li
-											%span.bold-font
-												Draw
-											tools
-										%li
-											%span.bold-font
-												Unlimited 
-											collaborators
-											%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
-												info
-										%li
-											%span.bold-font
-												@ 
-											mentions 
+						/ 				%hr
+						/ 				%li
+						/ 					%span.bold-font
+						/ 						Draw
+						/ 					tools
+						/ 				%li
+						/ 					%span.bold-font
+						/ 						Unlimited 
+						/ 					collaborators
+						/ 					%i.material-icons.cursor-pointer{"data-toggle"=>"tooltip", :title=>"Collaborators are invited into a single project. Collaborators can create and respond to feedback within a project."}
+						/ 						info
+						/ 				%li
+						/ 					%span.bold-font
+						/ 						@ 
+						/ 					mentions 
 										
 
 

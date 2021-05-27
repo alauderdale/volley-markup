@@ -161,14 +161,15 @@
                     %img.max-width{:src=>"../images/trello-logo.png", :width=>"100px"}
                   .col
                     .float-right
-                      %button.btn.btn-flat.btn-icon{"data-toggle" => "dropdown", :type=>"button"}
-                        %i.material-icons
-                          more_vert
-                      .dropdown-menu.dropdown-menu-right
-                        %button.dropdown-item{:type=>"button"} 
-                          Disconnect
-                      %a.btn.btn-primary{:href=>"/export"}
-                        Export
+                      .dropdown
+                        %button.btn.btn-flat.btn-icon{"data-toggle" => "dropdown", :type=>"button"}
+                          %i.material-icons
+                            more_vert
+                        .dropdown-menu.dropdown-menu-right
+                          %button.dropdown-item{:type=>"button"} 
+                            Disconnect
+                        %a.btn.btn-primary{:href=>"/export"}
+                          Export
           .double-margin-top
             %h5.bold-font
               Not configured
