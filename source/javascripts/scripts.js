@@ -55,14 +55,19 @@ $('#myModal').on('hide.bs.modal', function (e) {
 
 //nested dropdown support
 
+
 // PREVENT INSIDE CLICK DROPDOWN 
-  $('.dropdown-with-menu-nested').on("click.bs.dropdown", function (e) { 
-    // e.stopPropagation();                 
-    // e.preventDefault();                             
+  $('.prevent-dd-close-on-click').on("click.bs.dropdown", function (e) { 
+    e.stopPropagation();                 
+    e.preventDefault();                             
   });
 
-//toggle mobile menu
 
+//for filter menu
+
+  $('.checkbox-filter-item').on('click', function(e) {
+    $(this).toggleClass("active"); 
+  });
 
 
 

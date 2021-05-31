@@ -56,9 +56,8 @@
 										.material-icons
 											filter_list
 										1
-								.dropdown-menu.dropdown-with-menu-nested{:style=>"min-width:250px;"}		
-									%form	
-										=partial"/product/filter-menu"
+								.dropdown-menu.max-height-dropdown.prevent-dd-close-on-click{:style=>"min-width:250px;"}		
+									=partial"/product/filter-menu"
 								
 								%a.btn.btn-secondary.btn-icon.filter-button{:href=>"#"}
 									%span.light-text-color

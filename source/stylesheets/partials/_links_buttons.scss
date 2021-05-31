@@ -36,10 +36,25 @@ a{
 	&.btn-primary{
 		background:$link-color;
 		border-color:$link-color;
+
+		//ripple
+		// background-position: center;
+  		// 	transition: background 0.8s;
+
 		&:hover{
+
+			//ripple
+			// background: shade($link-color,10%) radial-gradient(circle, transparent 1%, shade($link-color,10%) 1%) center/15000%;
+
 			@include button-hover($link-color);
 		}
 		&:active{
+
+			//ripple
+			// background-color: tint($link-color,90%);
+			// background-size: 100%;
+			// transition: background 0s;
+
 			@include button-active($link-color);
 		}
 	}
@@ -47,9 +62,11 @@ a{
 		background:white;
 		border-color:$lightest-gray-color;
 		color:$text-color;
+
 		&:hover{
 			@include button-hover-light-button($link-color);
 		}
+
 		&:active{
 			@include button-active-light-button($link-color);
 		}

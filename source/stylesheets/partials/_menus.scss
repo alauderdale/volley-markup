@@ -61,7 +61,60 @@
 	}
 }
 
+.dropdown-header{
+	color:$text-color;
+	background-color: $off-white-color;
+	border-top:1px solid $off-white-darker-color;
+	border-bottom:1px solid $off-white-darker-color;
+	&.dropdown-header-white{
+		border:none;
+		background:transparent;
+	}
+}
 
+.max-height-dropdown{
+	overflow-y: scroll;
+	background: white;
+	max-height: 300px;
+}
+
+
+//used for the note filter
+.checkbox-filter-item{
+	cursor: pointer;
+	position:relative;
+	&:hover{
+		background:transparent!important;
+		&:after{
+			content: "check_box";
+			color:$link-color;
+			font-family:"material Icons Outlined";
+		}
+	}
+	&:after{
+		content: "check_box_outline_blank";
+		position:absolute;
+		top:3px;
+		right:18px;
+		font-size: 20px;
+		color: $lightest-gray-color;
+		font-family:"material Icons";
+
+	}
+	&.active{
+		background:transparent!important;
+		box-shadow: none!important;
+
+		&:after{
+			content: "check_box";
+			color: $link-color;	
+			font-family:"material Icons";	
+		}
+
+
+	}
+
+}
 
 .workspace-menu-inner{
     position: relative;
