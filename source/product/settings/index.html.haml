@@ -59,6 +59,59 @@
 									%label.form-check-label{:for => "inlineRadio2"} 
 										%p.no-margin
 											Anyone with the link
+					.settings-section.double-margin-bottom.double-padding-bottom
+						%h3.margin-bottom.medium-font
+							Advanced options
+						%form
+							%h4.medium-font.d-inline.align-middle
+								Also send notes to Trello or Jira
+							.d-inline
+								%span
+									%label.switch.margin-left
+										%input{:type => "checkbox", :checked=>"checked"}
+										%span.slider.round
+						.row
+							.col-12.col-md-7
+								.dropdown.margin-top
+									%button.btn.btn-secondary.text-left.btn-block{:type=>"button", "data-toggle" => "dropdown"}
+										.d-inline
+											%img.quarter-margin-right{:src=>"../images/trello-icon.png", :width=>"20px"}
+										.d-inline
+											Trello
+										.d-inline.float-right
+											%i.material-icons
+												expand_more
+									.dropdown-menu.full-width
+										%button.dropdown-item.active{:type=>"button"} 
+											%img.quarter-margin-right{:src=>"../images/trello-icon.png", :width=>"20px"}
+											Trello
+										%button.dropdown-item{:type=>"button"} 
+											%img.quarter-margin-right{:src=>"../images/jira-icon.png", :width=>"20px"}
+											Jira
+								.dropdown.half-margin-top
+									%button.btn.btn-secondary.text-left.btn-block{:type=>"button", "data-toggle" => "dropdown"}
+										.d-inline
+											Name of board
+										.d-inline.float-right
+											%i.material-icons
+												expand_more
+									.dropdown-menu.full-width
+										%button.dropdown-item.active{:type=>"button"} 
+											Name of board
+										%button.dropdown-item{:type=>"button"} 
+											Another board
+								.dropdown.half-margin-top
+									%button.btn.btn-secondary.text-left.btn-block{:type=>"button", "data-toggle" => "dropdown"}
+										.d-inline
+											Name of lane
+										.d-inline.float-right
+											%i.material-icons
+												expand_more
+									.dropdown-menu.full-width
+										%button.dropdown-item.active{:type=>"button"} 
+											Name of lane
+										%button.dropdown-item{:type=>"button"} 
+											Another lane
 					%hr
 					.text-right
 						%button.btn.btn-primary.btn-lg{:tyle=>"button", "data-dismiss" => "modal"}

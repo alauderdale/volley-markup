@@ -9,16 +9,16 @@
 Volley | Fast, easy feedback for your website"
 </title>
 <meta content='Volley | A visual feedback tool for teams making websites' property='og:title'>
-<meta content='../../images/featured.png' property='og:image'>
+<meta content='../images/featured.png' property='og:image'>
 <!-- /google material icons -->
 <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/icon?family=Material+Icons+Outlined' rel='stylesheet'>
-<link href="../../stylesheets/style.css" rel="stylesheet" />
-<link href='../../images/favicon.ico' rel='shortcut icon'>
-<script src="../../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
+<link href="../stylesheets/style.css" rel="stylesheet" />
+<link href='../images/favicon.ico' rel='shortcut icon'>
+<script src="../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
 
 </head>
-<body class='settings settings_notifications settings_notifications_index'>
+<body class='components components_index'>
 <div id='dashboard-container'>
 <!-- .alert.alert-promo.alert-dismissible.fade.show{:role => "alert"} -->
 <!-- .container.text-center -->
@@ -45,9 +45,9 @@ clear
 <nav class='navbar admin-bar'>
 <div class='nav-item dropup'>
 <a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
-<img alt='Avatar' class='avatar avatar-xs quarter-margin-right align-middle' src='../../images/img_avatar.png'>
+<img alt='Avatar' class='avatar avatar-xs quarter-margin-right align-middle' src='../images/img_avatar.png'>
 <span class='medium-font menu-text align-middle'>
-Kyla Cooper
+Wayne Clapp
 </span>
 <i class='material-icons align-middle'>
 unfold_more
@@ -90,7 +90,7 @@ Sign out
 </nav>
 <div class='logo-container text-center'>
 <a class='navbar-brand' href='/products'>
-<img src='../../images/logo.svg' width='100px'>
+<img src='../images/logo.svg' width='100px'>
 </a>
 </div>
 <nav class='navbar team-select-container'>
@@ -112,7 +112,7 @@ unfold_more
 <div class='workspace-menu-inner'>
 <a class='dropdown-item d-flex align-items-center' href='#'>
 <div class='avatar-container'>
-<img alt='Avatar' class='avatar avatar-xs' src='../../images/img_avatar.png' width='28px'>
+<img alt='Avatar' class='avatar avatar-xs' src='../images/img_avatar.png' width='28px'>
 </div>
 <span class='text p-2 mr-auto align-middle'>
 <p class='menu-title'>
@@ -483,7 +483,7 @@ menu
 </i>
 </button>
 <a class='navbar-brand mx-auto' href='/products'>
-<img src='../../images/logo.svg' width='90px'>
+<img src='../images/logo.svg' width='90px'>
 </a>
 </div>
 </nav>
@@ -522,166 +522,213 @@ Create team
 
 <div class='main'>
 <section>
-<div class='container'>
-<div class='row justify-content-center'>
-<div class='col-xl-10'>
-<div class='page-header-for-title'>
-<h2 class='medium-font title'>
-Good morning, John!
+<div class='container product-card-container'>
+<div class='row'>
+<div class='col'>
+<h2>
+Buttons
 </h2>
 </div>
-
-<nav class='nav double-margin-bottom primary-tabs'>
-<a class='nav-link' href='/settings/'>
-Prifile
+</div>
+<div class='row'>
+<div class='col'>
+<a class='btn btn-primary' href='#'>
+Primary button
 </a>
-<a class='nav-link' href='/settings/password'>
-Password
+<a class='btn btn-secondary' href='#'>
+Secondary button
 </a>
-<a class='nav-link active' href='/settings/notifications'>
-Notifications
+<a class='btn btn-icon btn-secondary' href='#'>
+<i class='material-icons'>
+settings
+</i>
 </a>
-<a class='nav-link' href='/settings/billing-appsumo'>
-Subbscription
+<a class='btn btn-terciary' href='#'>
+Terciary button
 </a>
-<a class='nav-link' href='/settings/appsumo'>
-AppSumo
+<a class='btn btn-label' href='#'>
+Label button
 </a>
-</nav>
-<div class='card-checkbox-fix margin-bottom'>
-<div class='card-body'>
-<div class='row align-items-center'>
-<div class='col-12'>
-<p class='medium-font'>
-Send me an email when someone:
-</p>
-<div class='list-of-options simple style-checkbox'>
-<div class='margin-bottom'>
-<div class='list-group'>
-<div class='list-group-inner'>
-<div>
-<input checked='checked' id='Checkbox0' name='RadioInputName' type='checkbox' value='Value1'>
-<label class='list-group-item' for='Checkbox0'>
-<div class='row align-items-center margin-left'>
+<a class='btn btn-flat' href='#'>
+Flat button
+</a>
+<span class='d-block' style='padding:10px; background:black;'>
+<a class='btn btn-wire' href='#'>
+Wire button
+</a>
+</span>
+<a class='btn btn-link' href='#'>
+Link button
+</a>
+</div>
+</div>
+<div class='row'>
 <div class='col'>
-<h4 class='quarter-margin-bottom'>
-Replies to any note
-</h4>
+<h2>
+Dropdowns
+</h2>
 </div>
 </div>
-</label>
-</div>
-</div>
-</div>
-<div class='list-group'>
-<div class='list-group-inner'>
-<div>
-<input checked='checked' id='Checkbox1' name='RadioInputName' type='checkbox' value='Value1'>
-<label class='list-group-item' for='Checkbox1'>
-<div class='row align-items-center margin-left'>
+<div class='row'>
 <div class='col'>
-<h4 class='quarter-margin-bottom'>
-Replies to a note I've made
-</h4>
-</div>
-</div>
-</label>
-</div>
-</div>
-</div>
-<div class='list-group'>
-<div class='list-group-inner'>
-<div>
-<input checked='checked' id='Checkbox2' name='RadioInputName' type='checkbox' value='Value1'>
-<label class='list-group-item' for='Checkbox2'>
-<div class='row align-items-center margin-left'>
-<div class='col'>
-<h4 class='quarter-margin-bottom'>
-Replies to a note I've replied to
-</h4>
-</div>
-</div>
-</label>
-</div>
-</div>
-</div>
-</div>
-<div class='margin-bottom'>
-<div class='list-group'>
-<div class='list-group-inner'>
-<div>
-<input id='Checkbox3' name='RadioInputName' type='checkbox' value='Value1'>
-<label class='list-group-item' for='Checkbox3'>
-<div class='row align-items-center margin-left'>
-<div class='col'>
-<h4 class='quarter-margin-bottom'>
-Resolves any note
-</h4>
-</div>
-</div>
-</label>
-</div>
-</div>
-</div>
-<div class='list-group'>
-<div class='list-group-inner'>
-<div>
-<input id='Checkbox4' name='RadioInputName' type='checkbox' value='Value1'>
-<label class='list-group-item' for='Checkbox4'>
-<div class='row align-items-center margin-left'>
-<div class='col'>
-<h4 class='quarter-margin-bottom'>
-Resolves a note I've made
-</h4>
-</div>
-</div>
-</label>
-</div>
-</div>
-</div>
-<div class='list-group'>
-<div class='list-group-inner'>
-<div>
-<input id='Checkbox5' name='RadioInputName' type='checkbox' value='Value1'>
-<label class='list-group-item' for='Checkbox5'>
-<div class='row align-items-center margin-left'>
-<div class='col'>
-<h4 class='quarter-margin-bottom'>
-Resolves a note I've replied to
-</h4>
-</div>
-</div>
-</label>
-</div>
-</div>
-</div>
-</div>
-<div class='margin-bottom'>
-<div class='list-group'>
-<div class='list-group-inner'>
-<div>
-<input id='Checkbox6' name='RadioInputName' type='checkbox' value='Value1'>
-<label class='list-group-item' for='Checkbox6'>
-<div class='row align-items-center margin-left'>
-<div class='col'>
-<h4 class='quarter-margin-bottom'>
-Creates a note
-</h4>
-</div>
-</div>
-</label>
-</div>
-</div>
-</div>
-</div>
-</div>
-<hr>
-<button class='btn btn-primary btn-lg margin-top' type='submit'>
-Save changes
+<div class='dropdown'>
+<button class='btn btn-secondary text-left' data-toggle='dropdown' type='button'>
+<i class='material-icons'>
+check_box_outline_blank
+</i>
+To Do
+<i class='material-icons'>
+expand_more
+</i>
+</button>
+<div class='dropdown-menu'>
+<button class='dropdown-item' type='button'>
+<i class='material-icons-outlined icon-left'>
+check_box_outline_blank
+</i>
+To Do
+</button>
+<button class='dropdown-item active' type='button'>
+<i class='material-icons-outlined icon-left'>
+smart_display
+</i>
+In Progress
+</button>
+<button class='dropdown-item' type='button'>
+<i class='material-icons icon-left'>
+check_box
+</i>
+Completed
+</button>
+<button class='dropdown-item' type='button'>
+<i class='material-icons-outlined icon-left'>
+warning
+</i>
+Blocked
+</button>
+<button class='dropdown-item' type='button'>
+<i class='material-icons icon-left'>
+disabled_by_default
+</i>
+Cancelled
 </button>
 </div>
 </div>
 </div>
+</div>
+<div class='row'>
+<div class='col'>
+<h2>
+Menus
+</h2>
+<div class='dropdown-menu show max-height-dropdown' style='min-width:250px;'>
+<h6 class='dropdown-header dropdown-header-white padding-bottom'>
+Filter notes by:
+</h6>
+<h6 class='dropdown-header'>
+Status
+</h6>
+<div class='quarter-padding-top quarter-padding-bottom'>
+<div class='dropdown-item checkbox-filter-item'>
+<div class='d-inline-block'>
+<i class='material-icons-outlined icon-left'>
+crop_free
+</i>
+</div>
+<div class='d-inline-block'>
+To Do
+</div>
+</div>
+<div class='dropdown-item checkbox-filter-item'>
+<div class='d-inline-block'>
+<i class='material-icons-outlined icon-left'>
+smart_display
+</i>
+</div>
+<div class='d-inline-block'>
+In Progress
+</div>
+</div>
+<div class='dropdown-item checkbox-filter-item'>
+<div class='d-inline-block'>
+<i class='material-icons icon-left'>
+check_box
+</i>
+</div>
+<div class='d-inline-block'>
+Completed
+</div>
+</div>
+<div class='dropdown-item checkbox-filter-item'>
+<div class='d-inline-block'>
+<i class='material-icons-outlined icon-left'>
+warning
+</i>
+</div>
+<div class='d-inline-block'>
+Blocked
+</div>
+</div>
+<div class='dropdown-item checkbox-filter-item'>
+<div class='d-inline-block'>
+<i class='material-icons icon-left'>
+disabled_by_default
+</i>
+</div>
+<div class='d-inline-block'>
+Cancelled
+</div>
+</div>
+</div>
+<!-- .padded -->
+<!-- .dropdown-section.margin-bottom -->
+<!-- %h4.medium-font -->
+<!-- Status -->
+<!-- .dropdown -->
+<!-- %button.btn.btn-secondary.text-left.full-width{:type=>"button", "data-toggle" => "dropdown"} -->
+<!-- .d-inline-block -->
+<!-- %i.material-icons-outlined -->
+<!-- crop_free -->
+<!-- .d-inline-block -->
+<!-- To do -->
+<!-- .d-inline-block.float-right -->
+<!-- %i.material-icons -->
+<!-- expand_more -->
+<!-- .dropdown-menu.dropdown-menu-right.full-width -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- clear_all -->
+<!-- All -->
+<!-- %button.dropdown-item.active{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- crop_free -->
+<!-- To Do -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- smart_display -->
+<!-- In progress -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- remove_red_eye -->
+<!-- Needs review -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- pause_presentation -->
+<!-- On hold -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- disabled_by_default -->
+<!-- Cancelled -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons.icon-left -->
+<!-- check_box -->
+<!-- Completed -->
+<!-- .dropdown-footer.d-flex.justify-content-end.half-padding-top -->
+<!-- %button.btn.btn-link{:type=>"button"} -->
+<!-- Reset -->
+<!-- %button.btn.btn-primary{:type=>"button"} -->
+<!-- Apply -->
+
 </div>
 </div>
 </div>
