@@ -10,6 +10,9 @@
 					Primary button
 				%a.btn.btn-secondary{:href=>"#"}
 					Secondary button
+				%a.btn.btn-icon.btn-secondary{:href=>"#"}
+					%i.material-icons
+						settings
 				%a.btn.btn-terciary{:href=>"#"}
 					Terciary button
 				%a.btn.btn-label{:href=>"#"}
@@ -21,3 +24,47 @@
 						Wire button
 				%a.btn.btn-link{:href=>"#"}
 					Link button
+		.row
+			.col
+				%h2
+					Dropdowns
+
+		.row
+			.col
+				.dropdown
+					%button.btn.btn-secondary.text-left{:type=>"button", "data-toggle" => "dropdown"}
+						%i.material-icons
+							check_box_outline_blank
+						To Do
+						%i.material-icons
+							expand_more
+					.dropdown-menu
+						%button.dropdown-item{:type=>"button"} 
+							%i.material-icons-outlined.icon-left
+								check_box_outline_blank
+							To Do
+						%button.dropdown-item.active{:type=>"button"} 
+							%i.material-icons-outlined.icon-left
+								smart_display
+							In Progress
+						%button.dropdown-item{:type=>"button"} 
+							%i.material-icons.icon-left
+								check_box
+							Completed
+						%button.dropdown-item{:type=>"button"} 
+							%i.material-icons-outlined.icon-left
+								warning
+							Blocked
+						%button.dropdown-item{:type=>"button"} 
+							%i.material-icons.icon-left
+								disabled_by_default
+							Cancelled
+		.row
+			.col
+				%h2
+					Menus
+				.dropdown-menu.show.max-height-dropdown{:style=>"min-width:250px;"}
+					=partial"/product/filter-menu"
+							
+								
+

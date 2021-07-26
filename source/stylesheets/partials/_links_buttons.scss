@@ -4,10 +4,22 @@ a{
 
 
 
+
 .btn{
 	border-radius:$base-border-radius;
 	font-weight:600;
 	font-size:13px;
+	transition: none;
+
+	.material-icons, .material-icons-outlined {
+	  vertical-align: middle;
+	  line-height: 0 !important;
+	  position: relative;
+	  top: -1px;
+	  font-size: 14px;
+	}
+
+
 	&.btn-lg{
 		padding: .65rem 2rem;
 		font-size:16px;
@@ -24,17 +36,39 @@ a{
 	&.btn-primary{
 		background:$link-color;
 		border-color:$link-color;
-		
+
+		//ripple
+		// background-position: center;
+  		// 	transition: background 0.8s;
+
 		&:hover{
+
+			//ripple
+			// background: shade($link-color,10%) radial-gradient(circle, transparent 1%, shade($link-color,10%) 1%) center/15000%;
+
 			@include button-hover($link-color);
+		}
+		&:active{
+
+			//ripple
+			// background-color: tint($link-color,90%);
+			// background-size: 100%;
+			// transition: background 0s;
+
+			@include button-active($link-color);
 		}
 	}
 	&.btn-secondary{
 		background:white;
 		border-color:$lightest-gray-color;
 		color:$text-color;
+
 		&:hover{
-			border-color:shade($lightest-gray-color,90%);
+			@include button-hover-light-button($link-color);
+		}
+
+		&:active{
+			@include button-active-light-button($link-color);
 		}
 		&.disabled{
 			border-color:$lightest-gray-color;
@@ -51,6 +85,7 @@ a{
 			border-color:tint($link-color,82%);
 		}
 	}
+	//used in the share modal
 	&.btn-label{
 		background:$off-white-dark-color;
 		border:none;
@@ -87,10 +122,15 @@ a{
 		border-color:white;
 		color:$text-color;
 		&:hover{
-			@include button-hover(white);
+			@include button-hover-light-button($link-color);
+			border-color:white;
+		}
+		&:active{
+			@include button-active-light-button($link-color);
 		}
 	}
 	//flat wire
+	//used in the hover of project card
 	&.btn-wire{
 		background:transparent;
 		border-color:white;
@@ -106,15 +146,10 @@ a{
 			color:shade($link-color,10%);
 		}
 	}
+	//used for icon only buttons
 	&.btn-icon{
-		line-height:1;
 		i{
-			color:$lightest-gray-color;
-			}
-		&:hover, &:focus{
-			i{
-				color:shade($lightest-gray-color,90%);
-			}	
+			font-size: 20px!important;
 		}
 	}
 	&:focus{

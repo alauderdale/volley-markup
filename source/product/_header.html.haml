@@ -4,7 +4,7 @@
       .d-inline-block
         %a.navbar-brand.padding-bottom.padding-top{:href => "/products"}
           .inline-block
-            %i.material-icons.light-text-color{:style=>"position:relative; top:3px;"}
+            %i.material-icons.light-text-color{:style=>"position:relative; top:3px; "}
               keyboard_arrow_left
       .d-inline-block.product-title
         %p.no-margin-bottom.product-name
@@ -19,12 +19,12 @@
               JD
           .avatar.avatar-initial.avatar-xs.d-inline-block.primary-bg{"data-toggle"=>"modal", "data-target"=>"#shareModal"}
             +4
-        %a.btn.btn-primary.share-button.d-inline-block.quarter-margin-right{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#shareModalGuest"}
+        %a.btn.btn-primary.share-button.d-inline-block{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#shareModalGuest"}
           Share
-        %a.btn.btn-secondary.share-button.d-inline-block.quarter-margin-right{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#exportModal"}
+        %a.btn.btn-secondary.share-button.d-inline-block{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#exportModal"}
           Export
-        %a.btn.btn-secondary.icon-btn.d-inline-block{:href=>"/product/settings"}
-          %i.material-icons
+        %a.btn.btn-secondary.btn-icon.d-inline-block{:href=>"/product/settings"}
+          %i.material-icons-outlined
             settings
         
 
@@ -161,14 +161,15 @@
                     %img.max-width{:src=>"../images/trello-logo.png", :width=>"100px"}
                   .col
                     .float-right
-                      %button.btn.btn-flat.btn-icon{"data-toggle" => "dropdown", :type=>"button"}
-                        %i.material-icons
-                          more_vert
-                      .dropdown-menu.dropdown-menu-right
-                        %button.dropdown-item{:type=>"button"} 
-                          Disconnect
-                      %a.btn.btn-primary{:href=>"/export"}
-                        Export
+                      .dropdown
+                        %button.btn.btn-flat.btn-icon{"data-toggle" => "dropdown", :type=>"button"}
+                          %i.material-icons
+                            more_vert
+                        .dropdown-menu.dropdown-menu-right
+                          %button.dropdown-item{:type=>"button"} 
+                            Disconnect
+                        %a.btn.btn-primary{:href=>"/export"}
+                          Export
           .double-margin-top
             %h5.bold-font
               Not configured

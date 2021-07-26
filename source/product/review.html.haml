@@ -20,25 +20,51 @@
 .review-container
 	.notes-list-container
 		.notes-list-body.promo-active
-			.notes-list-header.padded.half-padding-bottom
+			.notes-list-header.padded
 				.inline
 					.inline-block.align-middle
 						%h4.bold-font.no-margin-bottom
 							21 Notes
 					.inline-block.align-middle.show-notes-toggle.float-right.margin-left
 						%a{:href=>"#"}
-							%i.material-icons
+							%i.material-icons.text-color{:style=>"font-size:14px; position:relative; top:3px;"}
 								clear
+							
 					.inline-block.align-middle.float-right
-						.dropdown
-							%button.btn.btn-default.dropdown-toggle.no-padding.btn-sm-text.light-text-color.regular-font{:type=>"button", "data-toggle"=>"dropdown"}
+						.dropdown.d-inline.half-margin-right
+							%button.btn.btn-default.no-padding.btn-sm-text.light-text-color.regular-font{:type=>"button", "data-toggle"=>"dropdown"}
 								Oldest 
+								%i.material-icons
+									expand_more
 							
 							.dropdown-menu
 								%a.dropdown-item{:href=>"#"}
 									Newest 
 								%a.dropdown-item.active{:href=>"#"}
 									Oldest 
+						.dropdown.d-inline
+							/ %button.btn.btn-secondary.btn-icon.filter-button{:type=>"button", "data-toggle"=>"dropdown"}
+							/ 	%span.light-text-color
+							/ 		.material-icons
+							/ 			filter_list
+							/ .dropdown-menu.dropdown-with-menu-nested{:style=>"min-width:250px;"}		
+							/ 	=partial"/product/filter-menu"
+
+							.btn-group
+								%button.btn.btn-secondary.btn-icon.filter-button.dropdown-action{:type=>"button", "data-toggle"=>"dropdown"}
+									%span.light-text-color
+										.material-icons
+											filter_list
+										1
+								.dropdown-menu.max-height-dropdown.prevent-dd-close-on-click{:style=>"min-width:250px;"}		
+									=partial"/product/filter-menu"
+								
+								%a.btn.btn-secondary.btn-icon.filter-button{:href=>"#"}
+									%span.light-text-color
+										.material-icons
+											clear
+								
+							
 
 				
 			
@@ -59,6 +85,11 @@
 								3
 						%h5
 							=lorem.words(10)
+						.note-status-preview
+							%i.material-icons-outlined{"data-toggle"=>"tooltip", :title=>"Needs review"}
+								remove_red_eye
+						
+
 			.note-thumbnail.resolved
 				.media
 					/ %img.margin-right{:src=>"/images/tmp/product-shot.png", :width=>"42px"}
@@ -71,6 +102,10 @@
 							=lorem.first_name
 						%h5
 							=lorem.words(10)
+						.note-status-preview
+							%i.material-icons{"data-toggle"=>"tooltip", :title=>"Completed"}
+								check_box
+
 			- 30.times do
 				.note-thumbnail
 					.media
@@ -84,6 +119,9 @@
 								=lorem.first_name
 							%h5
 								=lorem.words(10)
+							.note-status-preview
+								%i.material-icons-outlined{"data-toggle"=>"tooltip", :title=>"To Do"}
+									crop_free
 
 
 
@@ -101,11 +139,12 @@
 							
 
 			.notes-list-footer
-				.show-resolved.check-btn
-					%button.no-margin-bottom.btn-link.btn{:type=>"button"}
-						%i.material-icons
-							check_box
-						Show resolved
+				.show-resolved
+					.custom-checkbox.half-padding-top{:style=>"position:relative; left:2px;"}
+						%input#inlineRadio1.form-check-input{:name => "inlineRadioOptions", :type => "checkbox", :value => "option1", :checked=>"checked"}
+							%label.form-check-label{:for => "inlineRadio1"} 
+								%h4.no-margin
+									Show completed
 
 	.note-container
 		.note-body
@@ -120,13 +159,20 @@
 							.inline-block
 								=partial"mark-resolved-btn"
 						.col-4
-							.float-right{:style=>"position:relative;"}
-								%a.btn.btn-secondary.float-right.page-btn.icon-bbtn.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
-									•••
+							.dropdown.float-right{:style=>"position:relative;"}
+								
+								%a.btn.btn-secondary.float-right.btn-icon.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
+									%i.material-icons
+										more_horiz
 								.dropdown-menu.dropdown-menu-right
-									%button.dropdown-item{:type=>"button"} 
+									%a.dropdown-item.delete-comment{ :href=>"/product/browse"} 
+										%i.material-icons-outlined.icon-left
+											launch
 										Go to page
-									%button.dropdown-item.delete-comment{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
+									.dropdown-divider
+									%button.dropdown-item.delete-comment.text-danger{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
+										%i.material-icons-outlined.icon-left
+											delete
 										Delete note
 									
 
@@ -147,15 +193,20 @@
 								.col-7
 									=partial"mark-resolved-btn"		
 								.col
-									%a.btn.btn-secondary.float-right.page-btn.icon-btn.inline{:href=>"/product/browse", "data-toggle"=>"dropdown"}
-										%i.material-icons
-											more_horiz
-									.dropdown-menu.dropdown-menu-right
-										%button.dropdown-item.delete-comment{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
-											Delete note
-									%a.btn.btn-secondary.float-right.page-btn.icon-btn.inline.half-margin-right{:href=>"/product/browse", "data-toggle"=>"tooltip", :title=>"Go to page"}
-										%i.material-icons
-											launch
+									.dropdown
+										%a.btn.btn-secondary.float-right.btn-icon.inline{:href=>"/product/browse", "data-toggle"=>"dropdown", :style=>"position:relative; left:4px;"}
+											%i.material-icons
+												more_horiz
+										.dropdown-menu.dropdown-menu-right
+											%a.dropdown-item.delete-comment{ :href=>"/product/browse"} 
+												%i.material-icons-outlined.icon-left
+													launch
+												Go to page
+											.dropdown-divider
+											%button.dropdown-item.delete-comment.text-danger{:type=>"button", "data-toggle"=>"modal", "data-target"=>"#confirmDeleteNoteModal"} 
+												%i.material-icons-outlined.icon-left
+													delete
+												Delete note
 					.comments-wrapper
 						/ .comment-list-confirm-overlay.text-center.invisible.delete-this-convo
 						/ 	.confirm-items
@@ -195,8 +246,8 @@
 											JD
 										.media-body
 											.actions
-												.dropdown.show.text-right
-													%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+												.dropdown.text-right
+													%button.btn.btn-flat.btn-icon{"data-toggle" => "dropdown", :type=>"button"}
 														%i.material-icons
 															more_horiz
 													.dropdown-menu.dropdown-menu-right
@@ -210,36 +261,42 @@
 												I just want to see how this note will look with a very long note written in it .Notes often are not all that long but just wanting to make sure this area provides the best UX possible for prople.
 											/ %a{:href=>"#"}
 											/ 	%img{:src=>"/images/tmp/shot.png", :width=>"85px"}
-							.note-details-container
-								.note-details
-									%h5.text-center
-										%a.collapsed.details-toggle{"data-toggle"=>"collapse", :href=>"#noteDetailsCollapse", :role=>"button", "aria-expanded"=>"false"}
-											Details
-											%i.material-icons.align-middle
-												expand_more
+								.note-details-container
+									.note-details
+										%h4.medium-font
+											%a.collapsed.details-toggle{"data-toggle"=>"collapse", :href=>"#noteDetailsCollapse", :role=>"button", "aria-expanded"=>"false"}
+												%i.material-icons.align-middle
+													expand_more
+												Details
+												
 
-									#noteDetailsCollapse.note-details-items.collapse
-										%dl.row
-											%dt.col-sm-3
-												Browser
-											%dd.col-sm-9
-												Mac OS 10.14.0
-										%dl.row
-											%dt.col-sm-3
-												OS
-											%dd.col-sm-9
-												Chrome 71
-										%dl.row
-											%dt.col-sm-3
-												URL
-											%dd.col-sm-9
-												https://app.productstash.io/
+										#noteDetailsCollapse.note-details-items.collapse
+											%dl.row
+												%dt.col-sm-3
+													Browser
+												%dd.col-sm-9
+													Mac OS 10.14.0
+											%dl.row
+												%dt.col-sm-3
+													OS
+												%dd.col-sm-9
+													Chrome 71
+											%dl.row
+												%dt.col-sm-3
+													Viewport
+												%dd.col-sm-9
+													400x400
+											%dl.row
+												%dt.col-sm-3
+													URL
+												%dd.col-sm-9.truncated-url
+													https://app.productstash.io/superlongurldontyouknow
 
 							.new-comment
 								%textarea.form-control.full-width.quarter-margin-bottom.new-comment-field{:rows=>"1", :placeholder=>"Write a reply"}
 								%button.btn.btn-primary.btn-sm.float-right.add-comment-btn{:type=>"button"}
 									Comment
-								%button.btn.btn-link.attachment.float-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
+								%button.btn.btn-flat.btn-icon.attachment.float-right.quarter-margin-right{:type=>"button", "data-toggle"=>"tooltip", :title=>"Attach a file"}
 									%i.material-icons
 										attachment
 
@@ -251,8 +308,8 @@
 											JD
 										.media-body
 											.actions
-												.dropdown.show.text-right
-													%button.btn.btn-link.btn-action{"data-toggle" => "dropdown", :type=>"button"}
+												.dropdown.text-right
+													%button.btn.btn-flat.btn-icon{"data-toggle" => "dropdown", :type=>"button"}
 														%i.material-icons
 															more_horiz
 													.dropdown-menu.dropdown-menu-right

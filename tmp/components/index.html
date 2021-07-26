@@ -9,16 +9,16 @@
 Volley | Fast, easy feedback for your website"
 </title>
 <meta content='Volley | A visual feedback tool for teams making websites' property='og:title'>
-<meta content='../../images/featured.png' property='og:image'>
+<meta content='../images/featured.png' property='og:image'>
 <!-- /google material icons -->
 <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/icon?family=Material+Icons+Outlined' rel='stylesheet'>
-<link href="../../stylesheets/style.css" rel="stylesheet" />
-<link href='../../images/favicon.ico' rel='shortcut icon'>
-<script src="../../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../../javascripts/scripts.js"></script>
+<link href="../stylesheets/style.css" rel="stylesheet" />
+<link href='../images/favicon.ico' rel='shortcut icon'>
+<script src="../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
 
 </head>
-<body class='products products_search-zero products_search-zero_index'>
+<body class='components components_index'>
 <div id='dashboard-container'>
 <!-- .alert.alert-promo.alert-dismissible.fade.show{:role => "alert"} -->
 <!-- .container.text-center -->
@@ -45,9 +45,9 @@ clear
 <nav class='navbar admin-bar'>
 <div class='nav-item dropup'>
 <a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
-<img alt='Avatar' class='avatar avatar-xs quarter-margin-right align-middle' src='../../images/img_avatar.png'>
+<img alt='Avatar' class='avatar avatar-xs quarter-margin-right align-middle' src='../images/img_avatar.png'>
 <span class='medium-font menu-text align-middle'>
-Harrison Morgan
+Samuel Sykes
 </span>
 <i class='material-icons align-middle'>
 unfold_more
@@ -90,7 +90,7 @@ Sign out
 </nav>
 <div class='logo-container text-center'>
 <a class='navbar-brand' href='/products'>
-<img src='../../images/logo.svg' width='100px'>
+<img src='../images/logo.svg' width='100px'>
 </a>
 </div>
 <nav class='navbar team-select-container'>
@@ -112,7 +112,7 @@ unfold_more
 <div class='workspace-menu-inner'>
 <a class='dropdown-item d-flex align-items-center' href='#'>
 <div class='avatar-container'>
-<img alt='Avatar' class='avatar avatar-xs' src='../../images/img_avatar.png' width='28px'>
+<img alt='Avatar' class='avatar avatar-xs' src='../images/img_avatar.png' width='28px'>
 </div>
 <span class='text p-2 mr-auto align-middle'>
 <p class='menu-title'>
@@ -456,7 +456,7 @@ Create a new team
 </div>
 </nav>
 <nav class='navbar nav flex-column margin-bottom'>
-<a class='active nav-link' href='/products/'>
+<a class='nav-link' href='/products/'>
 Projects
 </a>
 <a class='nav-link' href='/products/archived'>
@@ -483,7 +483,7 @@ menu
 </i>
 </button>
 <a class='navbar-brand mx-auto' href='/products'>
-<img src='../../images/logo.svg' width='90px'>
+<img src='../images/logo.svg' width='90px'>
 </a>
 </div>
 </nav>
@@ -521,107 +521,210 @@ Create team
 </div>
 
 <div class='main'>
-<!-- .alert-container -->
-<!-- .alert.alert-success -->
-<!-- .container.product-card-container.text-center -->
-<!-- Password changed successfully. -->
-<!-- = partial "free-trial-card" -->
-<section class='no-padding-bottom'>
-<div class='container product-card-container'>
-<div class='row'>
-<div class='col-sm-12'>
-<div class='page-header no-border'>
-<div class='row'>
-<div class='col-sm-12'>
-<form class='add-new-product-bar'>
-<div class='form-row'>
-<div class='col-xl-9 col-lg-8 col-md-8 mb-3'>
-<input class='form-control form-control-lg' placeholder='Project name'>
-</div>
-<div class='col-xl-3 col-lg-4 col-md-4 mb-3'>
-<button class='btn btn-primary mb-2 btn-block btn-lg' onclick='location.href=&#39;/product/review-zero&#39;;' type='button'>
-Create Project
-</button>
-</div>
-</div>
-</form>
-</div>
-</div>
-<!-- .row -->
-<!-- .col-sm-12 -->
-<!-- %ul.nav.tab-nav.justify-content-center.justify-content-lg-start -->
-<!-- %li.nav-item -->
-<!-- %a.nav-link{:href=>"/products/", :class => (current_page.data.title === "All projects") ? "active" : ""} -->
-<!-- Projects -->
-<!-- %li.nav-item -->
-<!-- %a.nav-link{:href=>"/products/archived", :class => (current_page.data.title === "Archived") ? "active" : ""} -->
-<!-- Archived -->
-<!-- %li.nav-item -->
-<!-- %a.nav-link{:href=>"/products/team", :class => (current_page.data.title === "Team") ? "active" : ""} -->
-<!-- Team -->
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class='padding-top no-padding-bottom'>
-<div class='container product-card-container'>
-<div class='row'>
-<div class='col-6'>
-<div class='input-group simple-prepend'>
-<div class='input-group-prepend'></div>
-<div class='input-group-text'>
-<div class='material-icons'>
-search
-</div>
-</div>
-<input class='form-control' id='inlineFormInputGroup' placeholder='Search...' type='text'>
-</div>
-</div>
-<div class='col-6'>
-<div class='inline-block align-middle float-right' style='line-height:36px;'>
-<div class='inline-block align-middle'>
-<h4 class='no-margin medium-font align-middle'>
-Sort by
-<span class='link-color activity-filter cursor-pointer' data-toggle='dropdown'>
-Recent
-<span class='material-icons align-middle dropdown'>
-expand_more
-</span>
-<div class='dropdown-menu'>
-<a class='dropdown-item' href='#'>
-Recent
-</a>
-<a class='dropdown-item' href='#'>
-Alphanumeric
-</a>
-</div>
-</span>
-</h4>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</section>
 <section>
 <div class='container product-card-container'>
 <div class='row'>
-<div class='col-lg-12'>
-<div class='padded double-padding-top double-padding-bottom'>
-<div class='double-padding-top double-padding-bottom'>
-<div class='text-center'>
-<img class='max-width double-margin-bottom' src='../images/no-results.svg' width='200px'>
+<div class='col'>
 <h2>
-No results found
+Buttons
 </h2>
-<p class='light-text-color no-margin-bottom'>
-Try adjusting your search or filter to find what you're looking for.
-</p>
 </div>
 </div>
+<div class='row'>
+<div class='col'>
+<a class='btn btn-primary' href='#'>
+Primary button
+</a>
+<a class='btn btn-secondary' href='#'>
+Secondary button
+</a>
+<a class='btn btn-icon btn-secondary' href='#'>
+<i class='material-icons'>
+settings
+</i>
+</a>
+<a class='btn btn-terciary' href='#'>
+Terciary button
+</a>
+<a class='btn btn-label' href='#'>
+Label button
+</a>
+<a class='btn btn-flat' href='#'>
+Flat button
+</a>
+<span class='d-block' style='padding:10px; background:black;'>
+<a class='btn btn-wire' href='#'>
+Wire button
+</a>
+</span>
+<a class='btn btn-link' href='#'>
+Link button
+</a>
+</div>
+</div>
+<div class='row'>
+<div class='col'>
+<h2>
+Dropdowns
+</h2>
+</div>
+</div>
+<div class='row'>
+<div class='col'>
+<div class='dropdown'>
+<button class='btn btn-secondary text-left' data-toggle='dropdown' type='button'>
+<i class='material-icons'>
+check_box_outline_blank
+</i>
+To Do
+<i class='material-icons'>
+expand_more
+</i>
+</button>
+<div class='dropdown-menu'>
+<button class='dropdown-item' type='button'>
+<i class='material-icons-outlined icon-left'>
+check_box_outline_blank
+</i>
+To Do
+</button>
+<button class='dropdown-item active' type='button'>
+<i class='material-icons-outlined icon-left'>
+smart_display
+</i>
+In Progress
+</button>
+<button class='dropdown-item' type='button'>
+<i class='material-icons icon-left'>
+check_box
+</i>
+Completed
+</button>
+<button class='dropdown-item' type='button'>
+<i class='material-icons-outlined icon-left'>
+warning
+</i>
+Blocked
+</button>
+<button class='dropdown-item' type='button'>
+<i class='material-icons icon-left'>
+disabled_by_default
+</i>
+Cancelled
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class='row'>
+<div class='col'>
+<h2>
+Menus
+</h2>
+<div class='dropdown-menu show max-height-dropdown' style='min-width:250px;'>
+<h6 class='dropdown-header dropdown-header-white padding-bottom'>
+Filter notes by:
+</h6>
+<h6 class='dropdown-header'>
+Status
+</h6>
+<div class='quarter-padding-top quarter-padding-bottom'>
+<div class='dropdown-item checkbox-filter-item'>
+<div class='d-inline-block'>
+<i class='material-icons-outlined icon-left'>
+crop_free
+</i>
+</div>
+<div class='d-inline-block'>
+To Do
+</div>
+</div>
+<div class='dropdown-item checkbox-filter-item'>
+<div class='d-inline-block'>
+<i class='material-icons-outlined icon-left'>
+smart_display
+</i>
+</div>
+<div class='d-inline-block'>
+In Progress
+</div>
+</div>
+<div class='dropdown-item checkbox-filter-item'>
+<div class='d-inline-block'>
+<i class='material-icons-outlined icon-left'>
+warning
+</i>
+</div>
+<div class='d-inline-block'>
+Blocked
+</div>
+</div>
+<div class='dropdown-item checkbox-filter-item'>
+<div class='d-inline-block'>
+<i class='material-icons icon-left'>
+disabled_by_default
+</i>
+</div>
+<div class='d-inline-block'>
+Cancelled
+</div>
+</div>
+<!-- .dropdown-item.checkbox-filter-item -->
+<!-- .d-inline-block -->
+<!-- %i.material-icons.icon-left -->
+<!-- check_box -->
+<!-- .d-inline-block -->
+<!-- Completed -->
+</div>
+<!-- .padded -->
+<!-- .dropdown-section.margin-bottom -->
+<!-- %h4.medium-font -->
+<!-- Status -->
+<!-- .dropdown -->
+<!-- %button.btn.btn-secondary.text-left.full-width{:type=>"button", "data-toggle" => "dropdown"} -->
+<!-- .d-inline-block -->
+<!-- %i.material-icons-outlined -->
+<!-- crop_free -->
+<!-- .d-inline-block -->
+<!-- To do -->
+<!-- .d-inline-block.float-right -->
+<!-- %i.material-icons -->
+<!-- expand_more -->
+<!-- .dropdown-menu.dropdown-menu-right.full-width -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- clear_all -->
+<!-- All -->
+<!-- %button.dropdown-item.active{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- crop_free -->
+<!-- To Do -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- smart_display -->
+<!-- In progress -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- remove_red_eye -->
+<!-- Needs review -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- pause_presentation -->
+<!-- On hold -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons-outlined.icon-left -->
+<!-- disabled_by_default -->
+<!-- Cancelled -->
+<!-- %button.dropdown-item{:type=>"button"} -->
+<!-- %i.material-icons.icon-left -->
+<!-- check_box -->
+<!-- Completed -->
+<!-- .dropdown-footer.d-flex.justify-content-end.half-padding-top -->
+<!-- %button.btn.btn-link{:type=>"button"} -->
+<!-- Reset -->
+<!-- %button.btn.btn-primary{:type=>"button"} -->
+<!-- Apply -->
+
 </div>
 </div>
 </div>

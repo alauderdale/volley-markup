@@ -1,0 +1,87 @@
+%h6.dropdown-header.dropdown-header-white.padding-bottom
+	Filter notes by:
+%h6.dropdown-header
+	Status
+.quarter-padding-top.quarter-padding-bottom
+	.dropdown-item.checkbox-filter-item
+		.d-inline-block
+			%i.material-icons-outlined.icon-left
+				crop_free
+		.d-inline-block
+			To Do
+	.dropdown-item.checkbox-filter-item 
+		.d-inline-block
+			%i.material-icons-outlined.icon-left
+				smart_display
+		.d-inline-block
+			In Progress
+	.dropdown-item.checkbox-filter-item
+		.d-inline-block
+			%i.material-icons-outlined.icon-left
+				warning
+		.d-inline-block
+			Blocked
+	.dropdown-item.checkbox-filter-item
+		.d-inline-block
+			%i.material-icons.icon-left
+				disabled_by_default
+		.d-inline-block
+			Cancelled
+	/ .dropdown-item.checkbox-filter-item
+	/ 	.d-inline-block
+	/ 		%i.material-icons.icon-left
+	/ 			check_box
+	/ 	.d-inline-block
+	/ 		Completed
+
+				
+
+
+/ .padded
+/ 	.dropdown-section.margin-bottom
+/ 		%h4.medium-font
+/ 			Status
+/ 		.dropdown
+/ 			%button.btn.btn-secondary.text-left.full-width{:type=>"button", "data-toggle" => "dropdown"}
+/ 				.d-inline-block
+/ 					%i.material-icons-outlined
+/ 						crop_free
+/ 				.d-inline-block
+/ 					To do
+/ 				.d-inline-block.float-right
+/ 					%i.material-icons
+/ 						expand_more
+/ 			.dropdown-menu.dropdown-menu-right.full-width
+/ 				%button.dropdown-item{:type=>"button"} 
+/ 					%i.material-icons-outlined.icon-left
+/ 						clear_all
+/ 					All
+/ 				%button.dropdown-item.active{:type=>"button"} 
+/ 					%i.material-icons-outlined.icon-left
+/ 						crop_free
+/ 					To Do
+/ 				%button.dropdown-item{:type=>"button"} 
+/ 					%i.material-icons-outlined.icon-left
+/ 						smart_display
+/ 					In progress
+/ 				%button.dropdown-item{:type=>"button"} 
+/ 					%i.material-icons-outlined.icon-left
+/ 						remove_red_eye
+/ 					Needs review
+/ 				%button.dropdown-item{:type=>"button"} 
+/ 					%i.material-icons-outlined.icon-left
+/ 						pause_presentation
+/ 					On hold
+/ 				%button.dropdown-item{:type=>"button"} 
+/ 					%i.material-icons-outlined.icon-left
+/ 						disabled_by_default
+/ 					Cancelled
+/ 				%button.dropdown-item{:type=>"button"} 
+/ 					%i.material-icons.icon-left
+/ 						check_box
+/ 					Completed
+/ 	.dropdown-footer.d-flex.justify-content-end.half-padding-top
+/ 		%button.btn.btn-link{:type=>"button"} 
+/ 			Reset
+/ 		%button.btn.btn-primary{:type=>"button"} 
+/ 			Apply 

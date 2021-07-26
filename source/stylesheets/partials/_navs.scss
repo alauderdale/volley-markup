@@ -91,6 +91,7 @@
 	  transition-duration: .1s;
 	  border-color:$border-color;
 	  width:100%;
+	  border-radius:$base-border-radius;
 	    &:hover{
 	    	background-color: tint($link-color, 95%);
 	    }

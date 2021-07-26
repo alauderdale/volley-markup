@@ -1,14 +1,29 @@
-.activity-filter{
-	.dropdown-menu{
-		.dropdown-item{
-			padding:.50rem 1.5rem;
+
+
+.btn-group{
+	&.show{
+		.btn.dropdown-action{
+			@include button-active-light-button($link-color);
 		}
 	}
 }
 
+.dropdown{
+	&.show{
+		.btn-secondary, .btn-flat{
+			@include button-active-light-button($link-color);
+		}
+	}
+}
+
+.dropdown-visible{
+	display: block;
+}
+
+
 //default dropdown menu styling
 .dropdown-menu{
-	box-shadow:$box-shadow-elv-two;
+	box-shadow:$box-shadow-elv-three;
 	border:none;
 	border-radius:$base-border-radius;
 	
@@ -33,20 +48,73 @@
 			}
 		}
 		i{
-				font-size:1rem;
-				line-height:1;
-				position:relative;
-				top:4px;
-				color:$lightest-gray-color;
+			vertical-align: middle;
+			line-height: 0 !important;
+			position: relative;
+			top: -2px;
+			font-size: 20px;
+			left:-5px;
 			}
 		.icon-left{
 			margin-right:12px;
 		}
 	}
+}
 
+.dropdown-header{
+	color:$text-color;
+	background-color: $off-white-color;
+	border-top:1px solid $off-white-darker-color;
+	border-bottom:1px solid $off-white-darker-color;
+	&.dropdown-header-white{
+		border:none;
+		background:transparent;
+	}
+}
+
+.max-height-dropdown{
+	overflow-y: scroll;
+	background: white;
+	max-height: 300px;
 }
 
 
+//used for the note filter
+.checkbox-filter-item{
+	cursor: pointer;
+	position:relative;
+	&:hover{
+		background:transparent!important;
+		&:after{
+			content: "check_box";
+			color:$link-color;
+			font-family:"material Icons Outlined";
+		}
+	}
+	&:after{
+		content: "check_box_outline_blank";
+		position:absolute;
+		top:3px;
+		right:18px;
+		font-size: 20px;
+		color: $lightest-gray-color;
+		font-family:"material Icons";
+
+	}
+	&.active{
+		background:transparent!important;
+		box-shadow: none!important;
+
+		&:after{
+			content: "check_box";
+			color: $link-color;	
+			font-family:"material Icons";	
+		}
+
+
+	}
+
+}
 
 .workspace-menu-inner{
     position: relative;
@@ -66,6 +134,8 @@
     left: 0;
     background: white;
     width: 100%;
+    border-radius:$base-border-radius;
+    margin-bottom:8px;
     .dropdown-divider{
     	margin-top: 0;
     }
@@ -134,3 +204,6 @@
 		}
 	}
 }
+
+
+
